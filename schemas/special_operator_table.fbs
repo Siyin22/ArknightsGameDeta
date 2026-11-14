@@ -1,0 +1,433 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_SpecialOperatorTargetType_cd5ed2d2 : int {
+  NONE = 0,
+  ROGUE = 1,
+}
+
+enum Torappu_SpecialOperatorDetailNodeType_a9be324b : int {
+  NONE = 0,
+  EVOLVE = 1,
+  SKILL = 2,
+  TALENT = 3,
+  MASTER = 4,
+  UNIEQUIP = 5,
+}
+
+enum Torappu_EvolvePhase_fd4d2921 : int {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+  PHASE_3 = 3,
+  E_NUM = 4,
+}
+
+enum Torappu_SpecialOperatorConditionViewType_7618bef7 : int {
+  TASK = 0,
+  EVOLVEPHASE = 1,
+}
+
+enum Torappu_MissionType_c258b75b : int {
+  UNKNOWN = 0,
+  MAIN = 1,
+  DAILY = 2,
+  WEEKLY = 3,
+  GUIDE = 4,
+  SUB = 5,
+  ACTIVITY = 6,
+  OPENSERVER = 7,
+  TOWERSEASON = 8,
+  RETRO = 9,
+  SPECIAL_OPERATOR = 10,
+  SPECIAL_OPERATOR_WEEKLY = 11,
+  GUIDE_V3 = 12,
+}
+
+enum Torappu_MissionItemBgType_07f1bbc4 : int {
+  COMMON = 0,
+  Equipment = 1,
+  Char = 2,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+table Torappu_SpecialOperatorTable_e290c478 {
+  operatorBasicData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorBasicData__5efdd9ed_Entry] (id:0);
+  operatorDetailData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailData__29992fe9_Entry] (id:1);
+  modeData:[Torappu_SpecialOperatorModeData_423dc5ea] (id:2);
+  nodeUnlockMissionData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MissionData__c9e6e57d_Entry] (id:3);
+  nodeUnlockMissionGroup:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MissionGroup__f45a3747_Entry] (id:4);
+  constData:Torappu_SpecialOperatorConstData_088eacbe (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorBasicData__5efdd9ed_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorBasicData_9d534f0f (id:1);
+}
+
+table Torappu_SpecialOperatorBasicData_9d534f0f {
+  soCharId:string (id:0);
+  sortId:int (id:1);
+  targetType:Torappu_SpecialOperatorTargetType_cd5ed2d2 (id:2);
+  targetId:string (id:3);
+  targetTopicName:string (id:4);
+  bgId:string (id:5);
+  bgEffectId:string (id:6);
+  charEffectId:string (id:7);
+  typeIconId:string (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailData__29992fe9_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDetailData_a666ce4d (id:1);
+}
+
+table Torappu_SpecialOperatorDetailData_a666ce4d {
+  specialOperatorExpMap:[System_Int32___3d2652dd] (id:0);
+  detailConstData:Torappu_SpecialOperatorDetailConstData_98d94656 (id:1);
+  tabData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailTabData__37282dc5_Entry] (id:2);
+  nodeUnlockData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailNodeUnlockData__52ce8e4d_Entry] (id:3);
+  evolveNodeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailEvolveNodeData__2edf9d61_Entry] (id:4);
+  skillNodeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailSkillNodeData__c6e07667_Entry] (id:5);
+  talentNodeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailTalentNodeData__b7d0e954_Entry] (id:6);
+  masterNodeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailMasterNodeData__88b3f2f0_Entry] (id:7);
+  uniEquipNodeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailUniEquipNodeData__7a145693_Entry] (id:8);
+  nodeDiagramMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDiagramData__e1177442_Entry] (id:9);
+}
+
+table System_Int32___3d2652dd {
+  values:[int] (id:0);
+}
+
+table Torappu_SpecialOperatorDetailConstData_98d94656 {
+  nextRoundBuffToast:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailTabData__37282dc5_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDetailTabData_36b1f450 (id:1);
+}
+
+table Torappu_SpecialOperatorDetailTabData_36b1f450 {
+  soTabId:string (id:0);
+  soTabName:string (id:1);
+  soTabSortId:int (id:2);
+  nodeType:Torappu_SpecialOperatorDetailNodeType_a9be324b (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailNodeUnlockData__52ce8e4d_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDetailNodeUnlockData_620f4aed (id:1);
+}
+
+table Torappu_SpecialOperatorDetailNodeUnlockData_620f4aed {
+  nodeId:string (id:0);
+  nodeType:Torappu_SpecialOperatorDetailNodeType_a9be324b (id:1);
+  isInGameMechanics:bool (id:2);
+  unlockEvolvePhase:Torappu_EvolvePhase_fd4d2921 (id:3);
+  unlockLevel:int (id:4);
+  unlockTaskId:string (id:5);
+  frontNodeId:string (id:6);
+  ifAutoUnlock:bool (id:7);
+  conditionViewType:Torappu_SpecialOperatorConditionViewType_7618bef7 (id:8);
+  topoOrder:int (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailEvolveNodeData__2edf9d61_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDetailEvolveNodeData_bfd23fec (id:1);
+}
+
+table Torappu_SpecialOperatorDetailEvolveNodeData_bfd23fec {
+  nodeId:string (id:0);
+  toEvolvePhase:Torappu_EvolvePhase_fd4d2921 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailSkillNodeData__c6e07667_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDetailSkillNodeData_a867b965 (id:1);
+}
+
+table Torappu_SpecialOperatorDetailSkillNodeData_a867b965 {
+  nodeId:string (id:0);
+  skillKey:string (id:1);
+  skillLevel:int (id:2);
+  skillSpLevel:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailTalentNodeData__b7d0e954_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDetailTalentNodeData_1cb30102 (id:1);
+}
+
+table Torappu_SpecialOperatorDetailTalentNodeData_1cb30102 {
+  nodeId:string (id:0);
+  talentIndex:int (id:1);
+  updateCount:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailMasterNodeData__88b3f2f0_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDetailMasterNodeData_52c076e1 (id:1);
+}
+
+table Torappu_SpecialOperatorDetailMasterNodeData_52c076e1 {
+  nodeId:string (id:0);
+  masterId:string (id:1);
+  level:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDetailUniEquipNodeData__7a145693_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDetailUniEquipNodeData_37782dec (id:1);
+}
+
+table Torappu_SpecialOperatorDetailUniEquipNodeData_37782dec {
+  nodeId:string (id:0);
+  uniEquipId:string (id:1);
+  equipLevel:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorDiagramData__e1177442_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorDiagramData_74ec8229 (id:1);
+}
+
+table Torappu_SpecialOperatorDiagramData_74ec8229 {
+  width:float (id:0);
+  height:float (id:1);
+  pointPosDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorPointPosData__19c99393_Entry] (id:2);
+  nodePointDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorNodePointData__5e9ae67c_Entry] (id:3);
+  elitePointDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorElitePointData__f18776d3_Entry] (id:4);
+  levelPointDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorLevelPointData__a9b25143_Entry] (id:5);
+  linePosDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorLinePosData__e9466b6f_Entry] (id:6);
+  lineRelationDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorLineRelationData__cf67e108_Entry] (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorPointPosData__19c99393_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorPointPosData_ef2010b6 (id:1);
+}
+
+table Torappu_SpecialOperatorPointPosData_ef2010b6 {
+  pos:UnityEngine_Vector2_1073c192 (id:0);
+}
+
+table UnityEngine_Vector2_1073c192 {
+  x:float (id:0);
+  y:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorNodePointData__5e9ae67c_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorNodePointData_78816dd3 (id:1);
+}
+
+table Torappu_SpecialOperatorNodePointData_78816dd3 {
+  nodeId:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorElitePointData__f18776d3_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorElitePointData_10f03e27 (id:1);
+}
+
+table Torappu_SpecialOperatorElitePointData_10f03e27 {
+  evolvePhase:Torappu_EvolvePhase_fd4d2921 (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorLevelPointData__a9b25143_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorLevelPointData_ad34cb27 (id:1);
+}
+
+table Torappu_SpecialOperatorLevelPointData_ad34cb27 {
+  evolvePhase:Torappu_EvolvePhase_fd4d2921 (id:0);
+  level:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorLinePosData__e9466b6f_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorLinePosData_2154ec80 (id:1);
+}
+
+table Torappu_SpecialOperatorLinePosData_2154ec80 {
+  startPos:UnityEngine_Vector2_1073c192 (id:0);
+  endPos:UnityEngine_Vector2_1073c192 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpecialOperatorLineRelationData__cf67e108_Entry {
+  key:string (id:0);
+  value:Torappu_SpecialOperatorLineRelationData_82bfc86e (id:1);
+}
+
+table Torappu_SpecialOperatorLineRelationData_82bfc86e {
+  startPointList:[string] (id:0);
+  endPointList:[string] (id:1);
+}
+
+table Torappu_SpecialOperatorModeData_423dc5ea {
+  type:Torappu_SpecialOperatorTargetType_cd5ed2d2 (id:0);
+  typeName:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MissionData__c9e6e57d_Entry {
+  key:string (id:0);
+  value:Torappu_MissionData_23fabcdf (id:1);
+}
+
+table Torappu_MissionData_23fabcdf {
+  id:string (id:0);
+  sortId:int (id:1);
+  description:string (id:2);
+  type:Torappu_MissionType_c258b75b (id:3);
+  itemBgType:Torappu_MissionItemBgType_07f1bbc4 (id:4);
+  preMissionIds:[string] (id:5);
+  template:string (id:6);
+  templateType:string (id:7);
+  param:[string] (id:8);
+  unlockCondition:string (id:9);
+  unlockParam:[string] (id:10);
+  missionGroup:string (id:11);
+  toPage:string (id:12);
+  periodicalPoint:int (id:13);
+  rewards:[Torappu_MissionDisplayRewards_5d5b7fc0] (id:14);
+  backImagePath:string (id:15);
+  foldId:string (id:16);
+  haveSubMissionToUnlock:bool (id:17);
+  countEndTs:long (id:18);
+}
+
+table Torappu_MissionDisplayRewards_5d5b7fc0 {
+  type:Torappu_ItemType_2ee74a72 (id:0);
+  id:string (id:1);
+  count:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MissionGroup__f45a3747_Entry {
+  key:string (id:0);
+  value:Torappu_MissionGroup_49e89766 (id:1);
+}
+
+table Torappu_MissionGroup_49e89766 {
+  id:string (id:0);
+  title:string (id:1);
+  type:Torappu_MissionType_c258b75b (id:2);
+  preMissionGroup:string (id:3);
+  period:[int] (id:4);
+  rewards:[Torappu_MissionDisplayRewards_5d5b7fc0] (id:5);
+  missionIds:[string] (id:6);
+  startTs:long (id:7);
+  endTs:long (id:8);
+}
+
+table Torappu_SpecialOperatorConstData_088eacbe {
+  weeklyTaskBoardUnlock:string (id:0);
+  taskPinOnToast:string (id:1);
+  noFrontNodeToast:string (id:2);
+  noFrontTaskToast:string (id:3);
+  skillGotoToast:string (id:4);
+  evolveTabExpNotice:string (id:5);
+  pinnedSpecialOperator:string (id:6);
+}
+
+root_type Torappu_SpecialOperatorTable_e290c478;

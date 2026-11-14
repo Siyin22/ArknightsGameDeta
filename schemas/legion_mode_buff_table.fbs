@@ -1,0 +1,34 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_Legion_LegionModeBuffData__1b58face_Entry {
+  key:string (id:0);
+  value:Torappu_Battle_Legion_LegionModeBuffData_209c8d77 (id:1);
+}
+
+table Torappu_Battle_Legion_LegionModeBuffData_209c8d77 {
+  dataParts:[Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_7ce5be84] (id:0);
+}
+
+table Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_7ce5be84 {
+  isInheritable:bool (id:0);
+  isRedrawWhenReplace:bool (id:1);
+  description:string (id:2);
+  descriptionHead:string (id:3);
+  levelPhases:[Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_LegionModeBuffLevelPhase_4954fc2b] (id:4);
+}
+
+table Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_LegionModeBuffLevelPhase_4954fc2b {
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:0);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_Legion_LegionModeBuffData__1b58face {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_Legion_LegionModeBuffData__1b58face_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_Legion_LegionModeBuffData__1b58face;

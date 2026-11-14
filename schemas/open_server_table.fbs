@@ -1,0 +1,632 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_MissionType_c258b75b : int {
+  UNKNOWN = 0,
+  MAIN = 1,
+  DAILY = 2,
+  WEEKLY = 3,
+  GUIDE = 4,
+  SUB = 5,
+  ACTIVITY = 6,
+  OPENSERVER = 7,
+  TOWERSEASON = 8,
+  RETRO = 9,
+  SPECIAL_OPERATOR = 10,
+  SPECIAL_OPERATOR_WEEKLY = 11,
+  GUIDE_V3 = 12,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_MissionItemBgType_07f1bbc4 : int {
+  COMMON = 0,
+  Equipment = 1,
+  Char = 2,
+}
+
+enum Torappu_ReturnAllOpenType_e86a6d27 : int {
+  RESOURCE = 0,
+  CAMP = 1,
+}
+
+enum Torappu_ReturnMissionGroupType_6fb637a6 : int {
+  DAILY = 0,
+  NORMAL = 1,
+  DIFF = 2,
+}
+
+enum Torappu_ReturnJumpType_d4b13056 : int {
+  NONE = 0,
+  ZONE_GROUP = 1,
+  ROGUE = 2,
+  CLIMB_TOWER = 3,
+  CAMPAIGN = 4,
+  BUILDING = 5,
+  RECRUIT_BUILD = 6,
+  DAILY_MISSION = 7,
+  SANDBOX = 8,
+  MAIN_SS = 9,
+}
+
+enum Torappu_ReturnNewsType_2f92a4e5 : int {
+  NONE = 0,
+  MAIN_SS = 1,
+  ROGUE = 2,
+  SANDBOX = 3,
+}
+
+enum Torappu_OpenServerMissionType_5ac52906 : int {
+  NORMAL = 0,
+  BONUS = 1,
+}
+
+enum Torappu_OpenServerV3JumpType_bde03846 : int {
+  NONE = 0,
+  MAIN_STAGE = 1,
+  CHAR_REPO = 2,
+  WEEKLY = 3,
+  SHOP = 4,
+  BUILDING = 5,
+  CAMPAIGN_STAGE = 6,
+}
+
+table Torappu_OpenServerSchedule_663497f1 {
+  schedule:[Torappu_OpenServerScheduleItem_3ac2a975] (id:0);
+  dataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerData__23721180_Entry] (id:1);
+  constant:Torappu_OpenServerConst_e329e6ef (id:2);
+  playerReturn:Torappu_ReturnData_20aaf941 (id:3);
+  newbieCheckInPackageList:[Torappu_NewbieCheckInPackageData_b4f27c25] (id:4);
+  longTermCheckInData:Torappu_LongTermCheckInData_ba3d6571 (id:5);
+  openServerV3Data:Torappu_OpenServerV3Data_099972f8 (id:6);
+}
+
+table Torappu_OpenServerScheduleItem_3ac2a975 {
+  id:string (id:0);
+  versionId:string (id:1);
+  startTs:int (id:2);
+  endTs:int (id:3);
+  totalCheckinDescption:string (id:4);
+  chainLoginDescription:string (id:5);
+  charImg:string (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerData__23721180_Entry {
+  key:string (id:0);
+  value:Torappu_OpenServerData_fcabeecb (id:1);
+}
+
+table Torappu_OpenServerData_fcabeecb {
+  openServerMissionGroup:Torappu_MissionGroup_49e89766 (id:0);
+  openServerMissionData:[Torappu_MissionData_23fabcdf] (id:1);
+  checkInData:[Torappu_TotalCheckinData_722f7618] (id:2);
+  chainLoginData:[Torappu_ChainLoginData_50d0c741] (id:3);
+  totalCheckinCharData:[string] (id:4);
+  chainLoginCharData:[string] (id:5);
+}
+
+table Torappu_MissionGroup_49e89766 {
+  id:string (id:0);
+  title:string (id:1);
+  type:Torappu_MissionType_c258b75b (id:2);
+  preMissionGroup:string (id:3);
+  period:[int] (id:4);
+  rewards:[Torappu_MissionDisplayRewards_5d5b7fc0] (id:5);
+  missionIds:[string] (id:6);
+  startTs:long (id:7);
+  endTs:long (id:8);
+}
+
+table Torappu_MissionDisplayRewards_5d5b7fc0 {
+  type:Torappu_ItemType_2ee74a72 (id:0);
+  id:string (id:1);
+  count:int (id:2);
+}
+
+table Torappu_MissionData_23fabcdf {
+  id:string (id:0);
+  sortId:int (id:1);
+  description:string (id:2);
+  type:Torappu_MissionType_c258b75b (id:3);
+  itemBgType:Torappu_MissionItemBgType_07f1bbc4 (id:4);
+  preMissionIds:[string] (id:5);
+  template:string (id:6);
+  templateType:string (id:7);
+  param:[string] (id:8);
+  unlockCondition:string (id:9);
+  unlockParam:[string] (id:10);
+  missionGroup:string (id:11);
+  toPage:string (id:12);
+  periodicalPoint:int (id:13);
+  rewards:[Torappu_MissionDisplayRewards_5d5b7fc0] (id:14);
+  backImagePath:string (id:15);
+  foldId:string (id:16);
+  haveSubMissionToUnlock:bool (id:17);
+  countEndTs:long (id:18);
+}
+
+table Torappu_TotalCheckinData_722f7618 {
+  order:int (id:0);
+  item:Torappu_OpenServerItemData_bf2a93a7 (id:1);
+  colorId:int (id:2);
+}
+
+table Torappu_OpenServerItemData_bf2a93a7 {
+  itemId:string (id:0);
+  itemType:Torappu_ItemType_2ee74a72 (id:1);
+  count:int (id:2);
+  name:string (id:3);
+}
+
+table Torappu_ChainLoginData_50d0c741 {
+  order:int (id:0);
+  item:Torappu_OpenServerItemData_bf2a93a7 (id:1);
+  colorId:int (id:2);
+}
+
+table Torappu_OpenServerConst_e329e6ef {
+  firstDiamondShardMailCount:int (id:0);
+  initApMailEndTs:long (id:1);
+  resFullOpenUnlockStageId:string (id:2);
+  resFullOpenDuration:int (id:3);
+  resFullOpenTitle:string (id:4);
+  resFullOpenDesc:string (id:5);
+  resFullOpenGuideGroupThreshold:string (id:6);
+  resFullOpenStartTime:long (id:7);
+  openServerV2EndTime:long (id:8);
+}
+
+table Torappu_ReturnData_20aaf941 {
+  groupDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnGroupData__dfc16b4b_Entry] (id:0);
+  onceDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnOnceRewardData__3ea557a7_Entry] (id:1);
+  checkinDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnCheckinGroupData__94a294c2_Entry] (id:2);
+  priceDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnPriceGroupData__52e9c00f_Entry] (id:3);
+  missionDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnMissionGroupData__818f966c_Entry] (id:4);
+  checkinGpData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnCheckinGpRewardData__db56c581_Entry] (id:5);
+  newsDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnNewsData__4a31b748_Entry] (id:6);
+  giftPackagePicDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnGiftPackagePicData__db334287_Entry] (id:7);
+  openStyleData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnOpenStyleData__99c02cf2_Entry] (id:8);
+  constData:Torappu_ReturnConstData_656edbbf (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnGroupData__dfc16b4b_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnGroupData_12de6601 (id:1);
+}
+
+table Torappu_ReturnGroupData_12de6601 {
+  groupId:string (id:0);
+  taskDays:int (id:1);
+  onceGroupId:string (id:2);
+  missionGroupId:[string] (id:3);
+  checkinGroupId:string (id:4);
+  priceGroupId:string (id:5);
+  newsGroupId:[string] (id:6);
+  giftPackageIdList:[string] (id:7);
+  checkinGpId:string (id:8);
+  gachaPoolId:string (id:9);
+  allOpenDays:int (id:10);
+  campAllOpenDays:int (id:11);
+  allOpenData:[Torappu_ReturnOpenData_8382e879] (id:12);
+}
+
+table Torappu_ReturnOpenData_8382e879 {
+  allOpenType:Torappu_ReturnAllOpenType_e86a6d27 (id:0);
+  allOpenTime:int (id:1);
+  desc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnOnceRewardData__3ea557a7_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnOnceRewardData_a78ffcbd (id:1);
+}
+
+table Torappu_ReturnOnceRewardData_a78ffcbd {
+  groupId:string (id:0);
+  rewardList:[Torappu_ReturnItemData_15cfb248] (id:1);
+}
+
+table Torappu_ReturnItemData_15cfb248 {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+  sortId:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnCheckinGroupData__94a294c2_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnCheckinGroupData_adfec418 (id:1);
+}
+
+table Torappu_ReturnCheckinGroupData_adfec418 {
+  groupId:string (id:0);
+  checkinItemList:[Torappu_ReturnCheckinItemData_9c9e6c6a] (id:1);
+}
+
+table Torappu_ReturnCheckinItemData_9c9e6c6a {
+  order:int (id:0);
+  isKeyItem:bool (id:1);
+  rewardList:[Torappu_ItemBundle_64f049cd] (id:2);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnPriceGroupData__52e9c00f_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnPriceGroupData_eebef5ce (id:1);
+}
+
+table Torappu_ReturnPriceGroupData_eebef5ce {
+  groupId:string (id:0);
+  content:[Torappu_ReturnPriceItemData_ade09546] (id:1);
+}
+
+table Torappu_ReturnPriceItemData_ade09546 {
+  contentId:string (id:0);
+  sortId:int (id:1);
+  pointRequire:int (id:2);
+  desc:string (id:3);
+  displayReward:Torappu_ReturnItemData_15cfb248 (id:4);
+  rewardList:[Torappu_ReturnItemData_15cfb248] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnMissionGroupData__818f966c_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnMissionGroupData_f306cbd5 (id:1);
+}
+
+table Torappu_ReturnMissionGroupData_f306cbd5 {
+  groupId:string (id:0);
+  sortId:int (id:1);
+  type:Torappu_ReturnMissionGroupType_6fb637a6 (id:2);
+  missionList:[Torappu_ReturnMissionItemData_ec211ce6] (id:3);
+}
+
+table Torappu_ReturnMissionItemData_ec211ce6 {
+  missionId:string (id:0);
+  sortId:int (id:1);
+  uncompleteBgIcon:string (id:2);
+  completeBgIcon:string (id:3);
+  desc:string (id:4);
+  jumpType:Torappu_ReturnJumpType_d4b13056 (id:5);
+  jumpPlace:string (id:6);
+  rewardList:[Torappu_ItemBundle_64f049cd] (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnCheckinGpRewardData__db56c581_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnCheckinGpRewardData_7c484d1d (id:1);
+}
+
+table Torappu_ReturnCheckinGpRewardData_7c484d1d {
+  groupId:string (id:0);
+  getTime:int (id:1);
+  bindGPGoodId:string (id:2);
+  totalCheckInDay:int (id:3);
+  iconId:string (id:4);
+  rewardDict:[System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_ReturnItemData___104b8618_Entry] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_ReturnItemData___104b8618_Entry {
+  key:int (id:0);
+  value:[Torappu_ReturnItemData_15cfb248] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnNewsData__4a31b748_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnNewsData_60d17925 (id:1);
+}
+
+table Torappu_ReturnNewsData_60d17925 {
+  groupId:string (id:0);
+  sortId:int (id:1);
+  tabTitle:string (id:2);
+  tabIcon:string (id:3);
+  title:string (id:4);
+  desc:string (id:5);
+  imgId:string (id:6);
+  iconId:string (id:7);
+  jumpType:Torappu_ReturnNewsType_2f92a4e5 (id:8);
+  jumpPlace:string (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnGiftPackagePicData__db334287_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnGiftPackagePicData_730e24cb (id:1);
+}
+
+table Torappu_ReturnGiftPackagePicData_730e24cb {
+  giftPackageId:string (id:0);
+  giftPackagePic:string (id:1);
+  sortId:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ReturnOpenStyleData__99c02cf2_Entry {
+  key:string (id:0);
+  value:Torappu_ReturnOpenStyleData_1fb4f164 (id:1);
+}
+
+table Torappu_ReturnOpenStyleData_1fb4f164 {
+  sortId:int (id:0);
+  imgBkgId:string (id:1);
+  imgEntryId:string (id:2);
+  imgIconId:string (id:3);
+  pauseDesc:string (id:4);
+  title:string (id:5);
+  name:string (id:6);
+}
+
+table Torappu_ReturnConstData_656edbbf {
+  pointItemId:string (id:0);
+  returnPriceDesc:string (id:1);
+  oldReturnGroupId:string (id:2);
+}
+
+table Torappu_NewbieCheckInPackageData_b4f27c25 {
+  groupId:string (id:0);
+  startTime:long (id:1);
+  endTime:long (id:2);
+  bindGPGoodId:string (id:3);
+  checkInDuration:int (id:4);
+  compensateEndDay:int (id:5);
+  totalCheckInDay:int (id:6);
+  iconId:string (id:7);
+  checkInRewardDict:[System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_NewbieCheckInPackageRewar_fdfe96da_Entry] (id:8);
+  trigStartTime:long (id:9);
+  trigEndTime:long (id:10);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_NewbieCheckInPackageRewar_fdfe96da_Entry {
+  key:int (id:0);
+  value:[Torappu_NewbieCheckInPackageRewardData_e772a4fd] (id:1);
+}
+
+table Torappu_NewbieCheckInPackageRewardData_e772a4fd {
+  orderNum:int (id:0);
+  itemBundle:Torappu_ItemBundle_64f049cd (id:1);
+}
+
+table Torappu_LongTermCheckInData_ba3d6571 {
+  groupList:[Torappu_LongTermCheckInGroupData_90ce112e] (id:0);
+  constData:Torappu_LongTermCheckInConstData_26cd4819 (id:1);
+}
+
+table Torappu_LongTermCheckInGroupData_90ce112e {
+  groupId:string (id:0);
+  sortId:int (id:1);
+  startTs:long (id:2);
+  level:int (id:3);
+  days:int (id:4);
+  bkgImgId:string (id:5);
+  titleImgId:string (id:6);
+  tipText:string (id:7);
+  bottomText:string (id:8);
+  rewardList:[Torappu_ItemBundle_64f049cd] (id:9);
+}
+
+table Torappu_LongTermCheckInConstData_26cd4819 {
+  startTs:long (id:0);
+  detailTitle:string (id:1);
+  detailDesc:string (id:2);
+}
+
+table Torappu_OpenServerV3Data_099972f8 {
+  checkInData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3CheckInGroupData__31d546c9_Entry] (id:0);
+  missionData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3MissionData__060655aa_Entry] (id:1);
+  missionGroupData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3MissionGroupData__13ae7f20_Entry] (id:2);
+  missionTypeDescData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3MissionTypeDescData__987cfedc_Entry] (id:3);
+  milestoneGroupData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3MilestoneGroupData__ab5ca50c_Entry] (id:4);
+  giftPackageList:[Torappu_OpenServerV3GiftPackageData_c6848204] (id:5);
+  stageCampaignData:[Torappu_OpenServerV3StageCampaignData_aca92f10] (id:6);
+  storyRecommendData:[Torappu_OpenServerV3StoryRecommendData_91088036] (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3CheckInGroupData__31d546c9_Entry {
+  key:string (id:0);
+  value:Torappu_OpenServerV3CheckInGroupData_594eeecc (id:1);
+}
+
+table Torappu_OpenServerV3CheckInGroupData_594eeecc {
+  groupId:string (id:0);
+  specialRewardItem:Torappu_ItemBundle_64f049cd (id:1);
+  specialRewardDay:int (id:2);
+  charImgId:string (id:3);
+  loginTitle:string (id:4);
+  loginDesc:string (id:5);
+  guidebookTrigger:string (id:6);
+  charList:[string] (id:7);
+  checkInItemList:[Torappu_OpenServerV3CheckInItemData_13194b0c] (id:8);
+}
+
+table Torappu_OpenServerV3CheckInItemData_13194b0c {
+  order:int (id:0);
+  isKeyItem:bool (id:1);
+  rewardList:[Torappu_ItemBundle_64f049cd] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3MissionData__060655aa_Entry {
+  key:string (id:0);
+  value:Torappu_OpenServerV3MissionData_0d659c96 (id:1);
+}
+
+table Torappu_OpenServerV3MissionData_0d659c96 {
+  id:string (id:0);
+  sortId:int (id:1);
+  description:string (id:2);
+  type:Torappu_MissionType_c258b75b (id:3);
+  openServerMissionType:Torappu_OpenServerMissionType_5ac52906 (id:4);
+  missionGroup:string (id:5);
+  jumpType:Torappu_OpenServerV3JumpType_bde03846 (id:6);
+  jumpPlace:string (id:7);
+  rewards:[Torappu_MissionDisplayRewards_5d5b7fc0] (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3MissionGroupData__13ae7f20_Entry {
+  key:string (id:0);
+  value:Torappu_OpenServerV3MissionGroupData_08b9b08f (id:1);
+}
+
+table Torappu_OpenServerV3MissionGroupData_08b9b08f {
+  id:string (id:0);
+  type:Torappu_MissionType_c258b75b (id:1);
+  sortId:int (id:2);
+  title:string (id:3);
+  period:[int] (id:4);
+  rewards:[Torappu_MissionDisplayRewards_5d5b7fc0] (id:5);
+  startTs:long (id:6);
+  endTs:long (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3MissionTypeDescData__987cfedc_Entry {
+  key:string (id:0);
+  value:Torappu_OpenServerV3MissionTypeDescData_702e9da7 (id:1);
+}
+
+table Torappu_OpenServerV3MissionTypeDescData_702e9da7 {
+  missionType:Torappu_OpenServerMissionType_5ac52906 (id:0);
+  desc:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_OpenServerV3MilestoneGroupData__ab5ca50c_Entry {
+  key:string (id:0);
+  value:Torappu_OpenServerV3MilestoneGroupData_27f9c949 (id:1);
+}
+
+table Torappu_OpenServerV3MilestoneGroupData_27f9c949 {
+  groupId:string (id:0);
+  rewardImgId:string (id:1);
+  rewardItemId:string (id:2);
+  rewardPointId:string (id:3);
+  itemList:[Torappu_OpenServerV3MilestoneItemData_b0d52116] (id:4);
+}
+
+table Torappu_OpenServerV3MilestoneItemData_b0d52116 {
+  level:int (id:0);
+  reward:Torappu_ItemBundle_64f049cd (id:1);
+  pointId:string (id:2);
+  pointCnt:int (id:3);
+  isBonus:bool (id:4);
+}
+
+table Torappu_OpenServerV3GiftPackageData_c6848204 {
+  giftPackageId:string (id:0);
+  goodId:string (id:1);
+  giftPackagePic:string (id:2);
+  sortId:int (id:3);
+  isLimit:bool (id:4);
+}
+
+table Torappu_OpenServerV3StageCampaignData_aca92f10 {
+  stageId:string (id:0);
+  sortId:int (id:1);
+  imgId:string (id:2);
+}
+
+table Torappu_OpenServerV3StoryRecommendData_91088036 {
+  storySetId:string (id:0);
+  sortId:int (id:1);
+}
+
+root_type Torappu_OpenServerSchedule_663497f1;

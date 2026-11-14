@@ -1,0 +1,1123 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_BuildingData_RoomType_42737feb : int {
+  NONE = 0,
+  CONTROL = 1,
+  POWER = 2,
+  MANUFACTURE = 4,
+  SHOP = 8,
+  DORMITORY = 16,
+  MEETING = 32,
+  HIRE = 64,
+  ELEVATOR = 128,
+  CORRIDOR = 256,
+  TRADING = 512,
+  WORKSHOP = 1024,
+  TRAINING = 2048,
+  PRIVATE = 4096,
+  RECYCLE = 8192,
+  FUNCTIONAL = 11902,
+  ALL = 16383,
+}
+
+enum Torappu_BuildingData_RoomCategory_20b08f2d : int {
+  NONE = 0,
+  FUNCTION = 1,
+  OUTPUT = 2,
+  CUSTOM = 4,
+  ELEVATOR = 8,
+  CORRIDOR = 16,
+  SPECIAL = 32,
+  CUSTOM_P = 64,
+  ELEVATOR_P = 128,
+  CORRIDOR_P = 256,
+  ALL = 511,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_BuildingData_LayoutData_StoreyData_Type_37764066 : int {
+  UPGROUND = 0,
+  DOWNGROUND = 1,
+}
+
+enum Torappu_EvolvePhase_fd4d2921 : int {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+  PHASE_3 = 3,
+  E_NUM = 4,
+}
+
+enum Torappu_BuildingData_BuffCategory_3fcecaaa : int {
+  NONE = 0,
+  FUNCTION = 1,
+  OUTPUT = 2,
+  RECOVERY = 3,
+}
+
+enum Torappu_BuildingData_FurnitureInteract_159900af : int {
+  NONE = 0,
+  ANIMATOR = 1,
+  MUSIC = 2,
+  FUNCTION = 3,
+}
+
+enum Torappu_BuildingData_FurnitureType_06eeaef7 : int {
+  FLOOR = 0,
+  CARPET = 1,
+  SEATING = 2,
+  BEDDING = 3,
+  TABLE = 4,
+  CABINET = 5,
+  DECORATION = 6,
+  WALLPAPER = 7,
+  WALLDECO = 8,
+  WALLLAMP = 9,
+  CEILING = 10,
+  CEILINGLAMP = 11,
+  FUNCTION = 12,
+  INTERACT = 13,
+}
+
+enum Torappu_BuildingData_FurnitureSubType_9cb0967a : int {
+  NONE = 0,
+  CHAIR = 1,
+  SOFA = 2,
+  BARSTOOL = 3,
+  STOOL = 4,
+  BENCH = 5,
+  ORTHER_S = 6,
+  POSTER = 7,
+  CURTAIN = 8,
+  BOARD_WD = 9,
+  SHELF = 10,
+  INSTRUMENT_WD = 11,
+  ART_WD = 12,
+  PLAQUE = 13,
+  CONTRACT = 14,
+  ANNIHILATION = 15,
+  ORTHER_WD = 16,
+  FLOORLAMP = 17,
+  PLANT = 18,
+  PARTITION = 19,
+  COOKING = 20,
+  CATERING = 21,
+  DEVICE = 22,
+  INSTRUMENT_D = 23,
+  ART_D = 24,
+  BOARD_D = 25,
+  ENTERTAINMENT = 26,
+  STORAGE = 27,
+  DRESSING = 28,
+  WARM = 29,
+  WASH = 30,
+  ORTHER_D = 31,
+  COLUMN = 32,
+  DECORATION_C = 33,
+  CURTAIN_C = 34,
+  DEVICE_C = 35,
+  CONTRACT_2 = 36,
+  LIGHT = 37,
+  ORTHER_C = 38,
+  VISITOR = 39,
+  MUSIC = 40,
+}
+
+enum Torappu_BuildingData_FurnitureLocation_866b576a : int {
+  NONE = 0,
+  WALL = 1,
+  FLOOR = 2,
+  CARPET = 3,
+  CEILING = 4,
+  POSTER = 5,
+  CEILINGDECAL = 6,
+}
+
+enum Torappu_BuildingData_FurnitureCategory_35adf5fe : int {
+  FURNITURE = 0,
+  WALL = 1,
+  FLOOR = 2,
+}
+
+enum Torappu_BuildingData_DiySortType_07e32cd4 : int {
+  NONE = 0,
+  THEME = 1,
+  FURNITURE = 2,
+  FURNITURE_IN_THEME = 3,
+  RECENT_THEME = 4,
+  RECENT_FURNITURE = 5,
+  MEETING_THEME = 6,
+  MEETING_FURNITURE = 7,
+  MEETING_FURNITURE_IN_THEME = 8,
+  MEETING_RECENT_THEME = 9,
+  MEETING_RECENT_FURNITURE = 10,
+}
+
+enum Torappu_BuildingData_DiyUISortOrder_60d4fdf7 : int {
+  DESC = 0,
+  ASC = 1,
+}
+
+enum Torappu_BuildingData_FormulaItemType_de7bf80b : int {
+  NONE = 0,
+  F_EVOLVE = 1,
+  F_BUILDING = 2,
+  F_GOLD = 3,
+  F_DIAMOND = 4,
+  F_FURNITURE = 5,
+  F_EXP = 6,
+  F_ASC = 7,
+  F_SKILL = 8,
+}
+
+enum Torappu_ItemRarity_13dad0e0 : int {
+  TIER_1 = 0,
+  TIER_2 = 1,
+  TIER_3 = 2,
+  TIER_4 = 3,
+  TIER_5 = 4,
+  TIER_6 = 5,
+  E_NUM = 6,
+}
+
+enum Torappu_BuildingData_CharStationFilterType_17fa81f9 : int {
+  All = 0,
+  DormLock = 1,
+  NotStationed = 2,
+}
+
+table Torappu_BuildingData_91aeb160 {
+  controlSlotId:string (id:0);
+  meetingSlotId:string (id:1);
+  initMaxLabor:int (id:2);
+  laborRecoverTime:int (id:3);
+  manufactInputCapacity:int (id:4);
+  shopCounterCapacity:int (id:5);
+  comfortLimit:int (id:6);
+  creditInitiativeLimit:int (id:7);
+  creditPassiveLimit:int (id:8);
+  creditComfortFactor:int (id:9);
+  creditGuaranteed:int (id:10);
+  creditCeiling:int (id:11);
+  manufactUnlockTips:string (id:12);
+  shopUnlockTips:string (id:13);
+  manufactStationBuff:float (id:14);
+  comfortManpowerRecoverFactor:int (id:15);
+  manpowerDisplayFactor:int (id:16);
+  shopOutputRatio:[Torappu_ListDict_2_System_String_System_Int32__58af52d4_Entry] (id:17);
+  shopStackRatio:[Torappu_ListDict_2_System_String_System_Int32__58af52d4_Entry] (id:18);
+  basicFavorPerDay:int (id:19);
+  humanResourceLimit:int (id:20);
+  tiredApThreshold:long (id:21);
+  processedCountRatio:int (id:22);
+  tradingStrategyUnlockLevel:int (id:23);
+  tradingReduceTimeUnit:int (id:24);
+  tradingLaborCostUnit:int (id:25);
+  manufactReduceTimeUnit:int (id:26);
+  manufactLaborCostUnit:int (id:27);
+  laborAssistUnlockLevel:int (id:28);
+  apToLaborUnlockLevel:int (id:29);
+  apToLaborRatio:int (id:30);
+  socialResourceLimit:int (id:31);
+  socialSlotNum:int (id:32);
+  furniDuplicationLimit:int (id:33);
+  assistFavorReport:long (id:34);
+  manufactManpowerCostByNum:[int] (id:35);
+  tradingManpowerCostByNum:[int] (id:36);
+  trainingBonusMax:int (id:37);
+  betaRemoveTime:long (id:38);
+  furniHighlightTime:float (id:39);
+  canNotVisitToast:string (id:40);
+  meetingMessageBoardEmoteTime:int (id:41);
+  musicPlayerOpenTime:long (id:42);
+  roomsWithoutRemoveStaff:[string] (id:43);
+  privateFavorLevelThresholds:[int] (id:44);
+  roomUnlockConds:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RoomUnlockCond__88cdc678_Entry] (id:45);
+  rooms:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RoomData__48798b4c_Entry] (id:46);
+  layouts:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_LayoutData__cde230f3_Entry] (id:47);
+  prefabs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_PrefabInfo__e6247595_Entry] (id:48);
+  controlData:Torappu_BuildingData_ControlRoomBean_1ba05f9e (id:49);
+  manufactData:Torappu_BuildingData_ManufactRoomBean_9e7ca01d (id:50);
+  shopData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_ShopPhase__73e432ae (id:51);
+  hireData:Torappu_BuildingData_HireRoomBean_06f6e522 (id:52);
+  dormData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_DormPhase__2c3e7fb2 (id:53);
+  privateRoomData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_PrivatePhase__fc4ff093 (id:54);
+  meetingData:Torappu_BuildingData_MeetingRoomBean_a103f90b (id:55);
+  tradingData:Torappu_BuildingData_TradingRoomBean_7af63c23 (id:56);
+  workshopData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_WorkshopPhase__c2fd6f43 (id:57);
+  trainingData:Torappu_BuildingData_TrainingBean_c1ed5f80 (id:58);
+  powerData:Torappu_BuildingData_PowerRoomBean_d8aaec90 (id:59);
+  recycleData:Torappu_BuildingData_RecycleBean_11a985b5 (id:60);
+  chars:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_BuildingCharacter__f54cbeee_Entry] (id:61);
+  buffs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_BuildingBuff__6f8ecf34_Entry] (id:62);
+  workshopBonus:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:63);
+  customData:Torappu_BuildingData_CustomData_0c376cc9 (id:64);
+  manufactFormulas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_ManufactFormula__d899bf8c_Entry] (id:65);
+  shopFormulas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_ShopFormula__6848b711_Entry] (id:66);
+  workshopFormulas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_WorkshopFormula__39a17335_Entry] (id:67);
+  creditFormula:Torappu_BuildingData_CreditFormula_8856dec5 (id:68);
+  goldItems:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:69);
+  assistantUnlock:[int] (id:70);
+  workshopRarities:[Torappu_BuildingData_WorkshopRarityInfo_bfe8fbed] (id:71);
+  todoItemSortPriorityDict:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:72);
+  slotPrequeDatas:[Torappu_ListDict_2_System_String_Torappu_BuildingData_SlotPrequeData__342fe2b3_Entry] (id:73);
+  dormitoryPrequeDatas:[Torappu_ListDict_2_System_String_Torappu_BuildingData_DormitoryPrequeData__f8f4c6f0_Entry] (id:74);
+  workshopTargetDesDict:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:75);
+  tradingOrderDesDict:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:76);
+  stationManageConstData:Torappu_BuildingData_StationManageConstData_32d92972 (id:77);
+  stationManageFilterInfos:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_BuildingData_StationManageFilterInfo__fa94a072_Entry] (id:78);
+  musicData:Torappu_BuildingData_MusicData_f8e00095 (id:79);
+  emojis:[string] (id:80);
+  categoryNames:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:81);
+  buffSortData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData__feadee05_Entry] (id:82);
+  tradingRoomInfoData:Torappu_BuildingData_TradingRoomInfoData_73f1a830 (id:83);
+  recycleRoomOutputPoolDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RecycleRoomOutputPoolData__533e3528_Entry] (id:84);
+  recycleRoomOutputPoolContentDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RecycleRoomOutputPoolContentData__3fc84349_Entry] (id:85);
+  recycleRoomInputItemDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RecycleRoomInputItemData__cb9eb5da_Entry] (id:86);
+  recycleRoomConsts:Torappu_BuildingData_RecycleRoomConsts_b228dadd (id:87);
+}
+
+table Torappu_ListDict_2_System_String_System_Int32__58af52d4_Entry {
+  key:string (id:0);
+  value:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RoomUnlockCond__88cdc678_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_RoomUnlockCond_6f8fd40b (id:1);
+}
+
+table Torappu_BuildingData_RoomUnlockCond_6f8fd40b {
+  id:string (id:0);
+  number:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem__eb98e0f6_Entry] (id:1);
+}
+
+table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem__eb98e0f6_Entry {
+  key:int (id:0);
+  value:Torappu_BuildingData_RoomUnlockCond_CondItem_c6774816 (id:1);
+}
+
+table Torappu_BuildingData_RoomUnlockCond_CondItem_c6774816 {
+  type:Torappu_BuildingData_RoomType_42737feb (id:0);
+  level:int (id:1);
+  count:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RoomData__48798b4c_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_RoomData_5b20043f (id:1);
+}
+
+table Torappu_BuildingData_RoomData_5b20043f {
+  id:Torappu_BuildingData_RoomType_42737feb (id:0);
+  name:string (id:1);
+  description:string (id:2);
+  defaultPrefabId:string (id:3);
+  canLevelDown:bool (id:4);
+  maxCount:int (id:5);
+  category:Torappu_BuildingData_RoomCategory_20b08f2d (id:6);
+  size:Torappu_GridPosition_049a6f02 (id:7);
+  phases:[Torappu_BuildingData_RoomData_PhaseData_fda27cf9] (id:8);
+}
+
+table Torappu_GridPosition_049a6f02 {
+  row:int (id:0);
+  col:int (id:1);
+}
+
+table Torappu_BuildingData_RoomData_PhaseData_fda27cf9 {
+  overrideName:string (id:0);
+  overridePrefabId:string (id:1);
+  unlockCondId:string (id:2);
+  buildCost:Torappu_BuildingData_RoomData_BuildCost_9becc802 (id:3);
+  electricity:int (id:4);
+  maxStationedNum:int (id:5);
+  manpowerCost:long (id:6);
+}
+
+table Torappu_BuildingData_RoomData_BuildCost_9becc802 {
+  items:[Torappu_ItemBundle_64f049cd] (id:0);
+  time:long (id:1);
+  labor:int (id:2);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_LayoutData__cde230f3_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_LayoutData_521b4808 (id:1);
+}
+
+table Torappu_BuildingData_LayoutData_521b4808 {
+  id:string (id:0);
+  slots:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot__c57ab08a_Entry] (id:1);
+  cleanCosts:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_LayoutData_SlotCleanCost__8d2c8a00_Entry] (id:2);
+  storeys:[Torappu_ListDict_2_System_String_Torappu_BuildingData_LayoutData_StoreyData__953fff9a_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot__c57ab08a_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_LayoutData_RoomSlot_0c707638 (id:1);
+}
+
+table Torappu_BuildingData_LayoutData_RoomSlot_0c707638 {
+  id:string (id:0);
+  cleanCostId:string (id:1);
+  costLabor:int (id:2);
+  provideLabor:int (id:3);
+  size:Torappu_GridPosition_049a6f02 (id:4);
+  offset:Torappu_GridPosition_049a6f02 (id:5);
+  category:Torappu_BuildingData_RoomCategory_20b08f2d (id:6);
+  storeyId:string (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_LayoutData_SlotCleanCost__8d2c8a00_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_LayoutData_SlotCleanCost_590102e4 (id:1);
+}
+
+table Torappu_BuildingData_LayoutData_SlotCleanCost_590102e4 {
+  id:string (id:0);
+  number:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost__0d52c546_Entry] (id:1);
+}
+
+table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost__0d52c546_Entry {
+  key:int (id:0);
+  value:Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_a08d29cd (id:1);
+}
+
+table Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_a08d29cd {
+  items:[Torappu_ItemBundle_64f049cd] (id:0);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_LayoutData_StoreyData__953fff9a_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_LayoutData_StoreyData_287ae82f (id:1);
+}
+
+table Torappu_BuildingData_LayoutData_StoreyData_287ae82f {
+  id:string (id:0);
+  yOffset:int (id:1);
+  unlockControlLevel:int (id:2);
+  type:Torappu_BuildingData_LayoutData_StoreyData_Type_37764066 (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_PrefabInfo__e6247595_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_PrefabInfo_1e7387fe (id:1);
+}
+
+table Torappu_BuildingData_PrefabInfo_1e7387fe {
+  id:string (id:0);
+  blueprintRoomOverrideId:string (id:1);
+  size:Torappu_GridPosition_049a6f02 (id:2);
+  floorGridSize:Torappu_GridPosition_049a6f02 (id:3);
+  backWallGridSize:Torappu_GridPosition_049a6f02 (id:4);
+  obstacleId:string (id:5);
+}
+
+table Torappu_BuildingData_ControlRoomBean_1ba05f9e {
+  basicCostBuff:int (id:0);
+  phases:[Torappu_BuildingData_ControlRoomPhase_c244efba] (id:1);
+}
+
+table Torappu_BuildingData_ControlRoomPhase_c244efba {
+}
+
+table Torappu_BuildingData_ManufactRoomBean_9e7ca01d {
+  basicSpeedBuff:float (id:0);
+  phases:[Torappu_BuildingData_ManufactPhase_06d53429] (id:1);
+}
+
+table Torappu_BuildingData_ManufactPhase_06d53429 {
+  speed:float (id:0);
+  outputCapacity:int (id:1);
+}
+
+table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_ShopPhase__73e432ae {
+  phases:[Torappu_BuildingData_ShopPhase_1f78dbfe] (id:0);
+}
+
+table Torappu_BuildingData_ShopPhase_1f78dbfe {
+  counterNum:int (id:0);
+  speed:float (id:1);
+  moneyCapacity:int (id:2);
+}
+
+table Torappu_BuildingData_HireRoomBean_06f6e522 {
+  basicSpeedBuff:float (id:0);
+  phases:[Torappu_BuildingData_HirePhase_7e7309c0] (id:1);
+}
+
+table Torappu_BuildingData_HirePhase_7e7309c0 {
+  economizeRate:float (id:0);
+  resSpeed:int (id:1);
+  refreshTimes:int (id:2);
+}
+
+table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_DormPhase__2c3e7fb2 {
+  phases:[Torappu_BuildingData_DormPhase_474d7fa8] (id:0);
+}
+
+table Torappu_BuildingData_DormPhase_474d7fa8 {
+  manpowerRecover:int (id:0);
+  decorationLimit:int (id:1);
+}
+
+table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_PrivatePhase__fc4ff093 {
+  phases:[Torappu_BuildingData_PrivatePhase_90b21c37] (id:0);
+}
+
+table Torappu_BuildingData_PrivatePhase_90b21c37 {
+  decorationLimit:int (id:0);
+}
+
+table Torappu_BuildingData_MeetingRoomBean_a103f90b {
+  basicSpeedBuff:float (id:0);
+  phases:[Torappu_BuildingData_MeetingPhase_8d7e3a5b] (id:1);
+}
+
+table Torappu_BuildingData_MeetingPhase_8d7e3a5b {
+  friendSlotInc:int (id:0);
+  maxVisitorNum:int (id:1);
+  gatheringSpeed:int (id:2);
+}
+
+table Torappu_BuildingData_TradingRoomBean_7af63c23 {
+  basicSpeedBuff:float (id:0);
+  phases:[Torappu_BuildingData_TradingPhase_04479161] (id:1);
+}
+
+table Torappu_BuildingData_TradingPhase_04479161 {
+  orderSpeed:float (id:0);
+  orderLimit:int (id:1);
+  orderRarity:int (id:2);
+}
+
+table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_WorkshopPhase__c2fd6f43 {
+  phases:[Torappu_BuildingData_WorkshopPhase_20cc3ce7] (id:0);
+}
+
+table Torappu_BuildingData_WorkshopPhase_20cc3ce7 {
+  manpowerFactor:float (id:0);
+}
+
+table Torappu_BuildingData_TrainingBean_c1ed5f80 {
+  basicSpeedBuff:float (id:0);
+  phases:[Torappu_BuildingData_TrainingPhase_bb7f0d97] (id:1);
+}
+
+table Torappu_BuildingData_TrainingPhase_bb7f0d97 {
+  specSkillLvlLimit:int (id:0);
+}
+
+table Torappu_BuildingData_PowerRoomBean_d8aaec90 {
+  basicSpeedBuff:float (id:0);
+  phases:[Torappu_BuildingData_PowerPhase_32cbb55b] (id:1);
+}
+
+table Torappu_BuildingData_PowerPhase_32cbb55b {
+}
+
+table Torappu_BuildingData_RecycleBean_11a985b5 {
+  basicSpeedBuff:float (id:0);
+  phases:[Torappu_BuildingData_RecyclePhase_46dd7cb9] (id:1);
+}
+
+table Torappu_BuildingData_RecyclePhase_46dd7cb9 {
+  recycleCapacity:int (id:0);
+  recycleSpeed:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_BuildingCharacter__f54cbeee_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_BuildingCharacter_9a2354a2 (id:1);
+}
+
+table Torappu_BuildingData_BuildingCharacter_9a2354a2 {
+  charId:string (id:0);
+  maxManpower:long (id:1);
+  buffChar:[Torappu_BuildingData_BuildingBuffCharSlot_100684ec] (id:2);
+}
+
+table Torappu_BuildingData_BuildingBuffCharSlot_100684ec {
+  buffData:[Torappu_BuildingData_BuildingBuffCharSlot_SlotItem_3a54d6fc] (id:0);
+}
+
+table Torappu_BuildingData_BuildingBuffCharSlot_SlotItem_3a54d6fc {
+  buffId:string (id:0);
+  cond:Torappu_CharacterData_UnlockCondition_c358a248 (id:1);
+}
+
+table Torappu_CharacterData_UnlockCondition_c358a248 {
+  phase:Torappu_EvolvePhase_fd4d2921 (id:0);
+  level:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_BuildingBuff__6f8ecf34_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_BuildingBuff_d235a4e2 (id:1);
+}
+
+table Torappu_BuildingData_BuildingBuff_d235a4e2 {
+  buffId:string (id:0);
+  buffName:string (id:1);
+  buffIcon:string (id:2);
+  skillIcon:string (id:3);
+  sortId:int (id:4);
+  buffColor:string (id:5);
+  textColor:string (id:6);
+  buffCategory:Torappu_BuildingData_BuffCategory_3fcecaaa (id:7);
+  roomType:Torappu_BuildingData_RoomType_42737feb (id:8);
+  description:string (id:9);
+  efficiency:int (id:10);
+  targetGroupSortId:int (id:11);
+  targets:[string] (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry {
+  key:string (id:0);
+  value:[string] (id:1);
+}
+
+table Torappu_BuildingData_CustomData_0c376cc9 {
+  furnitures:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_CustomData_FurnitureData__05c67bf1_Entry] (id:0);
+  themes:[Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_ThemeData__254de49b_Entry] (id:1);
+  groups:[Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_GroupData__848d37ad_Entry] (id:2);
+  types:[Torappu_ListDict_2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData__224d26e4_Entry] (id:3);
+  subTypes:[Torappu_ListDict_2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData__bd2a43c2_Entry] (id:4);
+  defaultFurnitures:[Torappu_ListDict_2_System_String_System_Collections_Generic_List_1_Torappu_BuildingData_CustomData_DormitoryDefaultFurni_780c5830_Entry] (id:5);
+  interactGroups:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_BuildingData_CustomData__2a2cee3a_Entry] (id:6);
+  diyUISortTemplates:[System_Collections_Generic_Dictionary_2_Torappu_BuildingData_DiySortType_System_Collections_Generic_Dictionary_2_System__5e048e17_Entry] (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_CustomData_FurnitureData__05c67bf1_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_CustomData_FurnitureData_3010d9a7 (id:1);
+}
+
+table Torappu_BuildingData_CustomData_FurnitureData_3010d9a7 {
+  id:string (id:0);
+  sortId:int (id:1);
+  name:string (id:2);
+  iconId:string (id:3);
+  interactType:Torappu_BuildingData_FurnitureInteract_159900af (id:4);
+  musicId:string (id:5);
+  type:Torappu_BuildingData_FurnitureType_06eeaef7 (id:6);
+  subType:Torappu_BuildingData_FurnitureSubType_9cb0967a (id:7);
+  location:Torappu_BuildingData_FurnitureLocation_866b576a (id:8);
+  category:Torappu_BuildingData_FurnitureCategory_35adf5fe (id:9);
+  validOnRotate:bool (id:10);
+  enableRotate:bool (id:11);
+  rarity:int (id:12);
+  themeId:string (id:13);
+  groupId:string (id:14);
+  width:int (id:15);
+  depth:int (id:16);
+  height:int (id:17);
+  comfort:int (id:18);
+  usage:string (id:19);
+  description:string (id:20);
+  obtainApproach:string (id:21);
+  processedProductId:string (id:22);
+  processedProductCount:int (id:23);
+  processedByProductPercentage:int (id:24);
+  processedByProductGroup:[Torappu_BuildingData_WorkshopExtraWeightItem_1c7f1be4] (id:25);
+  canBeDestroy:bool (id:26);
+  isOnly:int (id:27);
+  enableRoomType:int (id:28);
+  quantity:int (id:29);
+}
+
+table Torappu_BuildingData_WorkshopExtraWeightItem_1c7f1be4 {
+  weight:int (id:0);
+  itemId:string (id:1);
+  itemCount:int (id:2);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_ThemeData__254de49b_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_CustomData_ThemeData_d31f0ea5 (id:1);
+}
+
+table Torappu_BuildingData_CustomData_ThemeData_d31f0ea5 {
+  id:string (id:0);
+  enableRoomType:int (id:1);
+  sortId:int (id:2);
+  name:string (id:3);
+  themeType:string (id:4);
+  desc:string (id:5);
+  quickSetup:[Torappu_BuildingData_CustomData_ThemeQuickSetupItem_f4b68dce] (id:6);
+  groups:[string] (id:7);
+  furnitures:[string] (id:8);
+}
+
+table Torappu_BuildingData_CustomData_ThemeQuickSetupItem_f4b68dce {
+  furnitureId:string (id:0);
+  pos0:int (id:1);
+  pos1:int (id:2);
+  dir:int (id:3);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_GroupData__848d37ad_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_CustomData_GroupData_fd2244b5 (id:1);
+}
+
+table Torappu_BuildingData_CustomData_GroupData_fd2244b5 {
+  id:string (id:0);
+  sortId:int (id:1);
+  name:string (id:2);
+  themeId:string (id:3);
+  comfort:int (id:4);
+  count:int (id:5);
+  furniture:[string] (id:6);
+}
+
+table Torappu_ListDict_2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData__224d26e4_Entry {
+  key:Torappu_BuildingData_FurnitureType_06eeaef7 (id:0);
+  value:Torappu_BuildingData_CustomData_FurnitureTypeData_f3703db4 (id:1);
+}
+
+table Torappu_BuildingData_CustomData_FurnitureTypeData_f3703db4 {
+  type:Torappu_BuildingData_FurnitureType_06eeaef7 (id:0);
+  name:string (id:1);
+  enableRoomType:int (id:2);
+}
+
+table Torappu_ListDict_2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData__bd2a43c2_Entry {
+  key:Torappu_BuildingData_FurnitureSubType_9cb0967a (id:0);
+  value:Torappu_BuildingData_CustomData_FurnitureSubTypeData_5ce66203 (id:1);
+}
+
+table Torappu_BuildingData_CustomData_FurnitureSubTypeData_5ce66203 {
+  subType:Torappu_BuildingData_FurnitureSubType_9cb0967a (id:0);
+  name:string (id:1);
+  type:Torappu_BuildingData_FurnitureType_06eeaef7 (id:2);
+  sortId:int (id:3);
+  countLimit:int (id:4);
+  enableRoomType:int (id:5);
+}
+
+table Torappu_ListDict_2_System_String_System_Collections_Generic_List_1_Torappu_BuildingData_CustomData_DormitoryDefaultFurni_780c5830_Entry {
+  key:string (id:0);
+  value:[Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem_e0c83fc0] (id:1);
+}
+
+table Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem_e0c83fc0 {
+  furnitureId:string (id:0);
+  xOffset:int (id:1);
+  yOffset:int (id:2);
+  defaultPrefabId:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_BuildingData_CustomData__2a2cee3a_Entry {
+  key:string (id:0);
+  value:[Torappu_BuildingData_CustomData_InteractItem_f14e292d] (id:1);
+}
+
+table Torappu_BuildingData_CustomData_InteractItem_f14e292d {
+  skinId:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_BuildingData_DiySortType_System_Collections_Generic_Dictionary_2_System__5e048e17_Entry {
+  key:Torappu_BuildingData_DiySortType_07e32cd4 (id:0);
+  value:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData__a4a7e926_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData__a4a7e926_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_CustomData_DiyUISortTemplateListData_e0e413d7 (id:1);
+}
+
+table Torappu_BuildingData_CustomData_DiyUISortTemplateListData_e0e413d7 {
+  diySortType:Torappu_BuildingData_DiySortType_07e32cd4 (id:0);
+  expandState:string (id:1);
+  defaultTemplateIndex:int (id:2);
+  defaultTemplateOrder:Torappu_BuildingData_DiyUISortOrder_60d4fdf7 (id:3);
+  templates:[Torappu_BuildingData_CustomData_DiyUISortTemplateListData_DiyUISortTemplateData_11b21dcd] (id:4);
+}
+
+table Torappu_BuildingData_CustomData_DiyUISortTemplateListData_DiyUISortTemplateData_11b21dcd {
+  name:string (id:0);
+  sequences:[string] (id:1);
+  stableSequence:string (id:2);
+  stableSequenceOrder:Torappu_BuildingData_DiyUISortOrder_60d4fdf7 (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_ManufactFormula__d899bf8c_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_ManufactFormula_62667ecf (id:1);
+}
+
+table Torappu_BuildingData_ManufactFormula_62667ecf {
+  formulaId:string (id:0);
+  itemId:string (id:1);
+  count:int (id:2);
+  weight:int (id:3);
+  costPoint:long (id:4);
+  formulaType:Torappu_BuildingData_FormulaItemType_de7bf80b (id:5);
+  buffType:string (id:6);
+  costs:[Torappu_ItemBundle_64f049cd] (id:7);
+  requireRooms:[Torappu_BuildingData_ManufactFormula_UnlockRoom_3ba61bfa] (id:8);
+  requireStages:[Torappu_BuildingData_ManufactFormula_UnlockStage_f6d8ede3] (id:9);
+}
+
+table Torappu_BuildingData_ManufactFormula_UnlockRoom_3ba61bfa {
+  roomId:Torappu_BuildingData_RoomType_42737feb (id:0);
+  roomLevel:int (id:1);
+  roomCount:int (id:2);
+}
+
+table Torappu_BuildingData_ManufactFormula_UnlockStage_f6d8ede3 {
+  stageId:string (id:0);
+  rank:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_ShopFormula__6848b711_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_ShopFormula_91aa9cf2 (id:1);
+}
+
+table Torappu_BuildingData_ShopFormula_91aa9cf2 {
+  formulaId:string (id:0);
+  itemId:string (id:1);
+  formulaType:Torappu_BuildingData_FormulaItemType_de7bf80b (id:2);
+  costPoint:long (id:3);
+  gainItem:Torappu_ItemBundle_64f049cd (id:4);
+  requireRooms:[Torappu_BuildingData_ShopFormula_UnlockRoom_c4fbb5f5] (id:5);
+}
+
+table Torappu_BuildingData_ShopFormula_UnlockRoom_c4fbb5f5 {
+  roomId:Torappu_BuildingData_RoomType_42737feb (id:0);
+  roomLevel:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_WorkshopFormula__39a17335_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_WorkshopFormula_72852cd7 (id:1);
+}
+
+table Torappu_BuildingData_WorkshopFormula_72852cd7 {
+  sortId:int (id:0);
+  formulaId:string (id:1);
+  rarity:int (id:2);
+  itemId:string (id:3);
+  count:int (id:4);
+  goldCost:long (id:5);
+  apCost:long (id:6);
+  formulaType:Torappu_BuildingData_FormulaItemType_de7bf80b (id:7);
+  buffType:string (id:8);
+  extraOutcomeRate:float (id:9);
+  extraOutcomeGroup:[Torappu_BuildingData_WorkshopExtraWeightItem_1c7f1be4] (id:10);
+  costs:[Torappu_ItemBundle_64f049cd] (id:11);
+  requireRooms:[Torappu_BuildingData_WorkshopFormula_UnlockRoom_dc70071c] (id:12);
+  requireStages:[Torappu_BuildingData_WorkshopFormula_UnlockStage_75b60927] (id:13);
+}
+
+table Torappu_BuildingData_WorkshopFormula_UnlockRoom_dc70071c {
+  roomId:Torappu_BuildingData_RoomType_42737feb (id:0);
+  roomLevel:int (id:1);
+  roomCount:int (id:2);
+}
+
+table Torappu_BuildingData_WorkshopFormula_UnlockStage_75b60927 {
+  stageId:string (id:0);
+  rank:int (id:1);
+}
+
+table Torappu_BuildingData_CreditFormula_8856dec5 {
+  initiative:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel__ba35fe1a_Entry] (id:0);
+  passive:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel__ba35fe1a_Entry] (id:1);
+}
+
+table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel__ba35fe1a_Entry {
+  key:int (id:0);
+  value:Torappu_BuildingData_CreditFormula_ValueModel_13a090a9 (id:1);
+}
+
+table Torappu_BuildingData_CreditFormula_ValueModel_13a090a9 {
+  basic:int (id:0);
+  addition:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry {
+  key:string (id:0);
+  value:int (id:1);
+}
+
+table Torappu_BuildingData_WorkshopRarityInfo_bfe8fbed {
+  name:string (id:0);
+  order:int (id:1);
+  rarityList:[Torappu_ItemRarity_13dad0e0] (id:2);
+  color:string (id:3);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_SlotPrequeData__342fe2b3_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_SlotPrequeData_e8b8c8a3 (id:1);
+}
+
+table Torappu_BuildingData_SlotPrequeData_e8b8c8a3 {
+  roomType:Torappu_BuildingData_RoomType_42737feb (id:0);
+  name:string (id:1);
+  typeSortId:int (id:2);
+  isPreque:bool (id:3);
+  prequeNum:int (id:4);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_DormitoryPrequeData__f8f4c6f0_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_DormitoryPrequeData_3ac64e91 (id:1);
+}
+
+table Torappu_BuildingData_DormitoryPrequeData_3ac64e91 {
+  roomType:Torappu_BuildingData_RoomType_42737feb (id:0);
+  name:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table Torappu_BuildingData_StationManageConstData_32d92972 {
+  cantWorkToastNoTiredChar:string (id:0);
+  cantWorkToastNoAvailQueue:string (id:1);
+  cantWorkToastNoNeed:string (id:2);
+  cantRestToastNoTiredChar:string (id:3);
+  cantRestToastNoAvailDorm:string (id:4);
+  workBatchToast:string (id:5);
+  restBatchToast:string (id:6);
+  roomNoAvailQueueToast:string (id:7);
+  cantUseNoPerson:string (id:8);
+  cantUseWorking:string (id:9);
+  queueCleared:string (id:10);
+  updateTime:long (id:11);
+  dormLockUpdateTime:long (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_BuildingData_StationManageFilterInfo__fa94a072_Entry {
+  key:int (id:0);
+  value:Torappu_BuildingData_StationManageFilterInfo_304dd374 (id:1);
+}
+
+table Torappu_BuildingData_StationManageFilterInfo_304dd374 {
+  charStationFilterType:Torappu_BuildingData_CharStationFilterType_17fa81f9 (id:0);
+  name:string (id:1);
+}
+
+table Torappu_BuildingData_MusicData_f8e00095 {
+  defaultMusic:string (id:0);
+  musicDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_MusicSingleData__fcc5dda0_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_MusicSingleData__fcc5dda0_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_MusicSingleData_dbe5d560 (id:1);
+}
+
+table Torappu_BuildingData_MusicSingleData_dbe5d560 {
+  bgmId:string (id:0);
+  bgmSortId:int (id:1);
+  bgmStartTime:long (id:2);
+  bgmName:string (id:3);
+  gameMusicId:string (id:4);
+  obtainApproach:string (id:5);
+  bgmDescUnlocked:string (id:6);
+  unlockType:string (id:7);
+  unlockParams:[string] (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData__feadee05_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_BuildingRoomTypeBuffSortData_6906efa8 (id:1);
+}
+
+table Torappu_BuildingData_BuildingRoomTypeBuffSortData_6906efa8 {
+  hasEfficiencySort:bool (id:0);
+  defaultGroupSortId:int (id:1);
+  efficiencyTargetDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo__1d5dd66e_Entry] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo__1d5dd66e_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo_b740b53b (id:1);
+}
+
+table Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo_b740b53b {
+  targets:[string] (id:0);
+  sortId:int (id:1);
+}
+
+table Torappu_BuildingData_TradingRoomInfoData_73f1a830 {
+  tradingRoomSpecialOrderData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_TradingRoomSpecialOrderInfo__ab1fcc89_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_TradingRoomSpecialOrderInfo__ab1fcc89_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_TradingRoomSpecialOrderInfo_a69d50d6 (id:1);
+}
+
+table Torappu_BuildingData_TradingRoomSpecialOrderInfo_a69d50d6 {
+  charId:string (id:0);
+  iconId:string (id:1);
+  title:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RecycleRoomOutputPoolData__533e3528_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_RecycleRoomOutputPoolData_0a5f93f7 (id:1);
+}
+
+table Torappu_BuildingData_RecycleRoomOutputPoolData_0a5f93f7 {
+  itemPoolId:string (id:0);
+  itemPoolStartTime:long (id:1);
+  itemPoolEndTime:long (id:2);
+  extraPoolId:string (id:3);
+  extraPoolRequirement:int (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RecycleRoomOutputPoolContentData__3fc84349_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_RecycleRoomOutputPoolContentData_b1fa7379 (id:1);
+}
+
+table Torappu_BuildingData_RecycleRoomOutputPoolContentData_b1fa7379 {
+  items:[Torappu_BuildingData_RecycleRoomOutputPoolItemData_ade43533] (id:0);
+}
+
+table Torappu_BuildingData_RecycleRoomOutputPoolItemData_ade43533 {
+  itemId:string (id:0);
+  targetTags:[string] (id:1);
+  weight:int (id:2);
+  count:int (id:3);
+  extraPoolValueChange:int (id:4);
+  isNew:bool (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_RecycleRoomInputItemData__cb9eb5da_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_RecycleRoomInputItemData_20b4a7fe (id:1);
+}
+
+table Torappu_BuildingData_RecycleRoomInputItemData_20b4a7fe {
+  itemId:string (id:0);
+  addedTime:long (id:1);
+}
+
+table Torappu_BuildingData_RecycleRoomConsts_b228dadd {
+  recycleTimeRequirement:long (id:0);
+  recycleBaseCapacity:int (id:1);
+  recycleBoostSpeed:float (id:2);
+  recycleBoostLimit:long (id:3);
+  recycleBoostLimitProtect:long (id:4);
+  recycleSpeedUpUnlockLevel:int (id:5);
+  recycleTwoPersonUnlockLevel:int (id:6);
+}
+
+root_type Torappu_BuildingData_91aeb160;

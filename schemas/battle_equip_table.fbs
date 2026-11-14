@@ -1,0 +1,101 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_UniEquipTarget_1f63fa10 : int {
+  NONE = 0,
+  TRAIT = 1,
+  TRAIT_DATA_ONLY = 2,
+  TALENT = 3,
+  TALENT_DATA_ONLY = 4,
+  DISPLAY = 5,
+  OVERWRITE_BATTLE_DATA = 6,
+}
+
+enum Torappu_EvolvePhase_fd4d2921 : int {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+  PHASE_3 = 3,
+  E_NUM = 4,
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BattleEquipPack__e088b24e_Entry {
+  key:string (id:0);
+  value:Torappu_BattleEquipPack_9e0bd104 (id:1);
+}
+
+table Torappu_BattleEquipPack_9e0bd104 {
+  phases:[Torappu_BattleEquipPerLevelPack_62547e97] (id:0);
+}
+
+table Torappu_BattleEquipPerLevelPack_62547e97 {
+  equipLevel:int (id:0);
+  parts:[Torappu_BattleUniEquipData_533c5270] (id:1);
+  attributeBlackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:2);
+  tokenAttributeBlackboard:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Blackboard__1bb5c021_Entry] (id:3);
+}
+
+table Torappu_BattleUniEquipData_533c5270 {
+  resKey:string (id:0);
+  target:Torappu_UniEquipTarget_1f63fa10 (id:1);
+  isToken:bool (id:2);
+  validInGameTag:string (id:3);
+  validInMapTag:string (id:4);
+  addOrOverrideTalentDataBundle:Torappu_CharacterData_EquipTalentDataBundle_6a4ef428 (id:5);
+  overrideTraitDataBundle:Torappu_CharacterData_EquipTraitDataBundle_92607640 (id:6);
+}
+
+table Torappu_CharacterData_EquipTalentDataBundle_6a4ef428 {
+  candidates:[Torappu_EquipTalentData_4f43b439] (id:0);
+}
+
+table Torappu_EquipTalentData_4f43b439 {
+  displayRangeId:bool (id:0);
+  upgradeDescription:string (id:1);
+  talentIndex:int (id:2);
+  validModeIndices:[int] (id:3);
+  unlockCondition:Torappu_CharacterData_UnlockCondition_c358a248 (id:4);
+  requiredPotentialRank:int (id:5);
+  prefabKey:string (id:6);
+  name:string (id:7);
+  description:string (id:8);
+  rangeId:string (id:9);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:10);
+  tokenKey:string (id:11);
+  isHideTalent:bool (id:12);
+}
+
+table Torappu_CharacterData_UnlockCondition_c358a248 {
+  phase:Torappu_EvolvePhase_fd4d2921 (id:0);
+  level:int (id:1);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table Torappu_CharacterData_EquipTraitDataBundle_92607640 {
+  candidates:[Torappu_CharacterData_EquipTraitData_c79bd9f3] (id:0);
+}
+
+table Torappu_CharacterData_EquipTraitData_c79bd9f3 {
+  additionalDescription:string (id:0);
+  unlockCondition:Torappu_CharacterData_UnlockCondition_c358a248 (id:1);
+  requiredPotentialRank:int (id:2);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:3);
+  overrideDescripton:string (id:4);
+  prefabKey:string (id:5);
+  rangeId:string (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Blackboard__1bb5c021_Entry {
+  key:string (id:0);
+  value:[Torappu_Blackboard_DataPair_5ef45847] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BattleEquipPack__e088b24e {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BattleEquipPack__e088b24e_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_BattleEquipPack__e088b24e;

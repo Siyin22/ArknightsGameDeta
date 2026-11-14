@@ -1,0 +1,45 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table Torappu_Battle_BakedSpineData_0ca954e3 {
+  bakedAnimDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_BakedAnimData__ca672b12_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_BakedAnimData__ca672b12_Entry {
+  key:string (id:0);
+  value:Torappu_Battle_BakedAnimData_57b597de (id:1);
+}
+
+table Torappu_Battle_BakedAnimData_57b597de {
+  md5:string (id:0);
+  skipZeroFrameUpdate:bool (id:1);
+  bakedMPDatas:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_Int32_Torappu_Battl_bcf5e380_Entry] (id:2);
+  bakedEvents:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_BakedEventTimeline__268e058c_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_Int32_Torappu_Battl_bcf5e380_Entry {
+  key:string (id:0);
+  value:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_Battle_BakedMountPointData__80889c46_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_Battle_BakedMountPointData__80889c46_Entry {
+  key:int (id:0);
+  value:Torappu_Battle_BakedMountPointData_45ce4dc1 (id:1);
+}
+
+table Torappu_Battle_BakedMountPointData_45ce4dc1 {
+  bakedStepInterval:int (id:0);
+  frameCount:int (id:1);
+  trsData:[float] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_BakedEventTimeline__268e058c_Entry {
+  key:string (id:0);
+  value:Torappu_Battle_BakedEventTimeline_31f4f582 (id:1);
+}
+
+table Torappu_Battle_BakedEventTimeline_31f4f582 {
+  eventTime:[float] (id:0);
+  events:[string] (id:1);
+}
+
+root_type Torappu_Battle_BakedSpineData_0ca954e3;

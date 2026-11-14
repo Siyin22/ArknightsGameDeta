@@ -1,0 +1,151 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_SkinVoiceType_665f3b3c : int {
+  NONE = 0,
+  ILLUST = 1,
+  ALL = 2,
+}
+
+table Torappu_SkinTable_98d5782c {
+  charSkins:[System_Collections_Generic_Dictionary_2_System_String_Torappu_CharSkinData__7a9bc140_Entry] (id:0);
+  buildinEvolveMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ListDict_2_System_Int32_System_String___d6d73b33_Entry] (id:1);
+  buildinPatchMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ListDict_2_System_String_System_String___5d3817c2_Entry] (id:2);
+  brandList:[System_Collections_Generic_Dictionary_2_System_String_Torappu_CharSkinBrandInfo__afda4865_Entry] (id:3);
+  specialSkinInfoList:[Torappu_SpecialSkinInfo_fd892d4a] (id:4);
+  spDynSkins:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SpDynIllustInfo__bf7787f5_Entry] (id:5);
+  spDynIllustSkinTagsMap:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharSkinData__7a9bc140_Entry {
+  key:string (id:0);
+  value:Torappu_CharSkinData_540eaf0f (id:1);
+}
+
+table Torappu_CharSkinData_540eaf0f {
+  skinId:string (id:0);
+  charId:string (id:1);
+  tokenSkinMap:[Torappu_CharSkinData_TokenSkinInfo_efc726e7] (id:2);
+  illustId:string (id:3);
+  spIllustId:string (id:4);
+  dynIllustId:string (id:5);
+  spDynIllustId:string (id:6);
+  avatarId:string (id:7);
+  spAvatarId:string (id:8);
+  portraitId:string (id:9);
+  spPortraitId:string (id:10);
+  dynPortraitId:string (id:11);
+  dynEntranceId:string (id:12);
+  buildingId:string (id:13);
+  battleSkin:Torappu_CharSkinData_BattleSkin_e05622ff (id:14);
+  isBuySkin:bool (id:15);
+  tmplId:string (id:16);
+  voiceId:string (id:17);
+  voiceType:Torappu_SkinVoiceType_665f3b3c (id:18);
+  displaySkin:Torappu_CharSkinData_DisplaySkin_19fa1639 (id:19);
+}
+
+table Torappu_CharSkinData_TokenSkinInfo_efc726e7 {
+  tokenId:string (id:0);
+  tokenSkinId:string (id:1);
+}
+
+table Torappu_CharSkinData_BattleSkin_e05622ff {
+  overwritePrefab:bool (id:0);
+  skinOrPrefabId:string (id:1);
+}
+
+table Torappu_CharSkinData_DisplaySkin_19fa1639 {
+  skinName:string (id:0);
+  colorList:[string] (id:1);
+  titleList:[string] (id:2);
+  modelName:string (id:3);
+  drawerList:[string] (id:4);
+  designerList:[string] (id:5);
+  skinGroupId:string (id:6);
+  skinGroupName:string (id:7);
+  skinGroupSortIndex:int (id:8);
+  content:string (id:9);
+  dialog:string (id:10);
+  usage:string (id:11);
+  description:string (id:12);
+  obtainApproach:string (id:13);
+  sortId:int (id:14);
+  displayTagId:string (id:15);
+  getTime:long (id:16);
+  onYear:int (id:17);
+  onPeriod:int (id:18);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ListDict_2_System_Int32_System_String___d6d73b33_Entry {
+  key:string (id:0);
+  value:[Torappu_ListDict_2_System_Int32_System_String__3f8229cb_Entry] (id:1);
+}
+
+table Torappu_ListDict_2_System_Int32_System_String__3f8229cb_Entry {
+  key:int (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ListDict_2_System_String_System_String___5d3817c2_Entry {
+  key:string (id:0);
+  value:[Torappu_ListDict_2_System_String_System_String__191f36ab_Entry] (id:1);
+}
+
+table Torappu_ListDict_2_System_String_System_String__191f36ab_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharSkinBrandInfo__afda4865_Entry {
+  key:string (id:0);
+  value:Torappu_CharSkinBrandInfo_43bc4977 (id:1);
+}
+
+table Torappu_CharSkinBrandInfo_43bc4977 {
+  brandId:string (id:0);
+  groupList:[Torappu_CharSkinGroupInfo_a9e22544] (id:1);
+  kvImgIdList:[Torappu_CharSkinKvImgInfo_27c343f7] (id:2);
+  brandName:string (id:3);
+  brandCapitalName:string (id:4);
+  description:string (id:5);
+  publishTime:long (id:6);
+  sortId:int (id:7);
+}
+
+table Torappu_CharSkinGroupInfo_a9e22544 {
+  skinGroupId:string (id:0);
+  publishTime:long (id:1);
+}
+
+table Torappu_CharSkinKvImgInfo_27c343f7 {
+  kvImgId:string (id:0);
+  linkedSkinGroupId:string (id:1);
+}
+
+table Torappu_SpecialSkinInfo_fd892d4a {
+  skinId:string (id:0);
+  startTime:long (id:1);
+  endTime:long (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SpDynIllustInfo__bf7787f5_Entry {
+  key:string (id:0);
+  value:Torappu_SpDynIllustInfo_55e27c1e (id:1);
+}
+
+table Torappu_SpDynIllustInfo_55e27c1e {
+  skinId:string (id:0);
+  spDynIllustId:string (id:1);
+  spDynIllustSkinTag:string (id:2);
+  spIllustId:string (id:3);
+  spPortraitId:string (id:4);
+  spAvatarId:string (id:5);
+  spDynEntranceId:string (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+root_type Torappu_SkinTable_98d5782c;

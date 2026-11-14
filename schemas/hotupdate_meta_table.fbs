@@ -1,0 +1,32 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_HotUpdateMetaPicData_PicType_1092db99 : int {
+  NONE = 0,
+  SKIN = 1,
+}
+
+table Torappu_HotUpdateMetaTable_94ed55fc {
+  picList:[Torappu_HotUpdateMetaPicData_540bafd9] (id:0);
+  movieInfo:Torappu_HotUpdateMetaMovieData_d58f4db1 (id:1);
+}
+
+table Torappu_HotUpdateMetaPicData_540bafd9 {
+  picId:string (id:0);
+  groupId:int (id:1);
+  sortId:int (id:2);
+  startTime:long (id:3);
+  endTime:long (id:4);
+  textList:[string] (id:5);
+  picType:Torappu_HotUpdateMetaPicData_PicType_1092db99 (id:6);
+  logoId:string (id:7);
+  color:string (id:8);
+}
+
+table Torappu_HotUpdateMetaMovieData_d58f4db1 {
+  videoId:string (id:0);
+  videoPath:string (id:1);
+  endTime:long (id:2);
+  sortId:int (id:3);
+}
+
+root_type Torappu_HotUpdateMetaTable_94ed55fc;

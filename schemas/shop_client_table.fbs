@@ -1,0 +1,256 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_RecommendItemTagTips_886309c5 : int {
+  ONSALE = 0,
+  DEADLINE = 1,
+  NONE = 2,
+}
+
+enum Torappu_ShopRouteTarget_52cba373 : int {
+  RECOMMENDSHOP = 0,
+  CASHSHOP = 1,
+  GIFTPACKAGE = 2,
+  SKINSHOP = 3,
+  HQCSHOP = 4,
+  LQCSHOP = 5,
+  EXQCSHOP = 6,
+  SOCAILSHOP = 7,
+  FURNSHOP = 8,
+  REPSHOP = 9,
+  LMGTSSHOP = 10,
+  EPGSSHOP = 11,
+  CLASSICSHOP = 12,
+  NONE = 13,
+}
+
+enum Torappu_ShopRecommendTemplateType_9fb4de27 : int {
+  DEFAULT = 0,
+  NORSKIN = 1,
+  RETURNSKIN = 2,
+  NORFURN = 3,
+  NORGIFT = 4,
+}
+
+enum Torappu_ShopUnlockType_c9c8199d : int {
+  ALWAYS_UNLOCK = 0,
+  SKIN_UNLOCK = 1,
+  FURN_UNLOCK = 2,
+  BOTH_SKIN_FURN = 3,
+}
+
+enum Torappu_ShopCondTrigPackageType_53ac2c12 : int {
+  NONE = 0,
+  RETURN_PROGRESS = 1,
+  RETURN_ONCE = 2,
+  NEW_PROGRESS = 3,
+  CHOOSE_REGISTER_TIME = 4,
+  CHOOSE_NEWBIE = 5,
+}
+
+enum Torappu_ShopGPTabType_ba7c1a9b : int {
+  DEFAULT_ALL = 0,
+  MONTH_CARD = 1,
+  PERM = 2,
+  NEWBIE = 3,
+  RETURN = 4,
+  RECOMMOND = 5,
+  TIMELY = 6,
+}
+
+table Torappu_ShopClientData_1598a53f {
+  recommendList:[Torappu_ShopRecommendItem_47aa89e1] (id:0);
+  creditUnlockGroup:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ShopCreditUnlockGroup__4cc83365_Entry] (id:1);
+  shopKeeperData:Torappu_ShopClientData_ShopKeeperData_230a4478 (id:2);
+  carousels:[Torappu_ShopCarouselData_0ce3d507] (id:3);
+  chooseShopRelations:[Torappu_ChooseShopRelation_e51b931b] (id:4);
+  chooseOptionToGoodDict:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:5);
+  shopUnlockDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ShopUnlockType__303d0e15_Entry] (id:6);
+  extraQCShopRule:[string] (id:7);
+  repQCShopRule:[string] (id:8);
+  shopGPDataDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ShopClientGPData__2ff4304a_Entry] (id:9);
+  tabDisplayData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ShopGPTabDisplayData__f06278c1_Entry] (id:10);
+  shopMonthlySubGoodId:string (id:11);
+  ls:[Torappu_LMTGSShopSchedule_d5ecf312] (id:12);
+  os:[Torappu_LMTGSShopOverlaySchedule_6e0ecd94] (id:13);
+}
+
+table Torappu_ShopRecommendItem_47aa89e1 {
+  tagId:string (id:0);
+  displayType:string (id:1);
+  tagName:string (id:2);
+  itemTag:Torappu_RecommendItemTagTips_886309c5 (id:3);
+  orderNum:int (id:4);
+  startDatetime:long (id:5);
+  endDatetime:long (id:6);
+  groupList:[Torappu_ShopRecommendGroup_94364881] (id:7);
+  tagWord:Torappu_ShopKeeperWord_74b03636 (id:8);
+  templateType:Torappu_ShopRecommendTemplateType_9fb4de27 (id:9);
+  templateParam:Torappu_ShopRecommendTemplateParam_e1f1b6d6 (id:10);
+}
+
+table Torappu_ShopRecommendGroup_94364881 {
+  recommendGroup:[int] (id:0);
+  dataList:[Torappu_ShopRecommendData_c2e0e778] (id:1);
+}
+
+table Torappu_ShopRecommendData_c2e0e778 {
+  imgId:string (id:0);
+  slotIndex:int (id:1);
+  cmd:Torappu_ShopRouteTarget_52cba373 (id:2);
+  param1:string (id:3);
+  param2:string (id:4);
+  skinId:string (id:5);
+}
+
+table Torappu_ShopKeeperWord_74b03636 {
+  id:string (id:0);
+  text:string (id:1);
+}
+
+table Torappu_ShopRecommendTemplateParam_e1f1b6d6 {
+  normalGiftParam:Torappu_ShopRecommendTemplateNormalGiftParam_fdad11b2 (id:0);
+  normalSkinParam:Torappu_ShopRecommendTemplateNormalSkinParam_c3b72c0e (id:1);
+  normalFurnParam:Torappu_ShopRecommendTemplateNormalFurnParam_8d7a4a6b (id:2);
+  returnSkinParam:Torappu_ShopRecommendTemplateReturnSkinParam_5884b2f0 (id:3);
+}
+
+table Torappu_ShopRecommendTemplateNormalGiftParam_fdad11b2 {
+  showStartTs:long (id:0);
+  showEndTs:long (id:1);
+  goodId:string (id:2);
+  giftPackageName:string (id:3);
+  price:int (id:4);
+  logoId:string (id:5);
+  color:string (id:6);
+  haveMark:bool (id:7);
+  availCount:int (id:8);
+}
+
+table Torappu_ShopRecommendTemplateNormalSkinParam_c3b72c0e {
+  showStartTs:long (id:0);
+  showEndTs:long (id:1);
+  skinIds:[string] (id:2);
+  skinGroupName:string (id:3);
+  brandIconId:string (id:4);
+  colorBack:string (id:5);
+  colorText:string (id:6);
+  text:string (id:7);
+}
+
+table Torappu_ShopRecommendTemplateNormalFurnParam_8d7a4a6b {
+  showStartTs:long (id:0);
+  showEndTs:long (id:1);
+  furnPackId:string (id:2);
+  isNew:bool (id:3);
+  isPackSell:bool (id:4);
+  count:int (id:5);
+  colorBack:string (id:6);
+  colorText:string (id:7);
+  actId:string (id:8);
+}
+
+table Torappu_ShopRecommendTemplateReturnSkinParam_5884b2f0 {
+  showStartTs:long (id:0);
+  showEndTs:long (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ShopCreditUnlockGroup__4cc83365_Entry {
+  key:string (id:0);
+  value:Torappu_ShopCreditUnlockGroup_f4b1cc4a (id:1);
+}
+
+table Torappu_ShopCreditUnlockGroup_f4b1cc4a {
+  id:string (id:0);
+  index:string (id:1);
+  startDateTime:long (id:2);
+  charDict:[Torappu_ShopCreditUnlockItem_c2e03abd] (id:3);
+}
+
+table Torappu_ShopCreditUnlockItem_c2e03abd {
+  sortId:int (id:0);
+  unlockNum:int (id:1);
+  charId:string (id:2);
+}
+
+table Torappu_ShopClientData_ShopKeeperData_230a4478 {
+  welcomeWords:[Torappu_ShopKeeperWord_74b03636] (id:0);
+  clickWords:[Torappu_ShopKeeperWord_74b03636] (id:1);
+}
+
+table Torappu_ShopCarouselData_0ce3d507 {
+  items:[Torappu_ShopCarouselData_Item_02bd54d3] (id:0);
+}
+
+table Torappu_ShopCarouselData_Item_02bd54d3 {
+  spriteId:string (id:0);
+  startTime:long (id:1);
+  endTime:long (id:2);
+  cmd:Torappu_ShopRouteTarget_52cba373 (id:3);
+  param1:string (id:4);
+  skinId:string (id:5);
+  furniId:string (id:6);
+}
+
+table Torappu_ChooseShopRelation_e51b931b {
+  goodId:string (id:0);
+  optionList:[string] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ShopUnlockType__303d0e15_Entry {
+  key:string (id:0);
+  value:Torappu_ShopUnlockType_c9c8199d (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ShopClientGPData__2ff4304a_Entry {
+  key:string (id:0);
+  value:Torappu_ShopClientGPData_7ea7dbd4 (id:1);
+}
+
+table Torappu_ShopClientGPData_7ea7dbd4 {
+  goodId:string (id:0);
+  giftPackageId:string (id:1);
+  displayName:string (id:2);
+  condTrigPackageType:Torappu_ShopCondTrigPackageType_53ac2c12 (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ShopGPTabDisplayData__f06278c1_Entry {
+  key:string (id:0);
+  value:Torappu_ShopGPTabDisplayData_2af19bec (id:1);
+}
+
+table Torappu_ShopGPTabDisplayData_2af19bec {
+  tabId:string (id:0);
+  tabName:string (id:1);
+  tabType:Torappu_ShopGPTabType_ba7c1a9b (id:2);
+  recomDisplayNum:int (id:3);
+  tabPicId:string (id:4);
+  tabPicOnColor:string (id:5);
+  tabPicOffColor:string (id:6);
+  sortId:int (id:7);
+  tabStartTime:long (id:8);
+  tabEndTime:long (id:9);
+  markerPicId:string (id:10);
+}
+
+table Torappu_LMTGSShopSchedule_d5ecf312 {
+  gachaPoolId:string (id:0);
+  LMTGSId:string (id:1);
+  iconColor:string (id:2);
+  iconBackColor:string (id:3);
+  storeTextColor:string (id:4);
+  startTime:long (id:5);
+  endTime:long (id:6);
+}
+
+table Torappu_LMTGSShopOverlaySchedule_6e0ecd94 {
+  gachaPoolId1:string (id:0);
+  gachaPoolId2:string (id:1);
+  picId:string (id:2);
+}
+
+root_type Torappu_ShopClientData_1598a53f;

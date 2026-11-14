@@ -1,0 +1,493 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_SpecialOperatorTargetType_cd5ed2d2 : int {
+  NONE = 0,
+  ROGUE = 1,
+}
+
+enum Torappu_BuildableType_c4537a3b : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_RarityRank_acc16d61 : int {
+  TIER_1 = 0,
+  TIER_2 = 1,
+  TIER_3 = 2,
+  TIER_4 = 3,
+  TIER_5 = 4,
+  TIER_6 = 5,
+  E_NUM = 6,
+}
+
+enum Torappu_ProfessionCategory_f64dcd2f : int {
+  NONE = 0,
+  WARRIOR = 1,
+  SNIPER = 2,
+  TANK = 4,
+  MEDIC = 8,
+  SUPPORT = 16,
+  CASTER = 32,
+  SPECIAL = 64,
+  TOKEN = 128,
+  TRAP = 256,
+  PIONEER = 512,
+}
+
+enum Torappu_EvolvePhase_fd4d2921 : int {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+  PHASE_3 = 3,
+  E_NUM = 4,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_CharacterData_PotentialRank_TypeEnum_09d585f6 : int {
+  BUFF = 0,
+  CUSTOM = 1,
+}
+
+enum Torappu_AbnormalFlag_a48bf4c6 : int {
+  STUNNED = 0,
+  SP_RECOVER_STOPPED = 1,
+  TARGET_FREE = 2,
+  BLOCK_FREE = 3,
+  HIDDEN = 4,
+  INVINCIBLE = 5,
+  UNDEADABLE = 6,
+  HEAL_FREE = 7,
+  UNBALANCE_IMMUNE = 8,
+  INVISIBLE = 9,
+  UNUSED_PLACEHOLDER_1 = 10,
+  DISARMED = 11,
+  SILENCED = 12,
+  UNMOVABLE = 13,
+  UNUSED_PLACEHOLDER_2 = 14,
+  ALLY_TARGET_FREE = 15,
+  FROZEN = 16,
+  CAMOUFLAGE = 17,
+  FORCE_DISARMED = 18,
+  STUNNED_NO_AMPLIFY_DAMAGE = 19,
+  DISABLE_COMBAT = 20,
+  ELEMENT_FREE_ALL = 21,
+  UNMOVABLE_PRIVATE = 22,
+  COLD = 23,
+  SKILL_NOT_ACTIVATABLE = 24,
+  LEVITATE = 25,
+  DURANCE = 26,
+  NOT_WITHDRAWABLE = 27,
+  OUT_OF_GROUND = 28,
+  SP_MODIFY_STOPPED = 29,
+  ANTI_STATUS_RESISTABLE = 30,
+  DISARMED_COMBAT = 31,
+  TOWER_TARGET_FREE = 32,
+  FEARED = 33,
+  SKILL_ACTIVABLE_IN_ABNORMAL = 34,
+  MOTION_TARGET_FREE = 35,
+  FORCE_LEVITATE = 36,
+  BUFF_ADD_CAN_BE_CANCELED_IF_DEFENSE = 37,
+  DEFENSE_BUFF_ADD_IF_CANCELABLE_BUFF = 38,
+  PALSY = 39,
+  PALSYING = 40,
+  ATTRACTED = 41,
+  FEARED_PRIVATE = 42,
+  DOZE = 43,
+  TELEPORTED = 44,
+  GROUND_BOUND = 45,
+  E_NUM = 46,
+}
+
+enum Torappu_AbnormalCombo_b86d9225 : int {
+  SLEEPING = 0,
+  SHELTERING = 1,
+  ISOLATE = 2,
+  E_NUM = 3,
+}
+
+enum Torappu_AttributeType_52464bfb : int {
+  MAX_HP = 0,
+  ATK = 1,
+  DEF = 2,
+  MAGIC_RESISTANCE = 3,
+  COST = 4,
+  BLOCK_CNT = 5,
+  MOVE_SPEED = 6,
+  ATTACK_SPEED = 7,
+  BASE_ATTACK_TIME = 8,
+  RESERVED_0 = 9,
+  RESERVED_1 = 10,
+  RESERVED_2 = 11,
+  RESERVED_3 = 12,
+  HP_RECOVERY_PER_SEC = 13,
+  SP_RECOVERY_PER_SEC = 14,
+  ABILITY_RANGE_FORWARD_EXTEND = 15,
+  MAX_DEPLOY_COUNT = 16,
+  DEF_PENETRATE = 17,
+  MAGIC_RESIST_PENETRATE = 18,
+  HP_RECOVERY_PER_SEC_BY_MAX_HP_RATIO = 19,
+  TAUNT_LEVEL = 20,
+  RESPAWN_TIME = 21,
+  MAX_DECK_STACK_CNT = 22,
+  MASS_LEVEL = 23,
+  BASE_FORCE_LEVEL = 24,
+  DEF_PENETRATE_FIXED = 25,
+  ONE_MINUS_STATUS_RESISTANCE = 26,
+  MAGIC_RESIST_PENETRATE_FIXED = 27,
+  MAX_EP = 28,
+  EP_RECOVERY_PER_SEC = 29,
+  SP_RECOVER_RATIO = 30,
+  EP_DAMAGE_RESISTANCE = 31,
+  EP_RESISTANCE = 32,
+  DAMAGE_HITRATE_PHYSICAL = 33,
+  DAMAGE_HITRATE_MAGICAL = 34,
+  EP_BREAK_RECOVER_SPEED = 35,
+  SLOW_DOWN = 36,
+  BLOCK_RADIUS_SCALE = 37,
+  E_NUM = 38,
+}
+
+enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType_d0d321a1 : int {
+  ADDITION = 0,
+  MULTIPLIER = 1,
+  FINAL_ADDITION = 2,
+  FINAL_SCALER = 3,
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharacterData__6992997b_Entry {
+  key:string (id:0);
+  value:Torappu_CharacterData_881af36c (id:1);
+}
+
+table Torappu_CharacterData_881af36c {
+  name:string (id:0);
+  description:string (id:1);
+  sortIndex:int (id:2);
+  spTargetType:Torappu_SpecialOperatorTargetType_cd5ed2d2 (id:3);
+  spTargetId:string (id:4);
+  canUseGeneralPotentialItem:bool (id:5);
+  canUseActivityPotentialItem:bool (id:6);
+  potentialItemId:string (id:7);
+  activityPotentialItemId:string (id:8);
+  classicPotentialItemId:string (id:9);
+  nationId:string (id:10);
+  groupId:string (id:11);
+  teamId:string (id:12);
+  mainPower:Torappu_CharacterData_PowerData_5406bfea (id:13);
+  subPower:[Torappu_CharacterData_PowerData_5406bfea] (id:14);
+  displayNumber:string (id:15);
+  appellation:string (id:16);
+  position:Torappu_BuildableType_c4537a3b (id:17);
+  tagList:[string] (id:18);
+  itemUsage:string (id:19);
+  itemDesc:string (id:20);
+  itemObtainApproach:string (id:21);
+  isNotObtainable:bool (id:22);
+  isSpChar:bool (id:23);
+  maxPotentialLevel:int (id:24);
+  rarity:Torappu_RarityRank_acc16d61 (id:25);
+  profession:Torappu_ProfessionCategory_f64dcd2f (id:26);
+  subProfessionId:string (id:27);
+  trait:Torappu_CharacterData_TraitDataBundle_f525250a (id:28);
+  phases:[Torappu_CharacterData_PhaseData_7fb82d2b] (id:29);
+  skills:[Torappu_CharacterData_MainSkill_c645e63f] (id:30);
+  displayTokenDict:[System_Collections_Generic_Dictionary_2_System_String_System_Boolean__bc9aff55_Entry] (id:31);
+  talents:[Torappu_CharacterData_TalentDataBundle_b32f6617] (id:32);
+  potentialRanks:[Torappu_CharacterData_PotentialRank_53272b16] (id:33);
+  favorKeyFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesDeltaData_Torappu_AttributesData__8ddc2fc3] (id:34);
+  allSkillLvlup:[Torappu_CharacterData_SkillLevelCost_6e90b8ad] (id:35);
+}
+
+table Torappu_CharacterData_PowerData_5406bfea {
+  nationId:string (id:0);
+  groupId:string (id:1);
+  teamId:string (id:2);
+}
+
+table Torappu_CharacterData_TraitDataBundle_f525250a {
+  candidates:[Torappu_CharacterData_TraitData_fc133ef5] (id:0);
+}
+
+table Torappu_CharacterData_TraitData_fc133ef5 {
+  unlockCondition:Torappu_CharacterData_UnlockCondition_c358a248 (id:0);
+  requiredPotentialRank:int (id:1);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:2);
+  overrideDescripton:string (id:3);
+  prefabKey:string (id:4);
+  rangeId:string (id:5);
+}
+
+table Torappu_CharacterData_UnlockCondition_c358a248 {
+  phase:Torappu_EvolvePhase_fd4d2921 (id:0);
+  level:int (id:1);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table Torappu_CharacterData_PhaseData_7fb82d2b {
+  characterPrefabKey:string (id:0);
+  rangeId:string (id:1);
+  maxLevel:int (id:2);
+  attributesKeyFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesData_Torappu_AttributesData__105bb5fc] (id:3);
+  evolveCost:[Torappu_ItemBundle_64f049cd] (id:4);
+}
+
+table Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesData_Torappu_AttributesData__105bb5fc {
+  level:int (id:0);
+  data:Torappu_AttributesData_98b46752 (id:1);
+}
+
+table Torappu_AttributesData_98b46752 {
+  maxHp:int (id:0);
+  atk:int (id:1);
+  def:int (id:2);
+  magicResistance:float (id:3);
+  cost:int (id:4);
+  blockCnt:int (id:5);
+  moveSpeed:float (id:6);
+  attackSpeed:float (id:7);
+  baseAttackTime:float (id:8);
+  respawnTime:int (id:9);
+  hpRecoveryPerSec:float (id:10);
+  spRecoveryPerSec:float (id:11);
+  maxDeployCount:int (id:12);
+  maxDeckStackCnt:int (id:13);
+  tauntLevel:int (id:14);
+  massLevel:int (id:15);
+  baseForceLevel:int (id:16);
+  blockVolume:int (id:17);
+  stunImmune:bool (id:18);
+  silenceImmune:bool (id:19);
+  sleepImmune:bool (id:20);
+  frozenImmune:bool (id:21);
+  levitateImmune:bool (id:22);
+  disarmedCombatImmune:bool (id:23);
+  fearedImmune:bool (id:24);
+  palsyImmune:bool (id:25);
+  attractImmune:bool (id:26);
+  teleportImmune:bool (id:27);
+  groundBoundImmune:bool (id:28);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table Torappu_CharacterData_MainSkill_c645e63f {
+  skillId:string (id:0);
+  overridePrefabKey:string (id:1);
+  overrideTokenKey:string (id:2);
+  levelUpCostCond:[Torappu_CharacterData_MainSkill_SpecializeLevelData_6f15801a] (id:3);
+  unlockCond:Torappu_CharacterData_UnlockCondition_c358a248 (id:4);
+}
+
+table Torappu_CharacterData_MainSkill_SpecializeLevelData_6f15801a {
+  unlockCond:Torappu_CharacterData_UnlockCondition_c358a248 (id:0);
+  lvlUpTime:int (id:1);
+  levelUpCost:[Torappu_ItemBundle_64f049cd] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Boolean__bc9aff55_Entry {
+  key:string (id:0);
+  value:bool (id:1);
+}
+
+table Torappu_CharacterData_TalentDataBundle_b32f6617 {
+  candidates:[Torappu_TalentData_a7c18046] (id:0);
+}
+
+table Torappu_TalentData_a7c18046 {
+  unlockCondition:Torappu_CharacterData_UnlockCondition_c358a248 (id:0);
+  requiredPotentialRank:int (id:1);
+  prefabKey:string (id:2);
+  name:string (id:3);
+  description:string (id:4);
+  rangeId:string (id:5);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:6);
+  tokenKey:string (id:7);
+  isHideTalent:bool (id:8);
+}
+
+table Torappu_CharacterData_PotentialRank_53272b16 {
+  type:Torappu_CharacterData_PotentialRank_TypeEnum_09d585f6 (id:0);
+  description:string (id:1);
+  buff:Torappu_ExternalBuff_ebc0f79c (id:2);
+  equivalentCost:[Torappu_ItemBundle_64f049cd] (id:3);
+}
+
+table Torappu_ExternalBuff_ebc0f79c {
+  attributes:Torappu_AttributeModifierData_48d7cabb (id:0);
+}
+
+table Torappu_AttributeModifierData_48d7cabb {
+  abnormalFlags:[Torappu_AbnormalFlag_a48bf4c6] (id:0);
+  abnormalImmunes:[Torappu_AbnormalFlag_a48bf4c6] (id:1);
+  abnormalAntis:[Torappu_AbnormalFlag_a48bf4c6] (id:2);
+  abnormalCombos:[Torappu_AbnormalCombo_b86d9225] (id:3);
+  abnormalComboImmunes:[Torappu_AbnormalCombo_b86d9225] (id:4);
+  attributeModifiers:[Torappu_AttributeModifierData_AttributeModifier_6d41f64a] (id:5);
+}
+
+table Torappu_AttributeModifierData_AttributeModifier_6d41f64a {
+  attributeType:Torappu_AttributeType_52464bfb (id:0);
+  formulaItem:Torappu_AttributeModifierData_AttributeModifier_FormulaItemType_d0d321a1 (id:1);
+  value:float (id:2);
+  loadFromBlackboard:bool (id:3);
+  fetchBaseValueFromSourceEntity:bool (id:4);
+}
+
+table Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesDeltaData_Torappu_AttributesData__8ddc2fc3 {
+  level:int (id:0);
+  data:Torappu_AttributesDeltaData_350b90e8 (id:1);
+}
+
+table Torappu_AttributesDeltaData_350b90e8 {
+  maxHp:int (id:0);
+  atk:int (id:1);
+  def:int (id:2);
+  magicResistance:float (id:3);
+  cost:int (id:4);
+  blockCnt:int (id:5);
+  moveSpeed:float (id:6);
+  attackSpeed:float (id:7);
+  baseAttackTime:float (id:8);
+  respawnTime:int (id:9);
+  hpRecoveryPerSec:float (id:10);
+  spRecoveryPerSec:float (id:11);
+  maxDeployCount:int (id:12);
+  maxDeckStackCnt:int (id:13);
+  tauntLevel:int (id:14);
+  massLevel:int (id:15);
+  baseForceLevel:int (id:16);
+  blockVolume:int (id:17);
+  stunImmune:bool (id:18);
+  silenceImmune:bool (id:19);
+  sleepImmune:bool (id:20);
+  frozenImmune:bool (id:21);
+  levitateImmune:bool (id:22);
+  disarmedCombatImmune:bool (id:23);
+  fearedImmune:bool (id:24);
+  palsyImmune:bool (id:25);
+  attractImmune:bool (id:26);
+  teleportImmune:bool (id:27);
+  groundBoundImmune:bool (id:28);
+}
+
+table Torappu_CharacterData_SkillLevelCost_6e90b8ad {
+  unlockCond:Torappu_CharacterData_UnlockCondition_c358a248 (id:0);
+  lvlUpCost:[Torappu_ItemBundle_64f049cd] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharacterData__6992997b {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_CharacterData__6992997b_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_CharacterData__6992997b;

@@ -1,0 +1,23 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table Torappu_Resource_ResourceManifest_05234770 {
+  rawCount:int (id:0);
+  bundles:[Torappu_Resource_ResourceManifest_BundleMeta_87868a35] (id:1);
+  assetToBundleList:[Torappu_Resource_ResourceManifest_AssetToBundleMeta_97ef4351] (id:2);
+}
+
+table Torappu_Resource_ResourceManifest_BundleMeta_87868a35 {
+  name:string (id:0);
+  props:int (id:1);
+  sccIndex:int (id:2);
+  allDependencies:[int] (id:3);
+}
+
+table Torappu_Resource_ResourceManifest_AssetToBundleMeta_97ef4351 {
+  assetName:string (id:0);
+  bundleIndex:int (id:1);
+  name:string (id:2);
+  path:string (id:3);
+}
+
+root_type Torappu_Resource_ResourceManifest_05234770;

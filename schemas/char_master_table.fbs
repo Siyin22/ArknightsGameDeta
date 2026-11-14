@@ -1,0 +1,53 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_EvolvePhase_fd4d2921 : int {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+  PHASE_3 = 3,
+  E_NUM = 4,
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharacterData_MasterDataBundle__c981171f_Entry {
+  key:string (id:0);
+  value:Torappu_CharacterData_MasterDataBundle_5e8dff9b (id:1);
+}
+
+table Torappu_CharacterData_MasterDataBundle_5e8dff9b {
+  candidates:[Torappu_CharacterData_MasterData_cf9cdae3] (id:0);
+}
+
+table Torappu_CharacterData_MasterData_cf9cdae3 {
+  level:int (id:0);
+  masterId:string (id:1);
+  talentData:Torappu_TalentData_a7c18046 (id:2);
+}
+
+table Torappu_TalentData_a7c18046 {
+  unlockCondition:Torappu_CharacterData_UnlockCondition_c358a248 (id:0);
+  requiredPotentialRank:int (id:1);
+  prefabKey:string (id:2);
+  name:string (id:3);
+  description:string (id:4);
+  rangeId:string (id:5);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:6);
+  tokenKey:string (id:7);
+  isHideTalent:bool (id:8);
+}
+
+table Torappu_CharacterData_UnlockCondition_c358a248 {
+  phase:Torappu_EvolvePhase_fd4d2921 (id:0);
+  level:int (id:1);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharacterData_MasterDataBundle__c981171f {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_CharacterData_MasterDataBundle__c981171f_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_CharacterData_MasterDataBundle__c981171f;

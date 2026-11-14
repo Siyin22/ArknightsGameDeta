@@ -1,0 +1,29 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ExtraBattleLogData__d8b8daf0_Entry {
+  key:string (id:0);
+  value:Torappu_ExtraBattleLogData_4d28b643 (id:1);
+}
+
+table Torappu_ExtraBattleLogData_4d28b643 {
+  data:[Torappu_ExtraBattleLogDataKey_bc1cb249] (id:0);
+}
+
+table Torappu_ExtraBattleLogDataKey_bc1cb249 {
+  description:string (id:0);
+  sourceId:string (id:1);
+  sourceMode:string (id:2);
+  enemyId:string (id:3);
+  enemyApplyWay:string (id:4);
+  projectileName:string (id:5);
+  abilityName:string (id:6);
+  enemyLevelType:string (id:7);
+  enemyTag:[string] (id:8);
+  logAlias:string (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ExtraBattleLogData__d8b8daf0 {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ExtraBattleLogData__d8b8daf0_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_ExtraBattleLogData__d8b8daf0;

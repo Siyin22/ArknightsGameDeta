@@ -1,0 +1,3223 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_SandboxPermTemplateType_51d84009 : int {
+  NONE = 0,
+  SANDBOX_V2 = 1,
+  SANDBOX_V3 = 2,
+}
+
+enum Torappu_SandboxV2TrapItemType_762f5c7a : int {
+  NONE = 0,
+  BATTLE = 1,
+  TACTICAL = 2,
+  FUNCTION = 3,
+  ANIMAL = 4,
+}
+
+enum Torappu_SandboxV2ItemTrapTag_1d90cced : int {
+  OUTPUT = 0,
+  COLLECTION = 1,
+  IMPAIR = 2,
+  ENHANCE = 3,
+  EXPLORE = 4,
+  SPECTACLE = 5,
+  DECORATE = 6,
+  DEFEND = 7,
+  SCOUT = 8,
+}
+
+enum Torappu_SandboxV2CraftItemType_e84934fc : int {
+  BASE_BUILDING = 0,
+  TACTICAL = 1,
+  COMBAT_BUILDING = 2,
+}
+
+enum Torappu_SandboxPermItemType_2ec7dc91 : int {
+  NONE = 0,
+  TACTICAL = 1,
+  BUILDING = 2,
+  BUILDINGMAT = 3,
+  FOOD = 4,
+  FOODMAT = 5,
+  SPECIALMAT = 6,
+  COIN = 9,
+  CRAFT = 10,
+  PLACEHOLDER = 11,
+  STAMINAPOT = 12,
+  ANIMAL = 13,
+  INSECT = 14,
+  SLUGITEM = 15,
+  RELIC = 16,
+  RECIPE = 17,
+  PRODUCT = 18,
+  TOOLKIT = 19,
+  RANDRELIC = 20,
+  RANDRECIPE = 21,
+  CURRENCY = 22,
+  COOKBOOK = 23,
+  BASEBUILDING = 24,
+  BASECOIN = 25,
+  BASEANIMAL = 26,
+  BASETACTICAL = 27,
+  TECHPOINT = 28,
+}
+
+enum Torappu_SandboxFoodMatType_353d9629 : int {
+  MAIN = 0,
+  SUB = 1,
+}
+
+enum Torappu_SandboxFoodAttribute_f63c0666 : int {
+  NONE = 0,
+  SURVIVE = 1,
+  COST = 2,
+  ATTACK = 3,
+  COOLDOWN = 4,
+  SKILL_POINT = 5,
+  SPECIAL = 6,
+  ENHANCED = 7,
+  FUNCTION = 8,
+}
+
+enum Torappu_SandboxFoodVariantType_e233d885 : int {
+  NONE = 0,
+  ALPHA = 1,
+  BETA = 2,
+  GAMMA = 3,
+}
+
+enum Torappu_SandboxV2NodeType_571bd67f : int {
+  NONE = 0,
+  HOME = 1,
+  HOME_OUTPOST = 2,
+  BATTLE = 3,
+  NEST = 4,
+  COLLECT = 5,
+  HUNT = 6,
+  CAVE = 7,
+  MINE = 8,
+  ENCOUNTER = 9,
+  EXPEDITION = 10,
+  SHOP = 11,
+  GATE = 12,
+  MARKET = 13,
+  HOME_PORTABLE = 14,
+  HOME_PORTABLE_RIFT = 15,
+  SELECTION = 16,
+  RACING = 17,
+}
+
+enum Torappu_SandboxV2WeatherType_da139fd9 : int {
+  NORMAL = 0,
+  RAINFOREST = 1,
+  VOLCANO = 2,
+  DESERT = 3,
+}
+
+enum Torappu_SandboxV2EnemyRushType_0fc712cf : int {
+  NORMAL = 0,
+  ELITE = 1,
+  BOSS = 2,
+  BANDIT = 3,
+  RALLY = 4,
+  THIEF = 5,
+  MESSENGER = 6,
+  INSECT = 7,
+}
+
+enum Torappu_SandboxV2SeasonType_d8ba67aa : int {
+  NONE = 0,
+  DRY = 1,
+  RAINY = 2,
+  CHALLENGE = 3,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_TipData_Category_beac7a3c : int {
+  NONE = 0,
+  BATTLE = 1,
+  UI = 2,
+  BUILDING = 4,
+  GACHA = 8,
+  MISC = 16,
+  ALL = 31,
+}
+
+enum Torappu_ProfessionCategory_f64dcd2f : int {
+  NONE = 0,
+  WARRIOR = 1,
+  SNIPER = 2,
+  TANK = 4,
+  MEDIC = 8,
+  SUPPORT = 16,
+  CASTER = 32,
+  SPECIAL = 64,
+  TOKEN = 128,
+  TRAP = 256,
+  PIONEER = 512,
+}
+
+enum Torappu_BuildableType_c4537a3b : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_PlayerSideMask_5a51be9e : ubyte {
+  ALL = 0,
+  SIDE_A = 2,
+  SIDE_B = 4,
+  SIDE_C = 8,
+  SIDE_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_MapLayerMask_663506f1 : ubyte {
+  ALL = 0,
+  LAYER_A = 2,
+  LAYER_B = 4,
+  LAYER_C = 8,
+  LAYER_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_Battle_SideType_7ae7af6d : int {
+  NONE = 0,
+  ALLY = 1,
+  ENEMY = 2,
+  BOTH_ALLY_AND_ENEMY = 3,
+  NEUTRAL = 4,
+  ALL = 7,
+}
+
+enum Torappu_TileData_HeightTypeMask_fb187ca6 : int {
+  NONE = 0,
+  LOWLAND = 1,
+  HIGHLAND = 2,
+  ALL = 3,
+}
+
+enum Torappu_LevelData_Difficulty_47abb9d1 : int {
+  NONE = 0,
+  NORMAL = 1,
+  FOUR_STAR = 2,
+  EASY = 4,
+  SIX_STAR = 8,
+  ALL = 15,
+}
+
+enum Torappu_SandboxV2QuestRouteType_df65a103 : int {
+  NONE = 0,
+  ENEMY_RUSH = 1,
+  EVENT = 2,
+  NODE = 3,
+  NPC = 4,
+}
+
+enum Torappu_SandboxV2QuestLineType_436081f9 : int {
+  NONE = 0,
+  MAIN = 1,
+  SIDE = 2,
+  GUIDE = 3,
+  TRAINING = 4,
+}
+
+enum Torappu_SandboxV2NpcType_b9444c77 : int {
+  NORMAL = 0,
+  FIXED_RIFT = 1,
+  RANDOM_RIFT = 2,
+  PREY_RIFT = 3,
+}
+
+enum Torappu_BattleDialogType_5c544470 : int {
+  NONE = 0,
+  BEFORE = 1,
+  REACT = 2,
+  AFTER = 3,
+  ENUM = 4,
+}
+
+enum Torappu_SharedConsts_Direction_80eb1882 : int {
+  UP = 0,
+  RIGHT = 1,
+  DOWN = 2,
+  LEFT = 3,
+  E_NUM = 4,
+}
+
+enum Torappu_SandboxV2QuestLineBadgeType_459428d3 : int {
+  NONE = 0,
+  SIDE = 1,
+  GUIDE = 2,
+  MAIN = 3,
+  RIFT = 4,
+}
+
+enum Torappu_SandboxV2QuestLineScopeType_3b165dde : int {
+  MAIN = 0,
+  RIFT = 1,
+  ALL = 2,
+}
+
+enum Torappu_SandboxDevelopmentType_03a9aee8 : int {
+  NONE = 0,
+  SURVIVE = 1,
+  COLLECT = 2,
+  SHOP = 3,
+  BATTLE = 4,
+  DUNGEON = 5,
+  EXPLORE = 6,
+  RESOURCE = 7,
+  INITIAL = 8,
+}
+
+enum Torappu_SandboxV2EventType_1cbba48c : int {
+  NONE = 0,
+  EVENT = 1,
+  MISSION = 2,
+  QUEST_EVENT = 3,
+  QUEST_MISSION = 4,
+}
+
+enum Torappu_SandboxV2EventChoiceType_1e711d5f : int {
+  NONE = 0,
+  NEXT = 1,
+  LEAVE = 2,
+  MISSION = 3,
+}
+
+enum Torappu_ProfessionID_7b2b01de : int {
+  WARRIOR = 0,
+  SNIPER = 1,
+  TANK = 2,
+  MEDIC = 3,
+  SUPPORT = 4,
+  CASTER = 5,
+  SPECIAL = 6,
+  TOKEN = 7,
+  TRAP = 8,
+  PIONEER = 9,
+}
+
+enum Torappu_SandboxShopCoinType_faf201f0 : int {
+  DIMENSION_COIN = 0,
+  GOLD = 1,
+  BASE_GOLD = 2,
+  BASE_GOLDEX = 3,
+}
+
+enum Torappu_SandboxV2RiftMainTargetType_3a1a677a : int {
+  NONE = 0,
+  FIND = 1,
+  BOSS_HUNT = 2,
+  WILD_HUNT = 3,
+  PROTECT = 4,
+  FIGHT = 5,
+  CATCH_THIEF = 6,
+  PREY_HUNT = 7,
+}
+
+enum Torappu_SandboxArchiveQuestType_627bc6ca : int {
+  NONE = 0,
+  MAIN = 1,
+  SIDE = 2,
+}
+
+enum Torappu_SandboxV2BaseUnlockFuncType_3ff04b3a : int {
+  NONE = 0,
+  HOME_PUTPOST = 1,
+  HOME_PORTABLE = 2,
+  REWARDSHOP = 3,
+  TECH = 4,
+  REAR = 5,
+  BUILD = 6,
+  SHOP = 7,
+  RACING = 8,
+}
+
+enum Torappu_SandboxV2BaseUnlockFuncDisplayType_67b5152a : int {
+  NONE = 0,
+  NEW = 1,
+  UPDATE = 2,
+  NUMBER = 3,
+}
+
+enum Torappu_SandboxDevelopmentLineStyle_4d3bc3b7 : int {
+  EMPTY = 0,
+  LEVEL_PASS = 1,
+  LEVEL_BLOCK = 2,
+}
+
+enum Torappu_SandboxV2ConfirmIconType_826cb9aa : int {
+  COMMON = 0,
+  EMERGENCY = 1,
+  QUIT = 2,
+  EVACUATE = 3,
+  EVACUATELOSS = 4,
+  NORMAL = 5,
+  COMBAT = 6,
+  CONSTRUCT = 7,
+  NEXTDAY = 8,
+  RIFT_EXIT = 9,
+  LOAD_ARCHIVE = 10,
+}
+
+enum Torappu_EvolvePhase_fd4d2921 : int {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+  PHASE_3 = 3,
+  E_NUM = 4,
+}
+
+enum Torappu_SandboxV2RacerTalentType_f668a79c : int {
+  BORN = 0,
+  LEARNED = 1,
+}
+
+enum Torappu_SandboxV2RacerNameType_8c4a0bc2 : int {
+  PREFIX = 0,
+  SUFFIX = 1,
+}
+
+enum Torappu_SandboxV3MapTileType_ae3994d6 : int {
+  NONE = 0,
+  TEXTURE = 1,
+  BUILDING = 2,
+}
+
+enum Torappu_SandboxV3NodeType_3c927e2c : int {
+  NONE = 0,
+  HOME = 1,
+  STORY = 2,
+  EXPLORE = 3,
+}
+
+enum Torappu_SandboxV3MilestoneStage_623ca73c : int {
+  EARLY = 0,
+  MIDDLE = 1,
+  LATE = 2,
+}
+
+enum Torappu_SandboxV3BagItemType_b9345f29 : int {
+  NONE = 0,
+  MATERIALBAG = 1,
+  RELICBAG = 2,
+}
+
+enum Torappu_SandboxV3BasementUnlockFuncType_c6eb6e9a : int {
+  NONE = 0,
+  HOME_PUTPOST = 1,
+  TECH = 2,
+  MAP = 3,
+}
+
+enum Torappu_SandboxV3BasementUnlockFuncDisplayType_9c6d2852 : int {
+  NONE = 0,
+  NEW = 1,
+  UPDATE = 2,
+  NUMBER = 3,
+}
+
+enum Torappu_ScoreGroupType_e487f22e : int {
+  WONDER = 0,
+  DEBRIS_CLEAN = 1,
+  NPC_RECRUIT = 2,
+  TRAP_BUILD = 3,
+  TRAP_RULE = 4,
+}
+
+enum Torappu_SandboxV3NpcType_5af266a8 : int {
+  NORMAL = 0,
+  BASE = 1,
+}
+
+enum Torappu_SandboxV3QuestLineBadgeType_c92ddfcd : int {
+  NONE = 0,
+  MAIN = 1,
+  SIDE = 2,
+  GUIDE = 3,
+}
+
+enum Torappu_SandboxV3ShopType_ef53827c : int {
+  NONE = 0,
+  REST = 1,
+  BATTLE = 2,
+}
+
+enum Torappu_SandboxV3TrapType_2ae9b378 : int {
+  PRODUCER = 0,
+  INFRASTRUCTURE = 1,
+  PROCESSOR = 2,
+  SERVICE = 3,
+  AESTHETICS = 4,
+  TACTICAL = 5,
+}
+
+enum Torappu_SandboxV3BaseTrapType_48a35f19 : int {
+  NONE = 0,
+  PATH = 1,
+  AGRICULTURE = 2,
+  SETTLEMENT = 3,
+  PDLINE = 4,
+  DECORATION = 5,
+  OTHER = 6,
+}
+
+enum Torappu_SandboxV3BaseBuildType_02a07158 : int {
+  NONE = 0,
+  ROAD = 1,
+  CANAL = 2,
+  RAILWAY = 3,
+  PRODUCTION = 4,
+  HOUSE = 5,
+  POWER = 6,
+  BEAUTY = 7,
+}
+
+enum Torappu_SandboxV3ElectricTransferType_07223403 : int {
+  NONE = 0,
+  FUNCTION = 1,
+  SUPPLY = 2,
+  ADDITION = 3,
+  AMPLIFY = 4,
+}
+
+enum Torappu_SandboxV3BuildScoreType_3006e259 : int {
+  NONE = 0,
+  NPC = 1,
+  TRAP = 2,
+  LEVEL = 3,
+  ENPC = 4,
+}
+
+enum Torappu_SandboxV3EnemyRewardType_f6381aa8 : int {
+  NONE = 0,
+  ITEM = 1,
+  POWER = 2,
+  LUCKYDROP = 3,
+}
+
+enum Torappu_SandboxV3TaskDifficultyType_e443834b : int {
+  NONE = 0,
+  EASY = 1,
+  NORMAL = 2,
+  HARD = 3,
+}
+
+enum Torappu_SandboxV3TaskType_000de735 : int {
+  DEPLOY_TRAP_BY_GROUP = 0,
+  CONSTRUCT_TRAP_BY_GROUP = 1,
+  OWN_TRAP_BY_GROUP = 2,
+  OWN_TRAP_AND_DELIVER = 3,
+  OWN_TRAP_BY_TYPE = 4,
+  ITEM_DELIVERY = 5,
+  GATHER = 6,
+  KILL_ENEMY = 7,
+  KILL_ENEMY_FILTER_BY_TAG = 8,
+  KILL_ENEMY_FILTER_BY_LEVELTYPE = 9,
+  UNLOCK_ROOM_BY_MASK = 10,
+  UNLOCK_ROOM_CULMULATIVE = 11,
+  CATCH_ANIMAL = 12,
+  PROSPERITY_KEEP = 13,
+  AESTHETICS_REACH = 14,
+  PROSPERITY_REACH = 15,
+  AESTHETICS_INCREASE = 16,
+  PROSPERITY_INCREASE = 17,
+  TRADE_IN_SALE = 18,
+  CHARACTER_CHECK = 19,
+  RAILWAY_CHECK = 20,
+}
+
+table Torappu_SandboxPermTable_340395dc {
+  basicInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermBasicData__835f33c0_Entry] (id:0);
+  detail:Torappu_SandboxPermDetailData_4437c180 (id:1);
+  itemData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermItemData__caceca5c_Entry] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermBasicData__835f33c0_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxPermBasicData_af54844a (id:1);
+}
+
+table Torappu_SandboxPermBasicData_af54844a {
+  topicId:string (id:0);
+  topicTemplate:Torappu_SandboxPermTemplateType_51d84009 (id:1);
+  topicName:string (id:2);
+  topicStartTime:long (id:3);
+  fullStoredTime:long (id:4);
+  sortId:int (id:5);
+  priceItemId:string (id:6);
+  templateShopId:string (id:7);
+  homeEntryDisplayData:[Torappu_SandboxPermBasicData_HomeEntryDisplayData_542074f9] (id:8);
+  webBusType:string (id:9);
+  medalGroupId:string (id:10);
+  showMedalId:string (id:11);
+  description:string (id:12);
+  enrollPoints:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermEnrollPointData__1c6860cf_Entry] (id:13);
+}
+
+table Torappu_SandboxPermBasicData_HomeEntryDisplayData_542074f9 {
+  displayId:string (id:0);
+  topicId:string (id:1);
+  startTs:long (id:2);
+  endTs:long (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermEnrollPointData__1c6860cf_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxPermEnrollPointData_02202312 (id:1);
+}
+
+table Torappu_SandboxPermEnrollPointData_02202312 {
+  enrollPointId:string (id:0);
+  enrollTime:long (id:1);
+}
+
+table Torappu_SandboxPermDetailData_4437c180 {
+  SANDBOX_V2:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2Data__373ea7db_Entry] (id:0);
+  SANDBOX_V3:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3Data__313d3e12_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2Data__373ea7db_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2Data_c0a666cf (id:1);
+}
+
+table Torappu_SandboxV2Data_c0a666cf {
+  mapData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2MapData__6dbcae04_Entry] (id:0);
+  itemTrapData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ItemTrapData__133e50e9_Entry] (id:1);
+  itemTrapTagData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ItemTrapTagData__9e024f7a_Entry] (id:2);
+  buildingItemData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxBuildingItemData__3198ab6f_Entry] (id:3);
+  craftItemData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2CraftItemData__72dcc79e_Entry] (id:4);
+  livestockProduceData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2LivestockData__d83b0528_Entry] (id:5);
+  craftGroupData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2CraftGroupData__23be1b2b_Entry] (id:6);
+  alchemyRecipeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2AlchemyRecipeData__d001ad2c_Entry] (id:7);
+  drinkMatData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2DrinkMatData__6f31212f_Entry] (id:8);
+  foodMatData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxFoodMatData__e164a273_Entry] (id:9);
+  foodData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxFoodData__eff17fb5_Entry] (id:10);
+  nodeTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NodeTypeData__b4ffdd0e_Entry] (id:11);
+  nodeUpgradeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NodeUpgradeData__07b84112_Entry] (id:12);
+  weatherData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2WeatherData__7a05c7a1_Entry] (id:13);
+  stageData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2StageData__f671335e_Entry] (id:14);
+  zoneData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ZoneData__78afc5c3_Entry] (id:15);
+  nodeBuffData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NodeBuffData__03f7863c_Entry] (id:16);
+  rewardConfigData:Torappu_SandboxV2RewardConfigGroupData_771f5501 (id:17);
+  floatIconData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2FloatIconData__c915d088_Entry] (id:18);
+  enemyRushTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EnemyRushTypeData__d999e36a_Entry] (id:19);
+  rushEnemyData:Torappu_SandboxV2BattleRushEnemyData_6017b72b (id:20);
+  gameConst:Torappu_SandboxV2GameConst_862c4ddb (id:21);
+  basicConst:Torappu_SandboxV2BasicConst_8de9ce4a (id:22);
+  riftConst:Torappu_SandboxV2RiftConst_35d3f3c8 (id:23);
+  developmentConst:Torappu_SandboxV2DevelopmentConst_7bc332e7 (id:24);
+  battleLoadingTips:[Torappu_TipData_5e3b77f7] (id:25);
+  runeDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RuneTable_PackedRuneData__9e83f3a6_Entry] (id:26);
+  itemRuneList:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_LegacyInLevelRuneData___c12ae827_Entry] (id:27);
+  questData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2QuestData__c2e62128_Entry] (id:28);
+  npcData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NpcData__cf9acff0_Entry] (id:29);
+  dialogData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2DialogData__f15fb3d8_Entry] (id:30);
+  questLineData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2QuestLineData__99cbf10d_Entry] (id:31);
+  questLineStoryData:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:32);
+  guideQuestData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2GuideQuestData__60cc37ef_Entry] (id:33);
+  developmentData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxDevelopmentData__c8a58550_Entry] (id:34);
+  eventData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EventData__cab3c42b_Entry] (id:35);
+  eventSceneData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EventSceneData__cbe022ad_Entry] (id:36);
+  eventChoiceData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EventChoiceData__963fd865_Entry] (id:37);
+  expeditionData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ExpeditionData__2967f491_Entry] (id:38);
+  eventEffectData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EventEffectData__0c0ddab5_Entry] (id:39);
+  shopGoodData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxShopGoodData__f32ee87c_Entry] (id:40);
+  shopDialogData:Torappu_SandboxV2ShopDialogData_d5526a9a (id:41);
+  logisticsData:[Torappu_SandboxV2LogisticsData_021df486] (id:42);
+  logisticsCharMapping:[System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_Dictionary_2_System_Int32_System_Collect_d1f2b25e_Entry] (id:43);
+  materialKeywordData:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:44);
+  monthRushData:[Torappu_SandboxV2MonthRushData_785b5cae] (id:45);
+  riftTerrainParamData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftParamData__6ecb97ca_Entry] (id:46);
+  riftClimateParamData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftParamData__6ecb97ca_Entry] (id:47);
+  riftEnemyParamData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftParamData__6ecb97ca_Entry] (id:48);
+  riftSubTargetData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftSubTargetData__0c859ffc_Entry] (id:49);
+  riftMainTargetData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftMainTargetData__cc4ac8ff_Entry] (id:50);
+  riftGlobalEffectData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftGlobalEffectData__46940c1e_Entry] (id:51);
+  fixedRiftData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2FixedRiftData__99c5084b_Entry] (id:52);
+  riftTeamBuffData:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_SandboxV2RiftTeamBuffDat_f83f0727_Entry] (id:53);
+  riftDifficultyData:[Torappu_ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData__205988e8_Entry] (id:54);
+  riftRewardDisplayData:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:55);
+  enemyReplaceData:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_String_System_Strin_a05fdd1e_Entry] (id:56);
+  archiveQuestData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveQuestData__c51dba54_Entry] (id:57);
+  achievementData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveAchievementData__8f0eb0a9_Entry] (id:58);
+  achievementTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveAchievementTypeData__dc8ae888_Entry] (id:59);
+  archiveQuestTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveQuestTypeData__f74f5ac5_Entry] (id:60);
+  archiveMusicUnlockData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveMusicUnlockData__51510447_Entry] (id:61);
+  baseUpdate:[Torappu_SandboxV2BaseUpdateData_e2e6babc] (id:62);
+  developmentLineSegmentDatas:[Torappu_SandboxDevelopmentLineSegmentData_f6d7db56] (id:63);
+  buildingNodeScoreData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2BuildingNodeScoreData__79d32768_Entry] (id:64);
+  seasonData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2SeasonData__2a602811_Entry] (id:65);
+  confirmIconData:[Torappu_SandboxV2ConfirmIconData_53bdf1f6] (id:66);
+  shopUpdateTimeData:[long] (id:67);
+  tutorialData:Torappu_SandboxV2TutorialData_588d584b (id:68);
+  racingData:Torappu_SandboxV2RacingData_79080268 (id:69);
+  challengeModeData:Torappu_SandboxV2ChallengeModeData_41d4eff6 (id:70);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2MapData__6dbcae04_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2MapData_e326ca10 (id:1);
+}
+
+table Torappu_SandboxV2MapData_e326ca10 {
+  nodes:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NodeData__b72d7329_Entry] (id:0);
+  zones:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2MapZoneData__4de8757c_Entry] (id:1);
+  mapConfig:Torappu_SandboxV2MapConfig_ee63b2d1 (id:2);
+  centerNodeId:string (id:3);
+  monthModeNodeId:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NodeData__b72d7329_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2NodeData_0341d6ce (id:1);
+}
+
+table Torappu_SandboxV2NodeData_0341d6ce {
+  minDistance:float (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2MapZoneData__4de8757c_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2MapZoneData_8f26c300 (id:1);
+}
+
+table Torappu_SandboxV2MapZoneData_8f26c300 {
+  zoneId:string (id:0);
+  center:UnityEngine_Vector2_1073c192 (id:1);
+  vertices:[UnityEngine_Vector2_1073c192] (id:2);
+  triangles:[System_Collections_Generic_List_1_System_Int32__9a4a0407] (id:3);
+  hasBorder:bool (id:4);
+}
+
+table UnityEngine_Vector2_1073c192 {
+  x:float (id:0);
+  y:float (id:1);
+}
+
+table System_Collections_Generic_List_1_System_Int32__9a4a0407 {
+  values:[int] (id:0);
+}
+
+table Torappu_SandboxV2MapConfig_ee63b2d1 {
+  isRift:bool (id:0);
+  isGuide:bool (id:1);
+  cameraBoundMin:UnityEngine_Vector2_1073c192 (id:2);
+  cameraBoundMax:UnityEngine_Vector2_1073c192 (id:3);
+  cameraMaxNormalizedZoom:float (id:4);
+  backgroundId:string (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ItemTrapData__133e50e9_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2ItemTrapData_a451f74a (id:1);
+}
+
+table Torappu_SandboxV2ItemTrapData_a451f74a {
+  itemId:string (id:0);
+  trapId:string (id:1);
+  trapPhase:int (id:2);
+  trapLevel:int (id:3);
+  skillIndex:int (id:4);
+  skillLevel:int (id:5);
+  buildingLevel:int (id:6);
+  updatedItemId:string (id:7);
+  minLevelItemId:string (id:8);
+  baseItemName:string (id:9);
+  itemType:Torappu_SandboxV2TrapItemType_762f5c7a (id:10);
+  itemTag:Torappu_SandboxV2ItemTrapTag_1d90cced (id:11);
+  buffId:string (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ItemTrapTagData__9e024f7a_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2ItemTrapTagData_497fcffe (id:1);
+}
+
+table Torappu_SandboxV2ItemTrapTagData_497fcffe {
+  tag:Torappu_SandboxV2ItemTrapTag_1d90cced (id:0);
+  tagName:string (id:1);
+  tagPic:string (id:2);
+  sortId:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxBuildingItemData__3198ab6f_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxBuildingItemData_66c6243c (id:1);
+}
+
+table Torappu_SandboxBuildingItemData_66c6243c {
+  itemId:string (id:0);
+  itemRarity:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2CraftItemData__72dcc79e_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2CraftItemData_1ccd2e75 (id:1);
+}
+
+table Torappu_SandboxV2CraftItemData_1ccd2e75 {
+  itemId:string (id:0);
+  type:Torappu_SandboxV2CraftItemType_e84934fc (id:1);
+  buildingUnlockDesc:string (id:2);
+  materialItems:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:3);
+  upgradeItems:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:4);
+  outputRatio:int (id:5);
+  withdrawRatio:int (id:6);
+  repairCost:int (id:7);
+  isHidden:bool (id:8);
+  craftGroupId:string (id:9);
+  recipeLevel:int (id:10);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry {
+  key:string (id:0);
+  value:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2LivestockData__d83b0528_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2LivestockData_0dcd40b3 (id:1);
+}
+
+table Torappu_SandboxV2LivestockData_0dcd40b3 {
+  livestockItemId:string (id:0);
+  shinyLivestockItemId:string (id:1);
+  livestockEnemyId:string (id:2);
+  targetFenceId:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2CraftGroupData__23be1b2b_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2CraftGroupData_95b8541e (id:1);
+}
+
+table Torappu_SandboxV2CraftGroupData_95b8541e {
+  items:[string] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2AlchemyRecipeData__d001ad2c_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2AlchemyRecipeData_f67548c5 (id:1);
+}
+
+table Torappu_SandboxV2AlchemyRecipeData_f67548c5 {
+  recipeId:string (id:0);
+  materials:[Torappu_SandboxV2AlchemyMaterialData_52b7c5a4] (id:1);
+  itemId:string (id:2);
+  onceAlchemyRatio:int (id:3);
+  recipeLevel:int (id:4);
+  unlockDesc:string (id:5);
+}
+
+table Torappu_SandboxV2AlchemyMaterialData_52b7c5a4 {
+  itemId:string (id:0);
+  count:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2DrinkMatData__6f31212f_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2DrinkMatData_3460e325 (id:1);
+}
+
+table Torappu_SandboxV2DrinkMatData_3460e325 {
+  id:string (id:0);
+  type:Torappu_SandboxPermItemType_2ec7dc91 (id:1);
+  count:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxFoodMatData__e164a273_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxFoodMatData_5b89423d (id:1);
+}
+
+table Torappu_SandboxFoodMatData_5b89423d {
+  id:string (id:0);
+  type:Torappu_SandboxFoodMatType_353d9629 (id:1);
+  attribute:Torappu_SandboxFoodAttribute_f63c0666 (id:2);
+  variantType:Torappu_SandboxFoodVariantType_e233d885 (id:3);
+  bonusDuration:int (id:4);
+  buffDesc:string (id:5);
+  sortId:int (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxFoodData__eff17fb5_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxFoodData_088aaf5f (id:1);
+}
+
+table Torappu_SandboxFoodData_088aaf5f {
+  id:string (id:0);
+  attributes:[Torappu_SandboxFoodAttribute_f63c0666] (id:1);
+  recipes:[Torappu_SandboxFoodRecipeData_b03975b8] (id:2);
+  variants:[Torappu_SandboxFoodVariantData_dd284adf] (id:3);
+  duration:int (id:4);
+  sortId:int (id:5);
+}
+
+table Torappu_SandboxFoodRecipeData_b03975b8 {
+  foodId:string (id:0);
+  mats:[string] (id:1);
+}
+
+table Torappu_SandboxFoodVariantData_dd284adf {
+  type:Torappu_SandboxFoodVariantType_e233d885 (id:0);
+  name:string (id:1);
+  usage:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NodeTypeData__b4ffdd0e_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2NodeTypeData_7b270478 (id:1);
+}
+
+table Torappu_SandboxV2NodeTypeData_7b270478 {
+  nodeType:Torappu_SandboxV2NodeType_571bd67f (id:0);
+  name:string (id:1);
+  iconId:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NodeUpgradeData__07b84112_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2NodeUpgradeData_80ab4b94 (id:1);
+}
+
+table Torappu_SandboxV2NodeUpgradeData_80ab4b94 {
+  nodeUpgradeId:string (id:0);
+  name:string (id:1);
+  description:string (id:2);
+  upgradeDesc:string (id:3);
+  upgradeTips:string (id:4);
+  itemType:Torappu_SandboxPermItemType_2ec7dc91 (id:5);
+  itemTag:Torappu_SandboxV2ItemTrapTag_1d90cced (id:6);
+  itemCnt:int (id:7);
+  itemRarity:int (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2WeatherData__7a05c7a1_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2WeatherData_bb283bae (id:1);
+}
+
+table Torappu_SandboxV2WeatherData_bb283bae {
+  weatherId:string (id:0);
+  name:string (id:1);
+  weatherLevel:int (id:2);
+  weatherType:Torappu_SandboxV2WeatherType_da139fd9 (id:3);
+  weatherTypeName:string (id:4);
+  weatherIconId:string (id:5);
+  functionDesc:string (id:6);
+  description:string (id:7);
+  buffId:string (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2StageData__f671335e_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2StageData_0e4d8218 (id:1);
+}
+
+table Torappu_SandboxV2StageData_0e4d8218 {
+  stageId:string (id:0);
+  levelId:string (id:1);
+  code:string (id:2);
+  name:string (id:3);
+  description:string (id:4);
+  actionCost:int (id:5);
+  actionCostEnemyRush:int (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ZoneData__78afc5c3_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2ZoneData_3607d9c3 (id:1);
+}
+
+table Torappu_SandboxV2ZoneData_3607d9c3 {
+  zoneId:string (id:0);
+  zoneName:string (id:1);
+  displayName:bool (id:2);
+  appellation:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NodeBuffData__03f7863c_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2NodeBuffData_a82baef5 (id:1);
+}
+
+table Torappu_SandboxV2NodeBuffData_a82baef5 {
+  runeId:string (id:0);
+  name:string (id:1);
+  description:string (id:2);
+  extra:string (id:3);
+  iconId:string (id:4);
+}
+
+table Torappu_SandboxV2RewardConfigGroupData_771f5501 {
+  stageMapPreviewRewardDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardData__c75fa4f8_Entry] (id:0);
+  stageDetailPreviewRewardDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardData__c75fa4f8_Entry] (id:1);
+  trapRewardDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardCommonConfig__95aaed61_Entry] (id:2);
+  enemyRewardDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardCommonConfig__95aaed61_Entry] (id:3);
+  unitPreviewRewardDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardData__c75fa4f8_Entry] (id:4);
+  stageRewardDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardData__c75fa4f8_Entry] (id:5);
+  rushPreviewRewardDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardData__c75fa4f8_Entry] (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardData__c75fa4f8_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RewardData_009ab646 (id:1);
+}
+
+table Torappu_SandboxV2RewardData_009ab646 {
+  rewardList:[Torappu_SandboxV2RewardItemConfigData_363c40a8] (id:0);
+}
+
+table Torappu_SandboxV2RewardItemConfigData_363c40a8 {
+  rewardItem:string (id:0);
+  rewardType:Torappu_SandboxPermItemType_2ec7dc91 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RewardCommonConfig__95aaed61_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RewardCommonConfig_26820267 (id:1);
+}
+
+table Torappu_SandboxV2RewardCommonConfig_26820267 {
+  rewardItemId:string (id:0);
+  rewardItemType:Torappu_SandboxPermItemType_2ec7dc91 (id:1);
+  count:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2FloatIconData__c915d088_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2FloatIconData_d1133dc0 (id:1);
+}
+
+table Torappu_SandboxV2FloatIconData_d1133dc0 {
+  picId:string (id:0);
+  picName:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EnemyRushTypeData__d999e36a_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2EnemyRushTypeData_3c1a349a (id:1);
+}
+
+table Torappu_SandboxV2EnemyRushTypeData_3c1a349a {
+  type:Torappu_SandboxV2EnemyRushType_0fc712cf (id:0);
+  description:string (id:1);
+  sortId:int (id:2);
+}
+
+table Torappu_SandboxV2BattleRushEnemyData_6017b72b {
+  rushEnemyGroupConfigs:[System_Collections_Generic_Dictionary_2_Torappu_SandboxV2EnemyRushType_System_Collections_Generic_List_1_Torappu_Sandbox_84fda9e8_Entry] (id:0);
+  rushEnemyDbRef:[Torappu_SandboxV2BattleRushEnemyData_RushEnemyDBRef_c3fe6eae] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_SandboxV2EnemyRushType_System_Collections_Generic_List_1_Torappu_Sandbox_84fda9e8_Entry {
+  key:Torappu_SandboxV2EnemyRushType_0fc712cf (id:0);
+  value:[Torappu_SandboxV2BattleRushEnemyGroupConfig_c462ad08] (id:1);
+}
+
+table Torappu_SandboxV2BattleRushEnemyGroupConfig_c462ad08 {
+  enemyGroupKey:string (id:0);
+  enemy:[Torappu_SandboxV2BattleRushEnemyConfig_1be43fe5] (id:1);
+  dynamicEnemy:[string] (id:2);
+}
+
+table Torappu_SandboxV2BattleRushEnemyConfig_1be43fe5 {
+  enemyKey:string (id:0);
+  branchId:string (id:1);
+  count:int (id:2);
+  interval:float (id:3);
+  preDelay:float (id:4);
+}
+
+table Torappu_SandboxV2BattleRushEnemyData_RushEnemyDBRef_c3fe6eae {
+  id:string (id:0);
+  level:int (id:1);
+}
+
+table Torappu_SandboxV2GameConst_862c4ddb {
+  mainMapId:string (id:0);
+  baseTrapId:string (id:1);
+  portableTrapId:string (id:2);
+  doorTrapId:string (id:3);
+  mineTrapId:string (id:4);
+  neutralBossEnemyId:[string] (id:5);
+  nestTrapId:string (id:6);
+  shopNpcName:string (id:7);
+  daysBetweenAssessment:int (id:8);
+  portableConstructUnlockLevel:int (id:9);
+  outpostConstructUnlockLevel:int (id:10);
+  maxEnemyCountSameTimeInRush:int (id:11);
+  maxPreDelayTimeInRush:float (id:12);
+  maxSaveCnt:int (id:13);
+  firstSeasonDuration:int (id:14);
+  seasonTransitionLoop:[Torappu_SandboxV2SeasonType_d8ba67aa] (id:15);
+  seasonDurationLoop:[int] (id:16);
+  firstSeasonStartAngle:float (id:17);
+  seasonTransitionAngleLoop:[float] (id:18);
+  seasonAngle:float (id:19);
+  battleItemDesc:string (id:20);
+  foodDesc:string (id:21);
+  multipleSurvivalDayDesc:string (id:22);
+  multipleTips:string (id:23);
+  techProgressScore:int (id:24);
+  otherEnemyRushName:string (id:25);
+  surviveDayText:string (id:26);
+  survivePeriodText:string (id:27);
+  surviveScoreText:string (id:28);
+  actionPointScoreText:string (id:29);
+  nodeExploreDesc:string (id:30);
+  dungeonExploreDesc:string (id:31);
+  nodeCompleteDesc:string (id:32);
+  noRiftDungeonDesc:string (id:33);
+  baseRushedDesc:string (id:34);
+  riftBaseDesc:string (id:35);
+  riftBaseRushedDesc:string (id:36);
+  dungeonTriggeredGuideQuestList:[string] (id:37);
+  noLogInEnemyStatsEnemyId:[string] (id:38);
+}
+
+table Torappu_SandboxV2BasicConst_8de9ce4a {
+  staminaItemId:string (id:0);
+  goldItemId:string (id:1);
+  dimensioncoinItemId:string (id:2);
+  alwaysShowItemIdsConstruct:[string] (id:3);
+  alwaysShowItemIds:[string] (id:4);
+  bagBottomBarResType:[string] (id:5);
+  failedCookFood:string (id:6);
+  maxFoodDuration:int (id:7);
+  drinkCostOnce:int (id:8);
+  drinkMakeLimit:int (id:9);
+  specialMatWater:string (id:10);
+  workbenchMakeLimit:int (id:11);
+  logisticsPosLimit:int (id:12);
+  logisticsUnlockLevel:int (id:13);
+  logisticsDrinkCost:int (id:14);
+  logisticsEvacuateTips:string (id:15);
+  logisticsEvacuateWarning:string (id:16);
+  baseRepairCost:int (id:17);
+  portRepairCost:int (id:18);
+  unitFenceLimit:int (id:19);
+  unitRareFenceLimit:int (id:20);
+  cageId:string (id:21);
+  fenceId:string (id:22);
+  rareFenceId:string (id:23);
+  monthlyRushEntryText1:string (id:24);
+  monthlyEntryUnlockText:string (id:25);
+  monthlyEntryRiftText:string (id:26);
+  monthlyRushIntro:string (id:27);
+  monthlyCoin:Torappu_ItemBundle_64f049cd (id:28);
+  charRarityColorList:[string] (id:29);
+  squadCharCapacity:int (id:30);
+  totalSquadCnt:int (id:31);
+  toolboxCapacity:int (id:32);
+  toolCntLimitInSquad:int (id:33);
+  miniSquadCharCapacity:int (id:34);
+  miniSquadDrinkCost:int (id:35);
+  normalSquadDrinkCost:int (id:36);
+  emptySquadDrinkCost:int (id:37);
+  achieveTypeAll:string (id:38);
+  constructModeBgmHome:string (id:39);
+  battleBgmCollect:string (id:40);
+  battleBgmHunt:string (id:41);
+  battleBgmEnemyRush:string (id:42);
+  battleBgmBossRush:string (id:43);
+  imgLoadingNormalName:string (id:44);
+  imgLoadingBaseName:string (id:45);
+  imgUnloadingBaseName:string (id:46);
+  isChallengeOpen:bool (id:47);
+  isRacingOpen:bool (id:48);
+  hasExploreMode:bool (id:49);
+  exploreModeBuffDescs:[string] (id:50);
+  modeSelectTips:string (id:51);
+  stringRes:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:52);
+  diffList:[Torappu_SandboxV2DiffModeData_fc84f576] (id:53);
+  battlePreloadEnemies:[string] (id:54);
+  battleExcludedTrapsInRush:[string] (id:55);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table Torappu_SandboxV2DiffModeData_fc84f576 {
+  title:string (id:0);
+  desc:string (id:1);
+  buffList:[string] (id:2);
+  detailList:string (id:3);
+  sortId:int (id:4);
+}
+
+table Torappu_SandboxV2RiftConst_35d3f3c8 {
+  refreshRate:int (id:0);
+  randomDungeonId:string (id:1);
+  huntDungeonId:string (id:2);
+  subTargetRewardId:string (id:3);
+  preyQuestRewardId:string (id:4);
+  dungeonSeasonId:Torappu_SandboxV2SeasonType_d8ba67aa (id:5);
+  fixedDungeonTypeName:string (id:6);
+  randomDungeonTypeName:string (id:7);
+  preyDungeonTypeName:string (id:8);
+  noTeamDescription:string (id:9);
+  noTeamName:string (id:10);
+  noTeamBackgroundId:string (id:11);
+  noTeamSmallIconId:string (id:12);
+  noTeamBigIconId:string (id:13);
+  messengerEnemyId:string (id:14);
+  riftRushEnemyGroupLimit:int (id:15);
+  riftRushSpawnCd:int (id:16);
+}
+
+table Torappu_SandboxV2DevelopmentConst_7bc332e7 {
+  techPointsTotal:int (id:0);
+}
+
+table Torappu_TipData_5e3b77f7 {
+  tip:string (id:0);
+  weight:float (id:1);
+  category:Torappu_TipData_Category_beac7a3c (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RuneTable_PackedRuneData__9e83f3a6_Entry {
+  key:string (id:0);
+  value:Torappu_RuneTable_PackedRuneData_44298930 (id:1);
+}
+
+table Torappu_RuneTable_PackedRuneData_44298930 {
+  id:string (id:0);
+  points:float (id:1);
+  mutexGroupKey:string (id:2);
+  description:string (id:3);
+  runes:[Torappu_RuneData_fc2de0e9] (id:4);
+}
+
+table Torappu_RuneData_fc2de0e9 {
+  key:string (id:0);
+  selector:Torappu_RuneData_Selector_f177175d (id:1);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:2);
+}
+
+table Torappu_RuneData_Selector_f177175d {
+  professionMask:Torappu_ProfessionCategory_f64dcd2f (id:0);
+  buildableMask:Torappu_BuildableType_c4537a3b (id:1);
+  playerSideMask:Torappu_PlayerSideMask_5a51be9e (id:2);
+  mapLayerMask:Torappu_MapLayerMask_663506f1 (id:3);
+  sideType:Torappu_Battle_SideType_7ae7af6d (id:4);
+  charIdFilter:[string] (id:5);
+  charIdExcludeFilter:[string] (id:6);
+  enemyIdFilter:[string] (id:7);
+  enemyIdExcludeFilter:[string] (id:8);
+  enemyLevelTypeFilter:[string] (id:9);
+  enemyActionHiddenGroupFilter:[string] (id:10);
+  skillIdFilter:[string] (id:11);
+  tileKeyFilter:[string] (id:12);
+  groupTagFilter:[string] (id:13);
+  filterTagFilter:[string] (id:14);
+  filterTagExcludeFilter:[string] (id:15);
+  subProfessionExcludeFilter:[string] (id:16);
+  mapTagFilter:[string] (id:17);
+  heightTypeMask:Torappu_TileData_HeightTypeMask_fb187ca6 (id:18);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_LegacyInLevelRuneData___c12ae827_Entry {
+  key:string (id:0);
+  value:[Torappu_LegacyInLevelRuneData_1171f430] (id:1);
+}
+
+table Torappu_LegacyInLevelRuneData_1171f430 {
+  difficultyMask:Torappu_LevelData_Difficulty_47abb9d1 (id:0);
+  key:string (id:1);
+  professionMask:Torappu_ProfessionCategory_f64dcd2f (id:2);
+  buildableMask:Torappu_BuildableType_c4537a3b (id:3);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2QuestData__c2e62128_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2QuestData_5c1f633f (id:1);
+}
+
+table Torappu_SandboxV2QuestData_5c1f633f {
+  questId:string (id:0);
+  questLine:string (id:1);
+  questTitle:string (id:2);
+  questDesc:string (id:3);
+  questTargetDesc:string (id:4);
+  isDisplay:bool (id:5);
+  questRouteType:Torappu_SandboxV2QuestRouteType_df65a103 (id:6);
+  questLineType:Torappu_SandboxV2QuestLineType_436081f9 (id:7);
+  questRouteParam:string (id:8);
+  showProgressIndex:int (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2NpcData__cf9acff0_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2NpcData_7f20ee5a (id:1);
+}
+
+table Torappu_SandboxV2NpcData_7f20ee5a {
+  npcId:string (id:0);
+  trapId:string (id:1);
+  npcType:Torappu_SandboxV2NpcType_b9444c77 (id:2);
+  dialogIds:[System_Collections_Generic_Dictionary_2_Torappu_BattleDialogType_System_String__9fb9c79b_Entry] (id:3);
+  npcLocation:[int] (id:4);
+  npcOrientation:Torappu_SharedConsts_Direction_80eb1882 (id:5);
+  picId:string (id:6);
+  picName:string (id:7);
+  showPic:bool (id:8);
+  reactSkillIndex:int (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_BattleDialogType_System_String__9fb9c79b_Entry {
+  key:Torappu_BattleDialogType_5c544470 (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2DialogData__f15fb3d8_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2DialogData_376a25d9 (id:1);
+}
+
+table Torappu_SandboxV2DialogData_376a25d9 {
+  dialogId:string (id:0);
+  avgId:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2QuestLineData__99cbf10d_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2QuestLineData_25d17c7c (id:1);
+}
+
+table Torappu_SandboxV2QuestLineData_25d17c7c {
+  questLineId:string (id:0);
+  questLineTitle:string (id:1);
+  questLineType:Torappu_SandboxV2QuestLineType_436081f9 (id:2);
+  questLineBadgeType:Torappu_SandboxV2QuestLineBadgeType_459428d3 (id:3);
+  questLineScopeType:Torappu_SandboxV2QuestLineScopeType_3b165dde (id:4);
+  questLineDesc:string (id:5);
+  sortId:int (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2GuideQuestData__60cc37ef_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2GuideQuestData_8324d784 (id:1);
+}
+
+table Torappu_SandboxV2GuideQuestData_8324d784 {
+  questId:string (id:0);
+  storyId:string (id:1);
+  triggerKey:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxDevelopmentData__c8a58550_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxDevelopmentData_ca374c27 (id:1);
+}
+
+table Torappu_SandboxDevelopmentData_ca374c27 {
+  techId:string (id:0);
+  techType:Torappu_SandboxDevelopmentType_03a9aee8 (id:1);
+  positionX:int (id:2);
+  positionY:int (id:3);
+  frontNodeId:string (id:4);
+  nextNodeIds:[string] (id:5);
+  limitBaseLevel:int (id:6);
+  tokenCost:int (id:7);
+  techName:string (id:8);
+  techIconId:string (id:9);
+  nodeTitle:string (id:10);
+  rawDesc:string (id:11);
+  canBuffReserch:bool (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EventData__cab3c42b_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2EventData_5ca1279d (id:1);
+}
+
+table Torappu_SandboxV2EventData_5ca1279d {
+  eventId:string (id:0);
+  type:Torappu_SandboxV2EventType_1cbba48c (id:1);
+  iconId:string (id:2);
+  iconName:string (id:3);
+  enterSceneId:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EventSceneData__cbe022ad_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2EventSceneData_880aa513 (id:1);
+}
+
+table Torappu_SandboxV2EventSceneData_880aa513 {
+  eventSceneId:string (id:0);
+  title:string (id:1);
+  desc:string (id:2);
+  choiceIds:[string] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EventChoiceData__963fd865_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2EventChoiceData_cec7a368 (id:1);
+}
+
+table Torappu_SandboxV2EventChoiceData_cec7a368 {
+  choiceId:string (id:0);
+  type:Torappu_SandboxV2EventChoiceType_1e711d5f (id:1);
+  costAction:int (id:2);
+  title:string (id:3);
+  desc:string (id:4);
+  expeditionId:string (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ExpeditionData__2967f491_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2ExpeditionData_62fd9cc8 (id:1);
+}
+
+table Torappu_SandboxV2ExpeditionData_62fd9cc8 {
+  expeditionId:string (id:0);
+  desc:string (id:1);
+  effectDesc:string (id:2);
+  costAction:int (id:3);
+  costDrink:int (id:4);
+  charCnt:int (id:5);
+  profession:Torappu_ProfessionCategory_f64dcd2f (id:6);
+  professions:[Torappu_ProfessionID_7b2b01de] (id:7);
+  minEliteRank:int (id:8);
+  duration:int (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2EventEffectData__0c0ddab5_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2EventEffectData_cca51da0 (id:1);
+}
+
+table Torappu_SandboxV2EventEffectData_cca51da0 {
+  eventEffectId:string (id:0);
+  buffId:string (id:1);
+  duration:int (id:2);
+  desc:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxShopGoodData__f32ee87c_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxShopGoodData_1838d2f1 (id:1);
+}
+
+table Torappu_SandboxShopGoodData_1838d2f1 {
+  goodId:string (id:0);
+  itemId:string (id:1);
+  count:int (id:2);
+  coinType:Torappu_SandboxShopCoinType_faf201f0 (id:3);
+  value:int (id:4);
+  itemPoolId:string (id:5);
+  stock:int (id:6);
+  weight:int (id:7);
+}
+
+table Torappu_SandboxV2ShopDialogData_d5526a9a {
+  seasonDialogs:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:0);
+  afterBuyDialogs:[string] (id:1);
+  shopEmptyDialogs:[string] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry {
+  key:string (id:0);
+  value:[string] (id:1);
+}
+
+table Torappu_SandboxV2LogisticsData_021df486 {
+  id:string (id:0);
+  desc:string (id:1);
+  noBuffDesc:string (id:2);
+  iconId:string (id:3);
+  profession:Torappu_ProfessionCategory_f64dcd2f (id:4);
+  sortId:int (id:5);
+  levelParams:[string] (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_Dictionary_2_System_Int32_System_Collect_d1f2b25e_Entry {
+  key:int (id:0);
+  value:[System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_SandboxV2LogisticsCharDat_f00571ca_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_SandboxV2LogisticsCharDat_f00571ca_Entry {
+  key:int (id:0);
+  value:[Torappu_SandboxV2LogisticsCharData_a963ac8c] (id:1);
+}
+
+table Torappu_SandboxV2LogisticsCharData_a963ac8c {
+  levelUpperLimit:int (id:0);
+  charUpperLimit:int (id:1);
+}
+
+table Torappu_SandboxV2MonthRushData_785b5cae {
+  monthlyRushId:string (id:0);
+  startTime:long (id:1);
+  endTime:long (id:2);
+  isLast:bool (id:3);
+  sortId:int (id:4);
+  rushGroupKey:string (id:5);
+  monthlyRushName:string (id:6);
+  monthlyRushDes:string (id:7);
+  weatherId:string (id:8);
+  nodeId:string (id:9);
+  conditionGroup:string (id:10);
+  conditionDesc:string (id:11);
+  rewardItemList:[Torappu_ItemBundle_64f049cd] (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftParamData__6ecb97ca_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RiftParamData_6464ae10 (id:1);
+}
+
+table Torappu_SandboxV2RiftParamData_6464ae10 {
+  id:string (id:0);
+  desc:string (id:1);
+  iconId:string (id:2);
+  bkColor:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftSubTargetData__0c859ffc_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RiftSubTargetData_5971093a (id:1);
+}
+
+table Torappu_SandboxV2RiftSubTargetData_5971093a {
+  id:string (id:0);
+  name:string (id:1);
+  desc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftMainTargetData__cc4ac8ff_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RiftMainTargetData_11289ef5 (id:1);
+}
+
+table Torappu_SandboxV2RiftMainTargetData_11289ef5 {
+  id:string (id:0);
+  title:string (id:1);
+  desc:string (id:2);
+  storyDesc:string (id:3);
+  targetDayCount:int (id:4);
+  targetType:Torappu_SandboxV2RiftMainTargetType_3a1a677a (id:5);
+  questIconId:string (id:6);
+  questIconName:string (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RiftGlobalEffectData__46940c1e_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RiftGlobalEffectData_9b340a22 (id:1);
+}
+
+table Torappu_SandboxV2RiftGlobalEffectData_9b340a22 {
+  id:string (id:0);
+  desc:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2FixedRiftData__99c5084b_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2FixedRiftData_7bfaf5be (id:1);
+}
+
+table Torappu_SandboxV2FixedRiftData_7bfaf5be {
+  riftId:string (id:0);
+  riftName:string (id:1);
+  rewardGroupId:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_SandboxV2RiftTeamBuffDat_f83f0727_Entry {
+  key:string (id:0);
+  value:[Torappu_SandboxV2RiftTeamBuffData_ca9b3686] (id:1);
+}
+
+table Torappu_SandboxV2RiftTeamBuffData_ca9b3686 {
+  teamId:string (id:0);
+  teamName:string (id:1);
+  buffLevel:int (id:2);
+  buffDesc:string (id:3);
+  teamSmallIconId:string (id:4);
+  teamBigIconId:string (id:5);
+  teamDesc:string (id:6);
+  teamBgId:string (id:7);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData__205988e8_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RiftDifficultyData_96b59a99 (id:1);
+}
+
+table Torappu_SandboxV2RiftDifficultyData_96b59a99 {
+  id:string (id:0);
+  riftId:string (id:1);
+  desc:string (id:2);
+  difficultyLevel:int (id:3);
+  rewardGroupId:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_String_System_Strin_a05fdd1e_Entry {
+  key:string (id:0);
+  value:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveQuestData__c51dba54_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxArchiveQuestData_1f6190f9 (id:1);
+}
+
+table Torappu_SandboxArchiveQuestData_1f6190f9 {
+  id:string (id:0);
+  sortId:int (id:1);
+  questType:Torappu_SandboxArchiveQuestType_627bc6ca (id:2);
+  name:string (id:3);
+  desc:string (id:4);
+  avgDataList:[Torappu_SandboxArchiveQuestAvgData_56a17ccd] (id:5);
+  cgDataList:[Torappu_SandboxArchiveQuestCgData_f9efe973] (id:6);
+  npcPicIdList:[string] (id:7);
+  zoneData:Torappu_SandboxArchiveQuestZoneData_97c9f9da (id:8);
+}
+
+table Torappu_SandboxArchiveQuestAvgData_56a17ccd {
+  avgId:string (id:0);
+  avgName:string (id:1);
+}
+
+table Torappu_SandboxArchiveQuestCgData_f9efe973 {
+  cgId:string (id:0);
+  cgTitle:string (id:1);
+  cgDesc:string (id:2);
+  cgPath:string (id:3);
+}
+
+table Torappu_SandboxArchiveQuestZoneData_97c9f9da {
+  zoneId:string (id:0);
+  zoneName:string (id:1);
+  zoneBgPicId:string (id:2);
+  zoneNameIdEn:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveAchievementData__8f0eb0a9_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxArchiveAchievementData_455badf1 (id:1);
+}
+
+table Torappu_SandboxArchiveAchievementData_455badf1 {
+  id:string (id:0);
+  achievementType:[string] (id:1);
+  raritySortId:int (id:2);
+  sortId:int (id:3);
+  name:string (id:4);
+  desc:string (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveAchievementTypeData__dc8ae888_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxArchiveAchievementTypeData_b4b3093c (id:1);
+}
+
+table Torappu_SandboxArchiveAchievementTypeData_b4b3093c {
+  achievementType:string (id:0);
+  name:string (id:1);
+  sortId:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveQuestTypeData__f74f5ac5_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxArchiveQuestTypeData_c3cbd3a0 (id:1);
+}
+
+table Torappu_SandboxArchiveQuestTypeData_c3cbd3a0 {
+  type:Torappu_SandboxArchiveQuestType_627bc6ca (id:0);
+  name:string (id:1);
+  iconId:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveMusicUnlockData__51510447_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxArchiveMusicUnlockData_c1c4df36 (id:1);
+}
+
+table Torappu_SandboxArchiveMusicUnlockData_c1c4df36 {
+  musicId:string (id:0);
+  unlockCondDesc:string (id:1);
+}
+
+table Torappu_SandboxV2BaseUpdateData_e2e6babc {
+  baseLevelId:string (id:0);
+  baseLevel:int (id:1);
+  conditions:[Torappu_SandboxV2BaseUpdateCondition_f2fc6931] (id:2);
+  items:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:3);
+  previewDatas:[Torappu_SandboxV2BaseFunctionPreviewData_feb54c8c] (id:4);
+  scoreFactor:string (id:5);
+  portableRepairCost:int (id:6);
+  entryCount:int (id:7);
+  repairCost:int (id:8);
+}
+
+table Torappu_SandboxV2BaseUpdateCondition_f2fc6931 {
+  desc:string (id:0);
+  limitCond:string (id:1);
+  param:[string] (id:2);
+}
+
+table Torappu_SandboxV2BaseFunctionPreviewData_feb54c8c {
+  previewId:string (id:0);
+  previewValue:int (id:1);
+  detailData:Torappu_SandboxV2BaseUpdateFunctionPreviewDetailData_bab5b8ab (id:2);
+}
+
+table Torappu_SandboxV2BaseUpdateFunctionPreviewDetailData_bab5b8ab {
+  funcId:string (id:0);
+  unlockType:Torappu_SandboxV2BaseUnlockFuncType_3ff04b3a (id:1);
+  typeTitle:string (id:2);
+  desc:string (id:3);
+  icon:string (id:4);
+  darkMode:bool (id:5);
+  sortId:int (id:6);
+  displayType:Torappu_SandboxV2BaseUnlockFuncDisplayType_67b5152a (id:7);
+}
+
+table Torappu_SandboxDevelopmentLineSegmentData_f6d7db56 {
+  fromNodeId:string (id:0);
+  passingNodeIds:[string] (id:1);
+  fromAxisPosX:int (id:2);
+  fromAxisPosY:int (id:3);
+  toAxisPosX:int (id:4);
+  toAxisPosY:int (id:5);
+  lineStyle:Torappu_SandboxDevelopmentLineStyle_4d3bc3b7 (id:6);
+  unlockBasementLevel:int (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2BuildingNodeScoreData__79d32768_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2BuildingNodeScoreData_bf3ecbd6 (id:1);
+}
+
+table Torappu_SandboxV2BuildingNodeScoreData_bf3ecbd6 {
+  nodeId:string (id:0);
+  sortId:int (id:1);
+  limitScore:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2SeasonData__2a602811_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2SeasonData_4a541a49 (id:1);
+}
+
+table Torappu_SandboxV2SeasonData_4a541a49 {
+  seasonType:Torappu_SandboxV2SeasonType_d8ba67aa (id:0);
+  name:string (id:1);
+  functionDesc:string (id:2);
+  description:string (id:3);
+  color:string (id:4);
+}
+
+table Torappu_SandboxV2ConfirmIconData_53bdf1f6 {
+  iconType:Torappu_SandboxV2ConfirmIconType_826cb9aa (id:0);
+  iconPicId:string (id:1);
+}
+
+table Torappu_SandboxV2TutorialData_588d584b {
+  charRepoData:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_SandboxV2TutorialRepoCharData__6d56cd3f_Entry] (id:0);
+  questData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2QuestData__c2e62128_Entry] (id:1);
+  guideQuestData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2GuideQuestData__60cc37ef_Entry] (id:2);
+  questLineData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2QuestLineData__99cbf10d_Entry] (id:3);
+  basicConst:Torappu_SandboxV2TutorialBasicConst_4a77cdc5 (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_SandboxV2TutorialRepoCharData__6d56cd3f_Entry {
+  key:int (id:0);
+  value:Torappu_SandboxV2TutorialRepoCharData_6e4c9b5f (id:1);
+}
+
+table Torappu_SandboxV2TutorialRepoCharData_6e4c9b5f {
+  instId:int (id:0);
+  charId:string (id:1);
+  evolvePhase:Torappu_EvolvePhase_fd4d2921 (id:2);
+  level:int (id:3);
+  favorPoint:int (id:4);
+  potentialRank:int (id:5);
+  mainSkillLv:int (id:6);
+  specSkillList:[int] (id:7);
+}
+
+table Torappu_SandboxV2TutorialBasicConst_4a77cdc5 {
+  trainingQuestList:[string] (id:0);
+}
+
+table Torappu_SandboxV2RacingData_79080268 {
+  racerBasicInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacerBasicInfo__cbbb4e65_Entry] (id:0);
+  racerTalentInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacerTalentInfo__586ff280_Entry] (id:1);
+  racerNameInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacerNameInfo__1604cd87_Entry] (id:2);
+  racerMedalInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacerMedalInfo__1f8d30f7_Entry] (id:3);
+  enemyItemMap:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:4);
+  racingItemInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacingItemInfo__18fe54e0_Entry] (id:5);
+  constData:Torappu_SandboxV2RacingConstData_3783ee91 (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacerBasicInfo__cbbb4e65_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RacerBasicInfo_19623c3b (id:1);
+}
+
+table Torappu_SandboxV2RacerBasicInfo_19623c3b {
+  racerId:string (id:0);
+  sortId:int (id:1);
+  racerName:string (id:2);
+  itemId:string (id:3);
+  attributeMaxValue:[int] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacerTalentInfo__586ff280_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RacerTalentInfo_fffd093f (id:1);
+}
+
+table Torappu_SandboxV2RacerTalentInfo_fffd093f {
+  talentId:string (id:0);
+  talentType:Torappu_SandboxV2RacerTalentType_f668a79c (id:1);
+  talentIconId:string (id:2);
+  desc:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacerNameInfo__1604cd87_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RacerNameInfo_440a083f (id:1);
+}
+
+table Torappu_SandboxV2RacerNameInfo_440a083f {
+  nameId:string (id:0);
+  nameType:Torappu_SandboxV2RacerNameType_8c4a0bc2 (id:1);
+  nameDesc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacerMedalInfo__1f8d30f7_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RacerMedalInfo_3002fce3 (id:1);
+}
+
+table Torappu_SandboxV2RacerMedalInfo_3002fce3 {
+  medalId:string (id:0);
+  sortId:int (id:1);
+  name:string (id:2);
+  desc:string (id:3);
+  iconId:string (id:4);
+  smallIconId:string (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2RacingItemInfo__18fe54e0_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2RacingItemInfo_cc4f5700 (id:1);
+}
+
+table Torappu_SandboxV2RacingItemInfo_cc4f5700 {
+  racerItemId:string (id:0);
+  name:string (id:1);
+  iconId:string (id:2);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:3);
+}
+
+table Torappu_SandboxV2RacingConstData_3783ee91 {
+  attributeNameList:[string] (id:0);
+  racerMaxValue:[int] (id:1);
+  bagFullHintPercent:float (id:2);
+  tempBagFullHintPercent:float (id:3);
+  bagName:string (id:4);
+  tempBagName:string (id:5);
+  bagEmptyLeftDesc:string (id:6);
+  bagEmptyRightDesc:string (id:7);
+  tempBagEmptyLeftDesc:string (id:8);
+  tempBagEmptyRightDesc:string (id:9);
+  bornTalentIconId:string (id:10);
+  bornTalentTitle:string (id:11);
+  learnedTalentIconId:string (id:12);
+  learnedTalentTitle:string (id:13);
+  talentEmptyDesc:string (id:14);
+  slugItemId:string (id:15);
+  racingHpFactor:float (id:16);
+  racingSpeedFactor:float (id:17);
+  racingAccelerationFactor:float (id:18);
+  recoverMoveSpeed:float (id:19);
+  recoverHpFactor:float (id:20);
+  bleedingFactor:float (id:21);
+  maxSteeringFactor:float (id:22);
+  steeringMassLevelFactor:float (id:23);
+  steeringMoveSpeedFactor:float (id:24);
+  safeAngleCos:float (id:25);
+  safeCollisionForceLevel:float (id:26);
+  tileCollisionFactor:float (id:27);
+  collisionForceSector:[float] (id:28);
+  collisionForceLevel:[float] (id:29);
+  collisionSpeedLoss:[float] (id:30);
+  collisionHpLoss:[float] (id:31);
+  tileCollisionSpeedLoss:[float] (id:32);
+  tileCollisionHpLoss:[float] (id:33);
+  autoUseItemTimeRange:[float] (id:34);
+  recoverAcceleration:float (id:35);
+}
+
+table Torappu_SandboxV2ChallengeModeData_41d4eff6 {
+  challengeConst:Torappu_SandboxV2ChallengeConst_5062fc67 (id:0);
+  challengeModeUnlockData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ChallengeModeUnlockData__fb3fcae0_Entry] (id:1);
+  challengeModeRewardData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ChallengeModeRewardData__ea600d5f_Entry] (id:2);
+  challengeModeDifficultyData:[Torappu_SandboxV2ChallengeModeDifficultyData_6be3c8cd] (id:3);
+}
+
+table Torappu_SandboxV2ChallengeConst_5062fc67 {
+  challengeModeDesc:string (id:0);
+  dailyTitleDesc:string (id:1);
+  debuffCountdownDesc:string (id:2);
+  gainAllDebuffDesc:string (id:3);
+  dailyUpAttributeDesc:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ChallengeModeUnlockData__fb3fcae0_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2ChallengeModeUnlockData_2661f001 (id:1);
+}
+
+table Torappu_SandboxV2ChallengeModeUnlockData_2661f001 {
+  unlockId:string (id:0);
+  sortId:int (id:1);
+  conditionDesc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV2ChallengeModeRewardData__ea600d5f_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV2ChallengeModeRewardData_731bc5f6 (id:1);
+}
+
+table Torappu_SandboxV2ChallengeModeRewardData_731bc5f6 {
+  rewardId:string (id:0);
+  sortId:int (id:1);
+  rewardDay:int (id:2);
+  rewardItemList:[Torappu_ItemBundle_64f049cd] (id:3);
+}
+
+table Torappu_SandboxV2ChallengeModeDifficultyData_6be3c8cd {
+  challengeDay:int (id:0);
+  diffDesc:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3Data__313d3e12_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3Data_ea644ee1 (id:1);
+}
+
+table Torappu_SandboxV3Data_ea644ee1 {
+  modeDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ModeData__e153a1a8_Entry] (id:0);
+  mainMapData:Torappu_SandboxV3MapData_1f1b6ddd (id:1);
+  nodeTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3NodeTypeData__f80ed502_Entry] (id:2);
+  stageData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3StageData__0c2c1ec2_Entry] (id:3);
+  storyStageData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3StoryStageData__7a4ec442_Entry] (id:4);
+  exploreStageData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ExploreStageData__5cd08b01_Entry] (id:5);
+  exploreStageDifficultyData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ExploreStageDifficultyData__1e41d934_Entry] (id:6);
+  subStageData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3SubStageData__4a1a0dd4_Entry] (id:7);
+  stageDropData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3StageDropData__6426249b_Entry] (id:8);
+  navigationNodeIds:[string] (id:9);
+  itemTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ItemTypeData__88547a57_Entry] (id:10);
+  bagItemTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BagItemTypeData__8bdc55ac_Entry] (id:11);
+  toolkitContentData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ToolkitContentData__cc0d99e5_Entry] (id:12);
+  itemRandomPoolData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ItemRandomPoolData__62e2cc22_Entry] (id:13);
+  randomItemData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3RandomItemData__94bbcbde_Entry] (id:14);
+  itemExtraData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ItemExtraData__bc5e10dc_Entry] (id:15);
+  developmentData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxDevelopmentData__c8a58550_Entry] (id:16);
+  developmentLineSegmentDatas:[Torappu_SandboxDevelopmentLineSegmentData_f6d7db56] (id:17);
+  defendScoreData:[Torappu_SandboxV3DefendScoreData_658b44e6] (id:18);
+  zoneDefendDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ZoneDefendData__b7de8d7d_Entry] (id:19);
+  basementUpdateDatas:[Torappu_SandboxV3BasementUpdateData_ddbf1b86] (id:20);
+  basementPreviewDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BasementUpdateFunctionPreviewDetailData__0399a0f7_Entry] (id:21);
+  wonderDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3WonderData__756394e7_Entry] (id:22);
+  buildScoreGroupDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BuildScoreGroupData__58bf14f1_Entry] (id:23);
+  basementWeatherWeights:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:24);
+  questData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3QuestData__f87d1b64_Entry] (id:25);
+  npcData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3NpcData__f2157065_Entry] (id:26);
+  enemyNpcData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EnemyNpcData__d2354622_Entry] (id:27);
+  dialogData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3DialogData__5de7938b_Entry] (id:28);
+  questLineData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3QuestLineData__3eadb14c_Entry] (id:29);
+  questLineStoryData:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:30);
+  guideQuestData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3GuideQuestData__71f74b28_Entry] (id:31);
+  cookbookData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3CookbookData__9a590674_Entry] (id:32);
+  cookSpiceData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3CookSpiceData__87267dbf_Entry] (id:33);
+  baseShopGoodExtraData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BaseShopGoodExtraData__9ba438c4_Entry] (id:34);
+  baseShopGoodData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermShopGoodData__80c4a36a_Entry] (id:35);
+  baseShopSellData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermShopSellData__11fbcbb0_Entry] (id:36);
+  baseShopCoinList:[string] (id:37);
+  baseTrapItemListMap:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:38);
+  stageShopListData:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_SandboxV3StageShopData___3bf17bbc_Entry] (id:39);
+  shopDetailData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ShopDetailData__20881174_Entry] (id:40);
+  shopTypeCoinMap:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:41);
+  shopGoodPoolData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ShopGoodPoolData__f4bbd874_Entry] (id:42);
+  shopGoodData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermShopGoodData__80c4a36a_Entry] (id:43);
+  shopSellData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermShopSellData__11fbcbb0_Entry] (id:44);
+  shopCoinTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxShopCoinTypeData__36af0899_Entry] (id:45);
+  eventSceneData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EventSceneData__4548bab2_Entry] (id:46);
+  eventChoiceData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EventChoiceData__1a56fe1e_Entry] (id:47);
+  eventExpeditionData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EventExpeditionData__9b3e430c_Entry] (id:48);
+  trapData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TrapData__b590e6ae_Entry] (id:49);
+  trapTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TrapTypeData__8e7fc4a0_Entry] (id:50);
+  baseTrapData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BaseTrapData__819d37d2_Entry] (id:51);
+  electricTransferData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ElectricTransferData__eb36d46c_Entry] (id:52);
+  electricBuildingList:[string] (id:53);
+  baseTrapTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BaseTrapTypeData__f74dce20_Entry] (id:54);
+  buildRuleData:[Torappu_SandboxV3BuildRuleData_035a340c] (id:55);
+  buildScoreData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BuildScoreData__853968a5_Entry] (id:56);
+  baseTrapUpgradeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BaseTrapUpgradeData__de4fd7cc_Entry] (id:57);
+  buildAnimalData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BuildAnimalData__c2004985_Entry] (id:58);
+  baseTrapDeployMap:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_SandboxV3BaseTrapDeployD_488cbc0e_Entry] (id:59);
+  processRecipeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ProcessRecipeData__6f8fb463_Entry] (id:60);
+  buildRecipeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BuildRecipeData__b9d4af3f_Entry] (id:61);
+  buildTipData:[Torappu_TipData_5e3b77f7] (id:62);
+  enemyRewardData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EnemyRewardData__bfcab665_Entry] (id:63);
+  enemyLevelRewardData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EnemyLevelRewardData__cea948e2_Entry] (id:64);
+  milestoneRewardPools:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:65);
+  recipeWeight:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_String_System_Int32_832ee22c_Entry] (id:66);
+  paramData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3StatParamData__fed636e0_Entry] (id:67);
+  weatherData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3WeatherData__ecce1c18_Entry] (id:68);
+  runeDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RuneTable_PackedRuneData__9e83f3a6_Entry] (id:69);
+  relicData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3RelicData__439e228e_Entry] (id:70);
+  bandDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BandData__11fffc9f_Entry] (id:71);
+  modeType2BandIdListMap:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:72);
+  taskSlotData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TaskSlotData__d7170382_Entry] (id:73);
+  taskPoolData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TaskPoolData__09841c9a_Entry] (id:74);
+  taskData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TaskData__844799d8_Entry] (id:75);
+  avgPostTaskData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3AvgPostTaskData__b888a13b_Entry] (id:76);
+  livestockData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3LivestockData__11fe6089_Entry] (id:77);
+  achievementData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveAchievementData__8f0eb0a9_Entry] (id:78);
+  achievementTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveAchievementTypeData__dc8ae888_Entry] (id:79);
+  archiveQuestData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveQuestData__c51dba54_Entry] (id:80);
+  archiveQuestTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveQuestTypeData__f74f5ac5_Entry] (id:81);
+  archiveMusicUnlockData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxArchiveMusicUnlockData__51510447_Entry] (id:82);
+  gameConst:Torappu_SandboxV3GameConst_e1afbd45 (id:83);
+  shopUpdateTimeData:[long] (id:84);
+  extraLoadEnemies:[string] (id:85);
+  randomMapPool:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3RandomMapPool__52859ed1_Entry] (id:86);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ModeData__e153a1a8_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ModeData_85b046ed (id:1);
+}
+
+table Torappu_SandboxV3ModeData_85b046ed {
+  modeId:string (id:0);
+  modeName:string (id:1);
+  sortId:int (id:2);
+  modeDescription:string (id:3);
+  modeDescriptionDetail:string (id:4);
+  difficultyFactor:float (id:5);
+  runeIdList:[string] (id:6);
+}
+
+table Torappu_SandboxV3MapData_1f1b6ddd {
+  tiles:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3MapTileData__bba2215b_Entry] (id:0);
+  nodes:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3MapNodeData__d639ad6f_Entry] (id:1);
+  zones:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ZoneData__29163c9f_Entry] (id:2);
+  mapConfig:Torappu_SandboxV3MapConfig_9b2c4fc5 (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3MapTileData__bba2215b_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3MapTileData_ec9bdb2a (id:1);
+}
+
+table Torappu_SandboxV3MapTileData_ec9bdb2a {
+  tileId:string (id:0);
+  tileType:Torappu_SandboxV3MapTileType_ae3994d6 (id:1);
+  gridPos:Torappu_SandboxV3MapGridPos_a7810803 (id:2);
+  tileResId:string (id:3);
+  tileResRotateZ:int (id:4);
+  tileDecoId:string (id:5);
+  tileDecoRotateZ:int (id:6);
+  height:int (id:7);
+  nodeId:string (id:8);
+}
+
+table Torappu_SandboxV3MapGridPos_a7810803 {
+  x:int (id:0);
+  y:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3MapNodeData__d639ad6f_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3MapNodeData_ac0e303a (id:1);
+}
+
+table Torappu_SandboxV3MapNodeData_ac0e303a {
+  nodeId:string (id:0);
+  nodeType:Torappu_SandboxV3NodeType_3c927e2c (id:1);
+  stageId:string (id:2);
+  zoneId:string (id:3);
+  frontNodeId:string (id:4);
+  unlockTileIdList:[string] (id:5);
+  gridPos:Torappu_SandboxV3MapGridPos_a7810803 (id:6);
+  onTileId:string (id:7);
+  height:int (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ZoneData__29163c9f_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ZoneData_9a697f17 (id:1);
+}
+
+table Torappu_SandboxV3ZoneData_9a697f17 {
+  zoneId:string (id:0);
+  name:string (id:1);
+  sortId:int (id:2);
+  displayName:bool (id:3);
+  appellation:string (id:4);
+  gridPos:Torappu_SandboxV3MapGridPos_a7810803 (id:5);
+}
+
+table Torappu_SandboxV3MapConfig_9b2c4fc5 {
+  maxSpringBackRadius:float (id:0);
+  minSpringBackRadius:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3NodeTypeData__f80ed502_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3NodeTypeData_77ebe9cc (id:1);
+}
+
+table Torappu_SandboxV3NodeTypeData_77ebe9cc {
+  nodeType:Torappu_SandboxV3NodeType_3c927e2c (id:0);
+  name:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3StageData__0c2c1ec2_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3StageData_f927c5d1 (id:1);
+}
+
+table Torappu_SandboxV3StageData_f927c5d1 {
+  stageId:string (id:0);
+  code:string (id:1);
+  name:string (id:2);
+  description:string (id:3);
+  maxDay:int (id:4);
+  maxPlayTime:float (id:5);
+  jumpTime:float (id:6);
+  targetPowerValue:int (id:7);
+  dayTargetValues:[int] (id:8);
+  taskPool:[string] (id:9);
+  questPoolByDifficulty:int (id:10);
+  statParams:string (id:11);
+  milestones:[Torappu_ListDict_2_System_String_Torappu_SandboxV3PowerMilestoneData__ed1ca2c0_Entry] (id:12);
+  taskSlots:[string] (id:13);
+  initialItemData:[Torappu_SandboxV3StageInitialItemData_888fecb6] (id:14);
+  squadMax:int (id:15);
+  initialRecruitNum:int (id:16);
+  dayPassRecruitNum:int (id:17);
+  levelRune:string (id:18);
+  firstDayDescription:string (id:19);
+  levelBgm:string (id:20);
+  isFormationSaved:bool (id:21);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_SandboxV3PowerMilestoneData__ed1ca2c0_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3PowerMilestoneData_2f213e4e (id:1);
+}
+
+table Torappu_SandboxV3PowerMilestoneData_2f213e4e {
+  milestoneId:string (id:0);
+  stage:Torappu_SandboxV3MilestoneStage_623ca73c (id:1);
+  targetPowerValue:int (id:2);
+  choiceSlotCnt:int (id:3);
+  allowRefresh:bool (id:4);
+  allowGiveUpChoice:bool (id:5);
+  defaultPool:string (id:6);
+  refreshPool:string (id:7);
+}
+
+table Torappu_SandboxV3StageInitialItemData_888fecb6 {
+  itemId:string (id:0);
+  count:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3StoryStageData__7a4ec442_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3StoryStageData_535c40f2 (id:1);
+}
+
+table Torappu_SandboxV3StoryStageData_535c40f2 {
+  stageId:string (id:0);
+  subStageIdList:[string] (id:1);
+  initialSubStageIndexList:[int] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ExploreStageData__5cd08b01_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ExploreStageData_d9c75989 (id:1);
+}
+
+table Torappu_SandboxV3ExploreStageData_d9c75989 {
+  stageId:string (id:0);
+  subStagePoolId:string (id:1);
+  stageDifficultyMax:int (id:2);
+  displayEnemyIdList:[string] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ExploreStageDifficultyData__1e41d934_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ExploreStageDifficultyData_512ec32b (id:1);
+}
+
+table Torappu_SandboxV3ExploreStageDifficultyData_512ec32b {
+  difficultyId:string (id:0);
+  difficultyLevel:int (id:1);
+  unlockCondDescList:[string] (id:2);
+  difficultyDesc:string (id:3);
+  difficultyFactor:float (id:4);
+  runeIdList:[string] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3SubStageData__4a1a0dd4_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3SubStageData_e27c8557 (id:1);
+}
+
+table Torappu_SandboxV3SubStageData_e27c8557 {
+  subStageId:string (id:0);
+  levelId:string (id:1);
+  typeMask:int (id:2);
+  mapPreviewId:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3StageDropData__6426249b_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3StageDropData_d72e1cb8 (id:1);
+}
+
+table Torappu_SandboxV3StageDropData_d72e1cb8 {
+  stageId:string (id:0);
+  rewardFirstItems:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:1);
+  rewardNormalItems:[System_Collections_Generic_Dictionary_2_System_String_System_Single__eaaf3efa_Entry] (id:2);
+  rewardHardItems:[System_Collections_Generic_Dictionary_2_System_String_System_Single__eaaf3efa_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Single__eaaf3efa_Entry {
+  key:string (id:0);
+  value:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ItemTypeData__88547a57_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ItemTypeData_d2516be6 (id:1);
+}
+
+table Torappu_SandboxV3ItemTypeData_d2516be6 {
+  itemType:Torappu_SandboxPermItemType_2ec7dc91 (id:0);
+  itemTypeName:string (id:1);
+  isShopSell:bool (id:2);
+  isBagShow:bool (id:3);
+  bagItemType:Torappu_SandboxV3BagItemType_b9345f29 (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BagItemTypeData__8bdc55ac_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BagItemTypeData_82318d51 (id:1);
+}
+
+table Torappu_SandboxV3BagItemTypeData_82318d51 {
+  bagItemType:Torappu_SandboxV3BagItemType_b9345f29 (id:0);
+  bagItemTypeName:string (id:1);
+  sortId:int (id:2);
+  bagItemTypePic:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ToolkitContentData__cc0d99e5_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ToolkitContentData_f7270f41 (id:1);
+}
+
+table Torappu_SandboxV3ToolkitContentData_f7270f41 {
+  contentItemId:string (id:0);
+  contentCntMin:int (id:1);
+  contentCntMax:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ItemRandomPoolData__62e2cc22_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ItemRandomPoolData_b657dd0f (id:1);
+}
+
+table Torappu_SandboxV3ItemRandomPoolData_b657dd0f {
+  normalItemList:[Torappu_SandboxV3ItemRandomPoolData_Item_d9862fb6] (id:0);
+  guaranteeItemList:[Torappu_SandboxV3ItemRandomPoolData_Item_d9862fb6] (id:1);
+}
+
+table Torappu_SandboxV3ItemRandomPoolData_Item_d9862fb6 {
+  itemId:string (id:0);
+  count:int (id:1);
+  weight:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3RandomItemData__94bbcbde_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3RandomItemData_2ce96109 (id:1);
+}
+
+table Torappu_SandboxV3RandomItemData_2ce96109 {
+  poolId:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ItemExtraData__bc5e10dc_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ItemExtraData_8628755a (id:1);
+}
+
+table Torappu_SandboxV3ItemExtraData_8628755a {
+  itemId:string (id:0);
+  itemType:Torappu_SandboxPermItemType_2ec7dc91 (id:1);
+  trapCfgId:string (id:2);
+  recipeCfgId:string (id:3);
+  relicCfgId:string (id:4);
+  itemRarity:int (id:5);
+  itemSortId1:int (id:6);
+  itemSortId2:int (id:7);
+  isBagPreview:bool (id:8);
+}
+
+table Torappu_SandboxV3DefendScoreData_658b44e6 {
+  rarity:int (id:0);
+  evolvePhase:int (id:1);
+  level:int (id:2);
+  grade:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ZoneDefendData__b7de8d7d_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ZoneDefendData_677311f3 (id:1);
+}
+
+table Torappu_SandboxV3ZoneDefendData_677311f3 {
+  zoneId:string (id:0);
+  iconId:string (id:1);
+  titleIconId:string (id:2);
+  rewardDataList:[Torappu_SandboxV3ZoneDefendRewardData_19e508b4] (id:3);
+}
+
+table Torappu_SandboxV3ZoneDefendRewardData_19e508b4 {
+  grade:int (id:0);
+  rewards:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:1);
+}
+
+table Torappu_SandboxV3BasementUpdateData_ddbf1b86 {
+  baseLevelId:string (id:0);
+  baseLevel:int (id:1);
+  baseDesc:string (id:2);
+  levelId:string (id:3);
+  wonderId:string (id:4);
+  conditions:[Torappu_SandboxV3BasementUpdateCondition_e7bdafa2] (id:5);
+  items:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:6);
+  previewDatas:[Torappu_SandboxV3BasementFunctionPreviewData_b08ccc82] (id:7);
+  rewards:[Torappu_ItemBundle_64f049cd] (id:8);
+}
+
+table Torappu_SandboxV3BasementUpdateCondition_e7bdafa2 {
+  desc:string (id:0);
+  limitCond:string (id:1);
+  param:[string] (id:2);
+}
+
+table Torappu_SandboxV3BasementFunctionPreviewData_b08ccc82 {
+  previewId:string (id:0);
+  previewValue:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BasementUpdateFunctionPreviewDetailData__0399a0f7_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BasementUpdateFunctionPreviewDetailData_d00ad36b (id:1);
+}
+
+table Torappu_SandboxV3BasementUpdateFunctionPreviewDetailData_d00ad36b {
+  funcId:string (id:0);
+  unlockType:Torappu_SandboxV3BasementUnlockFuncType_c6eb6e9a (id:1);
+  typeTitle:string (id:2);
+  desc:string (id:3);
+  icon:string (id:4);
+  darkMode:bool (id:5);
+  sortId:int (id:6);
+  displayType:Torappu_SandboxV3BasementUnlockFuncDisplayType_9c6d2852 (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3WonderData__756394e7_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3WonderData_ab2f9bc5 (id:1);
+}
+
+table Torappu_SandboxV3WonderData_ab2f9bc5 {
+  wonderId:string (id:0);
+  wonderName:string (id:1);
+  sortId:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BuildScoreGroupData__58bf14f1_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BuildScoreGroupData_e596ef66 (id:1);
+}
+
+table Torappu_SandboxV3BuildScoreGroupData_e596ef66 {
+  sortId:int (id:0);
+  scoreGroupType:Torappu_ScoreGroupType_e487f22e (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3QuestData__f87d1b64_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3QuestData_c15e9ffb (id:1);
+}
+
+table Torappu_SandboxV3QuestData_c15e9ffb {
+  questId:string (id:0);
+  questLine:string (id:1);
+  sortId:int (id:2);
+  questTitle:string (id:3);
+  questDesc:string (id:4);
+  questTargetDesc:string (id:5);
+  isDisplay:bool (id:6);
+  questRouteParam:string (id:7);
+  showProgressIndex:int (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3NpcData__f2157065_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3NpcData_aa33336d (id:1);
+}
+
+table Torappu_SandboxV3NpcData_aa33336d {
+  npcId:string (id:0);
+  trapId:string (id:1);
+  sortId:int (id:2);
+  npcType:Torappu_SandboxV3NpcType_5af266a8 (id:3);
+  dialogIds:[System_Collections_Generic_Dictionary_2_Torappu_BattleDialogType_System_String__9fb9c79b_Entry] (id:4);
+  npcLocation:[int] (id:5);
+  npcOrientation:Torappu_SharedConsts_Direction_80eb1882 (id:6);
+  picId:string (id:7);
+  picName:string (id:8);
+  showPic:bool (id:9);
+  reactSkillIndex:int (id:10);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EnemyNpcData__d2354622_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3EnemyNpcData_4ce92603 (id:1);
+}
+
+table Torappu_SandboxV3EnemyNpcData_4ce92603 {
+  npcId:string (id:0);
+  battleRuneId:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3DialogData__5de7938b_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3DialogData_a8f91534 (id:1);
+}
+
+table Torappu_SandboxV3DialogData_a8f91534 {
+  dialogId:string (id:0);
+  avgId:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3QuestLineData__3eadb14c_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3QuestLineData_dcf8603c (id:1);
+}
+
+table Torappu_SandboxV3QuestLineData_dcf8603c {
+  questLineId:string (id:0);
+  questLineTitle:string (id:1);
+  questLineBadgeType:Torappu_SandboxV3QuestLineBadgeType_c92ddfcd (id:2);
+  questLineDesc:string (id:3);
+  sortId:int (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3GuideQuestData__71f74b28_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3GuideQuestData_c0de98fc (id:1);
+}
+
+table Torappu_SandboxV3GuideQuestData_c0de98fc {
+  questId:string (id:0);
+  storyId:string (id:1);
+  triggerKey:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3CookbookData__9a590674_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3CookbookData_5938bcb7 (id:1);
+}
+
+table Torappu_SandboxV3CookbookData_5938bcb7 {
+  itemId:string (id:0);
+  attrList:[string] (id:1);
+  mainMatList:[string] (id:2);
+  itemUsage:string (id:3);
+  itemName:string (id:4);
+  runeData:Torappu_RuneTable_PackedRuneData_44298930 (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3CookSpiceData__87267dbf_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3CookSpiceData_a3bb22d6 (id:1);
+}
+
+table Torappu_SandboxV3CookSpiceData_a3bb22d6 {
+  itemId:string (id:0);
+  buffDesc:string (id:1);
+  attrType:Torappu_SandboxFoodAttribute_f63c0666 (id:2);
+  runeData:Torappu_RuneTable_PackedRuneData_44298930 (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BaseShopGoodExtraData__9ba438c4_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BaseShopGoodExtraData_8bbc12c1 (id:1);
+}
+
+table Torappu_SandboxV3BaseShopGoodExtraData_8bbc12c1 {
+  unlockDesc:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermShopGoodData__80c4a36a_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxPermShopGoodData_e1bf87f6 (id:1);
+}
+
+table Torappu_SandboxPermShopGoodData_e1bf87f6 {
+  goodId:string (id:0);
+  itemId:string (id:1);
+  count:int (id:2);
+  coinType:Torappu_SandboxShopCoinType_faf201f0 (id:3);
+  value:int (id:4);
+  stock:int (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermShopSellData__11fbcbb0_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxPermShopSellData_e659479c (id:1);
+}
+
+table Torappu_SandboxPermShopSellData_e659479c {
+  itemId:string (id:0);
+  countInUnit:int (id:1);
+  sellCoinType:Torappu_SandboxShopCoinType_faf201f0 (id:2);
+  sellVal:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_SandboxV3StageShopData___3bf17bbc_Entry {
+  key:string (id:0);
+  value:[Torappu_SandboxV3StageShopData_254baebc] (id:1);
+}
+
+table Torappu_SandboxV3StageShopData_254baebc {
+  shopId:string (id:0);
+  stageId:string (id:1);
+  shopType:Torappu_SandboxV3ShopType_ef53827c (id:2);
+  priority:int (id:3);
+  canRefresh:bool (id:4);
+  displaySlot:int (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ShopDetailData__20881174_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ShopDetailData_77ab32e2 (id:1);
+}
+
+table Torappu_SandboxV3ShopDetailData_77ab32e2 {
+  slotDataList:[Torappu_SandboxShopSlotData_bfcf1bde] (id:0);
+}
+
+table Torappu_SandboxShopSlotData_bfcf1bde {
+  slotId:int (id:0);
+  sortId:int (id:1);
+  itemPoolId:string (id:2);
+  priceModifier:float (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ShopGoodPoolData__f4bbd874_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ShopGoodPoolData_b0d2c7e2 (id:1);
+}
+
+table Torappu_SandboxV3ShopGoodPoolData_b0d2c7e2 {
+  itemPoolId:string (id:0);
+  normalItemList:[Torappu_SandboxV3ShopGoodPoolItemData_2fda4508] (id:1);
+  guaranteeItemList:[Torappu_SandboxV3ShopGoodPoolItemData_2fda4508] (id:2);
+}
+
+table Torappu_SandboxV3ShopGoodPoolItemData_2fda4508 {
+  goodId:string (id:0);
+  weight:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxShopCoinTypeData__36af0899_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxShopCoinTypeData_3f36295c (id:1);
+}
+
+table Torappu_SandboxShopCoinTypeData_3f36295c {
+  coinTye:Torappu_SandboxShopCoinType_faf201f0 (id:0);
+  itemId:string (id:1);
+  coinIcon:string (id:2);
+  coinColorStr:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EventSceneData__4548bab2_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3EventSceneData_191eba68 (id:1);
+}
+
+table Torappu_SandboxV3EventSceneData_191eba68 {
+  sceneId:string (id:0);
+  title:string (id:1);
+  desc:string (id:2);
+  choiceIdList:[string] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EventChoiceData__1a56fe1e_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3EventChoiceData_583e37d1 (id:1);
+}
+
+table Torappu_SandboxV3EventChoiceData_583e37d1 {
+  choiceId:string (id:0);
+  title:string (id:1);
+  desc:string (id:2);
+  expeditionId:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EventExpeditionData__9b3e430c_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3EventExpeditionData_9c427010 (id:1);
+}
+
+table Torappu_SandboxV3EventExpeditionData_9c427010 {
+  expeditionId:string (id:0);
+  charCount:int (id:1);
+  requiredProfession:Torappu_ProfessionCategory_f64dcd2f (id:2);
+  minEliteRank:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TrapData__b590e6ae_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3TrapData_8e019c53 (id:1);
+}
+
+table Torappu_SandboxV3TrapData_8e019c53 {
+  trapCfgId:string (id:0);
+  trapId:string (id:1);
+  trapPhase:int (id:2);
+  trapLevel:int (id:3);
+  skillIndex:int (id:4);
+  skillLevel:int (id:5);
+  itemId:string (id:6);
+  trapType:Torappu_SandboxV3TrapType_2ae9b378 (id:7);
+  trapIcon:string (id:8);
+  prosperity:int (id:9);
+  aesthetics:int (id:10);
+  trapGroup:string (id:11);
+  overrideMaxDeployCnt:int (id:12);
+  handCoverItemId:string (id:13);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TrapTypeData__8e7fc4a0_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3TrapTypeData_2b9b7bc6 (id:1);
+}
+
+table Torappu_SandboxV3TrapTypeData_2b9b7bc6 {
+  trapType:Torappu_SandboxV3TrapType_2ae9b378 (id:0);
+  typeName:string (id:1);
+  typeImg:string (id:2);
+  sortId:int (id:3);
+  tagColor:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BaseTrapData__819d37d2_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BaseTrapData_c4f48168 (id:1);
+}
+
+table Torappu_SandboxV3BaseTrapData_c4f48168 {
+  trapCfgId:string (id:0);
+  trapId:string (id:1);
+  trapPhase:int (id:2);
+  trapLevel:int (id:3);
+  skillIndex:int (id:4);
+  skillLevel:int (id:5);
+  itemId:string (id:6);
+  upgradeItemId:string (id:7);
+  trapType:Torappu_SandboxV3BaseTrapType_48a35f19 (id:8);
+  buildType:Torappu_SandboxV3BaseBuildType_02a07158 (id:9);
+  buildScore:int (id:10);
+  derivedBuildType:[string] (id:11);
+  derivedItemNMaxCnt:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ElectricTransferData__eb36d46c_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ElectricTransferData_87653a50 (id:1);
+}
+
+table Torappu_SandboxV3ElectricTransferData_87653a50 {
+  itemId:string (id:0);
+  calType:Torappu_SandboxV3ElectricTransferType_07223403 (id:1);
+  attackRange:string (id:2);
+  attackRangeData:Torappu_RangeData_02fe4845 (id:3);
+  skillParam:string (id:4);
+  supplyType:[string] (id:5);
+  powerOutput:[System_Collections_Generic_Dictionary_2_System_String_System_Single__eaaf3efa_Entry] (id:6);
+}
+
+table Torappu_RangeData_02fe4845 {
+  id:string (id:0);
+  direction:Torappu_SharedConsts_Direction_80eb1882 (id:1);
+  grids:[Torappu_GridPosition_049a6f02] (id:2);
+}
+
+table Torappu_GridPosition_049a6f02 {
+  row:int (id:0);
+  col:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BaseTrapTypeData__f74dce20_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BaseTrapTypeData_1a5471f7 (id:1);
+}
+
+table Torappu_SandboxV3BaseTrapTypeData_1a5471f7 {
+  trapType:Torappu_SandboxV3BaseTrapType_48a35f19 (id:0);
+  typeName:string (id:1);
+  iconId:string (id:2);
+  sortId:int (id:3);
+}
+
+table Torappu_SandboxV3BuildRuleData_035a340c {
+  buildType1:Torappu_SandboxV3BaseBuildType_02a07158 (id:0);
+  buildType2:[string] (id:1);
+  extraBuildScore:int (id:2);
+  extraScoreDesc:string (id:3);
+  sortId:int (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BuildScoreData__853968a5_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BuildScoreData_0129957d (id:1);
+}
+
+table Torappu_SandboxV3BuildScoreData_0129957d {
+  itemId:string (id:0);
+  paramType:Torappu_SandboxV3BuildScoreType_3006e259 (id:1);
+  buildScore:int (id:2);
+  sortId:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BaseTrapUpgradeData__de4fd7cc_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BaseTrapUpgradeData_f6d3732b (id:1);
+}
+
+table Torappu_SandboxV3BaseTrapUpgradeData_f6d3732b {
+  itemId:string (id:0);
+  upgradeItemId:string (id:1);
+  costCoinList:[Torappu_SandboxV3CoinCostData_ef02a560] (id:2);
+  upgradeDesc:string (id:3);
+  upgradeCondition:string (id:4);
+  upgradeParamList:[string] (id:5);
+}
+
+table Torappu_SandboxV3CoinCostData_ef02a560 {
+  coinType:Torappu_SandboxShopCoinType_faf201f0 (id:0);
+  coinCount:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BuildAnimalData__c2004985_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BuildAnimalData_67f270fe (id:1);
+}
+
+table Torappu_SandboxV3BuildAnimalData_67f270fe {
+  itemId:string (id:0);
+  enemyId:string (id:1);
+  isLegend:bool (id:2);
+  isShiny:bool (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_SandboxV3BaseTrapDeployD_488cbc0e_Entry {
+  key:string (id:0);
+  value:[Torappu_SandboxV3BaseTrapDeployData_f14795b0] (id:1);
+}
+
+table Torappu_SandboxV3BaseTrapDeployData_f14795b0 {
+  baseLevel:int (id:0);
+  maxDeployCnt:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3ProcessRecipeData__6f8fb463_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3ProcessRecipeData_b4f2c244 (id:1);
+}
+
+table Torappu_SandboxV3ProcessRecipeData_b4f2c244 {
+  recipeCfgId:string (id:0);
+  recipeLevel:int (id:1);
+  recipeItemId:string (id:2);
+  materials:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:3);
+  outputItemId:string (id:4);
+  outputCnt:int (id:5);
+  outputProsperity:int (id:6);
+  recipeName:string (id:7);
+  outputSkillIcon:string (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BuildRecipeData__b9d4af3f_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BuildRecipeData_8a9d023b (id:1);
+}
+
+table Torappu_SandboxV3BuildRecipeData_8a9d023b {
+  recipeCfgId:string (id:0);
+  recipeItemId:string (id:1);
+  materials:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:2);
+  outputItemId:string (id:3);
+  outputTrapType:Torappu_SandboxV3TrapType_2ae9b378 (id:4);
+  withdrawRatio:int (id:5);
+  outputCnt:int (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EnemyRewardData__bfcab665_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3EnemyRewardData_359856d1 (id:1);
+}
+
+table Torappu_SandboxV3EnemyRewardData_359856d1 {
+  sourceId:string (id:0);
+  slotDict:[Torappu_ListDict_2_System_Int32_System_Collections_Generic_List_1_Torappu_SandboxV3EnemyRewardItem___57fa3653_Entry] (id:1);
+}
+
+table Torappu_ListDict_2_System_Int32_System_Collections_Generic_List_1_Torappu_SandboxV3EnemyRewardItem___57fa3653_Entry {
+  key:int (id:0);
+  value:[Torappu_SandboxV3EnemyRewardItem_947190c0] (id:1);
+}
+
+table Torappu_SandboxV3EnemyRewardItem_947190c0 {
+  itemId:string (id:0);
+  count:int (id:1);
+  rewardType:Torappu_SandboxV3EnemyRewardType_f6381aa8 (id:2);
+  weight:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3EnemyLevelRewardData__cea948e2_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3EnemyLevelRewardData_91d83e4c (id:1);
+}
+
+table Torappu_SandboxV3EnemyLevelRewardData_91d83e4c {
+  enemyLevelType:string (id:0);
+  slotDict:[Torappu_ListDict_2_System_Int32_System_Collections_Generic_List_1_Torappu_SandboxV3EnemyRewardItem___57fa3653_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_String_System_Int32_832ee22c_Entry {
+  key:string (id:0);
+  value:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3StatParamData__fed636e0_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3StatParamData_8eb4210f (id:1);
+}
+
+table Torappu_SandboxV3StatParamData_8eb4210f {
+  statId:string (id:0);
+  prosParams:[Torappu_SandboxV3ProsParam_4a2c3746] (id:1);
+  aesthParams:[Torappu_ListDict_2_System_Int32_System_Single__ae9a605c_Entry] (id:2);
+}
+
+table Torappu_SandboxV3ProsParam_4a2c3746 {
+  threshold:int (id:0);
+  plusValue:float (id:1);
+  level:int (id:2);
+}
+
+table Torappu_ListDict_2_System_Int32_System_Single__ae9a605c_Entry {
+  key:int (id:0);
+  value:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3WeatherData__ecce1c18_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3WeatherData_91be3195 (id:1);
+}
+
+table Torappu_SandboxV3WeatherData_91be3195 {
+  weatherId:string (id:0);
+  name:string (id:1);
+  runeId:string (id:2);
+  exRuneId:string (id:3);
+  funcDesc:string (id:4);
+  desc:string (id:5);
+  enableFog:bool (id:6);
+  screenEffectId:string (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3RelicData__439e228e_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3RelicData_90c0569a (id:1);
+}
+
+table Torappu_SandboxV3RelicData_90c0569a {
+  relicId:string (id:0);
+  parts:[Torappu_SandboxV3RelicPart_31fa084f] (id:1);
+}
+
+table Torappu_SandboxV3RelicPart_31fa084f {
+  key:string (id:0);
+  selector:string (id:1);
+  allowMultiple:bool (id:2);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3BandData__11fffc9f_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3BandData_35ae65f4 (id:1);
+}
+
+table Torappu_SandboxV3BandData_35ae65f4 {
+  bandId:string (id:0);
+  name:string (id:1);
+  sortId:int (id:2);
+  bandIcon:string (id:3);
+  levelList:[Torappu_SandboxV3BandLevelData_ef37c484] (id:4);
+}
+
+table Torappu_SandboxV3BandLevelData_ef37c484 {
+  level:int (id:0);
+  effectDesc:string (id:1);
+  unlockCondDesc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TaskSlotData__d7170382_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3TaskSlotData_e5912e77 (id:1);
+}
+
+table Torappu_SandboxV3TaskSlotData_e5912e77 {
+  slotId:string (id:0);
+  stageId:string (id:1);
+  unlockDay:int (id:2);
+  isFixed:bool (id:3);
+  fixedTasks:[string] (id:4);
+  taskLevel:int (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TaskPoolData__09841c9a_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3TaskPoolData_4b8431ae (id:1);
+}
+
+table Torappu_SandboxV3TaskPoolData_4b8431ae {
+  poolId:string (id:0);
+  taskWeights:[Torappu_SandboxV3TaskPoolWeightItem_bd40440c] (id:1);
+}
+
+table Torappu_SandboxV3TaskPoolWeightItem_bd40440c {
+  taskId:string (id:0);
+  weight:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3TaskData__844799d8_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3TaskData_02bc3aef (id:1);
+}
+
+table Torappu_SandboxV3TaskData_02bc3aef {
+  taskId:string (id:0);
+  taskBaseDesc:string (id:1);
+  taskDesc:string (id:2);
+  taskLevel:int (id:3);
+  difficulty:Torappu_SandboxV3TaskDifficultyType_e443834b (id:4);
+  taskType:Torappu_SandboxV3TaskType_000de735 (id:5);
+  taskTypeDesc:string (id:6);
+  strParams:[string] (id:7);
+  intParams:[int] (id:8);
+  powerValue:int (id:9);
+  rewards:[string] (id:10);
+  typeMask:int (id:11);
+  checkRecipes:[System_Collections_Generic_List_1_System_String__d86ef464] (id:12);
+  taskGroup:string (id:13);
+  preTaskGroupChain:[string] (id:14);
+}
+
+table System_Collections_Generic_List_1_System_String__d86ef464 {
+  values:[string] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3AvgPostTaskData__b888a13b_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3AvgPostTaskData_493a033e (id:1);
+}
+
+table Torappu_SandboxV3AvgPostTaskData_493a033e {
+  taskId:string (id:0);
+  avgId:string (id:1);
+  questId:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3LivestockData__11fe6089_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3LivestockData_717c5efe (id:1);
+}
+
+table Torappu_SandboxV3LivestockData_717c5efe {
+  enemyId:string (id:0);
+  livestockItemId:string (id:1);
+  livestockEnemyId:string (id:2);
+  shinyLivestockItemId:string (id:3);
+  shinyLivestockEnemyId:string (id:4);
+  shinyRate:float (id:5);
+  isLegend:bool (id:6);
+}
+
+table Torappu_SandboxV3GameConst_e1afbd45 {
+  basementGoldItemId:string (id:0);
+  basementGoldExItemId:string (id:1);
+  maxDefendCount:int (id:2);
+  defendProgressVolume:int (id:3);
+  defaultModeId:string (id:4);
+  defaultDifficultyId:string (id:5);
+  hardDifficultyLevel:int (id:6);
+  basementMapUnlockLevel:int (id:7);
+  defendUnlockLevel:int (id:8);
+  highBgmBaseLevel:int (id:9);
+  buildModeBgmHome:string (id:10);
+  collectionBaseGoldId:string (id:11);
+  collectionBaseGoldCount:int (id:12);
+  collectionMinTime:long (id:13);
+  collectionMaxTime:long (id:14);
+  baseCoinMax:int (id:15);
+  developmentPointsTotal:int (id:16);
+  recruitBuyTime:int (id:17);
+  recruitStartPrice:int (id:18);
+  recruitPriceMultiply:float (id:19);
+  recruitName:string (id:20);
+  recruitUsage:string (id:21);
+  shopDiscountRate:float (id:22);
+  shopDiscountNumMin:int (id:23);
+  shopDiscountNumMax:int (id:24);
+  shopDiscountValueMin:float (id:25);
+  shopDiscountValueMax:float (id:26);
+  refreshPrice:int (id:27);
+  multiplyFactor:float (id:28);
+  maxRefreshPrice:int (id:29);
+  refreshCoinType:Torappu_SandboxShopCoinType_faf201f0 (id:30);
+  recruitCoinType:Torappu_SandboxShopCoinType_faf201f0 (id:31);
+  characterLimit:int (id:32);
+  maxLifePoint:int (id:33);
+  initialCost:int (id:34);
+  maxCost:int (id:35);
+  giveUpRewardItemId:string (id:36);
+  giveUpRewardItemCnt:int (id:37);
+  recipeOriginRefreshTimes:int (id:38);
+  recipeRepeatDamp:float (id:39);
+  taskOptionCnt:int (id:40);
+  taskRepeatDamp:float (id:41);
+  taskOriginRefreshTimes:int (id:42);
+  taskNotAllowRefreshStage:[string] (id:43);
+  taskTimeStampType:Torappu_SandboxV3TaskType_000de735 (id:44);
+  aestheticsRewardItem:string (id:45);
+  repeatRelicConvertId:string (id:46);
+  repeatRecipeConvertId:string (id:47);
+  repeatRecipeConvertCount:int (id:48);
+  bagPreviewCnt:int (id:49);
+  bagPreviewFixedItems:[string] (id:50);
+  bagPreviewFixedCnt:int (id:51);
+  charRarityColorList:[string] (id:52);
+  spicedFoodNameFmt:string (id:53);
+  essentialFoodMatItemId:string (id:54);
+  baseCleanerItemId:string (id:55);
+  baseStartPointLocation:string (id:56);
+  electricPowerMax:int (id:57);
+  basementNodeId:string (id:58);
+  recipeRefreshPriceInit:int (id:59);
+  recipeRefreshPriceAdd:int (id:60);
+  recipeRefreshPriceMax:int (id:61);
+  recipeRefreshItemId:string (id:62);
+  dayPassRecruitRefreshItemId:string (id:63);
+  dayPassRecruitRefreshCount:[int] (id:64);
+  dayPassRecruitSubProfessionCount:int (id:65);
+  dayPassRecruitProfessionCount:int (id:66);
+  tempRecruitPercentage:float (id:67);
+  shopNpcRefreshStatus:string (id:68);
+  imgLoadingNormalName:string (id:69);
+  techTokenRatio:float (id:70);
+  luckyRewardMax:int (id:71);
+  bandAchievementScore:int (id:72);
+  generalTrademanSkillIndex:int (id:73);
+  generalTrademanAVGPath:string (id:74);
+  hideCookEntryNodeIds:[string] (id:75);
+  hideShopEntryNodeIds:[string] (id:76);
+  showProcessorNotWorkingInterval:int (id:77);
+  neutralBossEnemyId:[string] (id:78);
+  specialBossEnemyId:[string] (id:79);
+  taskPredecessorRampUp:float (id:80);
+  rainbowShinyAnimalRateMul:float (id:81);
+  enemyKillBlacklist:[string] (id:82);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3RandomMapPool__52859ed1_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3RandomMapPool_5adac99b (id:1);
+}
+
+table Torappu_SandboxV3RandomMapPool_5adac99b {
+  elements:[System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3SubStageRoomConstraint__cb695ada_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxV3SubStageRoomConstraint__cb695ada_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxV3SubStageRoomConstraint_f3983371 (id:1);
+}
+
+table Torappu_SandboxV3SubStageRoomConstraint_f3983371 {
+  top:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:0);
+  bottom:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:1);
+  left:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:2);
+  right:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_SandboxPermItemData__caceca5c_Entry {
+  key:string (id:0);
+  value:Torappu_SandboxPermItemData_6dab4d81 (id:1);
+}
+
+table Torappu_SandboxPermItemData_6dab4d81 {
+  itemId:string (id:0);
+  itemType:Torappu_SandboxPermItemType_2ec7dc91 (id:1);
+  itemName:string (id:2);
+  itemUsage:string (id:3);
+  itemDesc:string (id:4);
+  itemRarity:int (id:5);
+  sortId:int (id:6);
+  obtainApproach:string (id:7);
+}
+
+root_type Torappu_SandboxPermTable_340395dc;

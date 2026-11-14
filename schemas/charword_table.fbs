@@ -1,0 +1,258 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_CharWordVoiceType_86883e42 : int {
+  ONLY_TEXT = 0,
+  HAVE_CV = 1,
+  ENUM = 2,
+}
+
+enum Torappu_DataUnlockType_8143f81e : int {
+  DIRECT = 0,
+  AWAKE = 1,
+  FAVOR = 2,
+  STAGE = 3,
+  ITEM = 4,
+  NEVER = 5,
+  PATCH = 6,
+  NONE = 7,
+}
+
+enum Torappu_CharWordShowType_e36e9078 : int {
+  HOME_SHOW = 0,
+  HOME_PLACE = 1,
+  HOME_WAIT = 2,
+  GACHA = 3,
+  EVOLVE_ONE = 4,
+  EVOLVE_TWO = 5,
+  FOUR_STAR = 6,
+  THREE_STAR = 7,
+  TWO_STAR = 8,
+  LOSE = 9,
+  LEVEL_UP = 10,
+  SQUAD = 11,
+  SQUAD_FIRST = 12,
+  BATTLE_START = 13,
+  BATTLE_FACE_ENEMY = 14,
+  BATTLE_SELECT = 15,
+  BATTLE_PLACE = 16,
+  BATTLE_SKILL_1 = 17,
+  BATTLE_SKILL_2 = 18,
+  BATTLE_SKILL_3 = 19,
+  BATTLE_SKILL_4 = 20,
+  BUILDING_PLACE = 21,
+  BUILDING_DRAGGING = 22,
+  BUILDING_FAVOR_BUBBLE = 23,
+  BUILDING_TOUCHING = 24,
+  LOADING_PANEL = 25,
+  BIRTHDAY = 26,
+  NEW_YEAR = 27,
+  VALENT_DAY = 28,
+  DRAGON_BOAT_FESTIVAL = 29,
+  HALLOWEEN_DAY = 30,
+  CHRISMATS_DAY = 31,
+  GREETING = 32,
+  ANNIVERSARY = 33,
+  UNUSED = 34,
+  AUTOCHESS_GAME_START = 35,
+  AUTOCHESS_REST_NO_HP_LOSS = 36,
+  AUTOCHESS_REST_HP_LOSS = 37,
+  AUTOCHESS_REST_BOSS = 38,
+  AUTOCHESS_REST_HIDDEN_BOSS = 39,
+  AUTOCHESS_SAME_OPERATOR = 40,
+  AUTOCHESS_BUY_OPERATOR_LOW = 41,
+  AUTOCHESS_BUY_OPERATOR_HIGH = 42,
+  AUTOCHESS_SHOP_UPGRADE = 43,
+  AUTOCHESS_COUNTDOWN = 44,
+  AUTOCHESS_MERGE_TRIPLE = 45,
+  AUTOCHESS_ALLIANCE_LEVEL = 46,
+  AUTOCHESS_FREEZE = 47,
+  E_ALL = 48,
+}
+
+enum Torappu_VoiceLangType_843ad6bb : int {
+  NONE = 0,
+  JP = 1,
+  CN_MANDARIN = 2,
+  EN = 3,
+  KR = 4,
+  CN_TOPOLECT = 5,
+  LINKAGE = 6,
+  ITA = 7,
+  GER = 8,
+  RUS = 9,
+  FRE = 10,
+  SPA = 11,
+}
+
+enum Torappu_VoiceLangGroupType_06a84a0c : int {
+  NONE = 0,
+  CN_MANDARIN = 1,
+  JP = 2,
+  EN = 3,
+  KR = 4,
+  CUSTOM = 5,
+  LINKAGE = 6,
+}
+
+enum Torappu_FestivalVoiceTimeType_acd15f27 : int {
+  NONE = 0,
+  FESTIVAL = 1,
+  BIRTHDAY = 2,
+}
+
+table Torappu_CharWordTable_d926dc0b {
+  charWords:[System_Collections_Generic_Dictionary_2_System_String_Torappu_CharWordData__ba9d5325_Entry] (id:0);
+  charExtraWords:[System_Collections_Generic_Dictionary_2_System_String_Torappu_CharExtraWordData__4ab6d6fd_Entry] (id:1);
+  voiceLangDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_VoiceLangData__e1e3ded1_Entry] (id:2);
+  defaultLangType:Torappu_VoiceLangType_843ad6bb (id:3);
+  newTagList:[string] (id:4);
+  voiceLangTypeDict:[System_Collections_Generic_Dictionary_2_Torappu_VoiceLangType_Torappu_VoiceLangTypeData__90c53ed9_Entry] (id:5);
+  voiceLangGroupTypeDict:[System_Collections_Generic_Dictionary_2_Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData__f13bc694_Entry] (id:6);
+  charDefaultTypeDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_VoiceLangType__300f778e_Entry] (id:7);
+  startTimeWithTypeDict:[System_Collections_Generic_Dictionary_2_Torappu_VoiceLangType_System_Collections_Generic_List_1_Torappu_NewVoiceTimeData_c3782c31_Entry] (id:8);
+  displayGroupTypeList:[Torappu_VoiceLangGroupType_06a84a0c] (id:9);
+  displayTypeList:[Torappu_VoiceLangType_843ad6bb] (id:10);
+  playVoiceRange:Torappu_CharWordShowType_e36e9078 (id:11);
+  fesVoiceData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_FestivalVoiceData__c6c111fc_Entry] (id:12);
+  fesVoiceWeight:[System_Collections_Generic_Dictionary_2_System_String_Torappu_FestivalVoiceWeightData__5e968d83_Entry] (id:13);
+  extraVoiceConfigData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ExtraVoiceConfigData__9b12407c_Entry] (id:14);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharWordData__ba9d5325_Entry {
+  key:string (id:0);
+  value:Torappu_CharWordData_9069665d (id:1);
+}
+
+table Torappu_CharWordData_9069665d {
+  charWordId:string (id:0);
+  wordKey:string (id:1);
+  charId:string (id:2);
+  voiceId:string (id:3);
+  voiceText:string (id:4);
+  voiceTitle:string (id:5);
+  voiceIndex:int (id:6);
+  voiceType:Torappu_CharWordVoiceType_86883e42 (id:7);
+  unlockType:Torappu_DataUnlockType_8143f81e (id:8);
+  unlockParam:[Torappu_CharWordUnlockParam_eead92ac] (id:9);
+  lockDescription:string (id:10);
+  placeType:Torappu_CharWordShowType_e36e9078 (id:11);
+  voiceAsset:string (id:12);
+}
+
+table Torappu_CharWordUnlockParam_eead92ac {
+  valueStr:string (id:0);
+  valueInt:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharExtraWordData__4ab6d6fd_Entry {
+  key:string (id:0);
+  value:Torappu_CharExtraWordData_832b5cd4 (id:1);
+}
+
+table Torappu_CharExtraWordData_832b5cd4 {
+  wordKey:string (id:0);
+  charId:string (id:1);
+  voiceId:string (id:2);
+  voiceText:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_VoiceLangData__e1e3ded1_Entry {
+  key:string (id:0);
+  value:Torappu_VoiceLangData_604094e8 (id:1);
+}
+
+table Torappu_VoiceLangData_604094e8 {
+  wordkeys:[string] (id:0);
+  charId:string (id:1);
+  dict:[System_Collections_Generic_Dictionary_2_Torappu_VoiceLangType_Torappu_VoiceLangInfoData__3d498d23_Entry] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_VoiceLangType_Torappu_VoiceLangInfoData__3d498d23_Entry {
+  key:Torappu_VoiceLangType_843ad6bb (id:0);
+  value:Torappu_VoiceLangInfoData_ed0e3b13 (id:1);
+}
+
+table Torappu_VoiceLangInfoData_ed0e3b13 {
+  wordkey:string (id:0);
+  voiceLangType:Torappu_VoiceLangType_843ad6bb (id:1);
+  cvName:[string] (id:2);
+  voicePath:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_VoiceLangType_Torappu_VoiceLangTypeData__90c53ed9_Entry {
+  key:Torappu_VoiceLangType_843ad6bb (id:0);
+  value:Torappu_VoiceLangTypeData_09fe3c09 (id:1);
+}
+
+table Torappu_VoiceLangTypeData_09fe3c09 {
+  name:string (id:0);
+  groupType:Torappu_VoiceLangGroupType_06a84a0c (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData__f13bc694_Entry {
+  key:Torappu_VoiceLangGroupType_06a84a0c (id:0);
+  value:Torappu_VoiceLangGroupData_3367522a (id:1);
+}
+
+table Torappu_VoiceLangGroupData_3367522a {
+  name:string (id:0);
+  members:[Torappu_VoiceLangType_843ad6bb] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_VoiceLangType__300f778e_Entry {
+  key:string (id:0);
+  value:Torappu_VoiceLangType_843ad6bb (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_VoiceLangType_System_Collections_Generic_List_1_Torappu_NewVoiceTimeData_c3782c31_Entry {
+  key:Torappu_VoiceLangType_843ad6bb (id:0);
+  value:[Torappu_NewVoiceTimeData_40a2c3b9] (id:1);
+}
+
+table Torappu_NewVoiceTimeData_40a2c3b9 {
+  timestamp:long (id:0);
+  charSet:[string] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_FestivalVoiceData__c6c111fc_Entry {
+  key:string (id:0);
+  value:Torappu_FestivalVoiceData_319e5eda (id:1);
+}
+
+table Torappu_FestivalVoiceData_319e5eda {
+  showType:Torappu_CharWordShowType_e36e9078 (id:0);
+  timeData:[Torappu_FestivalTimeData_c4ff4554] (id:1);
+}
+
+table Torappu_FestivalTimeData_c4ff4554 {
+  timeType:Torappu_FestivalVoiceTimeType_acd15f27 (id:0);
+  interval:Torappu_FestivalTimeInterval_22ac765f (id:1);
+}
+
+table Torappu_FestivalTimeInterval_22ac765f {
+  startTs:long (id:0);
+  endTs:long (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_FestivalVoiceWeightData__5e968d83_Entry {
+  key:string (id:0);
+  value:Torappu_FestivalVoiceWeightData_1a643140 (id:1);
+}
+
+table Torappu_FestivalVoiceWeightData_1a643140 {
+  showType:Torappu_CharWordShowType_e36e9078 (id:0);
+  weight:float (id:1);
+  priority:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ExtraVoiceConfigData__9b12407c_Entry {
+  key:string (id:0);
+  value:Torappu_ExtraVoiceConfigData_b51af15b (id:1);
+}
+
+table Torappu_ExtraVoiceConfigData_b51af15b {
+  voiceId:string (id:0);
+  validVoiceLang:[Torappu_VoiceLangType_843ad6bb] (id:1);
+}
+
+root_type Torappu_CharWordTable_d926dc0b;

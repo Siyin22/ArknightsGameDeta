@@ -1,0 +1,342 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_CrisisV2AppraiseType_9a8d75b1 : int {
+  RANK_D = 0,
+  RANK_C = 1,
+  RANK_B = 2,
+  RANK_A = 3,
+  RANK_S = 4,
+  RANK_SS = 5,
+  RANK_SSS = 6,
+}
+
+enum Torappu_ProfessionCategory_f64dcd2f : int {
+  NONE = 0,
+  WARRIOR = 1,
+  SNIPER = 2,
+  TANK = 4,
+  MEDIC = 8,
+  SUPPORT = 16,
+  CASTER = 32,
+  SPECIAL = 64,
+  TOKEN = 128,
+  TRAP = 256,
+  PIONEER = 512,
+}
+
+enum Torappu_BuildableType_c4537a3b : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_PlayerSideMask_5a51be9e : ubyte {
+  ALL = 0,
+  SIDE_A = 2,
+  SIDE_B = 4,
+  SIDE_C = 8,
+  SIDE_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_MapLayerMask_663506f1 : ubyte {
+  ALL = 0,
+  LAYER_A = 2,
+  LAYER_B = 4,
+  LAYER_C = 8,
+  LAYER_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_Battle_SideType_7ae7af6d : int {
+  NONE = 0,
+  ALLY = 1,
+  ENEMY = 2,
+  BOTH_ALLY_AND_ENEMY = 3,
+  NEUTRAL = 4,
+  ALL = 7,
+}
+
+enum Torappu_TileData_HeightTypeMask_fb187ca6 : int {
+  NONE = 0,
+  LOWLAND = 1,
+  HIGHLAND = 2,
+  ALL = 3,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+table Torappu_CrisisV2SharedData_acbc26c3 {
+  seasonInfoDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_CrisisV2SeasonInfo__2722ec03_Entry] (id:0);
+  scoreLevelToAppraiseDataMap:[Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap__c16e6bfd_Entry] (id:1);
+  constData:Torappu_CrisisV2ConstData_e21c2ba0 (id:2);
+  battleCommentRuneData:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_RuneData___1335c262_Entry] (id:3);
+  recalRuneData:Torappu_RecalRuneSharedData_78741900 (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CrisisV2SeasonInfo__2722ec03_Entry {
+  key:string (id:0);
+  value:Torappu_CrisisV2SeasonInfo_e8fde240 (id:1);
+}
+
+table Torappu_CrisisV2SeasonInfo_e8fde240 {
+  seasonId:string (id:0);
+  name:string (id:1);
+  startTs:long (id:2);
+  endTs:long (id:3);
+  medalGroupId:string (id:4);
+  medalId:string (id:5);
+  themeColor1:string (id:6);
+  themeColor2:string (id:7);
+  themeColor3:string (id:8);
+  seasonBgm:string (id:9);
+  seasonBgmChallenge:string (id:10);
+  crisisV2SeasonCode:string (id:11);
+}
+
+table Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap__c16e6bfd_Entry {
+  key:int (id:0);
+  value:Torappu_CrisisV2AppraiseWrap_11ec051d (id:1);
+}
+
+table Torappu_CrisisV2AppraiseWrap_11ec051d {
+  appraiseType:Torappu_CrisisV2AppraiseType_9a8d75b1 (id:0);
+}
+
+table Torappu_CrisisV2ConstData_e21c2ba0 {
+  sysStartTime:long (id:0);
+  blackScoreThreshold:int (id:1);
+  redScoreThreshold:int (id:2);
+  detailBkgRedThreshold:int (id:3);
+  voiceGrade:int (id:4);
+  seasonButtonUnlockInfo:long (id:5);
+  shopCoinId:string (id:6);
+  hardBgmSwitchScore:int (id:7);
+  stageId:string (id:8);
+  hideTodoWhenStageFinish:bool (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_RuneData___1335c262_Entry {
+  key:string (id:0);
+  value:[Torappu_RuneData_fc2de0e9] (id:1);
+}
+
+table Torappu_RuneData_fc2de0e9 {
+  key:string (id:0);
+  selector:Torappu_RuneData_Selector_f177175d (id:1);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:2);
+}
+
+table Torappu_RuneData_Selector_f177175d {
+  professionMask:Torappu_ProfessionCategory_f64dcd2f (id:0);
+  buildableMask:Torappu_BuildableType_c4537a3b (id:1);
+  playerSideMask:Torappu_PlayerSideMask_5a51be9e (id:2);
+  mapLayerMask:Torappu_MapLayerMask_663506f1 (id:3);
+  sideType:Torappu_Battle_SideType_7ae7af6d (id:4);
+  charIdFilter:[string] (id:5);
+  charIdExcludeFilter:[string] (id:6);
+  enemyIdFilter:[string] (id:7);
+  enemyIdExcludeFilter:[string] (id:8);
+  enemyLevelTypeFilter:[string] (id:9);
+  enemyActionHiddenGroupFilter:[string] (id:10);
+  skillIdFilter:[string] (id:11);
+  tileKeyFilter:[string] (id:12);
+  groupTagFilter:[string] (id:13);
+  filterTagFilter:[string] (id:14);
+  filterTagExcludeFilter:[string] (id:15);
+  subProfessionExcludeFilter:[string] (id:16);
+  mapTagFilter:[string] (id:17);
+  heightTypeMask:Torappu_TileData_HeightTypeMask_fb187ca6 (id:18);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table Torappu_RecalRuneSharedData_78741900 {
+  seasons:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RecalRuneSeasonData__cec432ef_Entry] (id:0);
+  constData:Torappu_RecalRuneConstData_89963ec0 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RecalRuneSeasonData__cec432ef_Entry {
+  key:string (id:0);
+  value:Torappu_RecalRuneSeasonData_e795cac1 (id:1);
+}
+
+table Torappu_RecalRuneSeasonData_e795cac1 {
+  seasonId:string (id:0);
+  sortId:int (id:1);
+  startTs:long (id:2);
+  seasonCode:string (id:3);
+  juniorReward:Torappu_ItemBundle_64f049cd (id:4);
+  seniorReward:Torappu_ItemBundle_64f049cd (id:5);
+  seniorRewardHint:string (id:6);
+  mainMedalId:string (id:7);
+  picId:string (id:8);
+  stages:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RecalRuneStageData__63f9404c_Entry] (id:9);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RecalRuneStageData__63f9404c_Entry {
+  key:string (id:0);
+  value:Torappu_RecalRuneStageData_fcc9b5b4 (id:1);
+}
+
+table Torappu_RecalRuneStageData_fcc9b5b4 {
+  stageId:string (id:0);
+  levelId:string (id:1);
+  juniorMedalId:string (id:2);
+  seniorMedalId:string (id:3);
+  juniorMedalScore:int (id:4);
+  seniorMedalScore:int (id:5);
+  runes:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RecalRuneRuneData__f60954ed_Entry] (id:6);
+  sourceName:string (id:7);
+  sourceType:string (id:8);
+  useName:bool (id:9);
+  levelName:string (id:10);
+  levelCode:string (id:11);
+  levelDesc:string (id:12);
+  fixedRuneSeriesName:string (id:13);
+  logoId:string (id:14);
+  mainPicId:string (id:15);
+  loadingPicId:string (id:16);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RecalRuneRuneData__f60954ed_Entry {
+  key:string (id:0);
+  value:Torappu_RecalRuneRuneData_62e8f043 (id:1);
+}
+
+table Torappu_RecalRuneRuneData_62e8f043 {
+  runeId:string (id:0);
+  score:int (id:1);
+  sortId:int (id:2);
+  essential:bool (id:3);
+  exclusiveGroupId:string (id:4);
+  runeIcon:string (id:5);
+  packedRune:Torappu_RuneTable_PackedRuneData_44298930 (id:6);
+}
+
+table Torappu_RuneTable_PackedRuneData_44298930 {
+  id:string (id:0);
+  points:float (id:1);
+  mutexGroupKey:string (id:2);
+  description:string (id:3);
+  runes:[Torappu_RuneData_fc2de0e9] (id:4);
+}
+
+table Torappu_RecalRuneConstData_89963ec0 {
+  stageCountPerSeason:int (id:0);
+  juniorRewardMedalCount:int (id:1);
+  seniorRewardMedalCount:int (id:2);
+  unlockLevelIds:[string] (id:3);
+}
+
+root_type Torappu_CrisisV2SharedData_acbc26c3;

@@ -1,0 +1,92 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_EnemyLevelType_c35d0213 : int {
+  NORMAL = 0,
+  ELITE = 1,
+  BOSS = 2,
+  E_NUM = 3,
+}
+
+enum Torappu_EnemyHandBookData_TextFormat_cecf8658 : int {
+  NORMAL = 0,
+  TITLE = 1,
+  SILENCE = 2,
+}
+
+enum Torappu_EnemyHandBookDamageType_1bcb9fa9 : int {
+  PHYSIC = 0,
+  MAGIC = 1,
+  HEAL = 2,
+  NO_DAMAGE = 3,
+}
+
+table Torappu_EnemyHandBookDataGroup_c330add7 {
+  levelInfoList:[Torappu_EnemyHandbookLevelInfoData_5504c40d] (id:0);
+  enemyData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_EnemyHandBookData__0ba1ae35_Entry] (id:1);
+  raceData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_EnemyHandbookRaceData__183b521e_Entry] (id:2);
+}
+
+table Torappu_EnemyHandbookLevelInfoData_5504c40d {
+  classLevel:string (id:0);
+  attack:Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 (id:1);
+  def:Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 (id:2);
+  magicRes:Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 (id:3);
+  maxHP:Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 (id:4);
+  moveSpeed:Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 (id:5);
+  attackSpeed:Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 (id:6);
+  enemyDamageRes:Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 (id:7);
+  enemyRes:Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 (id:8);
+}
+
+table Torappu_EnemyHandbookLevelInfoData_RangePair_4141f999 {
+  min:float (id:0);
+  max:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_EnemyHandBookData__0ba1ae35_Entry {
+  key:string (id:0);
+  value:Torappu_EnemyHandBookData_be5b760c (id:1);
+}
+
+table Torappu_EnemyHandBookData_be5b760c {
+  enemyId:string (id:0);
+  enemyIndex:string (id:1);
+  enemyTags:[string] (id:2);
+  sortId:int (id:3);
+  name:string (id:4);
+  enemyLevel:Torappu_EnemyLevelType_c35d0213 (id:5);
+  description:string (id:6);
+  attackType:string (id:7);
+  ability:string (id:8);
+  isInvalidKilled:bool (id:9);
+  overrideKillCntInfos:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:10);
+  hideInHandbook:bool (id:11);
+  hideInStage:bool (id:12);
+  abilityList:[Torappu_EnemyHandBookData_Abilty_c1677249] (id:13);
+  linkEnemies:[string] (id:14);
+  damageType:[Torappu_EnemyHandBookDamageType_1bcb9fa9] (id:15);
+  invisibleDetail:bool (id:16);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry {
+  key:string (id:0);
+  value:int (id:1);
+}
+
+table Torappu_EnemyHandBookData_Abilty_c1677249 {
+  text:string (id:0);
+  textFormat:Torappu_EnemyHandBookData_TextFormat_cecf8658 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_EnemyHandbookRaceData__183b521e_Entry {
+  key:string (id:0);
+  value:Torappu_EnemyHandbookRaceData_fd00dc23 (id:1);
+}
+
+table Torappu_EnemyHandbookRaceData_fd00dc23 {
+  id:string (id:0);
+  raceName:string (id:1);
+  sortId:int (id:2);
+}
+
+root_type Torappu_EnemyHandBookDataGroup_c330add7;

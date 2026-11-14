@@ -1,0 +1,152 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_BattleVoiceOption_BattleVoiceType_78ec4aca : int {
+  BATTLE_START = 0,
+  ENCOUNTER_ENEMY = 1,
+  PLACE_CHAR = 2,
+  FOCUS_CHAR = 3,
+  SKILL_ACTIVE = 4,
+  SKILL_PASSIVE_IMP = 5,
+  SKILL_PASSIVE_NOR = 6,
+  NORMAL_ATTACK = 7,
+  E_NUM = 8,
+}
+
+enum Torappu_Audio_Middleware_Data_AudioFadeType_52b17988 : int {
+  LINEAR = 0,
+  CONCAVE = 1,
+}
+
+enum Torappu_VoiceLangType_843ad6bb : int {
+  NONE = 0,
+  JP = 1,
+  CN_MANDARIN = 2,
+  EN = 3,
+  KR = 4,
+  CN_TOPOLECT = 5,
+  LINKAGE = 6,
+  ITA = 7,
+  GER = 8,
+  RUS = 9,
+  FRE = 10,
+  SPA = 11,
+}
+
+table Torappu_Audio_Middleware_Data_TorappuAudioData_c04f2b6f {
+  bgmBanks:[Torappu_Audio_Middleware_Data_BGMBank_f9987903] (id:0);
+  soundFXBanks:[Torappu_Audio_Middleware_Data_SoundFXBank_da9a1e72] (id:1);
+  soundFXCtrlBanks:[Torappu_Audio_Middleware_Data_SoundFXCtrlBank_96cf841c] (id:2);
+  snapshotBanks:[Torappu_Audio_Middleware_Data_SnapshotBank_ca1f3519] (id:3);
+  battleVoice:Torappu_BattleVoiceData_2402f6c7 (id:4);
+  musics:[Torappu_Audio_Middleware_Data_MusicData_d1aff422] (id:5);
+  duckings:[Torappu_Audio_Middleware_Data_DuckingData_9347cd2a] (id:6);
+  fadeStyles:[Torappu_Audio_Middleware_Data_FadeStyleData_e4cd46cf] (id:7);
+  soundFxVoiceLang:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData__c46ba028_Entry] (id:8);
+  bankAlias:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:9);
+}
+
+table Torappu_Audio_Middleware_Data_BGMBank_f9987903 {
+  intro:string (id:0);
+  loop:string (id:1);
+  volume:float (id:2);
+  crossfade:float (id:3);
+  delay:float (id:4);
+  fadeStyleId:string (id:5);
+  name:string (id:6);
+}
+
+table Torappu_Audio_Middleware_Data_SoundFXBank_da9a1e72 {
+  sounds:[Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX_522f38fa] (id:0);
+  maxSoundAllowed:int (id:1);
+  popOldest:bool (id:2);
+  customMixerGroup:string (id:3);
+  loop:bool (id:4);
+  name:string (id:5);
+}
+
+table Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX_522f38fa {
+  asset:string (id:0);
+  weight:float (id:1);
+  important:bool (id:2);
+  is2D:bool (id:3);
+  delay:float (id:4);
+  minPitch:float (id:5);
+  maxPitch:float (id:6);
+  minVolume:float (id:7);
+  maxVolume:float (id:8);
+  ignoreTimeScale:bool (id:9);
+}
+
+table Torappu_Audio_Middleware_Data_SoundFXCtrlBank_96cf841c {
+  targetBank:string (id:0);
+  ctrlStop:bool (id:1);
+  ctrlStopFadetime:float (id:2);
+  name:string (id:3);
+}
+
+table Torappu_Audio_Middleware_Data_SnapshotBank_ca1f3519 {
+  targetSnapshot:string (id:0);
+  hookSoundFxBank:string (id:1);
+  delay:float (id:2);
+  duration:float (id:3);
+  name:string (id:4);
+}
+
+table Torappu_BattleVoiceData_2402f6c7 {
+  crossfade:float (id:0);
+  minTimeDeltaForEnemyEncounter:float (id:1);
+  minSpCostForImportantPassiveSkill:int (id:2);
+  voiceTypeOptions:[Torappu_BattleVoiceOption_d194a5ba] (id:3);
+}
+
+table Torappu_BattleVoiceOption_d194a5ba {
+  voiceType:Torappu_BattleVoiceOption_BattleVoiceType_78ec4aca (id:0);
+  priority:int (id:1);
+  overlapIfSamePriority:bool (id:2);
+  cooldown:float (id:3);
+  delay:float (id:4);
+}
+
+table Torappu_Audio_Middleware_Data_MusicData_d1aff422 {
+  id:string (id:0);
+  name:string (id:1);
+  bank:string (id:2);
+}
+
+table Torappu_Audio_Middleware_Data_DuckingData_9347cd2a {
+  bank:string (id:0);
+  volume:float (id:1);
+  fadeTime:float (id:2);
+  delay:float (id:3);
+  fadeStyleId:string (id:4);
+}
+
+table Torappu_Audio_Middleware_Data_FadeStyleData_e4cd46cf {
+  styleName:string (id:0);
+  fadeinTime:float (id:1);
+  fadeoutTime:float (id:2);
+  fadeinType:Torappu_Audio_Middleware_Data_AudioFadeType_52b17988 (id:3);
+  fadeoutType:Torappu_Audio_Middleware_Data_AudioFadeType_52b17988 (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData__c46ba028_Entry {
+  key:string (id:0);
+  value:[Torappu_Audio_Middleware_Data_SoundFXVoiceLangData_7b046005_Entry] (id:1);
+}
+
+table Torappu_Audio_Middleware_Data_SoundFXVoiceLangData_7b046005_Entry {
+  key:string (id:0);
+  value:[System_Collections_Generic_Dictionary_2_Torappu_VoiceLangType_System_String__b89edb93_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_VoiceLangType_System_String__b89edb93_Entry {
+  key:Torappu_VoiceLangType_843ad6bb (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+root_type Torappu_Audio_Middleware_Data_TorappuAudioData_c04f2b6f;

@@ -1,0 +1,341 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_ItemRarity_13dad0e0 : int {
+  TIER_1 = 0,
+  TIER_2 = 1,
+  TIER_3 = 2,
+  TIER_4 = 3,
+  TIER_5 = 4,
+  TIER_6 = 5,
+  E_NUM = 6,
+}
+
+enum Torappu_ItemReslockStatus_7f36fdf2 : int {
+  NOT_SUPPORT_RESLOCK = 0,
+  MAT_GACHA_RESLOCK_BLACKLIST = 1,
+  CHAR_POTENTIAL_BLACKLIST = 2,
+  COMMON_BLACKLIST = 999,
+  CAN_RESLOCK = 1000,
+}
+
+enum Torappu_ItemClassifyType_c9c2fa81 : int {
+  NONE = 0,
+  CONSUME = 1,
+  NORMAL = 2,
+  MATERIAL = 3,
+  MEMENTO = 4,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_OccPer_1434a871 : int {
+  ALWAYS = 0,
+  ALMOST = 1,
+  USUAL = 2,
+  OFTEN = 3,
+  SOMETIMES = 4,
+  NEVER = 5,
+  DEFINITELY_BUFF = 6,
+}
+
+enum Torappu_BuildingData_RoomType_42737feb : int {
+  NONE = 0,
+  CONTROL = 1,
+  POWER = 2,
+  MANUFACTURE = 4,
+  SHOP = 8,
+  DORMITORY = 16,
+  MEETING = 32,
+  HIRE = 64,
+  ELEVATOR = 128,
+  CORRIDOR = 256,
+  TRADING = 512,
+  WORKSHOP = 1024,
+  TRAINING = 2048,
+  PRIVATE = 4096,
+  RECYCLE = 8192,
+  FUNCTIONAL = 11902,
+  ALL = 16383,
+}
+
+enum Torappu_ItemDropShopType_95a7b94a : int {
+  HGGSHD_SHOP = 0,
+  LGGSHD_SHOP = 1,
+  XSHD_SHOP = 2,
+  EPGS_SHOP = 3,
+  REP_SHOP = 4,
+  CLASSIC_SHOP = 5,
+}
+
+enum Torappu_VoucherDisplayType_6e53faef : int {
+  NONE = 0,
+  DIVIDE = 1,
+}
+
+table Torappu_InventoryData_dbedc6ad {
+  items:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ItemData__1f0a010b_Entry] (id:0);
+  expItems:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ExpItemFeature__7a1d51e1_Entry] (id:1);
+  potentialItems:[System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_Dictionary_2_System_String_System_String_8c89603f_Entry] (id:2);
+  apSupplies:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ApSupplyFeature__e66f7006_Entry] (id:3);
+  charVoucherItems:[System_Collections_Generic_Dictionary_2_System_String_Torappu_CharVoucherItemFeature__ff6f4da6_Entry] (id:4);
+  uniqueInfo:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:5);
+  itemTimeLimit:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:6);
+  uniCollectionInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_UniCollectionInfo__b76648ea_Entry] (id:7);
+  itemPackInfos:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ItemPackInfo__5f08fc02_Entry] (id:8);
+  fullPotentialCharacters:[System_Collections_Generic_Dictionary_2_System_String_Torappu_FullPotentialCharacterInfo__07ddfa57_Entry] (id:9);
+  activityPotentialCharacters:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActivityPotentialCharacterInfo__fd237a22_Entry] (id:10);
+  favorCharacters:[System_Collections_Generic_Dictionary_2_System_String_Torappu_FavorCharacterInfo__865a2b77_Entry] (id:11);
+  itemShopNameDict:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ItemData__1f0a010b_Entry {
+  key:string (id:0);
+  value:Torappu_ItemData_667ef087 (id:1);
+}
+
+table Torappu_ItemData_667ef087 {
+  itemId:string (id:0);
+  name:string (id:1);
+  description:string (id:2);
+  rarity:Torappu_ItemRarity_13dad0e0 (id:3);
+  iconId:string (id:4);
+  overrideBkg:string (id:5);
+  stackIconId:string (id:6);
+  sortId:int (id:7);
+  usage:string (id:8);
+  obtainApproach:string (id:9);
+  hideInItemGet:bool (id:10);
+  reslockStatus:Torappu_ItemReslockStatus_7f36fdf2 (id:11);
+  canReslock:bool (id:12);
+  classifyType:Torappu_ItemClassifyType_c9c2fa81 (id:13);
+  itemType:Torappu_ItemType_2ee74a72 (id:14);
+  stageDropList:[Torappu_ItemData_StageDropInfo_f00d64fe] (id:15);
+  buildingProductList:[Torappu_ItemData_BuildingProductInfo_795d8a8c] (id:16);
+  voucherRelateList:[Torappu_ItemData_VoucherRelateInfo_b9a79696] (id:17);
+  shopRelateInfoList:[Torappu_ItemData_ShopRelateInfo_48f8464a] (id:18);
+}
+
+table Torappu_ItemData_StageDropInfo_f00d64fe {
+  stageId:string (id:0);
+  occPer:Torappu_OccPer_1434a871 (id:1);
+  sortId:int (id:2);
+}
+
+table Torappu_ItemData_BuildingProductInfo_795d8a8c {
+  roomType:Torappu_BuildingData_RoomType_42737feb (id:0);
+  formulaId:string (id:1);
+}
+
+table Torappu_ItemData_VoucherRelateInfo_b9a79696 {
+  voucherId:string (id:0);
+  voucherItemType:Torappu_ItemType_2ee74a72 (id:1);
+}
+
+table Torappu_ItemData_ShopRelateInfo_48f8464a {
+  shopType:Torappu_ItemDropShopType_95a7b94a (id:0);
+  shopGroup:int (id:1);
+  startTs:long (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ExpItemFeature__7a1d51e1_Entry {
+  key:string (id:0);
+  value:Torappu_ExpItemFeature_a59ac266 (id:1);
+}
+
+table Torappu_ExpItemFeature_a59ac266 {
+  id:string (id:0);
+  gainExp:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_Dictionary_2_System_String_System_String_8c89603f_Entry {
+  key:int (id:0);
+  value:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ApSupplyFeature__e66f7006_Entry {
+  key:string (id:0);
+  value:Torappu_ApSupplyFeature_bd61f455 (id:1);
+}
+
+table Torappu_ApSupplyFeature_bd61f455 {
+  id:string (id:0);
+  ap:int (id:1);
+  hasTs:bool (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_CharVoucherItemFeature__ff6f4da6_Entry {
+  key:string (id:0);
+  value:Torappu_CharVoucherItemFeature_7c984638 (id:1);
+}
+
+table Torappu_CharVoucherItemFeature_7c984638 {
+  id:string (id:0);
+  displayType:Torappu_VoucherDisplayType_6e53faef (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry {
+  key:string (id:0);
+  value:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_UniCollectionInfo__b76648ea_Entry {
+  key:string (id:0);
+  value:Torappu_UniCollectionInfo_6b69d4e1 (id:1);
+}
+
+table Torappu_UniCollectionInfo_6b69d4e1 {
+  uniCollectionItemId:string (id:0);
+  uniqueItem:[Torappu_ItemBundle_64f049cd] (id:1);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ItemPackInfo__5f08fc02_Entry {
+  key:string (id:0);
+  value:Torappu_ItemPackInfo_74589c7b (id:1);
+}
+
+table Torappu_ItemPackInfo_74589c7b {
+  packId:string (id:0);
+  content:[Torappu_ItemBundle_64f049cd] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_FullPotentialCharacterInfo__07ddfa57_Entry {
+  key:string (id:0);
+  value:Torappu_FullPotentialCharacterInfo_c6358807 (id:1);
+}
+
+table Torappu_FullPotentialCharacterInfo_c6358807 {
+  itemId:string (id:0);
+  ts:long (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActivityPotentialCharacterInfo__fd237a22_Entry {
+  key:string (id:0);
+  value:Torappu_ActivityPotentialCharacterInfo_007ce8f5 (id:1);
+}
+
+table Torappu_ActivityPotentialCharacterInfo_007ce8f5 {
+  charId:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_FavorCharacterInfo__865a2b77_Entry {
+  key:string (id:0);
+  value:Torappu_FavorCharacterInfo_971e3df4 (id:1);
+}
+
+table Torappu_FavorCharacterInfo_971e3df4 {
+  itemId:string (id:0);
+  charId:string (id:1);
+  favorAddAmt:int (id:2);
+}
+
+root_type Torappu_InventoryData_dbedc6ad;

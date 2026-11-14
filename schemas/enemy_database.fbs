@@ -1,0 +1,163 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_SourceApplyWay_ae55134d : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_MotionMode_e1934ea9 : int {
+  WALK = 0,
+  FLY = 1,
+  E_NUM = 2,
+}
+
+enum Torappu_EnemyLevelType_c35d0213 : int {
+  NORMAL = 0,
+  ELITE = 1,
+  BOSS = 2,
+  E_NUM = 3,
+}
+
+enum Torappu_SpType_68c5c67d : int {
+  NONE = 0,
+  INCREASE_WITH_TIME = 1,
+  INCREASE_WHEN_ATTACK = 2,
+  INCREASE_WHEN_TAKEN_DAMAGE = 4,
+  ATTACK_OR_DAMAGE = 6,
+  ALL = 7,
+}
+
+table Torappu_EnemyDatabase_56bfd335 {
+  enemies:[System_Collections_Generic_KeyValuePair_2_System_String_System_Collections_Generic_List_1_Torappu_EnemyDatabase_EnemyLev_e1f87002] (id:0);
+}
+
+table System_Collections_Generic_KeyValuePair_2_System_String_System_Collections_Generic_List_1_Torappu_EnemyDatabase_EnemyLev_e1f87002 {
+  key:string (id:0);
+  value:[Torappu_EnemyDatabase_EnemyLevel_1bc13dc4] (id:1);
+}
+
+table Torappu_EnemyDatabase_EnemyLevel_1bc13dc4 {
+  level:int (id:0);
+  enemyData:Torappu_EnemyDatabase_EnemyData_afec7a3d (id:1);
+}
+
+table Torappu_EnemyDatabase_EnemyData_afec7a3d {
+  name:Torappu_Undefinable_1_System_String__5a26218d (id:0);
+  description:Torappu_Undefinable_1_System_String__5a26218d (id:1);
+  prefabKey:Torappu_Undefinable_1_System_String__5a26218d (id:2);
+  attributes:Torappu_EnemyDatabase_AttributesData_777e1bf0 (id:3);
+  applyWay:Torappu_Undefinable_1_Torappu_SourceApplyWay__f47ce913 (id:4);
+  motion:Torappu_Undefinable_1_Torappu_MotionMode__e2b9c865 (id:5);
+  enemyTags:Torappu_Undefinable_1_System_String____92688a4f (id:6);
+  lifePointReduce:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:7);
+  levelType:Torappu_Undefinable_1_Torappu_EnemyLevelType__74fbf9b4 (id:8);
+  rangeRadius:Torappu_Undefinable_1_System_Single__f73f021b (id:9);
+  numOfExtraDrops:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:10);
+  viewRadius:Torappu_Undefinable_1_System_Single__f73f021b (id:11);
+  notCountInTotal:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:12);
+  talentBlackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:13);
+  skills:[Torappu_LevelData_EnemyData_ESkillData_5305b0d5] (id:14);
+  spData:Torappu_LevelData_EnemyData_ESpData_a0afdfac (id:15);
+}
+
+table Torappu_Undefinable_1_System_String__5a26218d {
+  m_defined:bool (id:0);
+  m_value:string (id:1);
+}
+
+table Torappu_EnemyDatabase_AttributesData_777e1bf0 {
+  maxHp:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:0);
+  atk:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:1);
+  def:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:2);
+  magicResistance:Torappu_Undefinable_1_System_Single__f73f021b (id:3);
+  cost:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:4);
+  blockCnt:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:5);
+  moveSpeed:Torappu_Undefinable_1_System_Single__f73f021b (id:6);
+  attackSpeed:Torappu_Undefinable_1_System_Single__f73f021b (id:7);
+  baseAttackTime:Torappu_Undefinable_1_System_Single__f73f021b (id:8);
+  respawnTime:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:9);
+  hpRecoveryPerSec:Torappu_Undefinable_1_System_Single__f73f021b (id:10);
+  spRecoveryPerSec:Torappu_Undefinable_1_System_Single__f73f021b (id:11);
+  maxDeployCount:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:12);
+  massLevel:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:13);
+  baseForceLevel:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:14);
+  tauntLevel:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:15);
+  epDamageResistance:Torappu_Undefinable_1_System_Single__f73f021b (id:16);
+  epResistance:Torappu_Undefinable_1_System_Single__f73f021b (id:17);
+  damageHitratePhysical:Torappu_Undefinable_1_System_Single__f73f021b (id:18);
+  damageHitrateMagical:Torappu_Undefinable_1_System_Single__f73f021b (id:19);
+  epBreakRecoverSpeed:Torappu_Undefinable_1_System_Single__f73f021b (id:20);
+  blockVolume:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:21);
+  stunImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:22);
+  silenceImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:23);
+  sleepImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:24);
+  frozenImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:25);
+  levitateImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:26);
+  disarmedCombatImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:27);
+  fearedImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:28);
+  palsyImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:29);
+  attractImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:30);
+  teleportImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:31);
+  groundBoundImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:32);
+}
+
+table Torappu_Undefinable_1_System_Int32__fe2390f2 {
+  m_defined:bool (id:0);
+  m_value:int (id:1);
+}
+
+table Torappu_Undefinable_1_System_Single__f73f021b {
+  m_defined:bool (id:0);
+  m_value:float (id:1);
+}
+
+table Torappu_Undefinable_1_System_Boolean__874ebd92 {
+  m_defined:bool (id:0);
+  m_value:bool (id:1);
+}
+
+table Torappu_Undefinable_1_Torappu_SourceApplyWay__f47ce913 {
+  m_defined:bool (id:0);
+  m_value:Torappu_SourceApplyWay_ae55134d (id:1);
+}
+
+table Torappu_Undefinable_1_Torappu_MotionMode__e2b9c865 {
+  m_defined:bool (id:0);
+  m_value:Torappu_MotionMode_e1934ea9 (id:1);
+}
+
+table Torappu_Undefinable_1_System_String____92688a4f {
+  m_defined:bool (id:0);
+  m_value:[string] (id:1);
+}
+
+table Torappu_Undefinable_1_Torappu_EnemyLevelType__74fbf9b4 {
+  m_defined:bool (id:0);
+  m_value:Torappu_EnemyLevelType_c35d0213 (id:1);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table Torappu_LevelData_EnemyData_ESkillData_5305b0d5 {
+  prefabKey:string (id:0);
+  priority:int (id:1);
+  cooldown:float (id:2);
+  initCooldown:float (id:3);
+  spCost:int (id:4);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:5);
+}
+
+table Torappu_LevelData_EnemyData_ESpData_a0afdfac {
+  spType:Torappu_SpType_68c5c67d (id:0);
+  maxSp:int (id:1);
+  initSp:int (id:2);
+  increment:float (id:3);
+}
+
+root_type Torappu_EnemyDatabase_56bfd335;

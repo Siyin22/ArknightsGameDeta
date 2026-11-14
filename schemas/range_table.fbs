@@ -1,0 +1,31 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_SharedConsts_Direction_80eb1882 : int {
+  UP = 0,
+  RIGHT = 1,
+  DOWN = 2,
+  LEFT = 3,
+  E_NUM = 4,
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RangeData__491afc03_Entry {
+  key:string (id:0);
+  value:Torappu_RangeData_02fe4845 (id:1);
+}
+
+table Torappu_RangeData_02fe4845 {
+  id:string (id:0);
+  direction:Torappu_SharedConsts_Direction_80eb1882 (id:1);
+  grids:[Torappu_GridPosition_049a6f02] (id:2);
+}
+
+table Torappu_GridPosition_049a6f02 {
+  row:int (id:0);
+  col:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RangeData__491afc03 {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RangeData__491afc03_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_RangeData__491afc03;

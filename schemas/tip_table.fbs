@@ -1,0 +1,31 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_TipData_Category_beac7a3c : int {
+  NONE = 0,
+  BATTLE = 1,
+  UI = 2,
+  BUILDING = 4,
+  GACHA = 8,
+  MISC = 16,
+  ALL = 31,
+}
+
+table Torappu_TipTable_ed679f93 {
+  tips:[Torappu_TipData_5e3b77f7] (id:0);
+  worldViewTips:[Torappu_WorldViewTip_8e9afadb] (id:1);
+}
+
+table Torappu_TipData_5e3b77f7 {
+  tip:string (id:0);
+  weight:float (id:1);
+  category:Torappu_TipData_Category_beac7a3c (id:2);
+}
+
+table Torappu_WorldViewTip_8e9afadb {
+  title:string (id:0);
+  description:string (id:1);
+  backgroundPicId:string (id:2);
+  weight:float (id:3);
+}
+
+root_type Torappu_TipTable_ed679f93;

@@ -1,0 +1,87 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_Battle_Cooperate_EndTileType_bbb6126b : int {
+  NONE = 0,
+  MY_SIDE = 1,
+  MATE_SIDE = 2,
+  SHARED = 3,
+}
+
+enum Torappu_Battle_Cooperate_LASTROUNDRESULT_bb706de9 : int {
+  GOAL = 0,
+  LOST = 1,
+}
+
+table Torappu_Battle_Cooperate_CooperateModeBattleData_a9eefee6 {
+  costTransferred:int (id:0);
+  getMaxMsgCntInOneUpdate:int (id:1);
+  endTileInfo:[System_Collections_Generic_Dictionary_2_Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileIn_f735f212_Entry] (id:2);
+  footballAheadGoalCntFactor:[Torappu_Battle_Cooperate_CooperateAheadGoalData_34fc472f] (id:3);
+  footballHardTypeFactor:int (id:4);
+  footballLastRoundResultFactor:[System_Collections_Generic_Dictionary_2_Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32__620259b1_Entry] (id:5);
+  footballLevelOfWaveFactor:[System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_Battle_Cooperate_Cooperat_870cfd5a_Entry] (id:6);
+  footballTeamWeights:[Torappu_Battle_Cooperate_CooperateTeamWeight_b38c0c57] (id:7);
+  footballTeamPlayers:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer__82a95ac1_Entry] (id:8);
+  footballPlayersName:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:9);
+  footballPlayersWaitTimeOnWaveStart:int (id:10);
+  footballStadiumWeights:[Torappu_Battle_Cooperate_FootballStadiumWeight_cc0cf706] (id:11);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileIn_f735f212_Entry {
+  key:Torappu_Battle_Cooperate_EndTileType_bbb6126b (id:0);
+  value:Torappu_Battle_Cooperate_CooperateEndTileInfo_372462b2 (id:1);
+}
+
+table Torappu_Battle_Cooperate_CooperateEndTileInfo_372462b2 {
+  name:string (id:0);
+  description:string (id:1);
+}
+
+table Torappu_Battle_Cooperate_CooperateAheadGoalData_34fc472f {
+  aheadCnt:int (id:0);
+  level:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32__620259b1_Entry {
+  key:Torappu_Battle_Cooperate_LASTROUNDRESULT_bb706de9 (id:0);
+  value:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_Battle_Cooperate_Cooperat_870cfd5a_Entry {
+  key:int (id:0);
+  value:[Torappu_Battle_Cooperate_CooperateWaveWeight_be1cc7da] (id:1);
+}
+
+table Torappu_Battle_Cooperate_CooperateWaveWeight_be1cc7da {
+  wave:int (id:0);
+  weight:int (id:1);
+}
+
+table Torappu_Battle_Cooperate_CooperateTeamWeight_b38c0c57 {
+  teamName:string (id:0);
+  weight:int (id:1);
+  teamType:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer__82a95ac1_Entry {
+  key:string (id:0);
+  value:Torappu_Battle_Cooperate_CooperateTeamPlayer_d8b6e576 (id:1);
+}
+
+table Torappu_Battle_Cooperate_CooperateTeamPlayer_d8b6e576 {
+  forward:string (id:0);
+  goalkeeper:string (id:1);
+  muscleman:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table Torappu_Battle_Cooperate_FootballStadiumWeight_cc0cf706 {
+  stadiumType:int (id:0);
+  weight:int (id:1);
+}
+
+root_type Torappu_Battle_Cooperate_CooperateModeBattleData_a9eefee6;

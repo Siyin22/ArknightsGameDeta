@@ -1,0 +1,23 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ChapterData__adcf38f8_Entry {
+  key:string (id:0);
+  value:Torappu_ChapterData_c0e0a253 (id:1);
+}
+
+table Torappu_ChapterData_c0e0a253 {
+  chapterId:string (id:0);
+  chapterName:string (id:1);
+  chapterName2:string (id:2);
+  chapterIndex:int (id:3);
+  preposedChapterId:string (id:4);
+  startZoneId:string (id:5);
+  endZoneId:string (id:6);
+  chapterEndStageId:string (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ChapterData__adcf38f8 {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ChapterData__adcf38f8_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_ChapterData__adcf38f8;

@@ -1,0 +1,483 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_MiniActTrialData_RuleType_4e612d6e : int {
+  NONE = 0,
+  TITLE = 1,
+  CONTENT = 2,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_ActArchivePicType_8ea7e044 : int {
+  IMAGE = 0,
+  BACKGROUND = 1,
+  ENDING_IMAGE = 2,
+  ROGUE_IMAGE = 3,
+}
+
+enum Torappu_ActArchiveResData_ArchiveNewsLineType_3eb54ed5 : int {
+  TextContent = 0,
+  ImageContent = 1,
+}
+
+enum Torappu_Act17sideData_ChapterIconType_f41416a8 : int {
+  NORMAL = 0,
+  EX = 1,
+  HARD = 2,
+}
+
+table Torappu_StoryReviewMetaTable_0c2637fc {
+  miniActTrialData:Torappu_MiniActTrialData_25074e75 (id:0);
+  actArchiveResData:Torappu_ActArchiveResData_ff658f33 (id:1);
+  actArchiveData:Torappu_ActArchiveComponentTable_ac33dc9c (id:2);
+  trainingCampData:Torappu_TrainingCampData_938b8d3e (id:3);
+}
+
+table Torappu_MiniActTrialData_25074e75 {
+  preShowDays:int (id:0);
+  ruleDataList:[Torappu_MiniActTrialData_RuleData_e122f21a] (id:1);
+  miniActTrialDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MiniActTrialData_MiniActTrialSingleData__f5016ed4_Entry] (id:2);
+}
+
+table Torappu_MiniActTrialData_RuleData_e122f21a {
+  ruleType:Torappu_MiniActTrialData_RuleType_4e612d6e (id:0);
+  ruleText:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MiniActTrialData_MiniActTrialSingleData__f5016ed4_Entry {
+  key:string (id:0);
+  value:Torappu_MiniActTrialData_MiniActTrialSingleData_1a2b4702 (id:1);
+}
+
+table Torappu_MiniActTrialData_MiniActTrialSingleData_1a2b4702 {
+  actId:string (id:0);
+  rewardStartTime:long (id:1);
+  themeColor:string (id:2);
+  rewardList:[Torappu_MiniActTrialData_MiniActTrialRewardData_43d471a3] (id:3);
+}
+
+table Torappu_MiniActTrialData_MiniActTrialRewardData_43d471a3 {
+  trialRewardId:string (id:0);
+  orderId:int (id:1);
+  actId:string (id:2);
+  targetStoryCount:int (id:3);
+  item:Torappu_ItemBundle_64f049cd (id:4);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table Torappu_ActArchiveResData_ff658f33 {
+  pics:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_PicArchiveResItemData__eed9cf0f_Entry] (id:0);
+  audios:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_AudioArchiveResItemData__d623f8b4_Entry] (id:1);
+  avgs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_AvgArchiveResItemData__969dfa70_Entry] (id:2);
+  stories:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_StoryArchiveResItemData__28c44929_Entry] (id:3);
+  news:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_NewsArchiveResItemData__d395cf36_Entry] (id:4);
+  landmarks:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_LandmarkArchiveResItemData__009098fb_Entry] (id:5);
+  logs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_LogArchiveResItemData__03659f4b_Entry] (id:6);
+  challengeBooks:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_ChallengeBookArchiveResItemData__6f60f43a_Entry] (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_PicArchiveResItemData__eed9cf0f_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveResData_PicArchiveResItemData_ddc32480 (id:1);
+}
+
+table Torappu_ActArchiveResData_PicArchiveResItemData_ddc32480 {
+  id:string (id:0);
+  desc:string (id:1);
+  assetPath:string (id:2);
+  type:Torappu_ActArchivePicType_8ea7e044 (id:3);
+  subType:string (id:4);
+  picDescription:string (id:5);
+  kvId:string (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_AudioArchiveResItemData__d623f8b4_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveResData_AudioArchiveResItemData_95ab3859 (id:1);
+}
+
+table Torappu_ActArchiveResData_AudioArchiveResItemData_95ab3859 {
+  id:string (id:0);
+  desc:string (id:1);
+  name:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_AvgArchiveResItemData__969dfa70_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveResData_AvgArchiveResItemData_904fdffc (id:1);
+}
+
+table Torappu_ActArchiveResData_AvgArchiveResItemData_904fdffc {
+  id:string (id:0);
+  desc:string (id:1);
+  breifPath:string (id:2);
+  contentPath:string (id:3);
+  imagePath:string (id:4);
+  rawBrief:string (id:5);
+  titleIconPath:string (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_StoryArchiveResItemData__28c44929_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveResData_StoryArchiveResItemData_84422651 (id:1);
+}
+
+table Torappu_ActArchiveResData_StoryArchiveResItemData_84422651 {
+  id:string (id:0);
+  desc:string (id:1);
+  date:string (id:2);
+  pic:string (id:3);
+  text:string (id:4);
+  titlePic:string (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_NewsArchiveResItemData__d395cf36_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveResData_NewsArchiveResItemData_fbfc07b3 (id:1);
+}
+
+table Torappu_ActArchiveResData_NewsArchiveResItemData_fbfc07b3 {
+  id:string (id:0);
+  desc:string (id:1);
+  newsType:string (id:2);
+  newsFormat:Torappu_ActArchiveResData_NewsFormatData_83f5821d (id:3);
+  newsText:string (id:4);
+  newsAuthor:string (id:5);
+  paramP0:int (id:6);
+  paramK:int (id:7);
+  paramR:float (id:8);
+  newsLines:[Torappu_ActArchiveResData_ActivityNewsLine_f58e631d] (id:9);
+}
+
+table Torappu_ActArchiveResData_NewsFormatData_83f5821d {
+  typeId:string (id:0);
+  typeName:string (id:1);
+  typeLogo:string (id:2);
+  typeMainLogo:string (id:3);
+  typeMainSealing:string (id:4);
+}
+
+table Torappu_ActArchiveResData_ActivityNewsLine_f58e631d {
+  lineType:Torappu_ActArchiveResData_ArchiveNewsLineType_3eb54ed5 (id:0);
+  content:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_LandmarkArchiveResItemData__009098fb_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveResData_LandmarkArchiveResItemData_43e5dcb8 (id:1);
+}
+
+table Torappu_ActArchiveResData_LandmarkArchiveResItemData_43e5dcb8 {
+  landmarkId:string (id:0);
+  landmarkName:string (id:1);
+  landmarkPic:string (id:2);
+  landmarkDesc:string (id:3);
+  landmarkEngName:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_LogArchiveResItemData__03659f4b_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveResData_LogArchiveResItemData_9e61a3de (id:1);
+}
+
+table Torappu_ActArchiveResData_LogArchiveResItemData_9e61a3de {
+  logId:string (id:0);
+  logDesc:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveResData_ChallengeBookArchiveResItemData__6f60f43a_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveResData_ChallengeBookArchiveResItemData_dc7fbc14 (id:1);
+}
+
+table Torappu_ActArchiveResData_ChallengeBookArchiveResItemData_dc7fbc14 {
+  storyId:string (id:0);
+  titleName:string (id:1);
+  storyName:string (id:2);
+  textId:string (id:3);
+}
+
+table Torappu_ActArchiveComponentTable_ac33dc9c {
+  components:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveComponentData__93158077_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveComponentData__93158077_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveComponentData_308612fe (id:1);
+}
+
+table Torappu_ActArchiveComponentData_308612fe {
+  timeline:Torappu_ActArchiveTimelineData_ed00a6d3 (id:0);
+  music:Torappu_ActArchiveMusicData_128b95f1 (id:1);
+  pic:Torappu_ActArchivePicData_499443e5 (id:2);
+  story:Torappu_ActArchiveStoryData_7d40e383 (id:3);
+  avg:Torappu_ActArchiveAvgData_b264f3ec (id:4);
+  news:Torappu_ActArchiveNewsData_d50cc2cc (id:5);
+  landmark:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveLandmarkItemData__556e0822_Entry] (id:6);
+  log:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveChapterLogData__f560da00_Entry] (id:7);
+  challengeBook:Torappu_ActArchiveChallengeBookData_8190a801 (id:8);
+}
+
+table Torappu_ActArchiveTimelineData_ed00a6d3 {
+  timelineList:[Torappu_ActArchiveTimelineItemData_7c70b513] (id:0);
+}
+
+table Torappu_ActArchiveTimelineItemData_7c70b513 {
+  timelineId:string (id:0);
+  timelineSortId:int (id:1);
+  timelineTitle:string (id:2);
+  timelineDes:string (id:3);
+  picIdList:[string] (id:4);
+  audioIdList:[string] (id:5);
+  avgIdList:[string] (id:6);
+  storyIdList:[string] (id:7);
+  newsIdList:[string] (id:8);
+}
+
+table Torappu_ActArchiveMusicData_128b95f1 {
+  musics:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveMusicItemData__bdb7f965_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveMusicItemData__bdb7f965_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveMusicItemData_8ee1cb88 (id:1);
+}
+
+table Torappu_ActArchiveMusicItemData_8ee1cb88 {
+  musicId:string (id:0);
+  musicSortId:int (id:1);
+}
+
+table Torappu_ActArchivePicData_499443e5 {
+  pics:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchivePicItemData__18a035c0_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchivePicItemData__18a035c0_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchivePicItemData_a5fd82cc (id:1);
+}
+
+table Torappu_ActArchivePicItemData_a5fd82cc {
+  picId:string (id:0);
+  picSortId:int (id:1);
+}
+
+table Torappu_ActArchiveStoryData_7d40e383 {
+  stories:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveStoryItemData__6ebe17f9_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveStoryItemData__6ebe17f9_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveStoryItemData_55af3547 (id:1);
+}
+
+table Torappu_ActArchiveStoryItemData_55af3547 {
+  storyId:string (id:0);
+  storySortId:int (id:1);
+}
+
+table Torappu_ActArchiveAvgData_b264f3ec {
+  avgs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveAvgItemData__96f1bb59_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveAvgItemData__96f1bb59_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveAvgItemData_e74e8afe (id:1);
+}
+
+table Torappu_ActArchiveAvgItemData_e74e8afe {
+  avgId:string (id:0);
+  avgSortId:int (id:1);
+}
+
+table Torappu_ActArchiveNewsData_d50cc2cc {
+  news:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveNewsItemData__25f5a458_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveNewsItemData__25f5a458_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveNewsItemData_725a9dcd (id:1);
+}
+
+table Torappu_ActArchiveNewsItemData_725a9dcd {
+  newsId:string (id:0);
+  newsSortId:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveLandmarkItemData__556e0822_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveLandmarkItemData_64aff7c6 (id:1);
+}
+
+table Torappu_ActArchiveLandmarkItemData_64aff7c6 {
+  landmarkId:string (id:0);
+  landmarkSortId:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveChapterLogData__f560da00_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveChapterLogData_e3a9d416 (id:1);
+}
+
+table Torappu_ActArchiveChapterLogData_e3a9d416 {
+  chapterName:string (id:0);
+  displayId:string (id:1);
+  unlockDes:string (id:2);
+  logs:[string] (id:3);
+  chapterIcon:Torappu_Act17sideData_ChapterIconType_f41416a8 (id:4);
+}
+
+table Torappu_ActArchiveChallengeBookData_8190a801 {
+  stories:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveChallengeBookItemData__4a9ccbf1_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveChallengeBookItemData__4a9ccbf1_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveChallengeBookItemData_b453b204 (id:1);
+}
+
+table Torappu_ActArchiveChallengeBookItemData_b453b204 {
+  storyId:string (id:0);
+  sortId:int (id:1);
+}
+
+table Torappu_TrainingCampData_938b8d3e {
+  stageData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_TrainingCampStageData__05309f05_Entry] (id:0);
+  newTrainingCampStages:[Torappu_NewTrainingCampStageData_80935145] (id:1);
+  consts:Torappu_TrainingCampConsts_5006f41c (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_TrainingCampStageData__05309f05_Entry {
+  key:string (id:0);
+  value:Torappu_TrainingCampStageData_79c164c6 (id:1);
+}
+
+table Torappu_TrainingCampStageData_79c164c6 {
+  stageId:string (id:0);
+  stageIconId:string (id:1);
+  sortId:int (id:2);
+  levelId:string (id:3);
+  code:string (id:4);
+  name:string (id:5);
+  loadingPicId:string (id:6);
+  description:string (id:7);
+  endCharId:string (id:8);
+  updateTs:long (id:9);
+}
+
+table Torappu_NewTrainingCampStageData_80935145 {
+  updateTs:long (id:0);
+  stages:[string] (id:1);
+}
+
+table Torappu_TrainingCampConsts_5006f41c {
+  unlockStageId:string (id:0);
+  updateDesc:string (id:1);
+  rewardItem:Torappu_ItemBundle_64f049cd (id:2);
+}
+
+root_type Torappu_StoryReviewMetaTable_0c2637fc;

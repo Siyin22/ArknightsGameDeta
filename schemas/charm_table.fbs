@@ -1,0 +1,129 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_CharmRarity_f34c39d4 : int {
+  NONE = 0,
+  LOW = 1,
+  MEDIUM = 2,
+  HIGH = 3,
+}
+
+enum Torappu_ProfessionCategory_f64dcd2f : int {
+  NONE = 0,
+  WARRIOR = 1,
+  SNIPER = 2,
+  TANK = 4,
+  MEDIC = 8,
+  SUPPORT = 16,
+  CASTER = 32,
+  SPECIAL = 64,
+  TOKEN = 128,
+  TRAP = 256,
+  PIONEER = 512,
+}
+
+enum Torappu_BuildableType_c4537a3b : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_PlayerSideMask_5a51be9e : ubyte {
+  ALL = 0,
+  SIDE_A = 2,
+  SIDE_B = 4,
+  SIDE_C = 8,
+  SIDE_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_MapLayerMask_663506f1 : ubyte {
+  ALL = 0,
+  LAYER_A = 2,
+  LAYER_B = 4,
+  LAYER_C = 8,
+  LAYER_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_Battle_SideType_7ae7af6d : int {
+  NONE = 0,
+  ALLY = 1,
+  ENEMY = 2,
+  BOTH_ALLY_AND_ENEMY = 3,
+  NEUTRAL = 4,
+  ALL = 7,
+}
+
+enum Torappu_TileData_HeightTypeMask_fb187ca6 : int {
+  NONE = 0,
+  LOWLAND = 1,
+  HIGHLAND = 2,
+  ALL = 3,
+}
+
+table Torappu_CharmData_503dc012 {
+  charmList:[Torappu_CharmItemData_7cddf20d] (id:0);
+}
+
+table Torappu_CharmItemData_7cddf20d {
+  id:string (id:0);
+  sort:int (id:1);
+  name:string (id:2);
+  icon:string (id:3);
+  itemUsage:string (id:4);
+  itemDesc:string (id:5);
+  itemObtainApproach:string (id:6);
+  rarity:Torappu_CharmRarity_f34c39d4 (id:7);
+  desc:string (id:8);
+  price:int (id:9);
+  specialObtainApproach:string (id:10);
+  charmType:string (id:11);
+  obtainInRandom:bool (id:12);
+  dropStages:[string] (id:13);
+  runeData:Torappu_RuneTable_PackedRuneData_44298930 (id:14);
+}
+
+table Torappu_RuneTable_PackedRuneData_44298930 {
+  id:string (id:0);
+  points:float (id:1);
+  mutexGroupKey:string (id:2);
+  description:string (id:3);
+  runes:[Torappu_RuneData_fc2de0e9] (id:4);
+}
+
+table Torappu_RuneData_fc2de0e9 {
+  key:string (id:0);
+  selector:Torappu_RuneData_Selector_f177175d (id:1);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:2);
+}
+
+table Torappu_RuneData_Selector_f177175d {
+  professionMask:Torappu_ProfessionCategory_f64dcd2f (id:0);
+  buildableMask:Torappu_BuildableType_c4537a3b (id:1);
+  playerSideMask:Torappu_PlayerSideMask_5a51be9e (id:2);
+  mapLayerMask:Torappu_MapLayerMask_663506f1 (id:3);
+  sideType:Torappu_Battle_SideType_7ae7af6d (id:4);
+  charIdFilter:[string] (id:5);
+  charIdExcludeFilter:[string] (id:6);
+  enemyIdFilter:[string] (id:7);
+  enemyIdExcludeFilter:[string] (id:8);
+  enemyLevelTypeFilter:[string] (id:9);
+  enemyActionHiddenGroupFilter:[string] (id:10);
+  skillIdFilter:[string] (id:11);
+  tileKeyFilter:[string] (id:12);
+  groupTagFilter:[string] (id:13);
+  filterTagFilter:[string] (id:14);
+  filterTagExcludeFilter:[string] (id:15);
+  subProfessionExcludeFilter:[string] (id:16);
+  mapTagFilter:[string] (id:17);
+  heightTypeMask:Torappu_TileData_HeightTypeMask_fb187ca6 (id:18);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+root_type Torappu_CharmData_503dc012;

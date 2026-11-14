@@ -1,0 +1,16 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table Torappu_Battle_LevelScriptDataMap_28606500 {
+  levelScriptDataCharacterDict:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:0);
+  levelScriptDataEnemyDict:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:1);
+  levelScriptDataLevelDict:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:2);
+  levelScriptDataGameModeDict:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:3);
+  levelScriptDataMiscList:[string] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry {
+  key:string (id:0);
+  value:[string] (id:1);
+}
+
+root_type Torappu_Battle_LevelScriptDataMap_28606500;

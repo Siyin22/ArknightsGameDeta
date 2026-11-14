@@ -1,0 +1,18 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_EPBreakBuffData__ac461485_Entry {
+  key:string (id:0);
+  value:Torappu_EPBreakBuffData_0edb1994 (id:1);
+}
+
+table Torappu_EPBreakBuffData_0edb1994 {
+  elementBreakDuration:float (id:0);
+  enemyElementBreakDuration:float (id:1);
+  elementBuffs:[string] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_EPBreakBuffData__ac461485 {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_EPBreakBuffData__ac461485_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_EPBreakBuffData__ac461485;

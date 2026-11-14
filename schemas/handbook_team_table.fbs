@@ -1,0 +1,23 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_HandbookTeamData__eec1097a_Entry {
+  key:string (id:0);
+  value:Torappu_HandbookTeamData_43c21833 (id:1);
+}
+
+table Torappu_HandbookTeamData_43c21833 {
+  powerId:string (id:0);
+  orderNum:int (id:1);
+  powerLevel:int (id:2);
+  powerName:string (id:3);
+  powerCode:string (id:4);
+  color:string (id:5);
+  isLimited:bool (id:6);
+  isRaw:bool (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_HandbookTeamData__eec1097a {
+  values:[System_Collections_Generic_Dictionary_2_System_String_Torappu_HandbookTeamData__eec1097a_Entry] (id:0);
+}
+
+root_type System_Collections_Generic_Dictionary_2_System_String_Torappu_HandbookTeamData__eec1097a;

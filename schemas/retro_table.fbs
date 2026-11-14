@@ -1,0 +1,1028 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_StageDropType_dba46f9e : int {
+  NONE = 0,
+  ONCE = 1,
+  NORMAL = 2,
+  SPECIAL = 3,
+  ADDITIONAL = 4,
+  APRETURN = 5,
+  DIAMOND_MATERIAL = 6,
+  FUNITURE_DROP = 7,
+  COMPLETE = 8,
+  CHARM_DROP = 9,
+  OVERRIDE_DROP = 10,
+  ITEM_RETURN = 11,
+  CONDITION_DROP = 12,
+}
+
+enum Torappu_OccPer_1434a871 : int {
+  ALWAYS = 0,
+  ALMOST = 1,
+  USUAL = 2,
+  OFTEN = 3,
+  SOMETIMES = 4,
+  NEVER = 5,
+  DEFINITELY_BUFF = 6,
+}
+
+enum Torappu_RetroType_93a70637 : int {
+  SIDESTORY = 0,
+  BRANCHLINE = 1,
+}
+
+enum Torappu_ActivityType_a6e2d1c1 : int {
+  DEFAULT = 0,
+  MISSION_ONLY = 1,
+  CHECKIN_ONLY = 2,
+  CHECKIN_ALL_PLAYER = 3,
+  TYPE_ACT3D0 = 4,
+  TYPE_ACT4D0 = 5,
+  TYPE_ACT5D0 = 6,
+  TYPE_ACT5D1 = 7,
+  COLLECTION = 8,
+  AVG_ONLY = 9,
+  TYPE_ACT9D0 = 10,
+  TYPE_ACT12SIDE = 11,
+  TYPE_ACT13SIDE = 12,
+  TYPE_ACT17SIDE = 13,
+  LOGIN_ONLY = 14,
+  MINISTORY = 15,
+  ROGUELIKE = 16,
+  PRAY_ONLY = 17,
+  MULTIPLAY = 18,
+  MULTIPLAY_VERIFY2 = 19,
+  TYPE_ACT17D7 = 20,
+  GRID_GACHA = 21,
+  GRID_GACHA_V2 = 22,
+  INTERLOCK = 23,
+  APRIL_FOOL = 24,
+  BOSS_RUSH = 25,
+  TYPE_ACT20SIDE = 26,
+  FLOAT_PARADE = 27,
+  TYPE_ACT21SIDE = 28,
+  MAIN_BUFF = 29,
+  TYPE_ACT24SIDE = 30,
+  FLIP_ONLY = 31,
+  TYPE_ACT25SIDE = 32,
+  CHECKIN_VS = 33,
+  SWITCH_ONLY = 34,
+  TYPE_ACT27SIDE = 35,
+  UNIQUE_ONLY = 36,
+  MAINLINE_BP = 37,
+  TYPE_ACT42D0 = 38,
+  TYPE_ACT29SIDE = 39,
+  BLESS_ONLY = 40,
+  CHECKIN_ACCESS = 41,
+  YEAR_5_GENERAL = 42,
+  TYPE_ACT35SIDE = 43,
+  VEC_BREAK = 44,
+  TYPE_ACT36SIDE = 45,
+  TYPE_ACT38SIDE = 46,
+  AUTOCHESS_VERIFY1 = 47,
+  CHECKIN_VIDEO = 48,
+  ARCADE = 49,
+  MULTIPLAY_V3 = 50,
+  TYPE_MAINSS = 51,
+  ENEMY_DUEL = 52,
+  VEC_BREAK_V2 = 53,
+  TYPE_ACT42SIDE = 54,
+  TYPE_ACT44SIDE = 55,
+  HALFIDLE_VERIFY1 = 56,
+  TYPE_ACT45SIDE = 57,
+  TEAM_QUEST = 58,
+  RECRUIT_ONLY = 59,
+  TYPE_ACT46SIDE = 60,
+  AUTOCHESS_SEASON = 61,
+  ARK_HUB = 62,
+  ACT_FOOTBALL = 63,
+  TYPE_ACT53SIDE = 64,
+  TYPE_ACT54SIDE = 65,
+  ACT_DP = 66,
+  REWARD_ONLY = 67,
+  AUTOCHESS = 68,
+  TYPE_ACT55SIDE = 69,
+  ENUM = 70,
+}
+
+enum Torappu_StageType_3f46c255 : int {
+  MAIN = 0,
+  DAILY = 1,
+  TRAINING = 2,
+  ACTIVITY = 3,
+  GUIDE = 4,
+  SUB = 5,
+  CAMPAIGN = 6,
+  SPECIAL_STORY = 7,
+  HANDBOOK_BATTLE = 8,
+  CLIMB_TOWER = 9,
+  ENUM = 10,
+}
+
+enum Torappu_LevelData_Difficulty_47abb9d1 : int {
+  NONE = 0,
+  NORMAL = 1,
+  FOUR_STAR = 2,
+  EASY = 4,
+  SIX_STAR = 8,
+  ALL = 15,
+}
+
+enum Torappu_StageData_PerformanceStageFlag_a16ac2d2 : int {
+  NORMAL_STAGE = 0,
+  PERFORMANCE_STAGE = 1,
+}
+
+enum Torappu_StageDiffGroup_6b170b89 : int {
+  NONE = 0,
+  EASY = 1,
+  NORMAL = 2,
+  TOUGH = 4,
+  ALL = 7,
+}
+
+enum Torappu_PlayerBattleRank_4b25cc10 : int {
+  _ZERO = 0,
+  FAIL = 1,
+  PASS = 2,
+  COMPLETE = 3,
+}
+
+enum Torappu_AppearanceStyle_6a492835 : int {
+  MAIN_NORMAL = 0,
+  MAIN_PREDEFINED = 1,
+  SUB = 2,
+  TRAINING = 3,
+  HIGH_DIFFICULTY = 4,
+  MIST_OPS = 5,
+  SPECIAL_STORY = 6,
+}
+
+enum Torappu_StageData_SpecialStageUnlockProgressType_49482822 : int {
+  ONCE = 0,
+  PROGRESS = 1,
+}
+
+enum Torappu_Act17sideData_NodeType_b4d09bfe : int {
+  LANDMARK = 0,
+  STORY = 1,
+  BATTLE = 2,
+  ENDING = 3,
+  TREASURE = 4,
+  EVENT = 5,
+  TECH = 6,
+  CHOICE = 7,
+}
+
+enum Torappu_Act17sideData_TrackPointType_4bdca999 : int {
+  NONE = 0,
+  MAIN = 1,
+  SUB = 2,
+}
+
+enum Torappu_Act17sideData_TreasureType_854cbcac : int {
+  SMALL = 0,
+  SPECIAL = 1,
+}
+
+enum Torappu_ActArchiveType_cd0ba499 : int {
+  NONE = 0,
+  TIMELINE = 1,
+  MUSIC = 2,
+  PIC = 3,
+  AVG = 4,
+  STORY = 5,
+  NEWS = 6,
+  BUFF = 7,
+  RELIC = 8,
+  CAPSULE = 9,
+  TRAP = 10,
+  CHAT = 11,
+  LANDMARK = 12,
+  LOG = 13,
+  ACTIVITY_ENTRY = 14,
+  DYNAMIC_MUSIC = 15,
+  DYNAMIC_PIC = 16,
+  ENDBOOK = 17,
+  DYNAMIC_STORY = 18,
+  TOTEM = 19,
+  CHAOS = 20,
+  CHALLENGE_BOOK = 21,
+  ACHIEVEMENT = 22,
+  QUEST = 23,
+  FRAGMENT = 24,
+  DISASTER = 25,
+  COPPER = 26,
+  WRATH = 27,
+  SCRAP = 28,
+  WEATHER = 29,
+}
+
+enum Torappu_Act17sideData_ArchiveItemUnlockCondition_2b908748 : int {
+  NONE = 0,
+  STAGE = 1,
+  NODE = 2,
+}
+
+enum Torappu_Act17sideData_ArchiveItemStageUnlockParam_30831ec6 : int {
+  NONE = 0,
+  PLAYED = 1,
+  PASS = 2,
+  COMPLETE = 3,
+}
+
+enum Torappu_ProfessionCategory_f64dcd2f : int {
+  NONE = 0,
+  WARRIOR = 1,
+  SNIPER = 2,
+  TANK = 4,
+  MEDIC = 8,
+  SUPPORT = 16,
+  CASTER = 32,
+  SPECIAL = 64,
+  TOKEN = 128,
+  TRAP = 256,
+  PIONEER = 512,
+}
+
+enum Torappu_BuildableType_c4537a3b : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_PlayerSideMask_5a51be9e : ubyte {
+  ALL = 0,
+  SIDE_A = 2,
+  SIDE_B = 4,
+  SIDE_C = 8,
+  SIDE_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_MapLayerMask_663506f1 : ubyte {
+  ALL = 0,
+  LAYER_A = 2,
+  LAYER_B = 4,
+  LAYER_C = 8,
+  LAYER_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_Battle_SideType_7ae7af6d : int {
+  NONE = 0,
+  ALLY = 1,
+  ENEMY = 2,
+  BOTH_ALLY_AND_ENEMY = 3,
+  NEUTRAL = 4,
+  ALL = 7,
+}
+
+enum Torappu_TileData_HeightTypeMask_fb187ca6 : int {
+  NONE = 0,
+  LOWLAND = 1,
+  HIGHLAND = 2,
+  ALL = 3,
+}
+
+enum Torappu_Act17sideData_ChapterIconType_f41416a8 : int {
+  NORMAL = 0,
+  EX = 1,
+  HARD = 2,
+}
+
+enum Torappu_Act25SideData_Act25sideTechType_9834dc6f : int {
+  TECH_1 = 0,
+  TECH_2 = 1,
+  TECH_3 = 2,
+  TECH_4 = 3,
+  TECH_NUM = 4,
+}
+
+table Torappu_RetroStageTable_0fac314f {
+  zoneToRetro:[Torappu_ListDict_2_System_String_System_String__191f36ab_Entry] (id:0);
+  stageValidInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_StageValidInfo__3ccc6f15_Entry] (id:1);
+  stages:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RetroStageOverrideInfo__72587f48_Entry] (id:2);
+  retroActList:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RetroActData__0a388699_Entry] (id:3);
+  retroTrailList:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RetroTrailData__116df384_Entry] (id:4);
+  stageList:[System_Collections_Generic_Dictionary_2_System_String_Torappu_StageData__f2e2c56a_Entry] (id:5);
+  ruleData:Torappu_RetroTrailRuleData_3348d864 (id:6);
+  customData:Torappu_ActivityCustomData_b602daf8 (id:7);
+  initRetroCoin:int (id:8);
+  retroCoinPerWeek:int (id:9);
+  retroCoinMaxOfLevels:[System_Collections_Generic_Dictionary_2_System_Int32_System_Int32__b6e5a62c_Entry] (id:10);
+  retroUnlockCost:int (id:11);
+  retroDetail:string (id:12);
+  retroPreShowTime:long (id:13);
+}
+
+table Torappu_ListDict_2_System_String_System_String__191f36ab_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_StageValidInfo__3ccc6f15_Entry {
+  key:string (id:0);
+  value:Torappu_StageValidInfo_0858285f (id:1);
+}
+
+table Torappu_StageValidInfo_0858285f {
+  startTs:long (id:0);
+  endTs:long (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RetroStageOverrideInfo__72587f48_Entry {
+  key:string (id:0);
+  value:Torappu_RetroStageOverrideInfo_7b5c0171 (id:1);
+}
+
+table Torappu_RetroStageOverrideInfo_7b5c0171 {
+  dropInfo:Torappu_StageData_StageDropInfo_bb8028e7 (id:0);
+  zoneId:string (id:1);
+  apCost:int (id:2);
+  apFailReturn:int (id:3);
+  expGain:int (id:4);
+  goldGain:int (id:5);
+  passFavor:int (id:6);
+  completeFavor:int (id:7);
+  canMultipleBattle:bool (id:8);
+}
+
+table Torappu_StageData_StageDropInfo_bb8028e7 {
+  firstPassRewards:[Torappu_ItemBundle_64f049cd] (id:0);
+  firstCompleteRewards:[Torappu_ItemBundle_64f049cd] (id:1);
+  passRewards:[Torappu_WeightItemBundle___5699c148] (id:2);
+  completeRewards:[Torappu_WeightItemBundle___5699c148] (id:3);
+  displayRewards:[Torappu_StageData_DisplayRewards_40ac1705] (id:4);
+  displayDetailRewards:[Torappu_StageData_DisplayDetailRewards_107bfe81] (id:5);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table Torappu_WeightItemBundle_2b0b431a {
+  id:string (id:0);
+  type:Torappu_ItemType_2ee74a72 (id:1);
+  dropType:Torappu_StageDropType_dba46f9e (id:2);
+  count:int (id:3);
+  weight:int (id:4);
+}
+
+table Torappu_WeightItemBundle___5699c148 {
+  values:[Torappu_WeightItemBundle_2b0b431a] (id:0);
+}
+
+table Torappu_StageData_DisplayRewards_40ac1705 {
+  type:Torappu_ItemType_2ee74a72 (id:0);
+  id:string (id:1);
+  dropType:Torappu_StageDropType_dba46f9e (id:2);
+}
+
+table Torappu_StageData_DisplayDetailRewards_107bfe81 {
+  occPercent:Torappu_OccPer_1434a871 (id:0);
+  type:Torappu_ItemType_2ee74a72 (id:1);
+  id:string (id:2);
+  dropType:Torappu_StageDropType_dba46f9e (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RetroActData__0a388699_Entry {
+  key:string (id:0);
+  value:Torappu_RetroActData_058c99e2 (id:1);
+}
+
+table Torappu_RetroActData_058c99e2 {
+  retroId:string (id:0);
+  type:Torappu_RetroType_93a70637 (id:1);
+  linkedActId:[string] (id:2);
+  startTime:long (id:3);
+  trailStartTime:long (id:4);
+  index:int (id:5);
+  name:string (id:6);
+  haveTrail:bool (id:7);
+  customActId:string (id:8);
+  customActType:Torappu_ActivityType_a6e2d1c1 (id:9);
+  trapDomainId:string (id:10);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RetroTrailData__116df384_Entry {
+  key:string (id:0);
+  value:Torappu_RetroTrailData_b8939cf2 (id:1);
+}
+
+table Torappu_RetroTrailData_b8939cf2 {
+  retroId:string (id:0);
+  trailStartTime:long (id:1);
+  trailRewardList:[Torappu_RetroTrailRewardItem_f9b6ceb0] (id:2);
+  stageList:[string] (id:3);
+  relatedChar:string (id:4);
+  relatedFullPotentialItemId:string (id:5);
+  themeColor:string (id:6);
+  fullPotentialItemId:string (id:7);
+}
+
+table Torappu_RetroTrailRewardItem_f9b6ceb0 {
+  trailRewardId:string (id:0);
+  starCount:int (id:1);
+  rewardItem:Torappu_ItemBundle_64f049cd (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_StageData__f2e2c56a_Entry {
+  key:string (id:0);
+  value:Torappu_StageData_81769338 (id:1);
+}
+
+table Torappu_StageData_81769338 {
+  stageType:Torappu_StageType_3f46c255 (id:0);
+  difficulty:Torappu_LevelData_Difficulty_47abb9d1 (id:1);
+  performanceStageFlag:Torappu_StageData_PerformanceStageFlag_a16ac2d2 (id:2);
+  diffGroup:Torappu_StageDiffGroup_6b170b89 (id:3);
+  unlockCondition:[Torappu_StageData_ConditionDesc_a4a79685] (id:4);
+  stageId:string (id:5);
+  levelId:string (id:6);
+  zoneId:string (id:7);
+  code:string (id:8);
+  name:string (id:9);
+  description:string (id:10);
+  hardStagedId:string (id:11);
+  sixStarStageId:string (id:12);
+  dangerLevel:string (id:13);
+  dangerPoint:float (id:14);
+  loadingPicId:string (id:15);
+  battleFinishLoadingPicId:string (id:16);
+  canPractice:bool (id:17);
+  canBattleReplay:bool (id:18);
+  apCost:int (id:19);
+  apFailReturn:int (id:20);
+  maxSlot:int (id:21);
+  etItemId:string (id:22);
+  etCost:int (id:23);
+  etFailReturn:int (id:24);
+  etButtonStyle:string (id:25);
+  apProtectTimes:int (id:26);
+  diamondOnceDrop:int (id:27);
+  practiceTicketCost:int (id:28);
+  dailyStageDifficulty:int (id:29);
+  expGain:int (id:30);
+  goldGain:int (id:31);
+  loseExpGain:int (id:32);
+  loseGoldGain:int (id:33);
+  passFavor:int (id:34);
+  completeFavor:int (id:35);
+  slProgress:int (id:36);
+  displayMainItem:string (id:37);
+  hilightMark:bool (id:38);
+  bossMark:bool (id:39);
+  isPredefined:bool (id:40);
+  isHardPredefined:bool (id:41);
+  isSkillSelectablePredefined:bool (id:42);
+  isStoryOnly:bool (id:43);
+  appearanceStyle:Torappu_AppearanceStyle_6a492835 (id:44);
+  stageDropInfo:Torappu_StageData_StageDropInfo_bb8028e7 (id:45);
+  levelMapId:string (id:46);
+  canUseCharm:bool (id:47);
+  canUseTech:bool (id:48);
+  canUseTrapTool:bool (id:49);
+  canUseBattlePerformance:bool (id:50);
+  canUseFirework:bool (id:51);
+  canMultipleBattle:bool (id:52);
+  startButtonOverrideId:string (id:53);
+  isStagePatch:bool (id:54);
+  mainStageId:string (id:55);
+  extraCondition:[Torappu_StageData_ExtraConditionDesc_49a65013] (id:56);
+  extraInfo:[Torappu_StageData_SpecialStoryInfo_757f9450] (id:57);
+  sixStarBaseDesc:string (id:58);
+  sixStarDisplayRewardList:[Torappu_ItemBundle_64f049cd] (id:59);
+  advancedRuneIdList1:[string] (id:60);
+  advancedRuneIdList2:[string] (id:61);
+  useSpecialSizeMapPreview:bool (id:62);
+}
+
+table Torappu_StageData_ConditionDesc_a4a79685 {
+  stageId:string (id:0);
+  completeState:Torappu_PlayerBattleRank_4b25cc10 (id:1);
+}
+
+table Torappu_StageData_ExtraConditionDesc_49a65013 {
+  index:int (id:0);
+  template:string (id:1);
+  unlockParam:[string] (id:2);
+}
+
+table Torappu_StageData_SpecialStoryInfo_757f9450 {
+  stageId:string (id:0);
+  rewards:[Torappu_ItemBundle_64f049cd] (id:1);
+  progressInfo:Torappu_StageData_SpecialProgressInfo_6ccb17cb (id:2);
+  imageId:string (id:3);
+  keyItemId:string (id:4);
+  unlockDesc:string (id:5);
+}
+
+table Torappu_StageData_SpecialProgressInfo_6ccb17cb {
+  progressType:Torappu_StageData_SpecialStageUnlockProgressType_49482822 (id:0);
+  descList:[System_Collections_Generic_Dictionary_2_System_Int32_System_String__d8af7298_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_String__d8af7298_Entry {
+  key:int (id:0);
+  value:string (id:1);
+}
+
+table Torappu_RetroTrailRuleData_3348d864 {
+  title:[string] (id:0);
+  desc:[string] (id:1);
+}
+
+table Torappu_ActivityCustomData_b602daf8 {
+  TYPE_ACT17SIDE:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData__c29a50c1_Entry] (id:0);
+  TYPE_ACT25SIDE:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActivityCustomData_Act25sideCustomData__5765fdd7_Entry] (id:1);
+  TYPE_ACT20SIDE:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act20SideData__be5bf482_Entry] (id:2);
+  TYPE_ACT21SIDE:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act21SideData__c5cdcb5d_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData__c29a50c1_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_b0953741 (id:1);
+}
+
+table Torappu_Act17sideData_b0953741 {
+  placeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_PlaceData__536d61fa_Entry] (id:0);
+  nodeInfoDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_NodeInfoData__1bbdccb4_Entry] (id:1);
+  landmarkNodeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_LandmarkNodeData__a9761093_Entry] (id:2);
+  storyNodeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_StoryNodeData__9f993460_Entry] (id:3);
+  battleNodeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_BattleNodeData__571ef56e_Entry] (id:4);
+  treasureNodeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_TreasureNodeData__ec4fa032_Entry] (id:5);
+  eventNodeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_EventNodeData__d1147526_Entry] (id:6);
+  techNodeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_TechNodeData__937b1dfe_Entry] (id:7);
+  choiceNodeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_ChoiceNodeData__248f93eb_Entry] (id:8);
+  eventDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_EventData__25de9940_Entry] (id:9);
+  archiveItemUnlockDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_ArchiveItemUnlockData__58efd1f2_Entry] (id:10);
+  techTreeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_TechTreeData__bb6c87db_Entry] (id:11);
+  techTreeBranchDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_TechTreeBranchData__327dae1b_Entry] (id:12);
+  mainlineChapterDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_MainlineChapterData__ac19295a_Entry] (id:13);
+  mainlineDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_MainlineData__ae05dd5c_Entry] (id:14);
+  zoneDataList:[Torappu_Act17sideData_ZoneData_34949d04] (id:15);
+  constData:Torappu_Act17sideData_ConstData_23566178 (id:16);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_PlaceData__536d61fa_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_PlaceData_afe8c55f (id:1);
+}
+
+table Torappu_Act17sideData_PlaceData_afe8c55f {
+  placeId:string (id:0);
+  placeDesc:string (id:1);
+  lockEventId:string (id:2);
+  zoneId:string (id:3);
+  visibleCondType:string (id:4);
+  visibleParams:[string] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_NodeInfoData__1bbdccb4_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_NodeInfoData_98cd3a0f (id:1);
+}
+
+table Torappu_Act17sideData_NodeInfoData_98cd3a0f {
+  nodeId:string (id:0);
+  nodeType:Torappu_Act17sideData_NodeType_b4d09bfe (id:1);
+  sortId:int (id:2);
+  placeId:string (id:3);
+  isPointPlace:bool (id:4);
+  chapterId:string (id:5);
+  trackPointType:Torappu_Act17sideData_TrackPointType_4bdca999 (id:6);
+  unlockCondType:string (id:7);
+  unlockParams:[string] (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_LandmarkNodeData__a9761093_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_LandmarkNodeData_56e9a31c (id:1);
+}
+
+table Torappu_Act17sideData_LandmarkNodeData_56e9a31c {
+  nodeId:string (id:0);
+  landmarkId:string (id:1);
+  landmarkName:string (id:2);
+  landmarkPic:string (id:3);
+  landmarkSpecialPic:string (id:4);
+  landmarkDesList:[string] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_StoryNodeData__9f993460_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_StoryNodeData_a0495fea (id:1);
+}
+
+table Torappu_Act17sideData_StoryNodeData_a0495fea {
+  nodeId:string (id:0);
+  storyId:string (id:1);
+  storyKey:string (id:2);
+  storyName:string (id:3);
+  storyPic:string (id:4);
+  confirmDes:string (id:5);
+  storyDesList:[string] (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_BattleNodeData__571ef56e_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_BattleNodeData_7e99fdde (id:1);
+}
+
+table Torappu_Act17sideData_BattleNodeData_7e99fdde {
+  nodeId:string (id:0);
+  stageId:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_TreasureNodeData__ec4fa032_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_TreasureNodeData_dfbaa6b0 (id:1);
+}
+
+table Torappu_Act17sideData_TreasureNodeData_dfbaa6b0 {
+  nodeId:string (id:0);
+  treasureId:string (id:1);
+  treasureName:string (id:2);
+  treasurePic:string (id:3);
+  treasureSpecialPic:string (id:4);
+  endEventId:string (id:5);
+  confirmDes:string (id:6);
+  treasureDesList:[string] (id:7);
+  missionIdList:[string] (id:8);
+  rewardList:[Torappu_ItemBundle_64f049cd] (id:9);
+  treasureType:Torappu_Act17sideData_TreasureType_854cbcac (id:10);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_EventNodeData__d1147526_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_EventNodeData_7c59301c (id:1);
+}
+
+table Torappu_Act17sideData_EventNodeData_7c59301c {
+  nodeId:string (id:0);
+  eventId:string (id:1);
+  endEventId:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_TechNodeData__937b1dfe_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_TechNodeData_65ff7f3c (id:1);
+}
+
+table Torappu_Act17sideData_TechNodeData_65ff7f3c {
+  nodeId:string (id:0);
+  techTreeId:string (id:1);
+  techTreeName:string (id:2);
+  techPic:string (id:3);
+  techSpecialPic:string (id:4);
+  endEventId:string (id:5);
+  confirmDes:string (id:6);
+  techDesList:[string] (id:7);
+  missionIdList:[string] (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_ChoiceNodeData__248f93eb_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_ChoiceNodeData_d17f9656 (id:1);
+}
+
+table Torappu_Act17sideData_ChoiceNodeData_d17f9656 {
+  nodeId:string (id:0);
+  choicePic:string (id:1);
+  isDisposable:bool (id:2);
+  choiceSpecialPic:string (id:3);
+  choiceName:string (id:4);
+  choiceDesList:[string] (id:5);
+  cancelDes:string (id:6);
+  choiceNum:int (id:7);
+  optionList:[Torappu_Act17sideData_ChoiceNodeOptionData_7c6cf55d] (id:8);
+}
+
+table Torappu_Act17sideData_ChoiceNodeOptionData_7c6cf55d {
+  canRepeat:bool (id:0);
+  eventId:string (id:1);
+  des:string (id:2);
+  unlockDes:string (id:3);
+  unlockCondType:string (id:4);
+  unlockParams:[string] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_EventData__25de9940_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_EventData_094ff4e2 (id:1);
+}
+
+table Torappu_Act17sideData_EventData_094ff4e2 {
+  eventId:string (id:0);
+  eventPic:string (id:1);
+  eventSpecialPic:string (id:2);
+  eventTitle:string (id:3);
+  eventDesList:[string] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_ArchiveItemUnlockData__58efd1f2_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_ArchiveItemUnlockData_ae0a42c3 (id:1);
+}
+
+table Torappu_Act17sideData_ArchiveItemUnlockData_ae0a42c3 {
+  itemId:string (id:0);
+  itemType:Torappu_ActArchiveType_cd0ba499 (id:1);
+  unlockCondition:Torappu_Act17sideData_ArchiveItemUnlockCondition_2b908748 (id:2);
+  nodeId:string (id:3);
+  stageParam:Torappu_Act17sideData_ArchiveItemStageUnlockParam_30831ec6 (id:4);
+  chapterId:string (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_TechTreeData__bb6c87db_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_TechTreeData_3a13ca45 (id:1);
+}
+
+table Torappu_Act17sideData_TechTreeData_3a13ca45 {
+  techTreeId:string (id:0);
+  sortId:int (id:1);
+  techTreeName:string (id:2);
+  defaultBranchId:string (id:3);
+  lockDes:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_TechTreeBranchData__327dae1b_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_TechTreeBranchData_9596441c (id:1);
+}
+
+table Torappu_Act17sideData_TechTreeBranchData_9596441c {
+  techTreeBranchId:string (id:0);
+  techTreeId:string (id:1);
+  techTreeBranchName:string (id:2);
+  techTreeBranchIcon:string (id:3);
+  techTreeBranchDesc:string (id:4);
+  runeData:Torappu_RuneTable_PackedRuneData_44298930 (id:5);
+}
+
+table Torappu_RuneTable_PackedRuneData_44298930 {
+  id:string (id:0);
+  points:float (id:1);
+  mutexGroupKey:string (id:2);
+  description:string (id:3);
+  runes:[Torappu_RuneData_fc2de0e9] (id:4);
+}
+
+table Torappu_RuneData_fc2de0e9 {
+  key:string (id:0);
+  selector:Torappu_RuneData_Selector_f177175d (id:1);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:2);
+}
+
+table Torappu_RuneData_Selector_f177175d {
+  professionMask:Torappu_ProfessionCategory_f64dcd2f (id:0);
+  buildableMask:Torappu_BuildableType_c4537a3b (id:1);
+  playerSideMask:Torappu_PlayerSideMask_5a51be9e (id:2);
+  mapLayerMask:Torappu_MapLayerMask_663506f1 (id:3);
+  sideType:Torappu_Battle_SideType_7ae7af6d (id:4);
+  charIdFilter:[string] (id:5);
+  charIdExcludeFilter:[string] (id:6);
+  enemyIdFilter:[string] (id:7);
+  enemyIdExcludeFilter:[string] (id:8);
+  enemyLevelTypeFilter:[string] (id:9);
+  enemyActionHiddenGroupFilter:[string] (id:10);
+  skillIdFilter:[string] (id:11);
+  tileKeyFilter:[string] (id:12);
+  groupTagFilter:[string] (id:13);
+  filterTagFilter:[string] (id:14);
+  filterTagExcludeFilter:[string] (id:15);
+  subProfessionExcludeFilter:[string] (id:16);
+  mapTagFilter:[string] (id:17);
+  heightTypeMask:Torappu_TileData_HeightTypeMask_fb187ca6 (id:18);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_MainlineChapterData__ac19295a_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_MainlineChapterData_e1b7c7fc (id:1);
+}
+
+table Torappu_Act17sideData_MainlineChapterData_e1b7c7fc {
+  chapterId:string (id:0);
+  chapterDes:string (id:1);
+  chapterIcon:Torappu_Act17sideData_ChapterIconType_f41416a8 (id:2);
+  unlockDes:string (id:3);
+  id:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act17sideData_MainlineData__ae05dd5c_Entry {
+  key:string (id:0);
+  value:Torappu_Act17sideData_MainlineData_a4ae74bc (id:1);
+}
+
+table Torappu_Act17sideData_MainlineData_a4ae74bc {
+  mainlineId:string (id:0);
+  nodeId:string (id:1);
+  sortId:int (id:2);
+  missionSort:string (id:3);
+  zoneId:string (id:4);
+  mainlineDes:string (id:5);
+  focusNodeId:string (id:6);
+}
+
+table Torappu_Act17sideData_ZoneData_34949d04 {
+  zoneId:string (id:0);
+  unlockPlaceId:string (id:1);
+  unlockText:string (id:2);
+}
+
+table Torappu_Act17sideData_ConstData_23566178 {
+  techTreeUnlockEventId:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActivityCustomData_Act25sideCustomData__5765fdd7_Entry {
+  key:string (id:0);
+  value:Torappu_ActivityCustomData_Act25sideCustomData_4e62c143 (id:1);
+}
+
+table Torappu_ActivityCustomData_Act25sideCustomData_4e62c143 {
+  battlePerformanceData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act25SideData_BattlePerformanceData__2ac2ca12_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act25SideData_BattlePerformanceData__2ac2ca12_Entry {
+  key:string (id:0);
+  value:Torappu_Act25SideData_BattlePerformanceData_2af75cd4 (id:1);
+}
+
+table Torappu_Act25SideData_BattlePerformanceData_2af75cd4 {
+  itemId:string (id:0);
+  sortId:int (id:1);
+  itemName:string (id:2);
+  itemIcon:string (id:3);
+  itemDesc:string (id:4);
+  itemTechType:Torappu_Act25SideData_Act25sideTechType_9834dc6f (id:5);
+  runeData:Torappu_RuneTable_PackedRuneData_44298930 (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act20SideData__be5bf482_Entry {
+  key:string (id:0);
+  value:Torappu_Act20SideData_0b721cf7 (id:1);
+}
+
+table Torappu_Act20SideData_0b721cf7 {
+  zoneAdditionDataMap:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:0);
+  residentCartDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act20SideData_ResidentCartData__546b9682_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act20SideData_ResidentCartData__546b9682_Entry {
+  key:string (id:0);
+  value:Torappu_Act20SideData_ResidentCartData_5bbb9ac3 (id:1);
+}
+
+table Torappu_Act20SideData_ResidentCartData_5bbb9ac3 {
+  residentPic:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act21SideData__c5cdcb5d_Entry {
+  key:string (id:0);
+  value:Torappu_Act21SideData_afecf3db (id:1);
+}
+
+table Torappu_Act21SideData_afecf3db {
+  zoneAdditionDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_Act21SideData_ZoneAddtionData__22ef2e1c_Entry] (id:0);
+  constData:Torappu_Act21SideData_ConstData_48b7f07f (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_Act21SideData_ZoneAddtionData__22ef2e1c_Entry {
+  key:string (id:0);
+  value:Torappu_Act21SideData_ZoneAddtionData_e8a8294b (id:1);
+}
+
+table Torappu_Act21SideData_ZoneAddtionData_e8a8294b {
+  zoneId:string (id:0);
+  unlockText:string (id:1);
+  stageUnlockText:string (id:2);
+  entryId:string (id:3);
+}
+
+table Torappu_Act21SideData_ConstData_48b7f07f {
+  lineConnectZone:string (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_Int32__b6e5a62c_Entry {
+  key:int (id:0);
+  value:int (id:1);
+}
+
+root_type Torappu_RetroStageTable_0fac314f;

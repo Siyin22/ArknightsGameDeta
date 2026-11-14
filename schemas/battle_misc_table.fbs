@@ -1,0 +1,432 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_AbnormalFlag_a48bf4c6 : int {
+  STUNNED = 0,
+  SP_RECOVER_STOPPED = 1,
+  TARGET_FREE = 2,
+  BLOCK_FREE = 3,
+  HIDDEN = 4,
+  INVINCIBLE = 5,
+  UNDEADABLE = 6,
+  HEAL_FREE = 7,
+  UNBALANCE_IMMUNE = 8,
+  INVISIBLE = 9,
+  UNUSED_PLACEHOLDER_1 = 10,
+  DISARMED = 11,
+  SILENCED = 12,
+  UNMOVABLE = 13,
+  UNUSED_PLACEHOLDER_2 = 14,
+  ALLY_TARGET_FREE = 15,
+  FROZEN = 16,
+  CAMOUFLAGE = 17,
+  FORCE_DISARMED = 18,
+  STUNNED_NO_AMPLIFY_DAMAGE = 19,
+  DISABLE_COMBAT = 20,
+  ELEMENT_FREE_ALL = 21,
+  UNMOVABLE_PRIVATE = 22,
+  COLD = 23,
+  SKILL_NOT_ACTIVATABLE = 24,
+  LEVITATE = 25,
+  DURANCE = 26,
+  NOT_WITHDRAWABLE = 27,
+  OUT_OF_GROUND = 28,
+  SP_MODIFY_STOPPED = 29,
+  ANTI_STATUS_RESISTABLE = 30,
+  DISARMED_COMBAT = 31,
+  TOWER_TARGET_FREE = 32,
+  FEARED = 33,
+  SKILL_ACTIVABLE_IN_ABNORMAL = 34,
+  MOTION_TARGET_FREE = 35,
+  FORCE_LEVITATE = 36,
+  BUFF_ADD_CAN_BE_CANCELED_IF_DEFENSE = 37,
+  DEFENSE_BUFF_ADD_IF_CANCELABLE_BUFF = 38,
+  PALSY = 39,
+  PALSYING = 40,
+  ATTRACTED = 41,
+  FEARED_PRIVATE = 42,
+  DOZE = 43,
+  TELEPORTED = 44,
+  GROUND_BOUND = 45,
+  E_NUM = 46,
+}
+
+enum Torappu_AbnormalCombo_b86d9225 : int {
+  SLEEPING = 0,
+  SHELTERING = 1,
+  ISOLATE = 2,
+  E_NUM = 3,
+}
+
+enum Torappu_AttributeType_52464bfb : int {
+  MAX_HP = 0,
+  ATK = 1,
+  DEF = 2,
+  MAGIC_RESISTANCE = 3,
+  COST = 4,
+  BLOCK_CNT = 5,
+  MOVE_SPEED = 6,
+  ATTACK_SPEED = 7,
+  BASE_ATTACK_TIME = 8,
+  RESERVED_0 = 9,
+  RESERVED_1 = 10,
+  RESERVED_2 = 11,
+  RESERVED_3 = 12,
+  HP_RECOVERY_PER_SEC = 13,
+  SP_RECOVERY_PER_SEC = 14,
+  ABILITY_RANGE_FORWARD_EXTEND = 15,
+  MAX_DEPLOY_COUNT = 16,
+  DEF_PENETRATE = 17,
+  MAGIC_RESIST_PENETRATE = 18,
+  HP_RECOVERY_PER_SEC_BY_MAX_HP_RATIO = 19,
+  TAUNT_LEVEL = 20,
+  RESPAWN_TIME = 21,
+  MAX_DECK_STACK_CNT = 22,
+  MASS_LEVEL = 23,
+  BASE_FORCE_LEVEL = 24,
+  DEF_PENETRATE_FIXED = 25,
+  ONE_MINUS_STATUS_RESISTANCE = 26,
+  MAGIC_RESIST_PENETRATE_FIXED = 27,
+  MAX_EP = 28,
+  EP_RECOVERY_PER_SEC = 29,
+  SP_RECOVER_RATIO = 30,
+  EP_DAMAGE_RESISTANCE = 31,
+  EP_RESISTANCE = 32,
+  DAMAGE_HITRATE_PHYSICAL = 33,
+  DAMAGE_HITRATE_MAGICAL = 34,
+  EP_BREAK_RECOVER_SPEED = 35,
+  SLOW_DOWN = 36,
+  BLOCK_RADIUS_SCALE = 37,
+  E_NUM = 38,
+}
+
+enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType_d0d321a1 : int {
+  ADDITION = 0,
+  MULTIPLIER = 1,
+  FINAL_ADDITION = 2,
+  FINAL_SCALER = 3,
+}
+
+enum Torappu_BuffData_StatusResistable_ff1bfa9d : ubyte {
+  NO = 0,
+  YES = 1,
+  AUTOMATIC = 2,
+}
+
+enum Torappu_BuffData_OverrideType_d56d0742 : int {
+  DEFAULT = 0,
+  STACK = 1,
+  UNIQUE = 2,
+  EXTEND = 3,
+  EXTEND_TIME = 4,
+}
+
+enum Torappu_BuffData_OnEventPriority_86df91ea : int {
+  TITI_DOZE_PRIORITY = -4000,
+  LOWEST_PRIORITY = -3000,
+  LOWER_PRIORITY = -2000,
+  LOW_PRIORITY = -1000,
+  DEFAULT = 0,
+  HIGH_PRIORITY = 1000,
+  HIGHER_PRIORITY = 2000,
+}
+
+enum Torappu_LifeType_b1c600c7 : ubyte {
+  IMMEDIATELY = 0,
+  LIMITED = 1,
+  INFINITY = 2,
+  CUSTOM = 3,
+}
+
+enum Torappu_Battle_AutoChess_MapAreaType_4a52532e : int {
+  NONE = 0,
+  ENEMY_PREVIEW_0 = 1,
+  ENEMY_PREVIEW_1 = 2,
+  ENEMY_PREVIEW_2 = 3,
+  ENEMY_PREVIEW_3 = 4,
+  ENEMY_PREVIEW_BOSS_0 = 5,
+  ENEMY_PREVIEW_BOSS_1 = 6,
+  CHAR_HAND_0 = 7,
+  CHAR_HAND_1 = 8,
+  CHAR_HAND_2 = 9,
+  CHAR_HAND_3 = 10,
+  CHAR_HAND_BOSS_LEFT_0 = 11,
+  CHAR_HAND_BOSS_RIGHT_0 = 12,
+  CHAR_HAND_BOSS_LEFT_1 = 13,
+  CHAR_HAND_BOSS_RIGHT_1 = 14,
+  CHAR_HAND_HELP_0 = 15,
+  CHAR_HAND_HELP_1 = 16,
+  EQUIP_HAND_0 = 17,
+  EQUIP_HAND_1 = 18,
+  EQUIP_HAND_2 = 19,
+  EQUIP_HAND_3 = 20,
+  EQUIP_HAND_BOSS_LEFT_0 = 21,
+  EQUIP_HAND_BOSS_RIGHT_0 = 22,
+  EQUIP_HAND_BOSS_LEFT_1 = 23,
+  EQUIP_HAND_BOSS_RIGHT_1 = 24,
+  BATTLE_SELF_0 = 25,
+  BATTLE_SELF_1 = 26,
+  BATTLE_SELF_2 = 27,
+  BATTLE_SELF_3 = 28,
+  BATTLE_HELP_LEFT = 29,
+  BATTLE_HELP_RIGHT = 30,
+  BATTLE_BOSS_LEFT_0 = 31,
+  BATTLE_BOSS_RIGHT_0 = 32,
+  BATTLE_BOSS_LEFT_1 = 33,
+  BATTLE_BOSS_RIGHT_1 = 34,
+  ALL_NORMAL_0 = 35,
+  ALL_NORMAL_1 = 36,
+  ALL_NORMAL_2 = 37,
+  ALL_NORMAL_3 = 38,
+  ALL_HELP = 39,
+  ALL_BOSS_0 = 40,
+  ALL_BOSS_1 = 41,
+}
+
+enum Torappu_Battle_AutoChess_AutoChessCameraPlugin_PositionType_e12153b4 : int {
+  NONE = 0,
+  PREPARE_NORMAL_HAND_0 = 1,
+  PREPARE_NORMAL_HAND_1 = 2,
+  PREPARE_NORMAL_HAND_2 = 3,
+  PREPARE_NORMAL_HAND_3 = 4,
+  PREPARE_NORMAL_SHOP_0 = 5,
+  PREPARE_NORMAL_SHOP_1 = 6,
+  PREPARE_NORMAL_SHOP_2 = 7,
+  PREPARE_NORMAL_SHOP_3 = 8,
+  PREPARE_NORMAL_ENEMY_0 = 9,
+  PREPARE_NORMAL_ENEMY_1 = 10,
+  PREPARE_NORMAL_ENEMY_2 = 11,
+  PREPARE_NORMAL_ENEMY_3 = 12,
+  PREPARE_BOSS_HAND_LEFT_0 = 13,
+  PREPARE_BOSS_HAND_LEFT_1 = 14,
+  PREPARE_BOSS_HAND_RIGHT_0 = 15,
+  PREPARE_BOSS_HAND_RIGHT_1 = 16,
+  PREPARE_BOSS_SHOP_LEFT_0 = 17,
+  PREPARE_BOSS_SHOP_LEFT_1 = 18,
+  PREPARE_BOSS_SHOP_RIGHT_0 = 19,
+  PREPARE_BOSS_SHOP_RIGHT_1 = 20,
+  PREPARE_BOSS_ENEMY_0 = 21,
+  PREPARE_BOSS_ENEMY_1 = 22,
+  BATTLE_SELF_0 = 23,
+  BATTLE_SELF_1 = 24,
+  BATTLE_SELF_2 = 25,
+  BATTLE_SELF_3 = 26,
+  BATTLE_HELP_LEFT = 27,
+  BATTLE_HELP_MID = 28,
+  BATTLE_HELP_RIGHT = 29,
+  BATTLE_BOSS_LEFT_0 = 30,
+  BATTLE_BOSS_LEFT_1 = 31,
+  BATTLE_BOSS_MID_0 = 32,
+  BATTLE_BOSS_MID_1 = 33,
+  BATTLE_BOSS_RIGHT_0 = 34,
+  BATTLE_BOSS_RIGHT_1 = 35,
+  CUSTOM_CHARACTER = 36,
+}
+
+table Torappu_BattleMiscData_0fafe59b {
+  levelScenePairs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_LevelScenePair__beb4f49d_Entry] (id:0);
+  effectBlacklist:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:1);
+  miscConfig:Torappu_BattleMiscConfigs_47281cd9 (id:2);
+  particleEffectManagerConfigs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ParticleEffectManagerConfig__4caf2e06_Entry] (id:3);
+  tileTypeDict:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_LevelScenePair__beb4f49d_Entry {
+  key:string (id:0);
+  value:Torappu_LevelScenePair_21235340 (id:1);
+}
+
+table Torappu_LevelScenePair_21235340 {
+  levelId:string (id:0);
+  sceneId:string (id:1);
+  hookedMapPreviewId:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry {
+  key:string (id:0);
+  value:[string] (id:1);
+}
+
+table Torappu_BattleMiscConfigs_47281cd9 {
+  palsyLimitedStackCnt:int (id:0);
+  palsyOverflowEffect:string (id:1);
+  defaultDozeAnimPlaybackSpeed:float (id:2);
+  defaultDozeAnim:string (id:3);
+  slowDownTemplateKey:string (id:4);
+  AUTOCHESS:Torappu_AutoChessBattleMiscConfig_0db894e4 (id:5);
+  prdBaseProbs:[float] (id:6);
+}
+
+table Torappu_AutoChessBattleMiscConfig_0db894e4 {
+  idleEffectMap:[Torappu_ListDict_2_System_String_System_String__191f36ab_Entry] (id:0);
+  defaultAnimMap:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:1);
+  forceUseModeIds:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:2);
+  enemyPreviewBuff:Torappu_BuffData_97fa50c7 (id:3);
+  mlyssWtrmanTransformBuff:string (id:4);
+  effectConfig:Torappu_AutoChessBattleMiscConfig_EffectConfig_6d031180 (id:5);
+  tutorialManagerCfg:Torappu_Battle_AutoChess_AutoChessTutorialManager_AutoChessTutorialManagerConfig_ad39caf6 (id:6);
+  mapSettings:Torappu_Battle_AutoChess_AutoChessMapAreaManager_MapSettings_5c46bc4b (id:7);
+  cameraSettings:Torappu_Battle_AutoChess_AutoChessCameraPlugin_CameraSettings_277c9509 (id:8);
+  sceneSettings:Torappu_Battle_AutoChessMultiSceneHolder_MultiSceneSetting_9df167ff (id:9);
+  emotionalChessOffset:Torappu_GridPosition_049a6f02 (id:10);
+  emotionalChessSpIdleWaitTime:UnityEngine_Vector2_1073c192 (id:11);
+  bondCheerLevels:[int] (id:12);
+}
+
+table Torappu_ListDict_2_System_String_System_String__191f36ab_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry {
+  key:string (id:0);
+  value:int (id:1);
+}
+
+table Torappu_BuffData_97fa50c7 {
+  attributes:Torappu_AttributeModifierData_48d7cabb (id:0);
+  buffKey:string (id:1);
+  loadFromDB:bool (id:2);
+  isDurableBuff:bool (id:3);
+  isDamageMissable:bool (id:4);
+  isSilenceable:bool (id:5);
+  isStunnable:bool (id:6);
+  isFreezable:bool (id:7);
+  isLevitatable:bool (id:8);
+  isGroundBoundable:bool (id:9);
+  statusResistable:Torappu_BuffData_StatusResistable_ff1bfa9d (id:10);
+  templateKey:string (id:11);
+  disableOverride:bool (id:12);
+  overrideKey:string (id:13);
+  overrideType:Torappu_BuffData_OverrideType_d56d0742 (id:14);
+  maxStackCnt:int (id:15);
+  refreshRemainingTimeWhenStackMax:bool (id:16);
+  clearAllStackCntWhenTimeUp:bool (id:17);
+  maxValidStackCnt:int (id:18);
+  independentCharacterSource:bool (id:19);
+  overrideEffectKey:string (id:20);
+  overrideOnEventPriority:bool (id:21);
+  onEventPriority:Torappu_BuffData_OnEventPriority_86df91ea (id:22);
+  audioSignal:string (id:23);
+  lifeTimeType:Torappu_LifeType_b1c600c7 (id:24);
+  takeSnapshotWhenExtend:bool (id:25);
+  durationKey:string (id:26);
+  remainingTimeKey:string (id:27);
+  lifeTime:float (id:28);
+  triggerLifeType:Torappu_LifeType_b1c600c7 (id:29);
+  triggerCnt:int (id:30);
+  triggerInterval:float (id:31);
+  waitFirstTriggerInterval:bool (id:32);
+  firstTriggerInterval:float (id:33);
+  priority:int (id:34);
+  priorityBBKeys:[string] (id:35);
+  stripBlackboardParamsWithBuffKey:bool (id:36);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:37);
+  enableInitDirectionFromSource:bool (id:38);
+}
+
+table Torappu_AttributeModifierData_48d7cabb {
+  abnormalFlags:[Torappu_AbnormalFlag_a48bf4c6] (id:0);
+  abnormalImmunes:[Torappu_AbnormalFlag_a48bf4c6] (id:1);
+  abnormalAntis:[Torappu_AbnormalFlag_a48bf4c6] (id:2);
+  abnormalCombos:[Torappu_AbnormalCombo_b86d9225] (id:3);
+  abnormalComboImmunes:[Torappu_AbnormalCombo_b86d9225] (id:4);
+  attributeModifiers:[Torappu_AttributeModifierData_AttributeModifier_6d41f64a] (id:5);
+}
+
+table Torappu_AttributeModifierData_AttributeModifier_6d41f64a {
+  attributeType:Torappu_AttributeType_52464bfb (id:0);
+  formulaItem:Torappu_AttributeModifierData_AttributeModifier_FormulaItemType_d0d321a1 (id:1);
+  value:float (id:2);
+  loadFromBlackboard:bool (id:3);
+  fetchBaseValueFromSourceEntity:bool (id:4);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table Torappu_AutoChessBattleMiscConfig_EffectConfig_6d031180 {
+  goldenEffectId:string (id:0);
+  buildableTileHintEffect:string (id:1);
+  maskEffectWhenGainChess:string (id:2);
+  deckRegionEffect:string (id:3);
+  tempChessRegionClearWarningEffect:string (id:4);
+  garrisonHintEffect:string (id:5);
+  chessUpgradeHintEffect:string (id:6);
+  equipComboHintEffect:string (id:7);
+  equipCntEffect:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:8);
+  preloadEffects:[string] (id:9);
+}
+
+table Torappu_Battle_AutoChess_AutoChessTutorialManager_AutoChessTutorialManagerConfig_ad39caf6 {
+  bossRoundFocusMapBoundPos:[int] (id:0);
+  bossRoundFocusBossPos:[int] (id:1);
+}
+
+table Torappu_Battle_AutoChess_AutoChessMapAreaManager_MapSettings_5c46bc4b {
+  areaRect:[Torappu_ListDict_2_Torappu_Battle_AutoChess_MapAreaType_System_String__239d71b3_Entry] (id:0);
+  overrideLevelDataOffset:[Torappu_Battle_AutoChess_AutoChessMapAreaManager_AreaOffset_16e185c3] (id:1);
+  defaultBattleOffset:Torappu_GridPosition_049a6f02 (id:2);
+  mapFlipWidth:int (id:3);
+}
+
+table Torappu_ListDict_2_Torappu_Battle_AutoChess_MapAreaType_System_String__239d71b3_Entry {
+  key:Torappu_Battle_AutoChess_MapAreaType_4a52532e (id:0);
+  value:string (id:1);
+}
+
+table Torappu_Battle_AutoChess_AutoChessMapAreaManager_AreaOffset_16e185c3 {
+  areaType:Torappu_Battle_AutoChess_MapAreaType_4a52532e (id:0);
+  position:Torappu_GridPosition_049a6f02 (id:1);
+}
+
+table Torappu_GridPosition_049a6f02 {
+  row:int (id:0);
+  col:int (id:1);
+}
+
+table Torappu_Battle_AutoChess_AutoChessCameraPlugin_CameraSettings_277c9509 {
+  cameraPos:[System_Collections_Generic_Dictionary_2_Torappu_Battle_AutoChess_AutoChessCameraPlugin_PositionType_System_String__c09d72be_Entry] (id:0);
+  moveTime:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_Battle_AutoChess_AutoChessCameraPlugin_PositionType_System_String__c09d72be_Entry {
+  key:Torappu_Battle_AutoChess_AutoChessCameraPlugin_PositionType_e12153b4 (id:0);
+  value:string (id:1);
+}
+
+table Torappu_Battle_AutoChessMultiSceneHolder_MultiSceneSetting_9df167ff {
+  defaultScenes:[Torappu_Battle_AutoChessMultiSceneHolder_SceneInfo_a9892880] (id:0);
+  multiPlayerScenes:[Torappu_Battle_AutoChessMultiSceneHolder_SceneInfo_a9892880] (id:1);
+}
+
+table Torappu_Battle_AutoChessMultiSceneHolder_SceneInfo_a9892880 {
+  sceneType:int (id:0);
+  indexOffset:int (id:1);
+  offset:Torappu_GridPosition_049a6f02 (id:2);
+}
+
+table UnityEngine_Vector2_1073c192 {
+  x:float (id:0);
+  y:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ParticleEffectManagerConfig__4caf2e06_Entry {
+  key:string (id:0);
+  value:Torappu_ParticleEffectManagerConfig_dabcee9e (id:1);
+}
+
+table Torappu_ParticleEffectManagerConfig_dabcee9e {
+  forceUseLowDetailFx:bool (id:0);
+  effectPositionThreshold:float (id:1);
+  effectPositionMaxCount:int (id:2);
+}
+
+root_type Torappu_BattleMiscData_0fafe59b;

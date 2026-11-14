@@ -1,0 +1,1012 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_PlayerAvatarGroupType_da039287 : int {
+  NONE = 0,
+  ASSISTANT = 1,
+  DEFAULT = 2,
+  SPECIAL = 3,
+  ACTIVITY = 4,
+  DYNAMIC = 5,
+}
+
+enum Torappu_HomeMultiFormChangeRule_55e22a50 : int {
+  NONE = 0,
+  TIME = 1,
+}
+
+enum Torappu_ItemRarity_13dad0e0 : int {
+  TIER_1 = 0,
+  TIER_2 = 1,
+  TIER_3 = 2,
+  TIER_4 = 3,
+  TIER_5 = 4,
+  TIER_6 = 5,
+  E_NUM = 6,
+}
+
+enum Torappu_NameCardV2ModuleType_7ce6f46d : int {
+  NONE = 0,
+  BACKGROUND = 1,
+  ILLUST = 2,
+  COLLECT = 3,
+  AVATAR = 4,
+  REMOVABLE = 5,
+  AVATAR_SIMPLE = 6,
+}
+
+enum Torappu_NameCardV2ModuleSubType_b5328fa7 : int {
+  NONE = 0,
+  SIGN = 1,
+  ASSIST = 2,
+  MEDAL = 3,
+  MAINLINE = 4,
+  EQUIPMENT = 5,
+}
+
+enum Torappu_NameCardV2SkinType_27ee2484 : int {
+  NONE = 0,
+  BASE = 1,
+  SPECIAL = 2,
+  DYNAMIC = 3,
+}
+
+enum Torappu_MailArchiveItemType_f1b713ae : int {
+  NORMAL = 0,
+  BIRTHDAY = 1,
+  OPEN_SERVER = 2,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_EmojiSceneType_9d481077 : int {
+  NONE = 0,
+  ACTMULTIV3_ROOM = 1,
+  ACTMULTIV3_PICK = 2,
+  ACTMULTIV3_BATTLE = 3,
+  ENEMYDUEL_BATTLE = 4,
+  AUTOCHESS_ROOM = 5,
+  AUTOCHESS_BATTLE = 6,
+  BUILDING_ACTION = 7,
+  ARKHUB_ROOM = 8,
+}
+
+enum Torappu_UIGuideTarget_3132f702 : int {
+  NONE = 0,
+  BUILDING_CONTROL = 1,
+  BUILDING_DORM = 2,
+  BUILDING_HIRE = 3,
+  BUILDING_MANUFACT = 4,
+  BUILDING_MEETING = 5,
+  BUILDING_TRADING = 6,
+  CHAR_INFO = 7,
+  FRIEND = 8,
+  RECRUIT = 9,
+  SHOP = 10,
+  SQUAD_NORMAL = 11,
+  SQUAD_BATTLE = 12,
+  STAGE_MAINLINE = 13,
+  BUILDING_POWER = 14,
+  MISSION = 15,
+  CHAR_SKILL_SELECT = 16,
+  BUILDING_WORKSHOP = 17,
+  STAGE_CAMPAIGN = 18,
+  CHAR_EVOLVE = 19,
+  HANDBOOK = 20,
+  BUILDING_FURN_SHOP = 21,
+  BUILDING_TRAINING = 22,
+  STAGE_ACTIVITY = 23,
+  CRISIS_STAGE = 24,
+  ROGUELIKE_CHARSELECT = 25,
+  ROGUELIKE_BP = 26,
+  CLIMB_TOWER_ENTRY = 27,
+  CLIMB_TOWER_LAYER = 28,
+  ROGUELIKE_DUNGEON = 31,
+  RL03_TOTEM = 32,
+  GROCERY = 33,
+  TUNING = 34,
+  CRISIS_V2 = 35,
+  MISSION_ARCHIVE = 36,
+  FIFTH_ANNIV_EXPLORE = 37,
+  CARVING = 38,
+  VEC_BREAK = 39,
+  FIREWORK = 40,
+  BUILDING_STATION_MANAGE = 41,
+  ACT_MULTI_V3 = 42,
+  ENEMY_DUEL = 43,
+  VEC_BREAK_V2 = 44,
+  GUN_TASK = 45,
+  SPECIAL_OPERATOR = 46,
+  INFORMANT = 47,
+  ACT1VHALFIDLE = 48,
+  MONOPOLY = 49,
+  AUTO_CHESS = 50,
+  ART_GALLERY = 51,
+  ART_MAGAZINE = 52,
+  ACT_FOOTBALL = 53,
+  PIXEL_MAP = 54,
+  ARK_HUB = 55,
+  ARK_ODC = 56,
+  ACT54SIDE_CARD = 57,
+  ACT_VASEBREAKER = 58,
+  BUILDING_RECYCLE = 59,
+  ACT_ARCADE_V2 = 60,
+  OPEN_SERVER_V3 = 61,
+  ARK_NEWS = 62,
+}
+
+enum Torappu_KeyCodeType_0415b5b4 : int {
+  KEYBOARD = 0,
+  MOUSE = 1,
+}
+
+enum Torappu_KeySettingGroup_d509566d : int {
+  BATTLE = 0,
+  NORMAL = 1,
+}
+
+enum Torappu_KeyEffectGroup_91f9a046 : int {
+  BATTLE = 0,
+  OUT_BATTLE = 1,
+  ARKVENT = 2,
+  ALL = 3,
+}
+
+enum Torappu_ActivityType_a6e2d1c1 : int {
+  DEFAULT = 0,
+  MISSION_ONLY = 1,
+  CHECKIN_ONLY = 2,
+  CHECKIN_ALL_PLAYER = 3,
+  TYPE_ACT3D0 = 4,
+  TYPE_ACT4D0 = 5,
+  TYPE_ACT5D0 = 6,
+  TYPE_ACT5D1 = 7,
+  COLLECTION = 8,
+  AVG_ONLY = 9,
+  TYPE_ACT9D0 = 10,
+  TYPE_ACT12SIDE = 11,
+  TYPE_ACT13SIDE = 12,
+  TYPE_ACT17SIDE = 13,
+  LOGIN_ONLY = 14,
+  MINISTORY = 15,
+  ROGUELIKE = 16,
+  PRAY_ONLY = 17,
+  MULTIPLAY = 18,
+  MULTIPLAY_VERIFY2 = 19,
+  TYPE_ACT17D7 = 20,
+  GRID_GACHA = 21,
+  GRID_GACHA_V2 = 22,
+  INTERLOCK = 23,
+  APRIL_FOOL = 24,
+  BOSS_RUSH = 25,
+  TYPE_ACT20SIDE = 26,
+  FLOAT_PARADE = 27,
+  TYPE_ACT21SIDE = 28,
+  MAIN_BUFF = 29,
+  TYPE_ACT24SIDE = 30,
+  FLIP_ONLY = 31,
+  TYPE_ACT25SIDE = 32,
+  CHECKIN_VS = 33,
+  SWITCH_ONLY = 34,
+  TYPE_ACT27SIDE = 35,
+  UNIQUE_ONLY = 36,
+  MAINLINE_BP = 37,
+  TYPE_ACT42D0 = 38,
+  TYPE_ACT29SIDE = 39,
+  BLESS_ONLY = 40,
+  CHECKIN_ACCESS = 41,
+  YEAR_5_GENERAL = 42,
+  TYPE_ACT35SIDE = 43,
+  VEC_BREAK = 44,
+  TYPE_ACT36SIDE = 45,
+  TYPE_ACT38SIDE = 46,
+  AUTOCHESS_VERIFY1 = 47,
+  CHECKIN_VIDEO = 48,
+  ARCADE = 49,
+  MULTIPLAY_V3 = 50,
+  TYPE_MAINSS = 51,
+  ENEMY_DUEL = 52,
+  VEC_BREAK_V2 = 53,
+  TYPE_ACT42SIDE = 54,
+  TYPE_ACT44SIDE = 55,
+  HALFIDLE_VERIFY1 = 56,
+  TYPE_ACT45SIDE = 57,
+  TEAM_QUEST = 58,
+  RECRUIT_ONLY = 59,
+  TYPE_ACT46SIDE = 60,
+  AUTOCHESS_SEASON = 61,
+  ARK_HUB = 62,
+  ACT_FOOTBALL = 63,
+  TYPE_ACT53SIDE = 64,
+  TYPE_ACT54SIDE = 65,
+  ACT_DP = 66,
+  REWARD_ONLY = 67,
+  AUTOCHESS = 68,
+  TYPE_ACT55SIDE = 69,
+  ENUM = 70,
+}
+
+enum Torappu_CollectType_daa9fdb1 : int {
+  ALL = 0,
+  ROGUE = 1,
+  SANDBOX = 2,
+}
+
+enum Torappu_MagazineLeafType_4a6c94d7 : int {
+  DEFAULT = 0,
+  ROGUE = 1,
+  SANDBOX = 2,
+  AMIYA = 3,
+}
+
+enum Torappu_StickerType_d3f59d2d : int {
+  DEFAULT = 0,
+  ROGUE = 1,
+  SANDBOX = 2,
+  AMIYA = 3,
+}
+
+table Torappu_DisplayMetaData_40d5a201 {
+  playerAvatarData:Torappu_PlayerAvatarData_086792bf (id:0);
+  homeBackgroundData:Torappu_HomeBackgroundData_58b2c6fd (id:1);
+  nameCardV2Data:Torappu_NameCardV2Data_670ca615 (id:2);
+  mailArchiveData:Torappu_MailArchiveData_b8bf9dce (id:3);
+  mailSenderData:Torappu_MailSenderData_d4296df5 (id:4);
+  emoticonData:Torappu_EmoticonData_9c3ada6e (id:5);
+  storyVariantData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_StoryVariantData__fed58803_Entry] (id:6);
+  guidebookGroupDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_GuidebookGroupData__bbea4f9c_Entry] (id:7);
+  pcKeyData:Torappu_PCKeyData_be2021d2 (id:8);
+  resolutionSettingList:[Torappu_ResolutionSettingItemData_f1824349] (id:9);
+  artGalleryCollectData:Torappu_ArtGalleryCollectData_4720c46a (id:10);
+  magazineLeafData:Torappu_MagazineLeafData_149759a1 (id:11);
+  stickerData:Torappu_StickerData_a423eff4 (id:12);
+  avgDialogSettingData:Torappu_AVGDialogSettingData_e600e74d (id:13);
+  pixelMapData:Torappu_PixelMapData_d9572a13 (id:14);
+}
+
+table Torappu_PlayerAvatarData_086792bf {
+  defaultAvatarId:string (id:0);
+  avatarList:[Torappu_PlayerAvatarPerData_5a63afd2] (id:1);
+  avatarTypeData:[System_Collections_Generic_Dictionary_2_Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData__c59d1b73_Entry] (id:2);
+  constData:Torappu_AvatarConstData_5dd34374 (id:3);
+}
+
+table Torappu_PlayerAvatarPerData_5a63afd2 {
+  avatarId:string (id:0);
+  avatarType:Torappu_PlayerAvatarGroupType_da039287 (id:1);
+  avatarDesc:string (id:2);
+  isSecret:bool (id:3);
+  avatarStartTs:long (id:4);
+  avatarLimit:bool (id:5);
+  avatarIdSort:int (id:6);
+  avatarIdDesc:string (id:7);
+  avatarItemName:string (id:8);
+  avatarItemDesc:string (id:9);
+  avatarItemUsage:string (id:10);
+  obtainApproach:string (id:11);
+  dynAvatarId:string (id:12);
+  limitDatas:[Torappu_PlayerAvatarLimitData_c494950e] (id:13);
+}
+
+table Torappu_PlayerAvatarLimitData_c494950e {
+  avatarId:string (id:0);
+  descShowTs:long (id:1);
+  descHideTs:long (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData__c59d1b73_Entry {
+  key:Torappu_PlayerAvatarGroupType_da039287 (id:0);
+  value:Torappu_PlayerAvatarGroupData_e6785fe6 (id:1);
+}
+
+table Torappu_PlayerAvatarGroupData_e6785fe6 {
+  avatarType:Torappu_PlayerAvatarGroupType_da039287 (id:0);
+  typeName:string (id:1);
+  sortId:int (id:2);
+  avatarIdList:[string] (id:3);
+}
+
+table Torappu_AvatarConstData_5dd34374 {
+  approachHideText:string (id:0);
+}
+
+table Torappu_HomeBackgroundData_58b2c6fd {
+  defaultBackgroundId:string (id:0);
+  defaultThemeId:string (id:1);
+  homeBgDataList:[Torappu_HomeBackgroundSingleData_63860517] (id:2);
+  backgroundGroupDatas:[Torappu_ArtGalleryGroupData_d97eaeb6] (id:3);
+  themeList:[Torappu_HomeThemeDisplayData_015f529a] (id:4);
+  themeGroupDatas:[Torappu_ArtGalleryGroupData_d97eaeb6] (id:5);
+  backgroundLimitData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_HomeBackgroundLimitData__5f1eddc2_Entry] (id:6);
+  themeLimitData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_HomeThemeLimitData__e09e19f1_Entry] (id:7);
+  multiFormInfoData:[Torappu_HomeMultiFormInfoData_d9de4e1b] (id:8);
+  timeRuleData:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_HomeMultiFormTimeRuleDat_c713efc0_Entry] (id:9);
+  defaultBgMusicId:string (id:10);
+  themeStartTime:long (id:11);
+}
+
+table Torappu_HomeBackgroundSingleData_63860517 {
+  bgId:string (id:0);
+  bgType:string (id:1);
+  bgSortId:int (id:2);
+  bgStartTime:long (id:3);
+  isSecret:bool (id:4);
+  bgName:string (id:5);
+  bgDes:string (id:6);
+  bgUsage:string (id:7);
+  isMultiForm:bool (id:8);
+  changeRule:Torappu_HomeMultiFormChangeRule_55e22a50 (id:9);
+  multiFormList:[Torappu_HomeBackgroundMultiFormData_a6581fab] (id:10);
+  obtainApproach:string (id:11);
+  unlockDesList:[string] (id:12);
+  multiPicId:string (id:13);
+}
+
+table Torappu_HomeBackgroundMultiFormData_a6581fab {
+  multiFormBgId:string (id:0);
+  sortId:int (id:1);
+  bgMusicId:string (id:2);
+}
+
+table Torappu_ArtGalleryGroupData_d97eaeb6 {
+  type:string (id:0);
+  title:string (id:1);
+  sortId:int (id:2);
+  items:[Torappu_ArtGalleryItemData_4d4a6d50] (id:3);
+}
+
+table Torappu_ArtGalleryItemData_4d4a6d50 {
+  id:string (id:0);
+  groupType:string (id:1);
+  sortId:int (id:2);
+}
+
+table Torappu_HomeThemeDisplayData_015f529a {
+  id:string (id:0);
+  type:string (id:1);
+  sortId:int (id:2);
+  startTime:long (id:3);
+  isSecret:bool (id:4);
+  tmName:string (id:5);
+  tmDes:string (id:6);
+  tmUsage:string (id:7);
+  isMultiForm:bool (id:8);
+  changeRule:Torappu_HomeMultiFormChangeRule_55e22a50 (id:9);
+  multiFormList:[Torappu_HomeThemeMultiFormData_475ced95] (id:10);
+  obtainApproach:string (id:11);
+  unlockDesList:[string] (id:12);
+  isLimitObtain:bool (id:13);
+  hideWhenLimit:bool (id:14);
+  rarity:Torappu_ItemRarity_13dad0e0 (id:15);
+  multiPicId:string (id:16);
+}
+
+table Torappu_HomeThemeMultiFormData_475ced95 {
+  multiFormTmId:string (id:0);
+  sortId:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_HomeBackgroundLimitData__5f1eddc2_Entry {
+  key:string (id:0);
+  value:Torappu_HomeBackgroundLimitData_b978da55 (id:1);
+}
+
+table Torappu_HomeBackgroundLimitData_b978da55 {
+  bgId:string (id:0);
+  limitInfos:[Torappu_HomeBackgroundLimitInfoData_9324225f] (id:1);
+}
+
+table Torappu_HomeBackgroundLimitInfoData_9324225f {
+  limitInfoId:string (id:0);
+  startTime:long (id:1);
+  endTime:long (id:2);
+  invalidObtainDesc:string (id:3);
+  displayAfterEndTime:bool (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_HomeThemeLimitData__e09e19f1_Entry {
+  key:string (id:0);
+  value:Torappu_HomeThemeLimitData_ce954620 (id:1);
+}
+
+table Torappu_HomeThemeLimitData_ce954620 {
+  id:string (id:0);
+  limitInfos:[Torappu_HomeThemeLimitInfoData_bae45602] (id:1);
+}
+
+table Torappu_HomeThemeLimitInfoData_bae45602 {
+  startTime:long (id:0);
+  endTime:long (id:1);
+  invalidObtainDesc:string (id:2);
+}
+
+table Torappu_HomeMultiFormInfoData_d9de4e1b {
+  changeRule:Torappu_HomeMultiFormChangeRule_55e22a50 (id:0);
+  bgDesc:string (id:1);
+  tmDesc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_HomeMultiFormTimeRuleDat_c713efc0_Entry {
+  key:string (id:0);
+  value:[Torappu_HomeMultiFormTimeRuleData_0544b911] (id:1);
+}
+
+table Torappu_HomeMultiFormTimeRuleData_0544b911 {
+  id:string (id:0);
+  startHour:int (id:1);
+}
+
+table Torappu_NameCardV2Data_670ca615 {
+  fixedModuleData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_NameCardV2ModuleData__14f2366f_Entry] (id:0);
+  removableModuleData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_NameCardV2RemovableModuleData__8478467d_Entry] (id:1);
+  skinData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_NameCardV2SkinData__df2c2901_Entry] (id:2);
+  skinGroupDatas:[Torappu_ArtGalleryGroupData_d97eaeb6] (id:3);
+  consts:Torappu_NameCardV2Consts_6cd77399 (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_NameCardV2ModuleData__14f2366f_Entry {
+  key:string (id:0);
+  value:Torappu_NameCardV2ModuleData_47f2b8c7 (id:1);
+}
+
+table Torappu_NameCardV2ModuleData_47f2b8c7 {
+  id:string (id:0);
+  type:Torappu_NameCardV2ModuleType_7ce6f46d (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_NameCardV2RemovableModuleData__8478467d_Entry {
+  key:string (id:0);
+  value:Torappu_NameCardV2RemovableModuleData_209597e2 (id:1);
+}
+
+table Torappu_NameCardV2RemovableModuleData_209597e2 {
+  sortId:int (id:0);
+  subType:Torappu_NameCardV2ModuleSubType_b5328fa7 (id:1);
+  name:string (id:2);
+  id:string (id:3);
+  type:Torappu_NameCardV2ModuleType_7ce6f46d (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_NameCardV2SkinData__df2c2901_Entry {
+  key:string (id:0);
+  value:Torappu_NameCardV2SkinData_b251ac3e (id:1);
+}
+
+table Torappu_NameCardV2SkinData_b251ac3e {
+  id:string (id:0);
+  name:string (id:1);
+  type:Torappu_NameCardV2SkinType_27ee2484 (id:2);
+  isSecret:bool (id:3);
+  sortId:int (id:4);
+  isSpTheme:bool (id:5);
+  defaultShowDetail:bool (id:6);
+  themeName:string (id:7);
+  themeEnName:string (id:8);
+  skinStartTime:long (id:9);
+  skinDesc:string (id:10);
+  usageDesc:string (id:11);
+  skinApproach:string (id:12);
+  unlockConditionCnt:int (id:13);
+  unlockDescList:[string] (id:14);
+  fixedModuleList:[string] (id:15);
+  rarity:Torappu_ItemRarity_13dad0e0 (id:16);
+  skinTmplCnt:int (id:17);
+  canChangeTmpl:bool (id:18);
+  isTimeLimit:bool (id:19);
+  timeLimitInfoList:[System_Collections_Generic_Dictionary_2_System_String_Torappu_NameCardV2TimeLimitInfo__ae37e18d_Entry] (id:20);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_NameCardV2TimeLimitInfo__ae37e18d_Entry {
+  key:string (id:0);
+  value:Torappu_NameCardV2TimeLimitInfo_657ef451 (id:1);
+}
+
+table Torappu_NameCardV2TimeLimitInfo_657ef451 {
+  limitId:string (id:0);
+  id:string (id:1);
+  availStartTime:long (id:2);
+  availEndTime:long (id:3);
+}
+
+table Torappu_NameCardV2Consts_6cd77399 {
+  defaultNameCardSkinId:string (id:0);
+  canUidHide:bool (id:1);
+  removableModuleMaxCount:int (id:2);
+  approachHideText:string (id:3);
+}
+
+table Torappu_MailArchiveData_b8bf9dce {
+  mailArchiveInfoDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MailArchiveItemData__c7489cc1_Entry] (id:0);
+  constData:Torappu_MailArchiveConstData_753a56ae (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MailArchiveItemData__c7489cc1_Entry {
+  key:string (id:0);
+  value:Torappu_MailArchiveItemData_50ee4a53 (id:1);
+}
+
+table Torappu_MailArchiveItemData_50ee4a53 {
+  id:string (id:0);
+  type:Torappu_MailArchiveItemType_f1b713ae (id:1);
+  sortId:int (id:2);
+  displayReceiveTs:long (id:3);
+  year:int (id:4);
+  dateDelta:int (id:5);
+  senderId:string (id:6);
+  title:string (id:7);
+  content:string (id:8);
+  rewardList:[Torappu_ItemBundle_64f049cd] (id:9);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table Torappu_MailArchiveConstData_753a56ae {
+  funcOpenTs:long (id:0);
+}
+
+table Torappu_MailSenderData_d4296df5 {
+  senderDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MailSenderSingleInfo__c88a5d91_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MailSenderSingleInfo__c88a5d91_Entry {
+  key:string (id:0);
+  value:Torappu_MailSenderSingleInfo_117f9a7b (id:1);
+}
+
+table Torappu_MailSenderSingleInfo_117f9a7b {
+  senderId:string (id:0);
+  senderName:string (id:1);
+  avatarId:string (id:2);
+}
+
+table Torappu_EmoticonData_9c3ada6e {
+  emojiDataDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_EmoticonData_EmojiData__baf3ea87_Entry] (id:0);
+  emoticonThemeDataDict:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:1);
+  emoticonThemeTypeDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_EmoticonData_EmoticonThemeTypeData__19c179ad_Entry] (id:2);
+  emoticonThemeReverseDict:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_EmoticonData_EmojiData__baf3ea87_Entry {
+  key:string (id:0);
+  value:Torappu_EmoticonData_EmojiData_7595e4f1 (id:1);
+}
+
+table Torappu_EmoticonData_EmojiData_7595e4f1 {
+  id:string (id:0);
+  type:Torappu_EmojiSceneType_9d481077 (id:1);
+  sortId:int (id:2);
+  picId:string (id:3);
+  desc:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_System_String___967a6dbd_Entry {
+  key:string (id:0);
+  value:[string] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_EmoticonData_EmoticonThemeTypeData__19c179ad_Entry {
+  key:string (id:0);
+  value:Torappu_EmoticonData_EmoticonThemeTypeData_dc1ca42b (id:1);
+}
+
+table Torappu_EmoticonData_EmoticonThemeTypeData_dc1ca42b {
+  itemId:string (id:0);
+  sortId:int (id:1);
+  isBasic:bool (id:2);
+  isDyn:bool (id:3);
+  picSceneList:[Torappu_EmojiSceneType_9d481077] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_StoryVariantData__fed58803_Entry {
+  key:string (id:0);
+  value:Torappu_StoryVariantData_389ced76 (id:1);
+}
+
+table Torappu_StoryVariantData_389ced76 {
+  plotTaskId:string (id:0);
+  spStoryId:string (id:1);
+  storyId:string (id:2);
+  priority:int (id:3);
+  startTime:long (id:4);
+  endTime:long (id:5);
+  template:string (id:6);
+  param:[string] (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_GuidebookGroupData__bbea4f9c_Entry {
+  key:string (id:0);
+  value:Torappu_GuidebookGroupData_db34362e (id:1);
+}
+
+table Torappu_GuidebookGroupData_db34362e {
+  groupId:string (id:0);
+  guideTarget:Torappu_UIGuideTarget_3132f702 (id:1);
+  subSignal:string (id:2);
+  configList:[Torappu_GuidebookConfigData_0020eb33] (id:3);
+}
+
+table Torappu_GuidebookConfigData_0020eb33 {
+  configId:string (id:0);
+  sortId:int (id:1);
+  pageIdList:[string] (id:2);
+}
+
+table Torappu_PCKeyData_be2021d2 {
+  keyList:[System_Collections_Generic_Dictionary_2_System_String_Torappu_KeyItem__773094db_Entry] (id:0);
+  keySettingData:[Torappu_ListDict_2_System_String_Torappu_KeySettingGroupData__9ab7cde7_Entry] (id:1);
+  constData:Torappu_PCKeyConstData_6e2f0008 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_KeyItem__773094db_Entry {
+  key:string (id:0);
+  value:Torappu_KeyItem_5dc3d3c5 (id:1);
+}
+
+table Torappu_KeyItem_5dc3d3c5 {
+  keyId:string (id:0);
+  keyName:string (id:1);
+  useIcon:bool (id:2);
+  keyCodeType:Torappu_KeyCodeType_0415b5b4 (id:3);
+  keyCodes:[int] (id:4);
+  canBeSetted:bool (id:5);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_KeySettingGroupData__9ab7cde7_Entry {
+  key:string (id:0);
+  value:Torappu_KeySettingGroupData_2d2b6fc2 (id:1);
+}
+
+table Torappu_KeySettingGroupData_2d2b6fc2 {
+  groupId:string (id:0);
+  name:string (id:1);
+  funcType:Torappu_KeySettingGroup_d509566d (id:2);
+  keyEffectGroup:Torappu_KeyEffectGroup_91f9a046 (id:3);
+  isHidden:bool (id:4);
+  relatedActTypes:[Torappu_ActivityType_a6e2d1c1] (id:5);
+  gameModeTag:string (id:6);
+  sortId:int (id:7);
+  startTs:long (id:8);
+  itemList:[Torappu_KeySettingItemData_aefdb671] (id:9);
+}
+
+table Torappu_KeySettingItemData_aefdb671 {
+  funcId:string (id:0);
+  funcName:string (id:1);
+  canBeSet:bool (id:2);
+  defaultKeyId:string (id:3);
+  sortId:int (id:4);
+}
+
+table Torappu_PCKeyConstData_6e2f0008 {
+  cannotSetKeyNotice:string (id:0);
+  resetKeyNotice:string (id:1);
+}
+
+table Torappu_ResolutionSettingItemData_f1824349 {
+  sortId:int (id:0);
+  resolutionWidth:int (id:1);
+  resolutionHeight:int (id:2);
+  resolutionText:string (id:3);
+  isFullScreen:bool (id:4);
+  isBorderless:bool (id:5);
+}
+
+table Torappu_ArtGalleryCollectData_4720c46a {
+  collectionSets:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArtGalleryCollectSetData__a5e49756_Entry] (id:0);
+  collectionTypes:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArtGalleryCollectTypeData__a01e7216_Entry] (id:1);
+  constData:Torappu_ArtGalleryCollectConstData_89cbfc03 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArtGalleryCollectSetData__a5e49756_Entry {
+  key:string (id:0);
+  value:Torappu_ArtGalleryCollectSetData_00cf3b05 (id:1);
+}
+
+table Torappu_ArtGalleryCollectSetData_00cf3b05 {
+  setId:string (id:0);
+  setName:string (id:1);
+  setType:Torappu_CollectType_daa9fdb1 (id:2);
+  sortId:int (id:3);
+  startTime:long (id:4);
+  completeTime:long (id:5);
+  items:[Torappu_ArtGalleryCollectItemData_af1f2c9e] (id:6);
+  displayMaxCount:int (id:7);
+  missionList:[Torappu_ListDict_2_System_String_Torappu_ArtGalleryCollectSetMissionData__0d641d38_Entry] (id:8);
+}
+
+table Torappu_ArtGalleryCollectItemData_af1f2c9e {
+  itemId:string (id:0);
+  itemType:Torappu_ItemType_2ee74a72 (id:1);
+  collectionSetId:string (id:2);
+  sortId:int (id:3);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_ArtGalleryCollectSetMissionData__0d641d38_Entry {
+  key:string (id:0);
+  value:Torappu_ArtGalleryCollectSetMissionData_0b5c4813 (id:1);
+}
+
+table Torappu_ArtGalleryCollectSetMissionData_0b5c4813 {
+  missionId:string (id:0);
+  requireItemCount:int (id:1);
+  rewardList:[Torappu_ItemBundle_64f049cd] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArtGalleryCollectTypeData__a01e7216_Entry {
+  key:string (id:0);
+  value:Torappu_ArtGalleryCollectTypeData_f36211ac (id:1);
+}
+
+table Torappu_ArtGalleryCollectTypeData_f36211ac {
+  setType:Torappu_CollectType_daa9fdb1 (id:0);
+  typeName:string (id:1);
+  typeEngNameFilterPic:string (id:2);
+  typeEngNamePic:string (id:3);
+  typeFilterSelectIcon:string (id:4);
+  typeFilterUnselectIcon:string (id:5);
+  setIdList:[string] (id:6);
+  sortId:int (id:7);
+}
+
+table Torappu_ArtGalleryCollectConstData_89cbfc03 {
+  collectTypeFilterAll:string (id:0);
+  collectTypeFilterAllUnselect:string (id:1);
+}
+
+table Torappu_MagazineLeafData_149759a1 {
+  leafMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MagazineLeafItemData__3e1ab74a_Entry] (id:0);
+  leafDecorTypeMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MagazineLeafDecorTypeData__8653c647_Entry] (id:1);
+  leafTypeMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MagazineLeafTypeData__b426c25a_Entry] (id:2);
+  leafTemplateMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArtMagazineLeafData__39983361_Entry] (id:3);
+  constData:Torappu_MagazineLeafConst_8fc8c7cc (id:4);
+  blackListInDiy:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_String_System_Int32_832ee22c_Entry] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MagazineLeafItemData__3e1ab74a_Entry {
+  key:string (id:0);
+  value:Torappu_MagazineLeafItemData_565a9740 (id:1);
+}
+
+table Torappu_MagazineLeafItemData_565a9740 {
+  leafId:string (id:0);
+  leafType:Torappu_MagazineLeafType_4a6c94d7 (id:1);
+  sortId:int (id:2);
+  startTime:long (id:3);
+  name:string (id:4);
+  desc:string (id:5);
+  usage:string (id:6);
+  approach:string (id:7);
+  rarity:Torappu_ItemRarity_13dad0e0 (id:8);
+  templateId:string (id:9);
+  templateStartTime:long (id:10);
+  templateColor:string (id:11);
+  templateColor2:string (id:12);
+  skinDefaultPos:UnityEngine_Vector2_1073c192 (id:13);
+  skinDefaultScale:float (id:14);
+  leafDecorMaxNumMap:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:15);
+}
+
+table UnityEngine_Vector2_1073c192 {
+  x:float (id:0);
+  y:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry {
+  key:string (id:0);
+  value:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MagazineLeafDecorTypeData__8653c647_Entry {
+  key:string (id:0);
+  value:Torappu_MagazineLeafDecorTypeData_7b2c69b6 (id:1);
+}
+
+table Torappu_MagazineLeafDecorTypeData_7b2c69b6 {
+  minScale:float (id:0);
+  maxScale:float (id:1);
+  defaultScale:float (id:2);
+  engName:string (id:3);
+  smallIconId:string (id:4);
+  bigIconId:string (id:5);
+  templateUseCardPosBias:UnityEngine_Vector2_1073c192 (id:6);
+  templateUseCardScale:float (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MagazineLeafTypeData__b426c25a_Entry {
+  key:string (id:0);
+  value:Torappu_MagazineLeafTypeData_0a79b4c1 (id:1);
+}
+
+table Torappu_MagazineLeafTypeData_0a79b4c1 {
+  engName:string (id:0);
+  typeIconId:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArtMagazineLeafData__39983361_Entry {
+  key:string (id:0);
+  value:Torappu_ArtMagazineLeafData_9185a100 (id:1);
+}
+
+table Torappu_ArtMagazineLeafData_9185a100 {
+  leafId:string (id:0);
+  decorList:[Torappu_ArtMagazineLeafElementData_b860c168] (id:1);
+  charSkin:Torappu_ArtMagazineLeafElementData_b860c168 (id:2);
+}
+
+table Torappu_ArtMagazineLeafElementData_b860c168 {
+  id:string (id:0);
+  type:Torappu_ItemType_2ee74a72 (id:1);
+  sub:int (id:2);
+  pos:[float] (id:3);
+  scale:float (id:4);
+}
+
+table Torappu_MagazineLeafConst_8fc8c7cc {
+  sysUnlockRewards:[Torappu_ItemBundle_64f049cd] (id:0);
+  leafDisplayMaxNum:int (id:1);
+  skinDefaultGainTime:long (id:2);
+  defaultLeafId:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_String_System_Int32_832ee22c_Entry {
+  key:string (id:0);
+  value:[System_Collections_Generic_Dictionary_2_System_String_System_Int32__9c8e89c6_Entry] (id:1);
+}
+
+table Torappu_StickerData_a423eff4 {
+  stickerMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_StickerItemData__481d78e7_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_StickerItemData__481d78e7_Entry {
+  key:string (id:0);
+  value:Torappu_StickerItemData_e8549338 (id:1);
+}
+
+table Torappu_StickerItemData_e8549338 {
+  id:string (id:0);
+  name:string (id:1);
+  stickerType:Torappu_StickerType_d3f59d2d (id:2);
+  sortId:int (id:3);
+  desc:string (id:4);
+  usage:string (id:5);
+  approach:string (id:6);
+  rarity:Torappu_ItemRarity_13dad0e0 (id:7);
+}
+
+table Torappu_AVGDialogSettingData_e600e74d {
+  defaultPresetId:int (id:0);
+  presetList:[Torappu_AVGDialogPresetData_4ffa8371] (id:1);
+}
+
+table Torappu_AVGDialogPresetData_4ffa8371 {
+  id:int (id:0);
+  name:string (id:1);
+  nameFontSize:int (id:2);
+  messageFontSize:int (id:3);
+  messageMinHeight:float (id:4);
+}
+
+table Torappu_PixelMapData_d9572a13 {
+  paramMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_PixelMapParamData__18c1223f_Entry] (id:0);
+  constData:Torappu_PixelMapConstData_15258666 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_PixelMapParamData__18c1223f_Entry {
+  key:string (id:0);
+  value:Torappu_PixelMapParamData_3fd0fab5 (id:1);
+}
+
+table Torappu_PixelMapParamData_3fd0fab5 {
+  width:int (id:0);
+  height:int (id:1);
+  initColor:string (id:2);
+  htmlColors:[string] (id:3);
+}
+
+table Torappu_PixelMapConstData_15258666 {
+  uidWaterMark:bool (id:0);
+}
+
+root_type Torappu_DisplayMetaData_40d5a201;

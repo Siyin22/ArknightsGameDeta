@@ -1,0 +1,52 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_BuildingData_LODLEVEL_702c378c : int {
+  HIGHEST = 0,
+  HIGH = 1,
+  LOW = 2,
+  LOWEST = 3,
+  COUNT = 4,
+}
+
+table Torappu_BuildingData_BuildingLocalData_3efffb9c {
+  furnitureObstacleData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_ObstacleData__d15bd244_Entry] (id:0);
+  roomObstacleData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_ObstacleData__d15bd244_Entry] (id:1);
+  furnitureLODConfig:[System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_FurnitureLODConfig__610be9be_Entry] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_ObstacleData__d15bd244_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_ObstacleData_69c48fdd (id:1);
+}
+
+table Torappu_BuildingData_ObstacleData_69c48fdd {
+  floorObstacles:[Torappu_BuildingData_ObstaclePoint_a78ebfe6] (id:0);
+  backwallObstacles:[Torappu_BuildingData_ObstaclePoint_a78ebfe6] (id:1);
+}
+
+table Torappu_BuildingData_ObstaclePoint_a78ebfe6 {
+  offset:Torappu_GridPosition_049a6f02 (id:0);
+  edgeWalkableMask:ubyte (id:1);
+}
+
+table Torappu_GridPosition_049a6f02 {
+  row:int (id:0);
+  col:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_BuildingData_FurnitureLODConfig__610be9be_Entry {
+  key:string (id:0);
+  value:Torappu_BuildingData_FurnitureLODConfig_7ae323c0 (id:1);
+}
+
+table Torappu_BuildingData_FurnitureLODConfig_7ae323c0 {
+  showedObjNames:[System_Collections_Generic_Dictionary_2_Torappu_BuildingData_LODLEVEL_System_Collections_Generic_List_1_System_String___57314b0b_Entry] (id:0);
+  isOverWrite:bool (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_BuildingData_LODLEVEL_System_Collections_Generic_List_1_System_String___57314b0b_Entry {
+  key:Torappu_BuildingData_LODLEVEL_702c378c (id:0);
+  value:[string] (id:1);
+}
+
+root_type Torappu_BuildingData_BuildingLocalData_3efffb9c;

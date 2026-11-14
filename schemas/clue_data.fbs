@@ -1,0 +1,50 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table Torappu_MeetingClueData_afbb8833 {
+  clues:[Torappu_MeetingClueData_ClueData_516fdca6] (id:0);
+  clueTypes:[Torappu_MeetingClueData_ClueTypeData_8c45bcf7] (id:1);
+  receiveTimeBonus:[Torappu_MeetingClueData_ReceiveTimeBonus_bf3f03c0] (id:2);
+  messageLeaveBoardConstData:Torappu_MeetingClueData_MessageLeaveBoardConstData_e1939706 (id:3);
+  inventoryLimit:int (id:4);
+  outputBasicBonus:int (id:5);
+  outputOperatorsBonus:int (id:6);
+  cluePointLimit:int (id:7);
+  expiredDays:int (id:8);
+  transferBonus:int (id:9);
+  recycleBonus:int (id:10);
+  expiredBonus:int (id:11);
+  communicationDuration:int (id:12);
+  initiatorBonus:int (id:13);
+  participantsBonus:int (id:14);
+  commuFoldDuration:float (id:15);
+}
+
+table Torappu_MeetingClueData_ClueData_516fdca6 {
+  clueId:string (id:0);
+  clueName:string (id:1);
+  clueType:string (id:2);
+  number:int (id:3);
+}
+
+table Torappu_MeetingClueData_ClueTypeData_8c45bcf7 {
+  clueType:string (id:0);
+  clueNumber:int (id:1);
+}
+
+table Torappu_MeetingClueData_ReceiveTimeBonus_bf3f03c0 {
+  receiveTimes:int (id:0);
+  receiveBonus:int (id:1);
+}
+
+table Torappu_MeetingClueData_MessageLeaveBoardConstData_e1939706 {
+  visitorBonus:int (id:0);
+  visitorBonusLimit:int (id:1);
+  visitorToWeek:int (id:2);
+  visitorPreWeek:int (id:3);
+  bonusToast:string (id:4);
+  bonusLimitText:string (id:5);
+  recordsTextBonus:string (id:6);
+  recordsTextTip:string (id:7);
+}
+
+root_type Torappu_MeetingClueData_afbb8833;

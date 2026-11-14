@@ -1,0 +1,616 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_BattleFunctionDisableMask_41080c2b : int {
+  NONE = 0,
+  CARD_LIST = 1,
+  CHARACTER_MENU = 2,
+  CHARACTER_INFO = 4,
+  SYSTEM_MENU = 8,
+  PAUSE_BUTTON = 16,
+  SPEED_SWITCHER_BUTTON = 32,
+  BATTLE_STATUS = 64,
+  COST_PANEL = 128,
+  SLOW_MOTION = 256,
+  PAUSE_BUTTON_INTERACT = 512,
+  SYSTEM_MENU_INTERACT = 1024,
+  SPEED_SWITCHER_BUTTON_INTERACT = 2048,
+  UNIT_HUD_SKILL_CAST_MASK = 4096,
+  WITHDRAWABLE_PANEL = 8192,
+  COST_PANEL_KEEP_CHARACTERLIMIT = 16384,
+  CHARACTER_LIMIT = 32768,
+  AUTOCHESS_SELL_OR_DESTORY = 65536,
+  CHARACTER_MENU_PANEL = 131072,
+  DRAG_UI_CARD = 262144,
+  ALL = 524287,
+}
+
+enum Torappu_TileData_HeightType_5eb8100e : int {
+  LOWLAND = 0,
+  HIGHLAND = 1,
+  E_NUM = 2,
+}
+
+enum Torappu_BuildableType_c4537a3b : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_MotionMask_8e0b9e99 : int {
+  NONE = 0,
+  WALK_ONLY = 1,
+  FLY_ONLY = 2,
+  ALL = 3,
+}
+
+enum Torappu_PlayerSideMask_5a51be9e : ubyte {
+  ALL = 0,
+  SIDE_A = 2,
+  SIDE_B = 4,
+  SIDE_C = 8,
+  SIDE_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_SharedConsts_Direction_80eb1882 : int {
+  UP = 0,
+  RIGHT = 1,
+  DOWN = 2,
+  LEFT = 3,
+  E_NUM = 4,
+}
+
+enum Torappu_LevelData_Difficulty_47abb9d1 : int {
+  NONE = 0,
+  NORMAL = 1,
+  FOUR_STAR = 2,
+  EASY = 4,
+  SIX_STAR = 8,
+  ALL = 15,
+}
+
+enum Torappu_ProfessionCategory_f64dcd2f : int {
+  NONE = 0,
+  WARRIOR = 1,
+  SNIPER = 2,
+  TANK = 4,
+  MEDIC = 8,
+  SUPPORT = 16,
+  CASTER = 32,
+  SPECIAL = 64,
+  TOKEN = 128,
+  TRAP = 256,
+  PIONEER = 512,
+}
+
+enum Torappu_MotionMode_e1934ea9 : int {
+  WALK = 0,
+  FLY = 1,
+  E_NUM = 2,
+}
+
+enum Torappu_CheckpointType_f6a5a54d : int {
+  MOVE = 0,
+  WAIT_FOR_SECONDS = 1,
+  WAIT_FOR_PLAY_TIME = 2,
+  WAIT_CURRENT_FRAGMENT_TIME = 3,
+  WAIT_CURRENT_WAVE_TIME = 4,
+  DISAPPEAR = 5,
+  APPEAR_AT_POS = 6,
+  ALERT = 7,
+  PATROL_MOVE = 8,
+  WAIT_BOSSRUSH_WAVE = 9,
+  MAP_OFFSET_MOVE = 10,
+  INVALID = 11,
+}
+
+enum Torappu_SourceApplyWay_ae55134d : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_EnemyLevelType_c35d0213 : int {
+  NORMAL = 0,
+  ELITE = 1,
+  BOSS = 2,
+  E_NUM = 3,
+}
+
+enum Torappu_SpType_68c5c67d : int {
+  NONE = 0,
+  INCREASE_WITH_TIME = 1,
+  INCREASE_WHEN_ATTACK = 2,
+  INCREASE_WHEN_TAKEN_DAMAGE = 4,
+  ATTACK_OR_DAMAGE = 6,
+  ALL = 7,
+}
+
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType_fd6da2aa : int {
+  SPAWN = 0,
+  PREVIEW_CURSOR = 1,
+  STORY = 2,
+  TUTORIAL = 3,
+  PLAY_BGM = 4,
+  DISPLAY_ENEMY_INFO = 5,
+  ACTIVATE_PREDEFINED = 6,
+  PLAY_OPERA = 7,
+  TRIGGER_PREDEFINED = 8,
+  BATTLE_EVENTS = 9,
+  WITHDRAW_PREDEFINED = 10,
+  DIALOG = 11,
+  SHOW_ALL_HIDDEN_CARDS = 12,
+  EMPTY = 13,
+  E_NUM = 14,
+}
+
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType_a2c467b5 : int {
+  ALWAYS = 0,
+  PER_DAY = 1,
+  NEVER = 2,
+  PER_SETTLE_DAY = 3,
+  PER_SEASON = 4,
+}
+
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType_e6a3fa3a : int {
+  ALWAYS = 0,
+  PER_DAY = 1,
+  NEVER = 2,
+  PER_SETTLE_DAY = 3,
+  PER_SEASON = 4,
+}
+
+enum Torappu_EvolvePhase_fd4d2921 : int {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+  PHASE_3 = 3,
+  E_NUM = 4,
+}
+
+table Torappu_LevelData_4aa6615e {
+  options:Torappu_LevelData_Options_2eab1eaf (id:0);
+  levelId:string (id:1);
+  mapId:string (id:2);
+  bgmEvent:string (id:3);
+  environmentSe:string (id:4);
+  mapData:Torappu_MapData_a2d92f05 (id:5);
+  tilesDisallowToLocate:[Torappu_GridPosition_049a6f02] (id:6);
+  runes:[Torappu_LegacyInLevelRuneData_1171f430] (id:7);
+  optionalRunes:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_LegacyInLevelRuneData___c12ae827_Entry] (id:8);
+  globalBuffs:[Torappu_LevelData_GlobalBuffData_124edf21] (id:9);
+  routes:[Torappu_RouteData_0013c27c] (id:10);
+  extraRoutes:[Torappu_RouteData_0013c27c] (id:11);
+  enemies:[Torappu_LevelData_EnemyData_7b598945] (id:12);
+  enemyDbRefs:[Torappu_LevelData_EnemyDataDbReference_052e1d48] (id:13);
+  waves:[Torappu_LevelData_WaveData_e3241e9c] (id:14);
+  branches:[Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData__45723ba2_Entry] (id:15);
+  predefines:Torappu_LevelData_PredefinedData_c01c5f70 (id:16);
+  hardPredefines:Torappu_LevelData_PredefinedData_c01c5f70 (id:17);
+  excludeCharIdList:[string] (id:18);
+  randomSeed:int (id:19);
+  operaConfig:string (id:20);
+  cameraPlugin:string (id:21);
+}
+
+table Torappu_LevelData_Options_2eab1eaf {
+  characterLimit:int (id:0);
+  maxLifePoint:int (id:1);
+  initialCost:int (id:2);
+  maxCost:int (id:3);
+  costIncreaseTime:float (id:4);
+  moveMultiplier:float (id:5);
+  steeringEnabled:bool (id:6);
+  reachableCheckIgnoreStartTile:bool (id:7);
+  isTrainingLevel:bool (id:8);
+  isHardTrainingLevel:bool (id:9);
+  isPredefinedCardsSelectable:bool (id:10);
+  displayRestTime:bool (id:11);
+  maxPlayTime:float (id:12);
+  functionDisableMask:Torappu_BattleFunctionDisableMask_41080c2b (id:13);
+  configBlackBoard:[Torappu_Blackboard_DataPair_5ef45847] (id:14);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table Torappu_MapData_a2d92f05 {
+  map:System_Int16____c9dab3ef (id:0);
+  tiles:[Torappu_TileData_cc61f7d7] (id:1);
+  blockEdges:[Torappu_MapData_Edge_827d0142] (id:2);
+  tags:[string] (id:3);
+  effects:[Torappu_MapEffectData_e837c947] (id:4);
+  layerRects:[string] (id:5);
+}
+
+table System_Int16____c9dab3ef {
+  rows:int (id:0);
+  cols:int (id:1);
+  data:[short] (id:2);
+}
+
+table Torappu_TileData_cc61f7d7 {
+  tileKey:string (id:0);
+  heightType:Torappu_TileData_HeightType_5eb8100e (id:1);
+  buildableType:Torappu_BuildableType_c4537a3b (id:2);
+  passableMask:Torappu_MotionMask_8e0b9e99 (id:3);
+  playerSideMask:Torappu_PlayerSideMask_5a51be9e (id:4);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:5);
+  effects:[Torappu_MapEffectData_e837c947] (id:6);
+}
+
+table Torappu_MapEffectData_e837c947 {
+  key:string (id:0);
+  offset:UnityEngine_Vector3_7c3ffff1 (id:1);
+  direction:Torappu_SharedConsts_Direction_80eb1882 (id:2);
+}
+
+table UnityEngine_Vector3_7c3ffff1 {
+  x:float (id:0);
+  y:float (id:1);
+  z:float (id:2);
+}
+
+table Torappu_MapData_Edge_827d0142 {
+  pos:Torappu_GridPosition_049a6f02 (id:0);
+  direction:Torappu_SharedConsts_Direction_80eb1882 (id:1);
+  blockMask:Torappu_MotionMask_8e0b9e99 (id:2);
+}
+
+table Torappu_GridPosition_049a6f02 {
+  row:int (id:0);
+  col:int (id:1);
+}
+
+table Torappu_LegacyInLevelRuneData_1171f430 {
+  difficultyMask:Torappu_LevelData_Difficulty_47abb9d1 (id:0);
+  key:string (id:1);
+  professionMask:Torappu_ProfessionCategory_f64dcd2f (id:2);
+  buildableMask:Torappu_BuildableType_c4537a3b (id:3);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_LegacyInLevelRuneData___c12ae827_Entry {
+  key:string (id:0);
+  value:[Torappu_LegacyInLevelRuneData_1171f430] (id:1);
+}
+
+table Torappu_LevelData_GlobalBuffData_124edf21 {
+  prefabKey:string (id:0);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:1);
+  overrideCameraEffect:string (id:2);
+  passProfessionMaskFlag:bool (id:3);
+  professionMask:Torappu_ProfessionCategory_f64dcd2f (id:4);
+  playerSideMask:Torappu_PlayerSideMask_5a51be9e (id:5);
+}
+
+table Torappu_RouteData_0013c27c {
+  motionMode:Torappu_MotionMode_e1934ea9 (id:0);
+  startPosition:Torappu_GridPosition_049a6f02 (id:1);
+  endPosition:Torappu_GridPosition_049a6f02 (id:2);
+  spawnRandomRange:UnityEngine_Vector2_1073c192 (id:3);
+  spawnOffset:UnityEngine_Vector2_1073c192 (id:4);
+  checkpoints:[Torappu_RouteData_CheckpointData_d3780219] (id:5);
+  allowDiagonalMove:bool (id:6);
+  visitEveryTileCenter:bool (id:7);
+  visitEveryNodeCenter:bool (id:8);
+  visitEveryCheckPoint:bool (id:9);
+}
+
+table UnityEngine_Vector2_1073c192 {
+  x:float (id:0);
+  y:float (id:1);
+}
+
+table Torappu_RouteData_CheckpointData_d3780219 {
+  type:Torappu_CheckpointType_f6a5a54d (id:0);
+  time:float (id:1);
+  position:Torappu_GridPosition_049a6f02 (id:2);
+  reachOffset:UnityEngine_Vector2_1073c192 (id:3);
+  randomizeReachOffset:bool (id:4);
+  reachDistance:float (id:5);
+}
+
+table Torappu_LevelData_EnemyData_7b598945 {
+  name:string (id:0);
+  description:string (id:1);
+  key:string (id:2);
+  attributes:Torappu_AttributesData_98b46752 (id:3);
+  applyWay:Torappu_SourceApplyWay_ae55134d (id:4);
+  motion:Torappu_MotionMode_e1934ea9 (id:5);
+  enemyTags:[string] (id:6);
+  notCountInTotal:bool (id:7);
+  alias:string (id:8);
+  lifePointReduce:int (id:9);
+  rangeRadius:float (id:10);
+  numOfExtraDrops:int (id:11);
+  viewRadius:float (id:12);
+  levelType:Torappu_EnemyLevelType_c35d0213 (id:13);
+  talentBlackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:14);
+  skills:[Torappu_LevelData_EnemyData_ESkillData_5305b0d5] (id:15);
+  spData:Torappu_LevelData_EnemyData_ESpData_a0afdfac (id:16);
+}
+
+table Torappu_AttributesData_98b46752 {
+  maxHp:int (id:0);
+  atk:int (id:1);
+  def:int (id:2);
+  magicResistance:float (id:3);
+  cost:int (id:4);
+  blockCnt:int (id:5);
+  moveSpeed:float (id:6);
+  attackSpeed:float (id:7);
+  baseAttackTime:float (id:8);
+  respawnTime:int (id:9);
+  hpRecoveryPerSec:float (id:10);
+  spRecoveryPerSec:float (id:11);
+  maxDeployCount:int (id:12);
+  maxDeckStackCnt:int (id:13);
+  tauntLevel:int (id:14);
+  massLevel:int (id:15);
+  baseForceLevel:int (id:16);
+  blockVolume:int (id:17);
+  stunImmune:bool (id:18);
+  silenceImmune:bool (id:19);
+  sleepImmune:bool (id:20);
+  frozenImmune:bool (id:21);
+  levitateImmune:bool (id:22);
+  disarmedCombatImmune:bool (id:23);
+  fearedImmune:bool (id:24);
+  palsyImmune:bool (id:25);
+  attractImmune:bool (id:26);
+  teleportImmune:bool (id:27);
+  groundBoundImmune:bool (id:28);
+}
+
+table Torappu_LevelData_EnemyData_ESkillData_5305b0d5 {
+  prefabKey:string (id:0);
+  priority:int (id:1);
+  cooldown:float (id:2);
+  initCooldown:float (id:3);
+  spCost:int (id:4);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:5);
+}
+
+table Torappu_LevelData_EnemyData_ESpData_a0afdfac {
+  spType:Torappu_SpType_68c5c67d (id:0);
+  maxSp:int (id:1);
+  initSp:int (id:2);
+  increment:float (id:3);
+}
+
+table Torappu_LevelData_EnemyDataDbReference_052e1d48 {
+  useDb:bool (id:0);
+  id:string (id:1);
+  level:int (id:2);
+  overwrittenData:Torappu_EnemyDatabase_EnemyData_afec7a3d (id:3);
+}
+
+table Torappu_EnemyDatabase_EnemyData_afec7a3d {
+  name:Torappu_Undefinable_1_System_String__5a26218d (id:0);
+  description:Torappu_Undefinable_1_System_String__5a26218d (id:1);
+  prefabKey:Torappu_Undefinable_1_System_String__5a26218d (id:2);
+  attributes:Torappu_EnemyDatabase_AttributesData_777e1bf0 (id:3);
+  applyWay:Torappu_Undefinable_1_Torappu_SourceApplyWay__f47ce913 (id:4);
+  motion:Torappu_Undefinable_1_Torappu_MotionMode__e2b9c865 (id:5);
+  enemyTags:Torappu_Undefinable_1_System_String____92688a4f (id:6);
+  lifePointReduce:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:7);
+  levelType:Torappu_Undefinable_1_Torappu_EnemyLevelType__74fbf9b4 (id:8);
+  rangeRadius:Torappu_Undefinable_1_System_Single__f73f021b (id:9);
+  numOfExtraDrops:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:10);
+  viewRadius:Torappu_Undefinable_1_System_Single__f73f021b (id:11);
+  notCountInTotal:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:12);
+  talentBlackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:13);
+  skills:[Torappu_LevelData_EnemyData_ESkillData_5305b0d5] (id:14);
+  spData:Torappu_LevelData_EnemyData_ESpData_a0afdfac (id:15);
+}
+
+table Torappu_Undefinable_1_System_String__5a26218d {
+  m_defined:bool (id:0);
+  m_value:string (id:1);
+}
+
+table Torappu_EnemyDatabase_AttributesData_777e1bf0 {
+  maxHp:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:0);
+  atk:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:1);
+  def:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:2);
+  magicResistance:Torappu_Undefinable_1_System_Single__f73f021b (id:3);
+  cost:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:4);
+  blockCnt:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:5);
+  moveSpeed:Torappu_Undefinable_1_System_Single__f73f021b (id:6);
+  attackSpeed:Torappu_Undefinable_1_System_Single__f73f021b (id:7);
+  baseAttackTime:Torappu_Undefinable_1_System_Single__f73f021b (id:8);
+  respawnTime:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:9);
+  hpRecoveryPerSec:Torappu_Undefinable_1_System_Single__f73f021b (id:10);
+  spRecoveryPerSec:Torappu_Undefinable_1_System_Single__f73f021b (id:11);
+  maxDeployCount:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:12);
+  massLevel:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:13);
+  baseForceLevel:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:14);
+  tauntLevel:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:15);
+  epDamageResistance:Torappu_Undefinable_1_System_Single__f73f021b (id:16);
+  epResistance:Torappu_Undefinable_1_System_Single__f73f021b (id:17);
+  damageHitratePhysical:Torappu_Undefinable_1_System_Single__f73f021b (id:18);
+  damageHitrateMagical:Torappu_Undefinable_1_System_Single__f73f021b (id:19);
+  epBreakRecoverSpeed:Torappu_Undefinable_1_System_Single__f73f021b (id:20);
+  blockVolume:Torappu_Undefinable_1_System_Int32__fe2390f2 (id:21);
+  stunImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:22);
+  silenceImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:23);
+  sleepImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:24);
+  frozenImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:25);
+  levitateImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:26);
+  disarmedCombatImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:27);
+  fearedImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:28);
+  palsyImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:29);
+  attractImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:30);
+  teleportImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:31);
+  groundBoundImmune:Torappu_Undefinable_1_System_Boolean__874ebd92 (id:32);
+}
+
+table Torappu_Undefinable_1_System_Int32__fe2390f2 {
+  m_defined:bool (id:0);
+  m_value:int (id:1);
+}
+
+table Torappu_Undefinable_1_System_Single__f73f021b {
+  m_defined:bool (id:0);
+  m_value:float (id:1);
+}
+
+table Torappu_Undefinable_1_System_Boolean__874ebd92 {
+  m_defined:bool (id:0);
+  m_value:bool (id:1);
+}
+
+table Torappu_Undefinable_1_Torappu_SourceApplyWay__f47ce913 {
+  m_defined:bool (id:0);
+  m_value:Torappu_SourceApplyWay_ae55134d (id:1);
+}
+
+table Torappu_Undefinable_1_Torappu_MotionMode__e2b9c865 {
+  m_defined:bool (id:0);
+  m_value:Torappu_MotionMode_e1934ea9 (id:1);
+}
+
+table Torappu_Undefinable_1_System_String____92688a4f {
+  m_defined:bool (id:0);
+  m_value:[string] (id:1);
+}
+
+table Torappu_Undefinable_1_Torappu_EnemyLevelType__74fbf9b4 {
+  m_defined:bool (id:0);
+  m_value:Torappu_EnemyLevelType_c35d0213 (id:1);
+}
+
+table Torappu_LevelData_WaveData_e3241e9c {
+  preDelay:float (id:0);
+  postDelay:float (id:1);
+  maxTimeWaitingForNextWave:float (id:2);
+  fragments:[Torappu_LevelData_WaveData_FragmentData_b2a92894] (id:3);
+  advancedWaveTag:string (id:4);
+}
+
+table Torappu_LevelData_WaveData_FragmentData_b2a92894 {
+  preDelay:float (id:0);
+  actions:[Torappu_LevelData_WaveData_FragmentData_ActionData_dcecd703] (id:1);
+}
+
+table Torappu_LevelData_WaveData_FragmentData_ActionData_dcecd703 {
+  actionType:Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType_fd6da2aa (id:0);
+  managedByScheduler:bool (id:1);
+  key:string (id:2);
+  count:int (id:3);
+  preDelay:float (id:4);
+  interval:float (id:5);
+  routeIndex:int (id:6);
+  blockFragment:bool (id:7);
+  autoPreviewRoute:bool (id:8);
+  autoDisplayEnemyInfo:bool (id:9);
+  isUnharmfulAndAlwaysCountAsKilled:bool (id:10);
+  hiddenGroup:string (id:11);
+  randomSpawnGroupKey:string (id:12);
+  randomSpawnGroupPackKey:string (id:13);
+  randomType:Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType_a2c467b5 (id:14);
+  refreshType:Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType_e6a3fa3a (id:15);
+  weight:int (id:16);
+  dontBlockWave:bool (id:17);
+  forceBlockWaveInBranch:bool (id:18);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData__45723ba2_Entry {
+  key:string (id:0);
+  value:Torappu_LevelData_BranchData_4f67cb1e (id:1);
+}
+
+table Torappu_LevelData_BranchData_4f67cb1e {
+  phases:[Torappu_LevelData_BranchData_PhaseData_0d1b726d] (id:0);
+}
+
+table Torappu_LevelData_BranchData_PhaseData_0d1b726d {
+  preDelay:float (id:0);
+  actions:[Torappu_LevelData_WaveData_FragmentData_ActionData_dcecd703] (id:1);
+}
+
+table Torappu_LevelData_PredefinedData_c01c5f70 {
+  characterInsts:[Torappu_LevelData_PredefinedData_PredefinedCharacter_6445ba8e] (id:0);
+  tokenInsts:[Torappu_LevelData_PredefinedData_PredefinedCharacter_6445ba8e] (id:1);
+  characterCards:[Torappu_LevelData_PredefinedData_PredefinedCard_f38b4cea] (id:2);
+  tokenCards:[Torappu_LevelData_PredefinedData_PredefinedTokenCard_402dac7b] (id:3);
+}
+
+table Torappu_LevelData_PredefinedData_PredefinedCharacter_6445ba8e {
+  position:Torappu_GridPosition_049a6f02 (id:0);
+  direction:Torappu_SharedConsts_Direction_80eb1882 (id:1);
+  hidden:bool (id:2);
+  alias:string (id:3);
+  uniEquipIds:[Torappu_CharacterData_UniqueEquipPair_0968ae17] (id:4);
+  showSpIllust:bool (id:5);
+  masterInfos:[Torappu_CharacterData_MasterInfo_b94de7f7] (id:6);
+  inst:Torappu_CharacterInst_Metadata_1288cd4c (id:7);
+  skillIndex:int (id:8);
+  mainSkillLvl:int (id:9);
+  skinId:string (id:10);
+  tmplId:string (id:11);
+  overrideSkillBlackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:12);
+  overrideTalents:[Torappu_CharacterInst_TalentInst_5f77089e] (id:13);
+}
+
+table Torappu_CharacterData_UniqueEquipPair_0968ae17 {
+  key:string (id:0);
+  level:int (id:1);
+}
+
+table Torappu_CharacterData_MasterInfo_b94de7f7 {
+  masterId:string (id:0);
+  level:int (id:1);
+}
+
+table Torappu_CharacterInst_Metadata_1288cd4c {
+  characterKey:string (id:0);
+  level:int (id:1);
+  phase:Torappu_EvolvePhase_fd4d2921 (id:2);
+  favorPoint:int (id:3);
+  potentialRank:int (id:4);
+}
+
+table Torappu_CharacterInst_TalentInst_5f77089e {
+  prefabKey:string (id:0);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:1);
+}
+
+table Torappu_LevelData_PredefinedData_PredefinedCard_f38b4cea {
+  hidden:bool (id:0);
+  alias:string (id:1);
+  uniEquipIds:[Torappu_CharacterData_UniqueEquipPair_0968ae17] (id:2);
+  showSpIllust:bool (id:3);
+  masterInfos:[Torappu_CharacterData_MasterInfo_b94de7f7] (id:4);
+  inst:Torappu_CharacterInst_Metadata_1288cd4c (id:5);
+  skillIndex:int (id:6);
+  mainSkillLvl:int (id:7);
+  skinId:string (id:8);
+  tmplId:string (id:9);
+  overrideSkillBlackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:10);
+  overrideTalents:[Torappu_CharacterInst_TalentInst_5f77089e] (id:11);
+}
+
+table Torappu_LevelData_PredefinedData_PredefinedTokenCard_402dac7b {
+  initialCnt:int (id:0);
+  hidden:bool (id:1);
+  alias:string (id:2);
+  uniEquipIds:[Torappu_CharacterData_UniqueEquipPair_0968ae17] (id:3);
+  showSpIllust:bool (id:4);
+  masterInfos:[Torappu_CharacterData_MasterInfo_b94de7f7] (id:5);
+  inst:Torappu_CharacterInst_Metadata_1288cd4c (id:6);
+  skillIndex:int (id:7);
+  mainSkillLvl:int (id:8);
+  skinId:string (id:9);
+  tmplId:string (id:10);
+  overrideSkillBlackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:11);
+  overrideTalents:[Torappu_CharacterInst_TalentInst_5f77089e] (id:12);
+}
+
+root_type Torappu_LevelData_4aa6615e;

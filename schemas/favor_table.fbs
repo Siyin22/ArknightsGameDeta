@@ -1,0 +1,19 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+table Torappu_FavorTable_2f4c294e {
+  maxFavor:int (id:0);
+  favorFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_FavorData_Torappu_FavorData__70286e6a] (id:1);
+}
+
+table Torappu_KeyFrames_2_KeyFrame_Torappu_FavorData_Torappu_FavorData__70286e6a {
+  level:int (id:0);
+  data:Torappu_FavorData_2ffd9522 (id:1);
+}
+
+table Torappu_FavorData_2ffd9522 {
+  favorPoint:int (id:0);
+  percent:int (id:1);
+  battlePhase:int (id:2);
+}
+
+root_type Torappu_FavorTable_2f4c294e;

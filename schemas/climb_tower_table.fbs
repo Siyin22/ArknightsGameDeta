@@ -1,0 +1,541 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_ClimbTowerTowerType_0291fb7a : int {
+  TRAINING = 0,
+  NORMAL = 1,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_ClimbTowerLevelType_a47ee935 : int {
+  NORMAL = 0,
+  HIGHLEVEL = 1,
+  BOSS = 2,
+}
+
+enum Torappu_StageDropType_dba46f9e : int {
+  NONE = 0,
+  ONCE = 1,
+  NORMAL = 2,
+  SPECIAL = 3,
+  ADDITIONAL = 4,
+  APRETURN = 5,
+  DIAMOND_MATERIAL = 6,
+  FUNITURE_DROP = 7,
+  COMPLETE = 8,
+  CHARM_DROP = 9,
+  OVERRIDE_DROP = 10,
+  ITEM_RETURN = 11,
+  CONDITION_DROP = 12,
+}
+
+enum Torappu_OccPer_1434a871 : int {
+  ALWAYS = 0,
+  ALMOST = 1,
+  USUAL = 2,
+  OFTEN = 3,
+  SOMETIMES = 4,
+  NEVER = 5,
+  DEFINITELY_BUFF = 6,
+}
+
+enum Torappu_ProfessionCategory_f64dcd2f : int {
+  NONE = 0,
+  WARRIOR = 1,
+  SNIPER = 2,
+  TANK = 4,
+  MEDIC = 8,
+  SUPPORT = 16,
+  CASTER = 32,
+  SPECIAL = 64,
+  TOKEN = 128,
+  TRAP = 256,
+  PIONEER = 512,
+}
+
+enum Torappu_ClimbTowerTaticalBuffType_a7ea590b : int {
+  A = 0,
+  B = 1,
+}
+
+enum Torappu_ClimbTowerCardType_b05e1287 : int {
+  SEASON = 0,
+  TOWER = 1,
+}
+
+enum Torappu_BuildableType_c4537a3b : int {
+  NONE = 0,
+  MELEE = 1,
+  RANGED = 2,
+  ALL = 3,
+}
+
+enum Torappu_PlayerSideMask_5a51be9e : ubyte {
+  ALL = 0,
+  SIDE_A = 2,
+  SIDE_B = 4,
+  SIDE_C = 8,
+  SIDE_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_MapLayerMask_663506f1 : ubyte {
+  ALL = 0,
+  LAYER_A = 2,
+  LAYER_B = 4,
+  LAYER_C = 8,
+  LAYER_D = 16,
+  NONE = 255,
+}
+
+enum Torappu_Battle_SideType_7ae7af6d : int {
+  NONE = 0,
+  ALLY = 1,
+  ENEMY = 2,
+  BOTH_ALLY_AND_ENEMY = 3,
+  NEUTRAL = 4,
+  ALL = 7,
+}
+
+enum Torappu_TileData_HeightTypeMask_fb187ca6 : int {
+  NONE = 0,
+  LOWLAND = 1,
+  HIGHLAND = 2,
+  ALL = 3,
+}
+
+enum Torappu_MissionType_c258b75b : int {
+  UNKNOWN = 0,
+  MAIN = 1,
+  DAILY = 2,
+  WEEKLY = 3,
+  GUIDE = 4,
+  SUB = 5,
+  ACTIVITY = 6,
+  OPENSERVER = 7,
+  TOWERSEASON = 8,
+  RETRO = 9,
+  SPECIAL_OPERATOR = 10,
+  SPECIAL_OPERATOR_WEEKLY = 11,
+  GUIDE_V3 = 12,
+}
+
+enum Torappu_MissionItemBgType_07f1bbc4 : int {
+  COMMON = 0,
+  Equipment = 1,
+  Char = 2,
+}
+
+table Torappu_ClimbTowerTable_8c2c1b4b {
+  towers:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerSingleTowerData__a3c39b41_Entry] (id:0);
+  levels:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerSingleLevelData__e5fc1efb_Entry] (id:1);
+  tacticalBuffs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerTacticalBuffData__66cfaf09_Entry] (id:2);
+  mainCards:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerMainCardData__4109279c_Entry] (id:3);
+  subCards:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerSubCardData__b148b6f4_Entry] (id:4);
+  curseCards:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerCurseCardData__e0132187_Entry] (id:5);
+  seasonInfos:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerSeasonInfoData__d18f65a6_Entry] (id:6);
+  detailConst:Torappu_ClimbTowerDetailConst_790d68c5 (id:7);
+  rewardInfoList:[Torappu_ClimbTowerRewardInfo_7e4e24c3] (id:8);
+  rewardInfoListHardMode:[Torappu_ClimbTowerRewardInfo_7e4e24c3] (id:9);
+  missionData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerMissionData__6ad66965_Entry] (id:10);
+  missionGroup:[System_Collections_Generic_Dictionary_2_System_String_Torappu_MissionGroup__f45a3747_Entry] (id:11);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerSingleTowerData__a3c39b41_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerSingleTowerData_fcd79ab9 (id:1);
+}
+
+table Torappu_ClimbTowerSingleTowerData_fcd79ab9 {
+  id:string (id:0);
+  sortId:int (id:1);
+  stageNum:int (id:2);
+  name:string (id:3);
+  subName:string (id:4);
+  desc:string (id:5);
+  towerType:Torappu_ClimbTowerTowerType_0291fb7a (id:6);
+  levels:[string] (id:7);
+  hardLevels:[string] (id:8);
+  taskInfo:[Torappu_ClimbTowerSingleTowerData_ClimbTowerTaskRewardData_bad4996d] (id:9);
+  preTowerId:string (id:10);
+  medalId:string (id:11);
+  hiddenMedalId:string (id:12);
+  hardModeMedalId:string (id:13);
+  bossId:string (id:14);
+  cardId:string (id:15);
+  curseCardIds:[string] (id:16);
+  dangerDesc:string (id:17);
+  hardModeDesc:string (id:18);
+}
+
+table Torappu_ClimbTowerSingleTowerData_ClimbTowerTaskRewardData_bad4996d {
+  levelNum:int (id:0);
+  rewards:[Torappu_ItemBundle_64f049cd] (id:1);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerSingleLevelData__e5fc1efb_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerSingleLevelData_53287b4e (id:1);
+}
+
+table Torappu_ClimbTowerSingleLevelData_53287b4e {
+  id:string (id:0);
+  levelId:string (id:1);
+  towerId:string (id:2);
+  layerNum:int (id:3);
+  code:string (id:4);
+  name:string (id:5);
+  desc:string (id:6);
+  levelType:Torappu_ClimbTowerLevelType_a47ee935 (id:7);
+  loadingPicId:string (id:8);
+  dropInfo:Torappu_ClimbTowerLevelDropInfo_b27b2e4f (id:9);
+}
+
+table Torappu_ClimbTowerLevelDropInfo_b27b2e4f {
+  passRewards:[Torappu_WeightItemBundle___5699c148] (id:0);
+  displayRewards:[Torappu_StageData_DisplayRewards_40ac1705] (id:1);
+  displayDetailRewards:[Torappu_StageData_DisplayDetailRewards_107bfe81] (id:2);
+  displayDropInfo:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerDropDisplayInfo__9080edcf_Entry] (id:3);
+}
+
+table Torappu_WeightItemBundle_2b0b431a {
+  id:string (id:0);
+  type:Torappu_ItemType_2ee74a72 (id:1);
+  dropType:Torappu_StageDropType_dba46f9e (id:2);
+  count:int (id:3);
+  weight:int (id:4);
+}
+
+table Torappu_WeightItemBundle___5699c148 {
+  values:[Torappu_WeightItemBundle_2b0b431a] (id:0);
+}
+
+table Torappu_StageData_DisplayRewards_40ac1705 {
+  type:Torappu_ItemType_2ee74a72 (id:0);
+  id:string (id:1);
+  dropType:Torappu_StageDropType_dba46f9e (id:2);
+}
+
+table Torappu_StageData_DisplayDetailRewards_107bfe81 {
+  occPercent:Torappu_OccPer_1434a871 (id:0);
+  type:Torappu_ItemType_2ee74a72 (id:1);
+  id:string (id:2);
+  dropType:Torappu_StageDropType_dba46f9e (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerDropDisplayInfo__9080edcf_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerDropDisplayInfo_0bd654c7 (id:1);
+}
+
+table Torappu_ClimbTowerDropDisplayInfo_0bd654c7 {
+  itemId:string (id:0);
+  type:Torappu_ItemType_2ee74a72 (id:1);
+  maxCount:int (id:2);
+  minCount:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerTacticalBuffData__66cfaf09_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerTacticalBuffData_15e7e7fa (id:1);
+}
+
+table Torappu_ClimbTowerTacticalBuffData_15e7e7fa {
+  id:string (id:0);
+  desc:string (id:1);
+  profession:Torappu_ProfessionCategory_f64dcd2f (id:2);
+  isDefaultActive:bool (id:3);
+  sortId:int (id:4);
+  buffType:Torappu_ClimbTowerTaticalBuffType_a7ea590b (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerMainCardData__4109279c_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerMainCardData_e362ab92 (id:1);
+}
+
+table Torappu_ClimbTowerMainCardData_e362ab92 {
+  id:string (id:0);
+  type:Torappu_ClimbTowerCardType_b05e1287 (id:1);
+  linkedTowerId:string (id:2);
+  sortId:int (id:3);
+  name:string (id:4);
+  desc:string (id:5);
+  subCardIds:[string] (id:6);
+  runeData:Torappu_RuneTable_PackedRuneData_44298930 (id:7);
+  trapIds:[string] (id:8);
+}
+
+table Torappu_RuneTable_PackedRuneData_44298930 {
+  id:string (id:0);
+  points:float (id:1);
+  mutexGroupKey:string (id:2);
+  description:string (id:3);
+  runes:[Torappu_RuneData_fc2de0e9] (id:4);
+}
+
+table Torappu_RuneData_fc2de0e9 {
+  key:string (id:0);
+  selector:Torappu_RuneData_Selector_f177175d (id:1);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:2);
+}
+
+table Torappu_RuneData_Selector_f177175d {
+  professionMask:Torappu_ProfessionCategory_f64dcd2f (id:0);
+  buildableMask:Torappu_BuildableType_c4537a3b (id:1);
+  playerSideMask:Torappu_PlayerSideMask_5a51be9e (id:2);
+  mapLayerMask:Torappu_MapLayerMask_663506f1 (id:3);
+  sideType:Torappu_Battle_SideType_7ae7af6d (id:4);
+  charIdFilter:[string] (id:5);
+  charIdExcludeFilter:[string] (id:6);
+  enemyIdFilter:[string] (id:7);
+  enemyIdExcludeFilter:[string] (id:8);
+  enemyLevelTypeFilter:[string] (id:9);
+  enemyActionHiddenGroupFilter:[string] (id:10);
+  skillIdFilter:[string] (id:11);
+  tileKeyFilter:[string] (id:12);
+  groupTagFilter:[string] (id:13);
+  filterTagFilter:[string] (id:14);
+  filterTagExcludeFilter:[string] (id:15);
+  subProfessionExcludeFilter:[string] (id:16);
+  mapTagFilter:[string] (id:17);
+  heightTypeMask:Torappu_TileData_HeightTypeMask_fb187ca6 (id:18);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerSubCardData__b148b6f4_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerSubCardData_73152b80 (id:1);
+}
+
+table Torappu_ClimbTowerSubCardData_73152b80 {
+  id:string (id:0);
+  mainCardId:string (id:1);
+  sortId:int (id:2);
+  name:string (id:3);
+  desc:string (id:4);
+  runeData:Torappu_RuneTable_PackedRuneData_44298930 (id:5);
+  trapIds:[string] (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerCurseCardData__e0132187_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerCurseCardData_56315041 (id:1);
+}
+
+table Torappu_ClimbTowerCurseCardData_56315041 {
+  id:string (id:0);
+  towerIdList:[string] (id:1);
+  name:string (id:2);
+  desc:string (id:3);
+  trapId:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerSeasonInfoData__d18f65a6_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerSeasonInfoData_b139fbc7 (id:1);
+}
+
+table Torappu_ClimbTowerSeasonInfoData_b139fbc7 {
+  id:string (id:0);
+  name:string (id:1);
+  seasonNum:int (id:2);
+  startTs:long (id:3);
+  endTs:long (id:4);
+  towers:[string] (id:5);
+  seasonCards:[string] (id:6);
+  replicatedTowers:[string] (id:7);
+}
+
+table Torappu_ClimbTowerDetailConst_790d68c5 {
+  unlockLevelId:string (id:0);
+  unlockModuleNumRequirement:int (id:1);
+  lowerItemId:string (id:2);
+  lowerItemLimit:int (id:3);
+  higherItemId:string (id:4);
+  higherItemLimit:int (id:5);
+  initCharCount:int (id:6);
+  charRecruitTimes:int (id:7);
+  charRecruitChoiceCount:int (id:8);
+  subcardStageSort:int (id:9);
+  assistCharLimit:int (id:10);
+  firstClearTaskDesc:string (id:11);
+  subCardObtainDesc:string (id:12);
+  subGodCardUnlockDesc:string (id:13);
+  sweepStartTime:long (id:14);
+  sweepOpenOrdinaryLayer:int (id:15);
+  sweepOpenDifficultLayer:int (id:16);
+  sweepCostCount:int (id:17);
+  squadMemStartTime:long (id:18);
+  recordNoResetStartTime:long (id:19);
+}
+
+table Torappu_ClimbTowerRewardInfo_7e4e24c3 {
+  stageSort:int (id:0);
+  lowerItemCount:int (id:1);
+  higherItemCount:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ClimbTowerMissionData__6ad66965_Entry {
+  key:string (id:0);
+  value:Torappu_ClimbTowerMissionData_e411228a (id:1);
+}
+
+table Torappu_ClimbTowerMissionData_e411228a {
+  bindGodCardId:string (id:0);
+  bindTowerId:string (id:1);
+  id:string (id:2);
+  sortId:int (id:3);
+  description:string (id:4);
+  type:Torappu_MissionType_c258b75b (id:5);
+  itemBgType:Torappu_MissionItemBgType_07f1bbc4 (id:6);
+  preMissionIds:[string] (id:7);
+  template:string (id:8);
+  templateType:string (id:9);
+  param:[string] (id:10);
+  unlockCondition:string (id:11);
+  unlockParam:[string] (id:12);
+  missionGroup:string (id:13);
+  toPage:string (id:14);
+  periodicalPoint:int (id:15);
+  rewards:[Torappu_MissionDisplayRewards_5d5b7fc0] (id:16);
+  backImagePath:string (id:17);
+  foldId:string (id:18);
+  haveSubMissionToUnlock:bool (id:19);
+  countEndTs:long (id:20);
+}
+
+table Torappu_MissionDisplayRewards_5d5b7fc0 {
+  type:Torappu_ItemType_2ee74a72 (id:0);
+  id:string (id:1);
+  count:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_MissionGroup__f45a3747_Entry {
+  key:string (id:0);
+  value:Torappu_MissionGroup_49e89766 (id:1);
+}
+
+table Torappu_MissionGroup_49e89766 {
+  id:string (id:0);
+  title:string (id:1);
+  type:Torappu_MissionType_c258b75b (id:2);
+  preMissionGroup:string (id:3);
+  period:[int] (id:4);
+  rewards:[Torappu_MissionDisplayRewards_5d5b7fc0] (id:5);
+  missionIds:[string] (id:6);
+  startTs:long (id:7);
+  endTs:long (id:8);
+}
+
+root_type Torappu_ClimbTowerTable_8c2c1b4b;

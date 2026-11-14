@@ -1,0 +1,3523 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_RoguelikeModuleType_5c8d1aec : int {
+  NONE = 0,
+  SANCHECK = 1,
+  DICE = 2,
+  CHAOS = 3,
+  TOTEMBUFF = 4,
+  VISION = 5,
+  FRAGMENT = 6,
+  DISASTER = 7,
+  NODE_UPGRADE = 8,
+  COPPER = 9,
+  WRATH = 10,
+  CANDLE = 11,
+  SKY = 12,
+  GRID_ZONE = 13,
+  WEATHER = 14,
+  SCRAP = 15,
+}
+
+enum Torappu_RoguelikeMonthChatTrigType_6f9e45f1 : int {
+  NONE = 0,
+  TRANSITING = 1,
+  DUNGEON = 2,
+}
+
+enum Torappu_RoguelikeCharState_9a2db5ba : int {
+  NORMAL = 0,
+  UPGRADE = 1,
+  UPGRADE_BUFF = 2,
+  UPGRADE_BONUS = 3,
+  FREE = 4,
+  ASSIST = 5,
+  THIRD = 6,
+  MONTHLY = 7,
+  THIRD_LOW = 8,
+  MERCENARY = 9,
+}
+
+enum Torappu_RoguelikeEnrollType_9a0a0b39 : int {
+  DLC = 0,
+  REVIEW = 1,
+}
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_RoguelikeGameMonthTaskClass_71482438 : int {
+  NONE = 0,
+  C = 1,
+  B = 2,
+  A = 3,
+}
+
+enum Torappu_RoguelikeTopicMode_bc5dd965 : int {
+  NONE = 0,
+  EASY = 1,
+  NORMAL = 2,
+  HARD = 3,
+  NORML_END = 4,
+  MONTH_TEAM = 5,
+  CHALLENGE = 6,
+}
+
+enum Torappu_RoguelikeTopicDifficultyWarningType_7ce099e4 : int {
+  NONE = 0,
+  NORMAL = 1,
+  HARD = 2,
+}
+
+enum Torappu_RoguelikeTopicBankRewardType_c5b23d3a : int {
+  NONE = 0,
+  UNLOCK_ITEM = 1,
+  ADD_SHOP_POS = 2,
+  UNLOCK_WITHDRAW = 3,
+  UNLOCK_SHOP_BATTLE = 4,
+  UNLOCK_SHOP_REFRESH = 5,
+}
+
+enum Torappu_ActArchiveTotemType_4ebac96e : int {
+  LOCATION = 0,
+  EFFECT = 1,
+  AFFIX = 2,
+}
+
+enum Torappu_ActArchiveCopperType_493ce8c9 : int {
+  _ZERO = 0,
+  LUCK = 1,
+  COPPER = 2,
+  GILD = 3,
+}
+
+enum Torappu_RoguelikeCopperType_fc7c4d33 : int {
+  NONE = 0,
+  BLANK = 1,
+  FIGHT = 2,
+  RESOURCE = 3,
+  UNSOUND = 4,
+  TREASURE = 5,
+  SPECIAL = 6,
+}
+
+enum Torappu_RoguelikeCopperLuckyLevel_ccfb2e43 : int {
+  NONE = 0,
+  HIGH = 1,
+  MID = 2,
+  LOW = 3,
+}
+
+enum Torappu_ActArchiveType_cd0ba499 : int {
+  NONE = 0,
+  TIMELINE = 1,
+  MUSIC = 2,
+  PIC = 3,
+  AVG = 4,
+  STORY = 5,
+  NEWS = 6,
+  BUFF = 7,
+  RELIC = 8,
+  CAPSULE = 9,
+  TRAP = 10,
+  CHAT = 11,
+  LANDMARK = 12,
+  LOG = 13,
+  ACTIVITY_ENTRY = 14,
+  DYNAMIC_MUSIC = 15,
+  DYNAMIC_PIC = 16,
+  ENDBOOK = 17,
+  DYNAMIC_STORY = 18,
+  TOTEM = 19,
+  CHAOS = 20,
+  CHALLENGE_BOOK = 21,
+  ACHIEVEMENT = 22,
+  QUEST = 23,
+  FRAGMENT = 24,
+  DISASTER = 25,
+  COPPER = 26,
+  WRATH = 27,
+  SCRAP = 28,
+  WEATHER = 29,
+}
+
+enum Torappu_EvolvePhase_fd4d2921 : int {
+  PHASE_0 = 0,
+  PHASE_1 = 1,
+  PHASE_2 = 2,
+  PHASE_3 = 3,
+  E_NUM = 4,
+}
+
+enum Torappu_LevelData_Difficulty_47abb9d1 : int {
+  NONE = 0,
+  NORMAL = 1,
+  FOUR_STAR = 2,
+  EASY = 4,
+  SIX_STAR = 8,
+  ALL = 15,
+}
+
+enum Torappu_ProfessionCategory_f64dcd2f : int {
+  NONE = 0,
+  WARRIOR = 1,
+  SNIPER = 2,
+  TANK = 4,
+  MEDIC = 8,
+  SUPPORT = 16,
+  CASTER = 32,
+  SPECIAL = 64,
+  TOKEN = 128,
+  TRAP = 256,
+  PIONEER = 512,
+}
+
+enum Torappu_RarityRankMask_a3c5391c : int {
+  NONE = 0,
+  TIER_1 = 1,
+  TIER_2 = 2,
+  TIER_3 = 4,
+  TIER_4 = 8,
+  TIER_5 = 16,
+  TIER_6 = 32,
+  ALL = 63,
+}
+
+enum Torappu_ProfessionID_7b2b01de : int {
+  WARRIOR = 0,
+  SNIPER = 1,
+  TANK = 2,
+  MEDIC = 3,
+  SUPPORT = 4,
+  CASTER = 5,
+  SPECIAL = 6,
+  TOKEN = 7,
+  TRAP = 8,
+  PIONEER = 9,
+}
+
+enum Torappu_RarityRank_acc16d61 : int {
+  TIER_1 = 0,
+  TIER_2 = 1,
+  TIER_3 = 2,
+  TIER_4 = 3,
+  TIER_5 = 4,
+  TIER_6 = 5,
+  E_NUM = 6,
+}
+
+enum Torappu_CustomTicketType_b6743712 : int {
+  NONE = 0,
+  PURIFY = 1,
+  GET_CANDLE = 2,
+}
+
+enum Torappu_RoguelikeGameRelicCheckType_47a2b09d : int {
+  NONE = 0,
+  PROFESSION = 1,
+  SUB_PROFESSION = 2,
+  UPGRADE = 3,
+}
+
+enum Torappu_RoguelikeGameChoiceType_b34792b5 : int {
+  NONE = 0,
+  LEAVE = 1,
+  NEXT = 2,
+  NEXT_PROB = 3,
+  TRADE = 4,
+  TRADE_PROB = 5,
+  SACRIFICE = 6,
+  TELEPORT = 7,
+  EXPEDITION = 8,
+  WISH = 9,
+  TRADE_PROB_SHOW = 10,
+  SACRIFICE_TOTEM = 11,
+  WISH_ALL = 12,
+  KILL = 13,
+  USE_STASHED_TICKET = 14,
+  EXPEDITION_ALL = 15,
+  EXPEDITION_RETURN_ALL = 16,
+  PACIFY_WRATH = 17,
+  GILD_COPPER = 18,
+  ITEM_REROLL = 19,
+  ITEM_TOP_UP = 20,
+  GILD_COPPER_ALL = 21,
+  JUMP_PROB = 22,
+  JUMP = 23,
+  ZONE_END = 24,
+  MOVE = 25,
+  VISION = 26,
+  SCRAP_PAY_SHOW = 27,
+}
+
+enum Torappu_RoguelikeChoiceLeftDecoType_0bc44ca7 : int {
+  NONE = 0,
+  TASK = 1,
+  TASK_REWARD = 2,
+  DICE = 3,
+  VISION = 4,
+}
+
+enum Torappu_RoguelikeChoiceDisplayType_6e999187 : int {
+  NONE = 0,
+  NORMAL = 1,
+  ITEM = 2,
+  TASK = 3,
+}
+
+enum Torappu_RoguelikeChoiceHintType_156e61da : int {
+  NONE = 0,
+  ITEM = 1,
+  CANDLED_CHAR = 2,
+  GUIDED_CHAR = 3,
+  SACRIFICE = 4,
+  SACRIFICE_TOTEM = 5,
+  SACRIFICE_SCRAP = 6,
+  EXPEDITION = 7,
+  CANDLE = 8,
+  GUIDED = 9,
+  HP = 10,
+  VISION = 11,
+  STASHED_RECRUIT = 12,
+  SEED_COST = 13,
+  ITEM_COST = 14,
+  CHAOS = 15,
+  FRAGMENT = 16,
+  SP_ZONE_AP = 17,
+  COPPER_LUCK = 18,
+  AP_LEFT = 19,
+}
+
+enum Torappu_RoguelikeEventType_74bd7f17 : int {
+  NONE = 0,
+  BATTLE_NORMAL = 1,
+  BATTLE_ELITE = 2,
+  BATTLE_BOSS = 4,
+  SHOP = 8,
+  REST = 16,
+  INCIDENT = 32,
+  TREASURE = 64,
+  ENTERTAINMENT = 128,
+  UNKNOWN = 256,
+  WISH = 512,
+  SACRIFICE = 1024,
+  EXPEDITION = 2048,
+  BATTLE_SHOP = 4096,
+  PORTAL = 8192,
+  MISSION = 16384,
+  STORY = 32768,
+  STORY_HIDDEN = 65536,
+  ALCHEMY = 131072,
+  DUEL = 262144,
+  STASHED_RECRUIT = 524288,
+  SPECIAL_ZONE = 1048576,
+  SCRAP_SHOP = 2097152,
+  DOOR = 4194304,
+  FINAL = 8388608,
+  EVACUATE = 16777216,
+  CHOICES = 27127536,
+  EMPLOY = 33554432,
+  LIGHT = 67108864,
+  BATTLE_SAVAGE = 134217728,
+  BATTLES = 134217735,
+  EMPTY = 268435456,
+  EVENTS = 402521848,
+  ALL = 536739583,
+}
+
+enum Torappu_RoguelikeGameVariationType_4d939c4a : int {
+  NONE = 0,
+  MAP = 1,
+  RES = 2,
+  BAT = 3,
+}
+
+enum Torappu_RoguelikeGameCharBuffType_b4f8d49a : int {
+  NONE = 0,
+  MUTATION = 1,
+  EVOLUTION = 2,
+  FROM_RELIC = 3,
+}
+
+enum Torappu_RoguelikeTaskRarity_d8678f1e : int {
+  NORMAL = 0,
+  RARE = 1,
+  SUPER_RARE = 2,
+}
+
+enum Torappu_RoguelikeBankRewardCountType_26e81487 : int {
+  HIGHEST_RECORD = 0,
+  TOTAL_SUM = 1,
+}
+
+enum Torappu_RoguelikeRewardExDropTagSrcType_616c5a32 : int {
+  NONE = 0,
+  TREASURE = 1,
+  TOTEM = 2,
+  EXPLORE_TOOL = 3,
+  COPPER = 4,
+  EVIL_TEMPLE = 5,
+  TREASURE_MAP = 6,
+  LOOP_CHIP = 7,
+  STEP = 8,
+  GREED = 9,
+  GOLDEN_AGE = 10,
+  ADVENTURER_EXTRA = 11,
+}
+
+enum Torappu_TipData_Category_beac7a3c : int {
+  NONE = 0,
+  BATTLE = 1,
+  UI = 2,
+  BUILDING = 4,
+  GACHA = 8,
+  MISC = 16,
+  ALL = 31,
+}
+
+enum Torappu_RoguelikeGameItemType_c861b7b4 : int {
+  NONE = 0,
+  HP = 1,
+  HPMAX = 2,
+  GOLD = 3,
+  POPULATION = 4,
+  EXP = 5,
+  SQUAD_CAPACITY = 6,
+  RECRUIT_TICKET = 7,
+  UPGRADE_TICKET = 8,
+  RELIC = 9,
+  BP_POINT = 10,
+  GROW_POINT = 11,
+  BAND = 12,
+  ACTIVE_TOOL = 13,
+  CAPSULE = 14,
+  POOL = 15,
+  RL_BP = 16,
+  RL_GP = 17,
+  KEY_POINT = 18,
+  SAN_POINT = 19,
+  DICE_POINT = 20,
+  DICE_TYPE = 21,
+  SHIELD = 22,
+  LOCKED_TREASURE = 23,
+  CUSTOM_TICKET = 24,
+  TOTEM = 25,
+  TOTEM_EFFECT = 26,
+  FEATURE = 27,
+  VISION = 28,
+  CHAOS = 29,
+  CHAOS_PURIFY = 30,
+  CHAOS_LEVEL = 31,
+  EXPLORE_TOOL = 32,
+  FRAGMENT = 33,
+  MAX_WEIGHT = 34,
+  DISASTER = 35,
+  DISASTER_TYPE = 36,
+  ABSTRACT_DISASTER = 37,
+  PILL = 38,
+  BIGPILL = 39,
+  COPPER = 40,
+  COPPER_BUFF = 41,
+  DIVINATION_KIT = 42,
+  WRATH = 43,
+  SPECIAL_ZONE_AP = 44,
+  COPPER_DRAW_NUM = 45,
+  STASH_RECRUIT_LIMIT = 46,
+  NODE_BUOY = 47,
+  SCRAP = 48,
+  LEGACY = 49,
+  CHARACTER = 50,
+}
+
+enum Torappu_RoguelikeGameItemSubType_0cdf8e51 : int {
+  NONE = 0,
+  CURSE = 1,
+  TEMP_TICKET = 2,
+  TOTEM_UPPER = 4,
+  TOTEM_LOWER = 8,
+  SECRET = 16,
+  SINGLE_RAND_FREE = 32,
+  RED_CAPSULE = 64,
+}
+
+enum Torappu_RoguelikeGameItemRarity_28263299 : int {
+  NONE = 0,
+  BORN = 1,
+  NORMAL = 2,
+  RARE = 3,
+  SUPER_RARE = 4,
+}
+
+enum Torappu_RoguelikeEndingDetailText_Type_6e071e8b : int {
+  SHOW_CHOICE = 0,
+  SHOW_RELIC = 1,
+  SHOW_CAPSULE = 2,
+  SHOW_ACTIVE_TOOL = 3,
+  SHOW_ACCELERATE_CHAR = 4,
+  SHOW_NORMAL_RECRUIT = 5,
+  SHOW_DIRECT_RECRUIT = 6,
+  SHOW_FRIEND_RECRUIT = 7,
+  SHOW_FREE_RECRUIT = 8,
+  BUY = 9,
+  INVEST = 10,
+  SHOW_STAGE = 11,
+  SHOW_CONST = 12,
+  SUM = 13,
+  SHOW_BOSS_END = 14,
+  SHOW_BATTLE = 15,
+}
+
+enum Torappu_RoguelikeExpStyleConfigParam_4ff8b97a : int {
+  BATTLE_END_HP_LOSE_TEXT = 0,
+}
+
+enum Torappu_RoguelikeActivityType_58565332 : int {
+  NONE = 0,
+  SEED_MODE = 1,
+}
+
+enum Torappu_SanEffectRank_62ce68f9 : int {
+  SAN_EFFECT_0 = 0,
+  SAN_EFFECT_1 = 1,
+  SAN_EFFECT_2 = 2,
+  SAN_EFFECT_3 = 3,
+}
+
+enum Torappu_DiceResultClass_6badc352 : int {
+  VERYBAD = 0,
+  BAD = 1,
+  NORMAL = 2,
+  GOOD = 3,
+  GREAT = 4,
+}
+
+enum Torappu_DiceResultShowType_c41c54b2 : int {
+  RAW_TEXT = 0,
+  MUTATION = 1,
+  VIRTUE = 2,
+}
+
+enum Torappu_ChaosEffectRank_feafed80 : int {
+  CHAOS_EFFECT_0 = 0,
+  CHAOS_EFFECT_1 = 1,
+  CHAOS_EFFECT_2 = 2,
+}
+
+enum Torappu_RoguelikeTotemColorType_7206c19d : int {
+  NONE = 0,
+  RED = 1,
+  GREEN = 2,
+  BLUE = 3,
+  ALL = 4,
+}
+
+enum Torappu_RoguelikeTotemPosType_a70f2eaf : int {
+  LOCATION = 0,
+  EFFECT = 1,
+}
+
+enum Torappu_RoguelikeTotemBlurNodeType_2fbd5937 : int {
+  NONE = 0,
+  BATTLE = 1,
+  NO_BATTLE = 2,
+}
+
+enum Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType_0b8b1808 : int {
+  LOWER = 0,
+  UPPER = 1,
+}
+
+enum Torappu_RoguelikeFragmentType_fbf032a6 : int {
+  NONE = 0,
+  INSPIRATION = 1,
+  WISH = 2,
+  IDEA = 3,
+}
+
+enum Torappu_AlchemyPoolRarityType_71d05801 : int {
+  NONE = -1,
+  NORMAL = 0,
+  RARE = 1,
+  SUPER_RARE = 2,
+}
+
+enum Torappu_RoguelikeCopperBuffType_0cc04e36 : int {
+  NONE = 0,
+  REFRESH = 1,
+  MOVE = 2,
+}
+
+enum Torappu_RoguelikeCopperDivineType_3accc8fa : int {
+  NONE = 0,
+  DIVINE = 1,
+  EVENT = 2,
+}
+
+enum Torappu_RoguelikeCopperDivineResultType_1541df3e : int {
+  NONE = 0,
+  GOOD = 1,
+  NORMAL = 2,
+  BAD = 3,
+}
+
+enum Torappu_RoguelikeSkyZoneNodeType_98461b4b : int {
+  NONE = 0,
+  ORIGIN = 1,
+  BATTLE = 2,
+  TRIAL_GATE = 4,
+  INCIDENT = 8,
+  TREASURE = 16,
+  SHOP = 32,
+  SACRIFICE = 64,
+  ENTERTAINMENT = 128,
+  MARKET = 256,
+  BATTLE_HARD = 512,
+  BATTLES = 514,
+  INCIDENT_BOSS = 1024,
+  INCIDENT_BOSS_ONLY = 2048,
+  CHOICES = 3548,
+}
+
+enum Torappu_RoguelikeScrapType_36cb49c6 : int {
+  ERROR = -1,
+  NONE = 0,
+  MOVE = 1,
+  GOODS = 2,
+  PASSIVE = 3,
+}
+
+enum Torappu_RoguelikeMoveScrapRangeType_9d7fb599 : int {
+  RANGE = 0,
+  FULL_MAP = 1,
+  FULL_ROW_COL = 2,
+}
+
+enum Torappu_SharedConsts_Direction_80eb1882 : int {
+  UP = 0,
+  RIGHT = 1,
+  DOWN = 2,
+  LEFT = 3,
+  E_NUM = 4,
+}
+
+enum Torappu_RoguelikeTopicDevNodeType_1b66601b : int {
+  BRANCH = 0,
+  KEY = 1,
+  NONE = 10,
+}
+
+enum Torappu_RoguelikeTopicDevTokenDisplayForm_ba4f8241 : int {
+  ABSOLUTE_VAL = 0,
+  PERCENTAGE = 1,
+}
+
+enum Torappu_RL02DevelopmentNodeType_58ad7dc4 : int {
+  NONE = 0,
+  SMALL = 1,
+  NORMAL = 2,
+  LARGE_RHODES = 3,
+  LARGE_ABYSSAL = 4,
+  LARGE_IBERIA = 5,
+}
+
+enum Torappu_RL02DevelopmentEffectType_0d76ee6b : int {
+  BUFF = 0,
+  RAW_TEXT_EFFECT = 1,
+  RAW_TEXT_BAND = 2,
+  NONE = 10,
+}
+
+enum Torappu_RL03DevelopmentNodeType_f3e4c178 : int {
+  NONE = 0,
+  NORMAL = 1,
+  KEY = 2,
+  DIFFICULTY = 3,
+}
+
+enum Torappu_RL03DevelopmentEffectType_5238b273 : int {
+  BUFF = 0,
+  RAW_TEXT_EFFECT = 1,
+  RAW_TEXT_BAND = 2,
+}
+
+enum Torappu_RoguelikeCommonDevelopmentNodeType_aa965185 : int {
+  NONE = 0,
+  NORMAL = 1,
+  KEY = 2,
+  DIFFICULTY = 3,
+}
+
+enum Torappu_RoguelikeCommonDevelopmentEffectType_28020d64 : int {
+  BUFF = 0,
+  RAW_TEXT_EFFECT = 1,
+  RAW_TEXT_BAND = 2,
+}
+
+table Torappu_RoguelikeTopicTable_670d558c {
+  topics:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicBasicData__9e622247_Entry] (id:0);
+  constant:Torappu_RoguelikeTopicConst_3f4195b8 (id:1);
+  details:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDetail__cfb8d7f6_Entry] (id:2);
+  modules:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeModule__2b8ea476_Entry] (id:3);
+  customizeData:Torappu_RoguelikeTopicCustomizeData_38eb7ef7 (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicBasicData__9e622247_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicBasicData_be98b5b7 (id:1);
+}
+
+table Torappu_RoguelikeTopicBasicData_be98b5b7 {
+  id:string (id:0);
+  name:string (id:1);
+  startTime:long (id:2);
+  disappearTimeOnMainScreen:long (id:3);
+  sort:int (id:4);
+  showMedalId:string (id:5);
+  medalGroupId:string (id:6);
+  fullStoredTime:long (id:7);
+  lineText:string (id:8);
+  homeEntryDisplayData:[Torappu_RoguelikeTopicBasicData_HomeEntryDisplayData_32523364] (id:9);
+  moduleTypes:[Torappu_RoguelikeModuleType_5c8d1aec] (id:10);
+  config:Torappu_RoguelikeTopicConfig_d90110e4 (id:11);
+}
+
+table Torappu_RoguelikeTopicBasicData_HomeEntryDisplayData_32523364 {
+  topicId:string (id:0);
+  displayId:string (id:1);
+  startTs:long (id:2);
+  endTs:long (id:3);
+}
+
+table Torappu_RoguelikeTopicConfig_d90110e4 {
+  loadCharCardPlugin:bool (id:0);
+  webBusType:string (id:1);
+  monthChatTrigType:Torappu_RoguelikeMonthChatTrigType_6f9e45f1 (id:2);
+  loadRewardHpDecoPlugin:bool (id:3);
+  loadRewardExtraInfoPlugin:bool (id:4);
+}
+
+table Torappu_RoguelikeTopicConst_3f4195b8 {
+  milestoneTokenRatio:int (id:0);
+  outerBuffTokenRatio:float (id:1);
+  relicTokenRatio:int (id:2);
+  rogueSystemUnlockStage:string (id:3);
+  ordiModeReOpenCoolDown:int (id:4);
+  monthModeReOpenCoolDown:int (id:5);
+  monthlyTaskUncompletedTime:int (id:6);
+  monthlyTaskManualRefreshLimit:int (id:7);
+  monthlyTeamUncompletedTime:int (id:8);
+  bpPurchaseSystemUnlockTime:long (id:9);
+  predefinedChars:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicConst_PredefinedChar__e0906e1b_Entry] (id:10);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicConst_PredefinedChar__e0906e1b_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicConst_PredefinedChar_e0d48783 (id:1);
+}
+
+table Torappu_RoguelikeTopicConst_PredefinedChar_e0d48783 {
+  charId:string (id:0);
+  canBeFree:bool (id:1);
+  uniEquipId:string (id:2);
+  recruitType:Torappu_RoguelikeCharState_9a2db5ba (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDetail__cfb8d7f6_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicDetail_6aab58d9 (id:1);
+}
+
+table Torappu_RoguelikeTopicDetail_6aab58d9 {
+  updates:[Torappu_RoguelikeTopicUpdate_f6dbf7d1] (id:0);
+  enrolls:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicEnroll__d8ddcb09_Entry] (id:1);
+  milestones:[Torappu_RoguelikeTopicBP_5f4d7511] (id:2);
+  milestoneUpdates:[Torappu_RoguelikeTopicMilestoneUpdateData_b12fc8e0] (id:3);
+  grandPrizes:[Torappu_RoguelikeTopicBPGrandPrize_c97d1cfc] (id:4);
+  monthMission:[Torappu_RoguelikeTopicMonthMission_f6b09fc2] (id:5);
+  monthSquad:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicMonthSquad__72cadcc7_Entry] (id:6);
+  challenges:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicChallenge__33aefbf9_Entry] (id:7);
+  difficulties:[Torappu_RoguelikeTopicDifficulty_f91a959f] (id:8);
+  bankRewards:[Torappu_RoguelikeTopicBankReward_82a09f8b] (id:9);
+  archiveComp:Torappu_RoguelikeArchiveComponentData_19406052 (id:10);
+  archiveUnlockCond:Torappu_RoguelikeArchiveUnlockCondData_b3035390 (id:11);
+  detailConst:Torappu_RoguelikeTopicDetailConst_3cebc731 (id:12);
+  init:[Torappu_RoguelikeGameInitData_728fd29a] (id:13);
+  stages:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameStageData__7104d8e4_Entry] (id:14);
+  zones:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameZoneData__864359d5_Entry] (id:15);
+  variation:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeZoneVariationData__b4996919_Entry] (id:16);
+  traps:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameTrapData__66bcfe90_Entry] (id:17);
+  recruitTickets:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameRecruitTicketData__02eb7036_Entry] (id:18);
+  upgradeTickets:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameUpgradeTicketData__5e1efad3_Entry] (id:19);
+  customTickets:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameCustomTicketData__7af56184_Entry] (id:20);
+  stashableTickets:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameStashableTicketData__41871b1d_Entry] (id:21);
+  relics:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameRelicData__1aaa2923_Entry] (id:22);
+  relicParams:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameRelicParamData__851931f6_Entry] (id:23);
+  recruitGrps:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameRecruitGrpData__e997d26f_Entry] (id:24);
+  choices:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameChoiceData__91e73b41_Entry] (id:25);
+  choiceScenes:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameChoiceSceneData__565a5b23_Entry] (id:26);
+  nodeTypeData:[System_Collections_Generic_Dictionary_2_Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData__b8e64f0d_Entry] (id:27);
+  subTypeData:[Torappu_RoguelikeGameNodeSubTypeData_fd4998dc] (id:28);
+  variationData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameVariationData__447eee62_Entry] (id:29);
+  fusionData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameFusionData__b9978b1e_Entry] (id:30);
+  charBuffData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameCharBuffData__35d5725e_Entry] (id:31);
+  squadBuffData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameSquadBuffData__923d5a9a_Entry] (id:32);
+  taskData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTaskData__5bad748b_Entry] (id:33);
+  gameConst:Torappu_RoguelikeGameConst_ed7c04c8 (id:34);
+  shopDialogData:Torappu_RoguelikeGameShopDialogData_41201cb4 (id:35);
+  capsuleDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicCapsule__ae460984_Entry] (id:36);
+  endings:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameEndingData__e3265232_Entry] (id:37);
+  failEndings:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameFailEndingData__66156c7d_Entry] (id:38);
+  battleSummeryDescriptions:[System_Collections_Generic_Dictionary_2_Torappu_RoguelikeTopicMode_Torappu_RoguelikeBattleSummeryDescriptionData__12819a28_Entry] (id:39);
+  battleLoadingTips:[Torappu_TipData_5e3b77f7] (id:40);
+  items:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameItemData__7d092407_Entry] (id:41);
+  bandRef:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeBandRefData__b305b064_Entry] (id:42);
+  endingDetailList:[Torappu_RoguelikeEndingDetailText_fa5dc024] (id:43);
+  endingRelicDetailList:[Torappu_RoguelikeEndingRelicDetailText_52c84d9b] (id:44);
+  treasures:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_RoguelikeGameTreasureDat_c47ddbd4_Entry] (id:45);
+  difficultyUpgradeRelicGroups:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDifficultyUpgradeRelicGroupData__0d8d3732_Entry] (id:46);
+  styles:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikePredefinedStyleData__ea29af57_Entry] (id:47);
+  styleConfig:Torappu_RoguelikePredefinedConstStyleData_e6d750b3 (id:48);
+  exploreTools:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameExploreToolData__5cedeada_Entry] (id:49);
+  rollNodeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeRollNodeData__213a291b_Entry] (id:50);
+  relicTipsData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeRelicTipsData__80b92d66_Entry] (id:51);
+  legacyItems:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeLegacyItemData__6a0b802a_Entry] (id:52);
+  activity:Torappu_RoguelikeActivityData_4b9e18ef (id:53);
+}
+
+table Torappu_RoguelikeTopicUpdate_f6dbf7d1 {
+  updateId:string (id:0);
+  topicUpdateTime:long (id:1);
+  topicEndTime:long (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicEnroll__d8ddcb09_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicEnroll_04c44725 (id:1);
+}
+
+table Torappu_RoguelikeTopicEnroll_04c44725 {
+  enrollId:string (id:0);
+  enrollTime:long (id:1);
+  enrollType:Torappu_RoguelikeEnrollType_9a0a0b39 (id:2);
+  enrollNoticeEndTime:long (id:3);
+}
+
+table Torappu_RoguelikeTopicBP_5f4d7511 {
+  id:string (id:0);
+  level:int (id:1);
+  tokenNum:int (id:2);
+  nextTokenNum:int (id:3);
+  itemID:string (id:4);
+  itemType:Torappu_ItemType_2ee74a72 (id:5);
+  itemCount:int (id:6);
+  isGoodPrize:bool (id:7);
+  isGrandPrize:bool (id:8);
+  isReturnDisplay:bool (id:9);
+  returnSortId:int (id:10);
+}
+
+table Torappu_RoguelikeTopicMilestoneUpdateData_b12fc8e0 {
+  updateTime:long (id:0);
+  endTime:long (id:1);
+  maxBpLevel:int (id:2);
+  maxBpCount:int (id:3);
+  maxDisplayBpCount:int (id:4);
+}
+
+table Torappu_RoguelikeTopicBPGrandPrize_c97d1cfc {
+  grandPrizeDisplayId:string (id:0);
+  sortId:int (id:1);
+  displayUnlockYear:int (id:2);
+  displayUnlockMonth:int (id:3);
+  acquireTitle:string (id:4);
+  purchaseTitle:string (id:5);
+  displayName:string (id:6);
+  displayDiscription:string (id:7);
+  bpLevelId:string (id:8);
+  itemBundle:Torappu_ItemBundle_64f049cd (id:9);
+  detailAnnounceTime:string (id:10);
+  picIdAftrerUnlock:string (id:11);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table Torappu_RoguelikeTopicMonthMission_f6b09fc2 {
+  id:string (id:0);
+  taskName:string (id:1);
+  taskClass:Torappu_RoguelikeGameMonthTaskClass_71482438 (id:2);
+  innerClassWeight:int (id:3);
+  template:string (id:4);
+  paramList:[string] (id:5);
+  desc:string (id:6);
+  tokenRewardNum:int (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicMonthSquad__72cadcc7_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicMonthSquad_8d51829c (id:1);
+}
+
+table Torappu_RoguelikeTopicMonthSquad_8d51829c {
+  id:string (id:0);
+  teamName:string (id:1);
+  teamSubName:string (id:2);
+  teamFlavorDesc:string (id:3);
+  teamDes:string (id:4);
+  teamColor:string (id:5);
+  teamMonth:string (id:6);
+  teamYear:string (id:7);
+  teamIndex:string (id:8);
+  teamChars:[Torappu_RoguelikeTopicMonthSquadTeamChar_15770409] (id:9);
+  zoneId:string (id:10);
+  chatId:string (id:11);
+  tokenRewardNum:int (id:12);
+  items:[Torappu_ItemBundle_64f049cd] (id:13);
+  startTime:long (id:14);
+  endTime:long (id:15);
+  taskDes:string (id:16);
+}
+
+table Torappu_RoguelikeTopicMonthSquadTeamChar_15770409 {
+  teamCharId:string (id:0);
+  teamTmplId:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicChallenge__33aefbf9_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicChallenge_70ac3156 (id:1);
+}
+
+table Torappu_RoguelikeTopicChallenge_70ac3156 {
+  challengeId:string (id:0);
+  sortId:int (id:1);
+  challengeName:string (id:2);
+  challengeGroup:int (id:3);
+  challengeGroupSortId:int (id:4);
+  challengeGroupName:string (id:5);
+  challengeUnlockDesc:string (id:6);
+  challengeUnlockToastDesc:string (id:7);
+  challengeDes:string (id:8);
+  challengeConditionDes:[string] (id:9);
+  challengeTasks:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicChallengeTask__575f8c59_Entry] (id:10);
+  defaultTaskId:string (id:11);
+  rewards:[Torappu_ItemBundle_64f049cd] (id:12);
+  challengeStoryId:string (id:13);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicChallengeTask__575f8c59_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicChallengeTask_c2727124 (id:1);
+}
+
+table Torappu_RoguelikeTopicChallengeTask_c2727124 {
+  taskId:string (id:0);
+  taskDes:string (id:1);
+  completionClass:string (id:2);
+  completionParams:[string] (id:3);
+}
+
+table Torappu_RoguelikeTopicDifficulty_f91a959f {
+  modeDifficulty:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  grade:int (id:1);
+  name:string (id:2);
+  nameImage:string (id:3);
+  subName:string (id:4);
+  enrollId:string (id:5);
+  haveInitialRelicIcon:bool (id:6);
+  scoreFactor:float (id:7);
+  canUnlockItem:bool (id:8);
+  doMonthTask:bool (id:9);
+  ruleDesc:string (id:10);
+  ruleDescReplacements:[Torappu_RoguelikeTopicDifficulty_RuleDescReplacement_e92482d7] (id:11);
+  failTitle:string (id:12);
+  failImageId:string (id:13);
+  failForceDesc:string (id:14);
+  sortId:int (id:15);
+  equivalentGrade:int (id:16);
+  color:string (id:17);
+  bpValue:int (id:18);
+  bossValue:int (id:19);
+  addDesc:string (id:20);
+  warningType:Torappu_RoguelikeTopicDifficultyWarningType_7ce099e4 (id:21);
+  unlockText:string (id:22);
+  displayIconId:string (id:23);
+  hideEndingStory:bool (id:24);
+  haveLegacy:bool (id:25);
+}
+
+table Torappu_RoguelikeTopicDifficulty_RuleDescReplacement_e92482d7 {
+  enrollId:string (id:0);
+  ruleDesc:string (id:1);
+}
+
+table Torappu_RoguelikeTopicBankReward_82a09f8b {
+  rewardId:string (id:0);
+  unlockGoldCnt:int (id:1);
+  rewardType:Torappu_RoguelikeTopicBankRewardType_c5b23d3a (id:2);
+  desc:string (id:3);
+}
+
+table Torappu_RoguelikeArchiveComponentData_19406052 {
+  relic:Torappu_ActArchiveRelicData_ed1d699d (id:0);
+  capsule:Torappu_ActArchiveCapsuleData_dfbd65f9 (id:1);
+  trap:Torappu_ActArchiveTrapData_20417b2a (id:2);
+  chat:Torappu_ActArchiveChatData_7f35fab2 (id:3);
+  endbook:Torappu_ActArchiveEndbookData_93ae405e (id:4);
+  buff:Torappu_ActArchiveBuffData_93c31c45 (id:5);
+  totem:Torappu_ActArchiveTotemData_8172ca87 (id:6);
+  chaos:Torappu_ActArchiveChaosData_1fa6ca8a (id:7);
+  fragment:Torappu_ActArchiveFragmentData_bcbe5864 (id:8);
+  disaster:Torappu_ActArchiveDisasterData_33954e02 (id:9);
+  wrath:Torappu_ActArchiveWrathData_81225f4b (id:10);
+  copper:Torappu_ActArchiveCopperData_0587cb15 (id:11);
+  scrap:Torappu_ActArchiveScrapData_fdc98e5c (id:12);
+  weather:Torappu_ActArchiveWeatherData_0ac27233 (id:13);
+}
+
+table Torappu_ActArchiveRelicData_ed1d699d {
+  relic:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveRelicItemData__bda92346_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveRelicItemData__bda92346_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveRelicItemData_7daa494a (id:1);
+}
+
+table Torappu_ActArchiveRelicItemData_7daa494a {
+  relicId:string (id:0);
+  relicSortId:int (id:1);
+  relicGroupId:int (id:2);
+  orderId:string (id:3);
+  isSpRelic:bool (id:4);
+  enrollId:string (id:5);
+}
+
+table Torappu_ActArchiveCapsuleData_dfbd65f9 {
+  capsule:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCapsuleItemData__a49f5466_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCapsuleItemData__a49f5466_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveCapsuleItemData_7edd6f77 (id:1);
+}
+
+table Torappu_ActArchiveCapsuleItemData_7edd6f77 {
+  capsuleId:string (id:0);
+  capsuleSortId:int (id:1);
+  englishName:string (id:2);
+  enrollId:string (id:3);
+}
+
+table Torappu_ActArchiveTrapData_20417b2a {
+  trap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveTrapItemData__d44215c2_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveTrapItemData__d44215c2_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveTrapItemData_01f030b5 (id:1);
+}
+
+table Torappu_ActArchiveTrapItemData_01f030b5 {
+  trapId:string (id:0);
+  trapSortId:int (id:1);
+  orderId:string (id:2);
+  enrollId:string (id:3);
+}
+
+table Torappu_ActArchiveChatData_7f35fab2 {
+  chat:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveChatGroupData__45728606_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveChatGroupData__45728606_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveChatGroupData_14c1e373 (id:1);
+}
+
+table Torappu_ActArchiveChatGroupData_14c1e373 {
+  sortId:int (id:0);
+  chatItemList:[Torappu_ActArchiveChatItemData_d7b4c201] (id:1);
+}
+
+table Torappu_ActArchiveChatItemData_d7b4c201 {
+  floor:int (id:0);
+  chatZoneId:string (id:1);
+  chatDesc:string (id:2);
+  chatStoryId:string (id:3);
+}
+
+table Torappu_ActArchiveEndbookData_93ae405e {
+  endbook:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveEndbookGroupData__101745cb_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveEndbookGroupData__101745cb_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveEndbookGroupData_76cb3946 (id:1);
+}
+
+table Torappu_ActArchiveEndbookGroupData_76cb3946 {
+  endId:string (id:0);
+  endingId:string (id:1);
+  sortId:int (id:2);
+  title:string (id:3);
+  cgId:string (id:4);
+  backBlurId:string (id:5);
+  cardId:string (id:6);
+  hasAvg:bool (id:7);
+  avgId:string (id:8);
+  clientEndbookItemDatas:[Torappu_ActArchiveEndbookItemData_29f8344b] (id:9);
+}
+
+table Torappu_ActArchiveEndbookItemData_29f8344b {
+  endBookId:string (id:0);
+  sortId:int (id:1);
+  enrollId:string (id:2);
+  isLast:bool (id:3);
+  endbookName:string (id:4);
+  unlockDesc:string (id:5);
+  textId:string (id:6);
+}
+
+table Torappu_ActArchiveBuffData_93c31c45 {
+  buff:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveBuffItemData__870b4ff4_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveBuffItemData__870b4ff4_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveBuffItemData_4d20bd7f (id:1);
+}
+
+table Torappu_ActArchiveBuffItemData_4d20bd7f {
+  buffId:string (id:0);
+  buffGroupIndex:int (id:1);
+  innerSortId:int (id:2);
+  name:string (id:3);
+  iconId:string (id:4);
+  usage:string (id:5);
+  desc:string (id:6);
+  color:string (id:7);
+}
+
+table Torappu_ActArchiveTotemData_8172ca87 {
+  totem:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveTotemItemData__b8d3edcd_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveTotemItemData__b8d3edcd_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveTotemItemData_76471a5f (id:1);
+}
+
+table Torappu_ActArchiveTotemItemData_76471a5f {
+  id:string (id:0);
+  type:Torappu_ActArchiveTotemType_4ebac96e (id:1);
+  enrollConditionId:string (id:2);
+  sortId:int (id:3);
+}
+
+table Torappu_ActArchiveChaosData_1fa6ca8a {
+  chaos:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveChaosItemData__07e7ab00_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveChaosItemData__07e7ab00_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveChaosItemData_29c4f58d (id:1);
+}
+
+table Torappu_ActArchiveChaosItemData_29c4f58d {
+  id:string (id:0);
+  isHidden:bool (id:1);
+  enrollId:string (id:2);
+  sortId:int (id:3);
+}
+
+table Torappu_ActArchiveFragmentData_bcbe5864 {
+  fragment:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveFragmentItemData__473f886c_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveFragmentItemData__473f886c_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveFragmentItemData_21c2a4b9 (id:1);
+}
+
+table Torappu_ActArchiveFragmentItemData_21c2a4b9 {
+  fragmentId:string (id:0);
+  sortId:int (id:1);
+  enrollConditionId:string (id:2);
+}
+
+table Torappu_ActArchiveDisasterData_33954e02 {
+  disasters:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveDisasterItemData__e693ff14_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveDisasterItemData__e693ff14_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveDisasterItemData_924065cc (id:1);
+}
+
+table Torappu_ActArchiveDisasterItemData_924065cc {
+  disasterId:string (id:0);
+  sortId:int (id:1);
+  enrollConditionId:string (id:2);
+  picSmallId:string (id:3);
+  picBigActiveId:string (id:4);
+  picBigInactiveId:string (id:5);
+}
+
+table Torappu_ActArchiveWrathData_81225f4b {
+  wraths:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveWrathItemData__5f7df5d6_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveWrathItemData__5f7df5d6_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveWrathItemData_77ed7ecd (id:1);
+}
+
+table Torappu_ActArchiveWrathItemData_77ed7ecd {
+  wrathId:string (id:0);
+  sortId:int (id:1);
+  picTitleId:string (id:2);
+  picSmallInactiveId:string (id:3);
+  picSmallActiveId:string (id:4);
+  picBigActiveId:string (id:5);
+  picBigInactiveId:string (id:6);
+  enrollId:string (id:7);
+  isSp:bool (id:8);
+}
+
+table Torappu_ActArchiveCopperData_0587cb15 {
+  coppers:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCopperItemData__0488c54c_Entry] (id:0);
+  copperTypes:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCopperTypeData__1bb45ac0_Entry] (id:1);
+  gilds:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCopperGildData__e78c22bc_Entry] (id:2);
+  luckyLevels:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCopperLuckyLevelData__655ba918_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCopperItemData__0488c54c_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveCopperItemData_640ca808 (id:1);
+}
+
+table Torappu_ActArchiveCopperItemData_640ca808 {
+  id:string (id:0);
+  displayCopperId:string (id:1);
+  archiveType:Torappu_ActArchiveCopperType_493ce8c9 (id:2);
+  copperType:Torappu_RoguelikeCopperType_fc7c4d33 (id:3);
+  sortId:int (id:4);
+  enrollId:string (id:5);
+  coppersInGroup:[string] (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCopperTypeData__1bb45ac0_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveCopperTypeData_aa7ede04 (id:1);
+}
+
+table Torappu_ActArchiveCopperTypeData_aa7ede04 {
+  copperType:Torappu_RoguelikeCopperType_fc7c4d33 (id:0);
+  typeName:string (id:1);
+  typeIconId:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCopperGildData__e78c22bc_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveCopperGildData_963595c3 (id:1);
+}
+
+table Torappu_ActArchiveCopperGildData_963595c3 {
+  gildTypeId:string (id:0);
+  gildName:string (id:1);
+  gildDesc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveCopperLuckyLevelData__655ba918_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveCopperLuckyLevelData_a7d825c6 (id:1);
+}
+
+table Torappu_ActArchiveCopperLuckyLevelData_a7d825c6 {
+  luckyLevel:Torappu_RoguelikeCopperLuckyLevel_ccfb2e43 (id:0);
+  luckyName:string (id:1);
+  luckyDesc:string (id:2);
+  luckyUsage:string (id:3);
+}
+
+table Torappu_ActArchiveScrapData_fdc98e5c {
+  scraps:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveScrapItemData__0652327e_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveScrapItemData__0652327e_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveScrapItemData_9c0417a1 (id:1);
+}
+
+table Torappu_ActArchiveScrapItemData_9c0417a1 {
+  scrapId:string (id:0);
+  sortId:int (id:1);
+  enrollConditionId:string (id:2);
+}
+
+table Torappu_ActArchiveWeatherData_0ac27233 {
+  weathers:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveWeatherItemData__6c0b2549_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ActArchiveWeatherItemData__6c0b2549_Entry {
+  key:string (id:0);
+  value:Torappu_ActArchiveWeatherItemData_0e2da1b9 (id:1);
+}
+
+table Torappu_ActArchiveWeatherItemData_0e2da1b9 {
+  weatherId:string (id:0);
+  sortId:int (id:1);
+  enrollConditionId:string (id:2);
+}
+
+table Torappu_RoguelikeArchiveUnlockCondData_b3035390 {
+  unlockCondDesc:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc__b357454d_Entry] (id:0);
+  enroll:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeArchiveEnroll__872a455f_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc__b357454d_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeArchiveUnlockCondDesc_b99a7607 (id:1);
+}
+
+table Torappu_RoguelikeArchiveUnlockCondDesc_b99a7607 {
+  archiveType:Torappu_ActArchiveType_cd0ba499 (id:0);
+  description:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeArchiveEnroll__872a455f_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeArchiveEnroll_8fe1fb92 (id:1);
+}
+
+table Torappu_RoguelikeArchiveEnroll_8fe1fb92 {
+  archiveType:Torappu_ActArchiveType_cd0ba499 (id:0);
+  enrollId:string (id:1);
+}
+
+table Torappu_RoguelikeTopicDetailConst_3cebc731 {
+  playerLevelTable:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData__516bb66e_Entry] (id:0);
+  charUpgradeTable:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData__e1a04a26_Entry] (id:1);
+  difficultyUpgradeRelicDescTable:[System_Collections_Generic_Dictionary_2_System_Int32_System_String__d8af7298_Entry] (id:2);
+  predefinedLevelTable:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData__1dc062b3_Entry] (id:3);
+  tokenBpId:string (id:4);
+  tokenOuterBuffId:string (id:5);
+  spOperatorLockedMessage:string (id:6);
+  previewedRewardsAccordingUpdateId:string (id:7);
+  tipButtonName:string (id:8);
+  collectButtonName:string (id:9);
+  bpSystemName:string (id:10);
+  autoSetKV:string (id:11);
+  bpPurchaseActiveEnroll:string (id:12);
+  defaultExpeditionSelectDesc:string (id:13);
+  gotCharMutationBuffToast:string (id:14);
+  gotCharEvolutionBuffToast:string (id:15);
+  gotSquadBuffToast:string (id:16);
+  loseCharBuffToast:string (id:17);
+  monthTeamSystemName:string (id:18);
+  battlePassUpdateName:string (id:19);
+  monthCharCardTagName:string (id:20);
+  monthTeamDescTagName:string (id:21);
+  outerBuffCompleteText:string (id:22);
+  outerProgressTextColor:string (id:23);
+  challengeTaskTargetName:string (id:24);
+  challengeTaskConditionName:string (id:25);
+  challengeTaskRewardName:string (id:26);
+  challengeTaskModeName:string (id:27);
+  challengeTaskName:string (id:28);
+  outerBuffTokenSum:int (id:29);
+  needAllFrontNode:bool (id:30);
+  showBlurBack:bool (id:31);
+  endingIconBorderDifficulty:int (id:32);
+  endingIconBorderCount:int (id:33);
+  copySeedModeInfo:string (id:34);
+  copySucceededTextHint:string (id:35);
+  historicalRecordsCount:int (id:36);
+  historicalRecordsStartTime:long (id:37);
+  historicalRecordsMode:Torappu_RoguelikeTopicMode_bc5dd965 (id:38);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData__516bb66e_Entry {
+  key:int (id:0);
+  value:Torappu_RoguelikeTopicDetailConst_PlayerLevelData_873335dd (id:1);
+}
+
+table Torappu_RoguelikeTopicDetailConst_PlayerLevelData_873335dd {
+  exp:int (id:0);
+  populationUp:int (id:1);
+  squadCapacityUp:int (id:2);
+  battleCharLimitUp:int (id:3);
+  maxHpUp:int (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData__e1a04a26_Entry {
+  key:int (id:0);
+  value:Torappu_RoguelikeTopicDetailConst_CharUpgradeData_884a3796 (id:1);
+}
+
+table Torappu_RoguelikeTopicDetailConst_CharUpgradeData_884a3796 {
+  evolvePhase:Torappu_EvolvePhase_fd4d2921 (id:0);
+  skillLevel:int (id:1);
+  skillSpecializeLevel:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_String__d8af7298_Entry {
+  key:int (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData__1dc062b3_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData_adaa01f3 (id:1);
+}
+
+table Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData_adaa01f3 {
+  levels:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData__516bb66e_Entry] (id:0);
+}
+
+table Torappu_RoguelikeGameInitData_728fd29a {
+  modeId:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  modeGrade:int (id:1);
+  predefinedId:string (id:2);
+  predefinedStyle:string (id:3);
+  initialBandRelic:[string] (id:4);
+  initialRecruitGroup:[string] (id:5);
+  initialHp:int (id:6);
+  initialPopulation:int (id:7);
+  initialGold:int (id:8);
+  initialSquadCapacity:int (id:9);
+  initialShield:int (id:10);
+  initialMaxHp:int (id:11);
+  initialKey:int (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameStageData__7104d8e4_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameStageData_becfc986 (id:1);
+}
+
+table Torappu_RoguelikeGameStageData_becfc986 {
+  id:string (id:0);
+  linkedStageId:string (id:1);
+  levelId:string (id:2);
+  levelReplaceIds:[string] (id:3);
+  code:string (id:4);
+  name:string (id:5);
+  loadingPicId:string (id:6);
+  description:string (id:7);
+  eliteDesc:string (id:8);
+  isBoss:int (id:9);
+  isElite:int (id:10);
+  difficulty:Torappu_LevelData_Difficulty_47abb9d1 (id:11);
+  capsulePool:string (id:12);
+  capsuleProb:float (id:13);
+  vutresProb:[double] (id:14);
+  boxProb:[double] (id:15);
+  specialNodeId:string (id:16);
+  redCapsulePool:string (id:17);
+  redCapsuleProb:float (id:18);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameZoneData__864359d5_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameZoneData_9de7915d (id:1);
+}
+
+table Torappu_RoguelikeGameZoneData_9de7915d {
+  id:string (id:0);
+  name:string (id:1);
+  clockPerformance:string (id:2);
+  displayTime:string (id:3);
+  description:string (id:4);
+  buffDescription:string (id:5);
+  endingDescription:string (id:6);
+  backgroundId:string (id:7);
+  zoneIconId:string (id:8);
+  isHiddenZone:bool (id:9);
+  bgmSignal:string (id:10);
+  bgmSignalWithLowSan:string (id:11);
+  transitionEffectId:string (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeZoneVariationData__b4996919_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeZoneVariationData_e2a71b6d (id:1);
+}
+
+table Torappu_RoguelikeZoneVariationData_e2a71b6d {
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameTrapData__66bcfe90_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameTrapData_d013c1ce (id:1);
+}
+
+table Torappu_RoguelikeGameTrapData_d013c1ce {
+  itemId:string (id:0);
+  trapId:string (id:1);
+  trapDesc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameRecruitTicketData__02eb7036_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameRecruitTicketData_8229bf6a (id:1);
+}
+
+table Torappu_RoguelikeGameRecruitTicketData_8229bf6a {
+  id:string (id:0);
+  profession:Torappu_ProfessionCategory_f64dcd2f (id:1);
+  rarity:Torappu_RarityRankMask_a3c5391c (id:2);
+  professionList:[Torappu_ProfessionID_7b2b01de] (id:3);
+  rarityList:[Torappu_RarityRank_acc16d61] (id:4);
+  extraEliteNum:int (id:5);
+  extraFreeRarity:[Torappu_RarityRank_acc16d61] (id:6);
+  extraCharIds:[string] (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameUpgradeTicketData__5e1efad3_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameUpgradeTicketData_3fef3c73 (id:1);
+}
+
+table Torappu_RoguelikeGameUpgradeTicketData_3fef3c73 {
+  id:string (id:0);
+  profession:Torappu_ProfessionCategory_f64dcd2f (id:1);
+  rarity:Torappu_RarityRankMask_a3c5391c (id:2);
+  professionList:[Torappu_ProfessionID_7b2b01de] (id:3);
+  rarityList:[Torappu_RarityRank_acc16d61] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameCustomTicketData__7af56184_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameCustomTicketData_01882799 (id:1);
+}
+
+table Torappu_RoguelikeGameCustomTicketData_01882799 {
+  id:string (id:0);
+  subType:Torappu_CustomTicketType_b6743712 (id:1);
+  discardText:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameStashableTicketData__41871b1d_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameStashableTicketData_c08c88bf (id:1);
+}
+
+table Torappu_RoguelikeGameStashableTicketData_c08c88bf {
+  ticketId:string (id:0);
+  stashedTicketId:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameRelicData__1aaa2923_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameRelicData_4e67962b (id:1);
+}
+
+table Torappu_RoguelikeGameRelicData_4e67962b {
+  id:string (id:0);
+  buffs:[Torappu_RoguelikeBuff_f322e2d0] (id:1);
+}
+
+table Torappu_RoguelikeBuff_f322e2d0 {
+  key:string (id:0);
+  blackboard:[Torappu_Blackboard_DataPair_5ef45847] (id:1);
+}
+
+table Torappu_Blackboard_DataPair_5ef45847 {
+  key:string (id:0);
+  value:float (id:1);
+  valueStr:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameRelicParamData__851931f6_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameRelicParamData_30aeeead (id:1);
+}
+
+table Torappu_RoguelikeGameRelicParamData_30aeeead {
+  id:string (id:0);
+  checkCharBoxTypes:[Torappu_RoguelikeGameRelicCheckType_47a2b09d] (id:1);
+  checkCharBoxParams:[Torappu_RoguelikeGameRelicCheckParam_bcfe3892] (id:2);
+}
+
+table Torappu_RoguelikeGameRelicCheckParam_bcfe3892 {
+  valueProfessionMask:Torappu_ProfessionCategory_f64dcd2f (id:0);
+  valueStrs:[string] (id:1);
+  valueInt:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameRecruitGrpData__e997d26f_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameRecruitGrpData_18e3a2f6 (id:1);
+}
+
+table Torappu_RoguelikeGameRecruitGrpData_18e3a2f6 {
+  id:string (id:0);
+  iconId:string (id:1);
+  name:string (id:2);
+  desc:string (id:3);
+  unlockDesc:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameChoiceData__91e73b41_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameChoiceData_5ed0c647 (id:1);
+}
+
+table Torappu_RoguelikeGameChoiceData_5ed0c647 {
+  id:string (id:0);
+  title:string (id:1);
+  description:string (id:2);
+  lockedCoverDesc:string (id:3);
+  type:Torappu_RoguelikeGameChoiceType_b34792b5 (id:4);
+  leftDecoType:Torappu_RoguelikeChoiceLeftDecoType_0bc44ca7 (id:5);
+  nextSceneId:string (id:6);
+  icon:string (id:7);
+  displayData:Torappu_RoguelikeChoiceDisplayData_c228f68d (id:8);
+  forceShowWhenOnlyLeave:bool (id:9);
+  isHiddenChoice:bool (id:10);
+  sortId:int (id:11);
+}
+
+table Torappu_RoguelikeChoiceDisplayData_c228f68d {
+  type:Torappu_RoguelikeChoiceDisplayType_6e999187 (id:0);
+  costHintType:Torappu_RoguelikeChoiceHintType_156e61da (id:1);
+  effectHintType:Torappu_RoguelikeChoiceHintType_156e61da (id:2);
+  funcIconId:string (id:3);
+  itemId:string (id:4);
+  difficultyUpgradeRelicGroupId:string (id:5);
+  taskId:string (id:6);
+  instId:string (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameChoiceSceneData__565a5b23_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameChoiceSceneData_f6f42046 (id:1);
+}
+
+table Torappu_RoguelikeGameChoiceSceneData_f6f42046 {
+  id:string (id:0);
+  title:string (id:1);
+  description:string (id:2);
+  background:string (id:3);
+  titleIcon:string (id:4);
+  subTypeId:int (id:5);
+  useHiddenMusic:bool (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData__b8e64f0d_Entry {
+  key:Torappu_RoguelikeEventType_74bd7f17 (id:0);
+  value:Torappu_RoguelikeGameNodeTypeData_1066b5f9 (id:1);
+}
+
+table Torappu_RoguelikeGameNodeTypeData_1066b5f9 {
+  name:string (id:0);
+  subName:string (id:1);
+  description:string (id:2);
+}
+
+table Torappu_RoguelikeGameNodeSubTypeData_fd4998dc {
+  eventType:Torappu_RoguelikeEventType_74bd7f17 (id:0);
+  subTypeId:int (id:1);
+  iconId:string (id:2);
+  name:string (id:3);
+  description:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameVariationData__447eee62_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameVariationData_50961cec (id:1);
+}
+
+table Torappu_RoguelikeGameVariationData_50961cec {
+  id:string (id:0);
+  type:Torappu_RoguelikeGameVariationType_4d939c4a (id:1);
+  outerName:string (id:2);
+  innerName:string (id:3);
+  functionDesc:string (id:4);
+  desc:string (id:5);
+  iconId:string (id:6);
+  sound:string (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameFusionData__b9978b1e_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameFusionData_c6fec6c6 (id:1);
+}
+
+table Torappu_RoguelikeGameFusionData_c6fec6c6 {
+  id:string (id:0);
+  type:Torappu_RoguelikeGameVariationType_4d939c4a (id:1);
+  name:string (id:2);
+  functionDesc:string (id:3);
+  desc:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameCharBuffData__35d5725e_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameCharBuffData_db955a91 (id:1);
+}
+
+table Torappu_RoguelikeGameCharBuffData_db955a91 {
+  id:string (id:0);
+  buffType:Torappu_RoguelikeGameCharBuffType_b4f8d49a (id:1);
+  iconId:string (id:2);
+  relatedItemId:string (id:3);
+  outerName:string (id:4);
+  innerName:string (id:5);
+  functionDesc:string (id:6);
+  desc:string (id:7);
+  buffs:[Torappu_RoguelikeBuff_f322e2d0] (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameSquadBuffData__923d5a9a_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameSquadBuffData_812758be (id:1);
+}
+
+table Torappu_RoguelikeGameSquadBuffData_812758be {
+  id:string (id:0);
+  iconId:string (id:1);
+  outerName:string (id:2);
+  innerName:string (id:3);
+  functionDesc:string (id:4);
+  desc:string (id:5);
+  buffs:[Torappu_RoguelikeBuff_f322e2d0] (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTaskData__5bad748b_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTaskData_e1b0443f (id:1);
+}
+
+table Torappu_RoguelikeTaskData_e1b0443f {
+  taskId:string (id:0);
+  taskName:string (id:1);
+  taskDesc:string (id:2);
+  rewardSceneId:string (id:3);
+  taskRarity:Torappu_RoguelikeTaskRarity_d8678f1e (id:4);
+}
+
+table Torappu_RoguelikeGameConst_ed7c04c8 {
+  initSceneName:string (id:0);
+  failSceneName:string (id:1);
+  hpItemId:string (id:2);
+  goldItemId:string (id:3);
+  populationItemId:string (id:4);
+  squadCapacityItemId:string (id:5);
+  expItemId:string (id:6);
+  initialBandShowGradeFlag:bool (id:7);
+  bankMaxGold:int (id:8);
+  bankCostId:string (id:9);
+  bankDrawCount:int (id:10);
+  bankDrawLimit:int (id:11);
+  bankRewardCountType:Torappu_RoguelikeBankRewardCountType_26e81487 (id:12);
+  spZoneShopBgmSignal:string (id:13);
+  mimicEnemyIds:[string] (id:14);
+  bossIds:[string] (id:15);
+  goldChestTrapId:string (id:16);
+  normBoxTrapId:string (id:17);
+  rareBoxTrapId:string (id:18);
+  badBoxTrapId:string (id:19);
+  toolBoxTrapId:string (id:20);
+  maxHpItemId:string (id:21);
+  shieldItemId:string (id:22);
+  keyItemId:string (id:23);
+  divinationKitItemId:string (id:24);
+  chestKeyCnt:int (id:25);
+  chestKeyItemId:string (id:26);
+  keyColorId:string (id:27);
+  onceNodeTypeList:[Torappu_RoguelikeEventType_74bd7f17] (id:28);
+  vertNodeCostDialogUseItemIconType:bool (id:29);
+  gpScoreRatio:int (id:30);
+  overflowUsageSquadBuff:string (id:31);
+  specialTrapId:string (id:32);
+  trapRewardRelicId:string (id:33);
+  unlockRouteItemId:string (id:34);
+  unlockRouteItemCount:int (id:35);
+  hideBattleNodeName:string (id:36);
+  hideBattleNodeDescription:string (id:37);
+  hideNonBattleNodeName:string (id:38);
+  hideNonBattleNodeDescription:string (id:39);
+  charSelectExpeditionConflictToast:string (id:40);
+  charSelectNoUpgradeConflictToast:string (id:41);
+  itemDropTagDict:[System_Collections_Generic_Dictionary_2_Torappu_RoguelikeRewardExDropTagSrcType_System_String__6b4e762f_Entry] (id:42);
+  shopRefreshCostId:string (id:43);
+  expeditionLeaveToastFormat:string (id:44);
+  expeditionReturnDescCureUpgrade:string (id:45);
+  expeditionReturnDescUpgrade:string (id:46);
+  expeditionReturnDescCure:string (id:47);
+  expeditionReturnDesc:string (id:48);
+  expeditionSelectDescFormat:string (id:49);
+  expeditionReturnDescItem:string (id:50);
+  expedEndingRelic:string (id:51);
+  expedEndingRelicDesc:string (id:52);
+  expeditionReturnRewardBlackList:[string] (id:53);
+  travelLeaveToastFormat:string (id:54);
+  charSelectTravelConflictToast:string (id:55);
+  travelReturnDescUpgrade:string (id:56);
+  travelReturnDesc:string (id:57);
+  travelReturnDescItem:string (id:58);
+  traderReturnTitle:string (id:59);
+  traderReturnDesc:string (id:60);
+  candleReturnDescCandleUpgrade:string (id:61);
+  candleReturnDescCandle:string (id:62);
+  charSelectCandleConflictToast:string (id:63);
+  charSelectGuidedConflictToast:string (id:64);
+  charSelectNonGuidedConflictToast:string (id:65);
+  gainBuffDiffGrade:int (id:66);
+  dsPredictTips:string (id:67);
+  dsBuffActiveTips:string (id:68);
+  totemDesc:string (id:69);
+  copperGildDesc:string (id:70);
+  relicDesc:string (id:71);
+  buffDesc:string (id:72);
+  refreshNodeItemId:string (id:73);
+  storingRecruitDesc:string (id:74);
+  storingRecruitSucceedToast:string (id:75);
+  specialRecruitReductionDesc:string (id:76);
+  specialRecruitFuncDesc:string (id:77);
+  specialRecruitDetailDesc:string (id:78);
+  portalZones:[string] (id:79);
+  treasureBuffs:[string] (id:80);
+  diffDisplayZoneId:string (id:81);
+  exploreExpOnKill:string (id:82);
+  fusionName:string (id:83);
+  fusionNotifyToast:string (id:84);
+  haveCustomZone:bool (id:85);
+  gotCharCandleBuffToast:string (id:86);
+  gotCharsCandleBuffToast:string (id:87);
+  stashedRecruitNodeDescription:string (id:88);
+  stashedRecruitEmptyNodeDescription:string (id:89);
+  recruitStashMaxNum:int (id:90);
+  recruitStashMinNum:int (id:91);
+  hasTopicCharSelectMenuButton:bool (id:92);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_RoguelikeRewardExDropTagSrcType_System_String__6b4e762f_Entry {
+  key:Torappu_RoguelikeRewardExDropTagSrcType_616c5a32 (id:0);
+  value:string (id:1);
+}
+
+table Torappu_RoguelikeGameShopDialogData_41201cb4 {
+  types:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameShopDialogTypeData__c2118ab5_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameShopDialogTypeData__c2118ab5_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameShopDialogTypeData_c1cb9d49 (id:1);
+}
+
+table Torappu_RoguelikeGameShopDialogTypeData_c1cb9d49 {
+  groups:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameShopDialogGroupData__0885d6a0_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameShopDialogGroupData__0885d6a0_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameShopDialogGroupData_bec26314 (id:1);
+}
+
+table Torappu_RoguelikeGameShopDialogGroupData_bec26314 {
+  content:[string] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicCapsule__ae460984_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicCapsule_2ccda7e3 (id:1);
+}
+
+table Torappu_RoguelikeTopicCapsule_2ccda7e3 {
+  itemId:string (id:0);
+  maskType:Torappu_RoguelikeEventType_74bd7f17 (id:1);
+  innerColor:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameEndingData__e3265232_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameEndingData_b4c89e94 (id:1);
+}
+
+table Torappu_RoguelikeGameEndingData_b4c89e94 {
+  id:string (id:0);
+  familyId:int (id:1);
+  name:string (id:2);
+  desc:string (id:3);
+  bgId:string (id:4);
+  icons:[Torappu_RoguelikeGameEndingData_LevelIcon_444244ae] (id:5);
+  priority:int (id:6);
+  changeEndingDesc:string (id:7);
+  bossIconId:string (id:8);
+}
+
+table Torappu_RoguelikeGameEndingData_LevelIcon_444244ae {
+  level:int (id:0);
+  iconId:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameFailEndingData__66156c7d_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameFailEndingData_224e820f (id:1);
+}
+
+table Torappu_RoguelikeGameFailEndingData_224e820f {
+  id:string (id:0);
+  name:string (id:1);
+  desc:string (id:2);
+  iconId:string (id:3);
+  priority:int (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_RoguelikeTopicMode_Torappu_RoguelikeBattleSummeryDescriptionData__12819a28_Entry {
+  key:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  value:Torappu_RoguelikeBattleSummeryDescriptionData_ca8fc944 (id:1);
+}
+
+table Torappu_RoguelikeBattleSummeryDescriptionData_ca8fc944 {
+  randomDescriptionList:[string] (id:0);
+}
+
+table Torappu_TipData_5e3b77f7 {
+  tip:string (id:0);
+  weight:float (id:1);
+  category:Torappu_TipData_Category_beac7a3c (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameItemData__7d092407_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameItemData_4ffcdb29 (id:1);
+}
+
+table Torappu_RoguelikeGameItemData_4ffcdb29 {
+  id:string (id:0);
+  name:string (id:1);
+  description:string (id:2);
+  usage:string (id:3);
+  obtainApproach:string (id:4);
+  iconId:string (id:5);
+  itemIconGroupId:string (id:6);
+  type:Torappu_RoguelikeGameItemType_c861b7b4 (id:7);
+  subType:Torappu_RoguelikeGameItemSubType_0cdf8e51 (id:8);
+  rarity:Torappu_RoguelikeGameItemRarity_28263299 (id:9);
+  sortId:int (id:10);
+  canSacrifice:bool (id:11);
+  tinyIconColor:string (id:12);
+  unlockCondDesc:string (id:13);
+  shortUsage:string (id:14);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeBandRefData__b305b064_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeBandRefData_1787082f (id:1);
+}
+
+table Torappu_RoguelikeBandRefData_1787082f {
+  itemId:string (id:0);
+  bandLevel:int (id:1);
+  normalBandId:string (id:2);
+}
+
+table Torappu_RoguelikeEndingDetailText_fa5dc024 {
+  textId:string (id:0);
+  text:string (id:1);
+  eventType:Torappu_RoguelikeEventType_74bd7f17 (id:2);
+  spZoneEvtType:string (id:3);
+  showType:Torappu_RoguelikeEndingDetailText_Type_6e071e8b (id:4);
+  choiceSceneId:string (id:5);
+  paramList:[string] (id:6);
+  otherPara1:string (id:7);
+}
+
+table Torappu_RoguelikeEndingRelicDetailText_52c84d9b {
+  relicId:string (id:0);
+  summaryEventText:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_RoguelikeGameTreasureDat_c47ddbd4_Entry {
+  key:string (id:0);
+  value:[Torappu_RoguelikeGameTreasureData_54ce6178] (id:1);
+}
+
+table Torappu_RoguelikeGameTreasureData_54ce6178 {
+  treasureId:string (id:0);
+  groupId:string (id:1);
+  subIndex:int (id:2);
+  name:string (id:3);
+  usage:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDifficultyUpgradeRelicGroupData__0d8d3732_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeDifficultyUpgradeRelicGroupData_fa48cd28 (id:1);
+}
+
+table Torappu_RoguelikeDifficultyUpgradeRelicGroupData_fa48cd28 {
+  relicData:[Torappu_RoguelikeDifficultyUpgradeRelicData_30dd53c4] (id:0);
+}
+
+table Torappu_RoguelikeDifficultyUpgradeRelicData_30dd53c4 {
+  relicId:string (id:0);
+  equivalentGrade:int (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikePredefinedStyleData__ea29af57_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikePredefinedStyleData_9e03fddb (id:1);
+}
+
+table Torappu_RoguelikePredefinedStyleData_9e03fddb {
+  styleId:string (id:0);
+  styleConfig:int (id:1);
+}
+
+table Torappu_RoguelikePredefinedConstStyleData_e6d750b3 {
+  expStyleConfig:Torappu_RoguelikePredefinedExpStyleConfigData_88231983 (id:0);
+}
+
+table Torappu_RoguelikePredefinedExpStyleConfigData_88231983 {
+  paramDict:[System_Collections_Generic_Dictionary_2_Torappu_RoguelikeExpStyleConfigParam_System_String__8e74ff77_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_RoguelikeExpStyleConfigParam_System_String__8e74ff77_Entry {
+  key:Torappu_RoguelikeExpStyleConfigParam_4ff8b97a (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGameExploreToolData__5cedeada_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGameExploreToolData_082b3cbc (id:1);
+}
+
+table Torappu_RoguelikeGameExploreToolData_082b3cbc {
+  itemId:string (id:0);
+  trapId:string (id:1);
+  trapDesc:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeRollNodeData__213a291b_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeRollNodeData_75ce1787 (id:1);
+}
+
+table Torappu_RoguelikeRollNodeData_75ce1787 {
+  zoneId:string (id:0);
+  groups:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeRollNodeGroupData__fca9ebba_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeRollNodeGroupData__fca9ebba_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeRollNodeGroupData_8df5eb48 (id:1);
+}
+
+table Torappu_RoguelikeRollNodeGroupData_8df5eb48 {
+  nodeType:Torappu_RoguelikeEventType_74bd7f17 (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeRelicTipsData__80b92d66_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeRelicTipsData_8aa77e88 (id:1);
+}
+
+table Torappu_RoguelikeRelicTipsData_8aa77e88 {
+  itemId:string (id:0);
+  toastText:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeLegacyItemData__6a0b802a_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeLegacyItemData_4c3d37cc (id:1);
+}
+
+table Torappu_RoguelikeLegacyItemData_4c3d37cc {
+  legacyId:string (id:0);
+  hideLegacyItem:bool (id:1);
+  legacyGroupId:string (id:2);
+}
+
+table Torappu_RoguelikeActivityData_4b9e18ef {
+  basicDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeActivityBasicData__3db223c3_Entry] (id:0);
+  activityTable:Torappu_RoguelikeActivityTable_5bf5c3f1 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeActivityBasicData__3db223c3_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeActivityBasicData_e11449cb (id:1);
+}
+
+table Torappu_RoguelikeActivityBasicData_e11449cb {
+  id:string (id:0);
+  type:Torappu_RoguelikeActivityType_58565332 (id:1);
+  startTime:long (id:2);
+  endTime:long (id:3);
+  isPresentSeedMode:bool (id:4);
+  isUnlockBadge:bool (id:5);
+  validMode:Torappu_RoguelikeTopicMode_bc5dd965 (id:6);
+}
+
+table Torappu_RoguelikeActivityTable_5bf5c3f1 {
+  SEED_MODE:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeActivitySeedModeData__88678fc0_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeActivitySeedModeData__88678fc0_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeActivitySeedModeData_9d115511 (id:1);
+}
+
+table Torappu_RoguelikeActivitySeedModeData_9d115511 {
+  officialSeedDataList:[Torappu_RoguelikeActivitySeedModeData_RoguelikeActivityOfficialSeedData_d9e43d6d] (id:0);
+  constData:Torappu_RoguelikeActivitySeedModeData_RoguelikeActivitySeedModeConstData_b102d666 (id:1);
+}
+
+table Torappu_RoguelikeActivitySeedModeData_RoguelikeActivityOfficialSeedData_d9e43d6d {
+  seed:string (id:0);
+  sortId:int (id:1);
+  desc:string (id:2);
+}
+
+table Torappu_RoguelikeActivitySeedModeData_RoguelikeActivitySeedModeConstData_b102d666 {
+  seedModeIntro:string (id:0);
+  emptyTextHint:string (id:1);
+  errorTextHint:string (id:2);
+  legitimateTextHint:string (id:3);
+  seedModeConfirmReplacement:string (id:4);
+  difficultyLevelTextHint:string (id:5);
+  lockedDifficultyLevelTextHint:string (id:6);
+  setDifficultyLevelTextHint:string (id:7);
+  notEnabledTextHint:string (id:8);
+  enabledTextHint:string (id:9);
+  useSucceededTextHint:string (id:10);
+  officialUseSucceededTextHint:string (id:11);
+  seedModeLockedTextHint:string (id:12);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeModule__2b8ea476_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeModule_ef5e20f5 (id:1);
+}
+
+table Torappu_RoguelikeModule_ef5e20f5 {
+  moduleTypes:[Torappu_RoguelikeModuleType_5c8d1aec] (id:0);
+  sanCheck:Torappu_RoguelikeSanCheckModuleData_afa79164 (id:1);
+  dice:Torappu_RoguelikeDiceModuleData_e46e4144 (id:2);
+  chaos:Torappu_RoguelikeChaosModuleData_8b62868c (id:3);
+  totemBuff:Torappu_RoguelikeTotemBuffModuleData_ea6ac586 (id:4);
+  vision:Torappu_RoguelikeVisionModuleData_35c931c7 (id:5);
+  fragment:Torappu_RoguelikeFragmentModuleData_5a811135 (id:6);
+  disaster:Torappu_RoguelikeDisasterModuleData_e0817029 (id:7);
+  nodeUpgrade:Torappu_RoguelikeNodeUpgradeModuleData_21345f0c (id:8);
+  copper:Torappu_RoguelikeCopperModuleData_9cd5694b (id:9);
+  wrath:Torappu_RoguelikeWrathModuleData_3a14c77e (id:10);
+  candle:Torappu_RoguelikeCandleModuleData_23c19d01 (id:11);
+  sky:Torappu_RoguelikeSkyModuleData_d55e0bb9 (id:12);
+  weather:Torappu_RoguelikeWeatherModuleData_4492a564 (id:13);
+  gridZone:Torappu_RoguelikeGridZoneModuleData_ef85aa72 (id:14);
+  scrap:Torappu_RoguelikeScrapModuleData_df1a8333 (id:15);
+}
+
+table Torappu_RoguelikeSanCheckModuleData_afa79164 {
+  sanRanges:[Torappu_RoguelikeSanRangeData_d5d1624c] (id:0);
+  moduleConsts:Torappu_RoguelikeSanCheckConsts_10949b0d (id:1);
+}
+
+table Torappu_RoguelikeSanRangeData_d5d1624c {
+  sanMax:int (id:0);
+  diceGroupId:string (id:1);
+  description:string (id:2);
+  sanDungeonEffect:Torappu_SanEffectRank_62ce68f9 (id:3);
+  sanEffectRank:Torappu_SanEffectRank_62ce68f9 (id:4);
+  sanEndingDesc:string (id:5);
+}
+
+table Torappu_RoguelikeSanCheckConsts_10949b0d {
+  sanDecreaseToast:string (id:0);
+}
+
+table Torappu_RoguelikeDiceModuleData_e46e4144 {
+  dice:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDiceData__ec7457d2_Entry] (id:0);
+  diceEvents:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDiceRuleData__d1e4ee93_Entry] (id:1);
+  diceChoices:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:2);
+  diceRuleGroups:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDiceRuleGroupData__85db8198_Entry] (id:3);
+  dicePredefines:[Torappu_RoguelikeDicePredefineData_523e08a0] (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDiceData__ec7457d2_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeDiceData_eed08092 (id:1);
+}
+
+table Torappu_RoguelikeDiceData_eed08092 {
+  diceId:string (id:0);
+  description:string (id:1);
+  isUpgradeDice:int (id:2);
+  upgradeDiceId:string (id:3);
+  diceFaceCount:int (id:4);
+  battleDiceId:string (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDiceRuleData__d1e4ee93_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeDiceRuleData_01ccf178 (id:1);
+}
+
+table Torappu_RoguelikeDiceRuleData_01ccf178 {
+  dicePointMax:int (id:0);
+  diceResultClass:Torappu_DiceResultClass_6badc352 (id:1);
+  diceGroupId:string (id:2);
+  diceEventId:string (id:3);
+  resultDesc:string (id:4);
+  showType:Torappu_DiceResultShowType_c41c54b2 (id:5);
+  canReroll:bool (id:6);
+  diceEndingScene:string (id:7);
+  diceEndingDesc:string (id:8);
+  sound:string (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDiceRuleGroupData__85db8198_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeDiceRuleGroupData_e1ee189b (id:1);
+}
+
+table Torappu_RoguelikeDiceRuleGroupData_e1ee189b {
+  ruleGroupId:string (id:0);
+  minGoodNum:int (id:1);
+}
+
+table Torappu_RoguelikeDicePredefineData_523e08a0 {
+  modeId:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  modeGrade:int (id:1);
+  predefinedId:string (id:2);
+  initialDiceCount:int (id:3);
+}
+
+table Torappu_RoguelikeChaosModuleData_8b62868c {
+  chaosDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeChaosData__0fa4ff1c_Entry] (id:0);
+  chaosRanges:[Torappu_RoguelikeChaosRangeData_4d863b84] (id:1);
+  levelInfoDict:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_Int32_Torappu_Rogue_a103b655_Entry] (id:2);
+  moduleConsts:Torappu_RoguelikeChaosModuleConsts_c7b9bb67 (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeChaosData__0fa4ff1c_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeChaosData_3a0a1b90 (id:1);
+}
+
+table Torappu_RoguelikeChaosData_3a0a1b90 {
+  chaosId:string (id:0);
+  level:int (id:1);
+  nextChaosId:string (id:2);
+  prevChaosId:string (id:3);
+  iconId:string (id:4);
+  name:string (id:5);
+  functionDesc:string (id:6);
+  desc:string (id:7);
+  sound:string (id:8);
+  sortId:int (id:9);
+}
+
+table Torappu_RoguelikeChaosRangeData_4d863b84 {
+  chaosMax:int (id:0);
+  chaosDungeonEffect:Torappu_ChaosEffectRank_feafed80 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_Dictionary_2_System_Int32_Torappu_Rogue_a103b655_Entry {
+  key:string (id:0);
+  value:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo__d20ac528_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo__d20ac528_Entry {
+  key:int (id:0);
+  value:Torappu_RoguelikeChaosPredefineLevelInfo_c3e6541f (id:1);
+}
+
+table Torappu_RoguelikeChaosPredefineLevelInfo_c3e6541f {
+  chaosLevelBeginNum:int (id:0);
+  chaosLevelEndNum:int (id:1);
+}
+
+table Torappu_RoguelikeChaosModuleConsts_c7b9bb67 {
+  maxChaosLevel:int (id:0);
+  maxChaosSlot:int (id:1);
+  chaosNotMaxDescription:string (id:2);
+  chaosMaxDescription:string (id:3);
+  chaosPredictDescription:string (id:4);
+}
+
+table Torappu_RoguelikeTotemBuffModuleData_ea6ac586 {
+  totemBuffDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTotemBuffData__9137df8a_Entry] (id:0);
+  subBuffs:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTotemSubBuffData__5ee21856_Entry] (id:1);
+  moduleConsts:Torappu_RoguelikeTotemModuleConsts_11917791 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTotemBuffData__9137df8a_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTotemBuffData_3cfe688a (id:1);
+}
+
+table Torappu_RoguelikeTotemBuffData_3cfe688a {
+  totemId:string (id:0);
+  color:Torappu_RoguelikeTotemColorType_7206c19d (id:1);
+  pos:Torappu_RoguelikeTotemPosType_a70f2eaf (id:2);
+  rhythm:string (id:3);
+  normalDesc:string (id:4);
+  synergyDesc:string (id:5);
+  archiveDesc:string (id:6);
+  combineGroupName:string (id:7);
+  bgIconId:string (id:8);
+  isManual:bool (id:9);
+  linkedNodeTypeData:Torappu_RoguelikeTotemLinkedNodeTypeData_9fb8969e (id:10);
+  distanceMin:int (id:11);
+  distanceMax:int (id:12);
+  vertPassable:bool (id:13);
+  expandLength:int (id:14);
+  onlyForVert:bool (id:15);
+  portalLinkedNodeTypeData:Torappu_RoguelikeTotemLinkedNodeTypeData_9fb8969e (id:16);
+}
+
+table Torappu_RoguelikeTotemLinkedNodeTypeData_9fb8969e {
+  effectiveNodeTypes:[Torappu_RoguelikeEventType_74bd7f17] (id:0);
+  blurNodeTypes:[Torappu_RoguelikeTotemBlurNodeType_2fbd5937] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTotemSubBuffData__5ee21856_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTotemSubBuffData_57502c29 (id:1);
+}
+
+table Torappu_RoguelikeTotemSubBuffData_57502c29 {
+  subBuffId:string (id:0);
+  name:string (id:1);
+  desc:string (id:2);
+  combinedDesc:string (id:3);
+  info:string (id:4);
+}
+
+table Torappu_RoguelikeTotemModuleConsts_11917791 {
+  totemPredictDescription:string (id:0);
+  colorCombineDesc:[System_Collections_Generic_Dictionary_2_Torappu_RoguelikeTotemColorType_System_String__fec44fd2_Entry] (id:1);
+  bossCombineDesc:string (id:2);
+  battleNoPredictDescription:string (id:3);
+  shopNoGoodsDescription:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_Torappu_RoguelikeTotemColorType_System_String__fec44fd2_Entry {
+  key:Torappu_RoguelikeTotemColorType_7206c19d (id:0);
+  value:string (id:1);
+}
+
+table Torappu_RoguelikeVisionModuleData_35c931c7 {
+  visionDatas:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeVisionData__6f1f4259_Entry] (id:0);
+  visionChoices:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig__4110d16e_Entry] (id:1);
+  moduleConsts:Torappu_RoguelikeVisionModuleConsts_1454ad67 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeVisionData__6f1f4259_Entry {
+  key:int (id:0);
+  value:Torappu_RoguelikeVisionData_16ecb75f (id:1);
+}
+
+table Torappu_RoguelikeVisionData_16ecb75f {
+  sightNum:int (id:0);
+  level:int (id:1);
+  canForesee:bool (id:2);
+  dividedDis:int (id:3);
+  status:string (id:4);
+  clr:string (id:5);
+  desc1:string (id:6);
+  desc2:string (id:7);
+  icon:string (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig__4110d16e_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeVisionModuleData_VisionChoiceConfig_999c5589 (id:1);
+}
+
+table Torappu_RoguelikeVisionModuleData_VisionChoiceConfig_999c5589 {
+  value:int (id:0);
+  type:Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType_0b8b1808 (id:1);
+}
+
+table Torappu_RoguelikeVisionModuleConsts_1454ad67 {
+  maxVision:int (id:0);
+  totemBottomDescription:string (id:1);
+  chestBottomDescription:string (id:2);
+  goodsBottomDescription:string (id:3);
+}
+
+table Torappu_RoguelikeFragmentModuleData_5a811135 {
+  fragmentData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeFragmentData__c1b4974d_Entry] (id:0);
+  fragmentTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeFragmentTypeData__bf88f110_Entry] (id:1);
+  moduleConsts:Torappu_RoguelikeFragmentModuleConsts_d1cc421b (id:2);
+  fragmentBuffData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeFragmentBuffData__3166c596_Entry] (id:3);
+  alchemyData:[Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData__3cfe657d_Entry] (id:4);
+  alchemyFormulaData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeAlchemyFormulationData__a3bec3f1_Entry] (id:5);
+  fragmentLevelData:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData__dcd8126d_Entry] (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeFragmentData__c1b4974d_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeFragmentData_92b2f0b9 (id:1);
+}
+
+table Torappu_RoguelikeFragmentData_92b2f0b9 {
+  id:string (id:0);
+  type:Torappu_RoguelikeFragmentType_fbf032a6 (id:1);
+  value:int (id:2);
+  weight:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeFragmentTypeData__bf88f110_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeFragmentTypeData_72f1545f (id:1);
+}
+
+table Torappu_RoguelikeFragmentTypeData_72f1545f {
+  type:Torappu_RoguelikeFragmentType_fbf032a6 (id:0);
+  typeName:string (id:1);
+  typeDesc:string (id:2);
+  typeIconId:string (id:3);
+}
+
+table Torappu_RoguelikeFragmentModuleConsts_d1cc421b {
+  weightStatusSafeDesc:string (id:0);
+  weightStatusLimitDesc:string (id:1);
+  weightStatusOverweightDesc:string (id:2);
+  charWeightSlot:int (id:3);
+  limitWeightThresholdValue:int (id:4);
+  overWeightThresholdValue:int (id:5);
+  maxAlchemyField:int (id:6);
+  maxAlchemyCount:int (id:7);
+  fragmentBagWeightLimitTips:string (id:8);
+  fragmentBagWeightOverWeightTips:string (id:9);
+  weightUpgradeToastFormat:string (id:10);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeFragmentBuffData__3166c596_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeFragmentBuffData_c2daa81f (id:1);
+}
+
+table Torappu_RoguelikeFragmentBuffData_c2daa81f {
+  itemId:string (id:0);
+  maskType:Torappu_RoguelikeEventType_74bd7f17 (id:1);
+  desc:string (id:2);
+}
+
+table Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData__3cfe657d_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeAlchemyData_862c3528 (id:1);
+}
+
+table Torappu_RoguelikeAlchemyData_862c3528 {
+  fragmentTypeList:[Torappu_RoguelikeFragmentType_fbf032a6] (id:0);
+  fragmentSquareSum:int (id:1);
+  poolRarity:Torappu_AlchemyPoolRarityType_71d05801 (id:2);
+  relicProp:float (id:3);
+  shieldProp:float (id:4);
+  populationProp:float (id:5);
+  overrideConditionBandIds:[string] (id:6);
+  overrideRecipeId:string (id:7);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeAlchemyFormulationData__a3bec3f1_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeAlchemyFormulationData_5f68e4c2 (id:1);
+}
+
+table Torappu_RoguelikeAlchemyFormulationData_5f68e4c2 {
+  fragmentIds:[string] (id:0);
+  rewardId:string (id:1);
+  rewardCount:int (id:2);
+  rewardItemType:Torappu_RoguelikeGameItemType_c861b7b4 (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData__dcd8126d_Entry {
+  key:int (id:0);
+  value:Torappu_RoguelikeFragmentLevelRelatedData_9e711401 (id:1);
+}
+
+table Torappu_RoguelikeFragmentLevelRelatedData_9e711401 {
+  weightUp:int (id:0);
+}
+
+table Torappu_RoguelikeDisasterModuleData_e0817029 {
+  disasterData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDisasterData__26797c42_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeDisasterData__26797c42_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeDisasterData_82f2978d (id:1);
+}
+
+table Torappu_RoguelikeDisasterData_82f2978d {
+  id:string (id:0);
+  iconId:string (id:1);
+  toastIconId:string (id:2);
+  level:int (id:3);
+  name:string (id:4);
+  levelName:string (id:5);
+  type:string (id:6);
+  functionDesc:string (id:7);
+  desc:string (id:8);
+  sound:string (id:9);
+}
+
+table Torappu_RoguelikeNodeUpgradeModuleData_21345f0c {
+  nodeUpgradeDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeNodeUpgradeData__51c0eb35_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeNodeUpgradeData__51c0eb35_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeNodeUpgradeData_3d0f6636 (id:1);
+}
+
+table Torappu_RoguelikeNodeUpgradeData_3d0f6636 {
+  nodeType:Torappu_RoguelikeEventType_74bd7f17 (id:0);
+  sortId:int (id:1);
+  permItemList:[Torappu_RoguelikePermNodeUpgradeItemData_8d4e0d03] (id:2);
+  tempItemList:[Torappu_RoguelikeTempNodeUpgradeItemData_b0e7fefb] (id:3);
+}
+
+table Torappu_RoguelikePermNodeUpgradeItemData_8d4e0d03 {
+  upgradeId:string (id:0);
+  nodeType:Torappu_RoguelikeEventType_74bd7f17 (id:1);
+  nodeLevel:int (id:2);
+  costItemId:string (id:3);
+  costItemCount:int (id:4);
+  desc:string (id:5);
+  nodeName:string (id:6);
+}
+
+table Torappu_RoguelikeTempNodeUpgradeItemData_b0e7fefb {
+  upgradeId:string (id:0);
+  nodeType:Torappu_RoguelikeEventType_74bd7f17 (id:1);
+  sortId:int (id:2);
+  costItemId:string (id:3);
+  costItemCount:int (id:4);
+  desc:string (id:5);
+}
+
+table Torappu_RoguelikeCopperModuleData_9cd5694b {
+  copperData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCopperData__6da305e1_Entry] (id:0);
+  copperDivineData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCopperDivineData__7ce77bfb_Entry] (id:1);
+  copperGildTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCopperGildTypeData__c5ce22b0_Entry] (id:2);
+  changeCopperMap:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:3);
+  moduleConsts:Torappu_RoguelikeCopperModuleConsts_747b597d (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCopperData__6da305e1_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeCopperData_77be1056 (id:1);
+}
+
+table Torappu_RoguelikeCopperData_77be1056 {
+  id:string (id:0);
+  groupId:string (id:1);
+  gildTypeId:string (id:2);
+  luckyLevel:Torappu_RoguelikeCopperLuckyLevel_ccfb2e43 (id:3);
+  buffType:Torappu_RoguelikeCopperBuffType_0cc04e36 (id:4);
+  layerCntDesc:string (id:5);
+  poemList:[string] (id:6);
+  alwaysShowCountDown:bool (id:7);
+  buffItemIdList:[string] (id:8);
+  isAllLuckyLevel:bool (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCopperDivineData__7ce77bfb_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeCopperDivineData_b157e7e3 (id:1);
+}
+
+table Torappu_RoguelikeCopperDivineData_b157e7e3 {
+  eventId:string (id:0);
+  groupId:string (id:1);
+  showDesc:string (id:2);
+  divineType:Torappu_RoguelikeCopperDivineType_3accc8fa (id:3);
+  resultType:Torappu_RoguelikeCopperDivineResultType_1541df3e (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCopperGildTypeData__c5ce22b0_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeCopperGildTypeData_bb251fd8 (id:1);
+}
+
+table Torappu_RoguelikeCopperGildTypeData_bb251fd8 {
+  gildTypeId:string (id:0);
+  gildName:string (id:1);
+  gildDesc:string (id:2);
+}
+
+table Torappu_RoguelikeCopperModuleConsts_747b597d {
+  copperDrawMaxNum:int (id:0);
+  copperDrawMinNum:int (id:1);
+  copperAllLuckyLevelGildId:string (id:2);
+  copperDrawFreezeCostItemId:string (id:3);
+  copperDrawFreezeCostCount:[int] (id:4);
+}
+
+table Torappu_RoguelikeWrathModuleData_3a14c77e {
+  wrathData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeWrathData__b04adb70_Entry] (id:0);
+  moduleConsts:Torappu_RoguelikeWrathModuleConsts_d90bf678 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeWrathData__b04adb70_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeWrathData_770cab58 (id:1);
+}
+
+table Torappu_RoguelikeWrathData_770cab58 {
+  id:string (id:0);
+  group:string (id:1);
+  level:int (id:2);
+  name:string (id:3);
+  levelName:string (id:4);
+  functionDesc:string (id:5);
+  desc:string (id:6);
+  isPacified:bool (id:7);
+}
+
+table Torappu_RoguelikeWrathModuleConsts_d90bf678 {
+  getWrathTransition:string (id:0);
+  getWrathToast:string (id:1);
+  hiddenWrathType:string (id:2);
+  pacifiedWrathLevel:int (id:3);
+}
+
+table Torappu_RoguelikeCandleModuleData_23c19d01 {
+  candleTicketIdList:[string] (id:0);
+  moduleConsts:Torappu_RoguelikeCandleModuleConsts_bc7d25da (id:1);
+  candleBattleStageIdList:[string] (id:2);
+}
+
+table Torappu_RoguelikeCandleModuleConsts_bc7d25da {
+  candleHolderBuffId:string (id:0);
+}
+
+table Torappu_RoguelikeSkyModuleData_d55e0bb9 {
+  nodeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeSkyNodeData__0a4e7867_Entry] (id:0);
+  subTypeData:[Torappu_RoguelikeSkyNodeSubTypeData_351e2947] (id:1);
+  moduleConsts:Torappu_RoguelikeSkyModuleConsts_d2f5ab51 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeSkyNodeData__0a4e7867_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeSkyNodeData_dbca0a78 (id:1);
+}
+
+table Torappu_RoguelikeSkyNodeData_dbca0a78 {
+  evtType:Torappu_RoguelikeSkyZoneNodeType_98461b4b (id:0);
+  name:string (id:1);
+  iconId:string (id:2);
+  effId:string (id:3);
+  desc:string (id:4);
+  nameBkgClr:string (id:5);
+  selectClr:string (id:6);
+  isRepeatedly:bool (id:7);
+}
+
+table Torappu_RoguelikeSkyNodeSubTypeData_351e2947 {
+  evtType:Torappu_RoguelikeSkyZoneNodeType_98461b4b (id:0);
+  subTypeId:int (id:1);
+  desc:string (id:2);
+}
+
+table Torappu_RoguelikeSkyModuleConsts_d2f5ab51 {
+  skyApItemId:string (id:0);
+  skyMaxColumns:int (id:1);
+  skySacrificeChoiceDynamicKey:string (id:2);
+}
+
+table Torappu_RoguelikeWeatherModuleData_4492a564 {
+  mainWeatherData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeMainWeatherData__c862d936_Entry] (id:0);
+  subWeatherData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeSubWeatherData__7c864e69_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeMainWeatherData__c862d936_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeMainWeatherData_534df31d (id:1);
+}
+
+table Torappu_RoguelikeMainWeatherData_534df31d {
+  id:string (id:0);
+  iconId:string (id:1);
+  iconBigId:string (id:2);
+  isPositive:bool (id:3);
+  level:int (id:4);
+  name:string (id:5);
+  levelName:string (id:6);
+  type:string (id:7);
+  functionDesc:string (id:8);
+  desc:string (id:9);
+  sound:string (id:10);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeSubWeatherData__7c864e69_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeSubWeatherData_107057ba (id:1);
+}
+
+table Torappu_RoguelikeSubWeatherData_107057ba {
+  id:string (id:0);
+  iconId:string (id:1);
+  isPositive:bool (id:2);
+  name:string (id:3);
+  type:string (id:4);
+  functionDesc:string (id:5);
+  desc:string (id:6);
+  sound:string (id:7);
+}
+
+table Torappu_RoguelikeGridZoneModuleData_ef85aa72 {
+  zoneMissionBannerData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGridZoneMissionBannerData__6e9fcd28_Entry] (id:0);
+  scrapSideBarStepZeroHintBannerData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGridZoneFocusViewHintData__5508dd28_Entry] (id:1);
+  buoyItemDatas:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeBuoyItemData__68307217_Entry] (id:2);
+  moduleConsts:Torappu_RoguelikeGridZoneModuleConsts_34e571ea (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGridZoneMissionBannerData__6e9fcd28_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGridZoneMissionBannerData_2aaffb94 (id:1);
+}
+
+table Torappu_RoguelikeGridZoneMissionBannerData_2aaffb94 {
+  zoneId:string (id:0);
+  bannerText:string (id:1);
+  bannerIcon:string (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeGridZoneFocusViewHintData__5508dd28_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeGridZoneFocusViewHintData_d05045e2 (id:1);
+}
+
+table Torappu_RoguelikeGridZoneFocusViewHintData_d05045e2 {
+  zoneId:string (id:0);
+  hintText:string (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeBuoyItemData__68307217_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeBuoyItemData_e578bf86 (id:1);
+}
+
+table Torappu_RoguelikeBuoyItemData_e578bf86 {
+  itemId:string (id:0);
+  isVisible:bool (id:1);
+}
+
+table Torappu_RoguelikeGridZoneModuleConsts_34e571ea {
+  savageBubble:string (id:0);
+  secretZoneDisableBuff:string (id:1);
+  shadvrTrapIds:[string] (id:2);
+  shadvrFirstDieTrapIds:[string] (id:3);
+  shadvrAliveEventId:string (id:4);
+  shadvrDieEventId:string (id:5);
+  shadvrFinalRelicId:string (id:6);
+  maxBannerDifficulty:int (id:7);
+  focusViewBossHintStageId:[System_Collections_Generic_Dictionary_2_System_String_System_Boolean__bc9aff55_Entry] (id:8);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Boolean__bc9aff55_Entry {
+  key:string (id:0);
+  value:bool (id:1);
+}
+
+table Torappu_RoguelikeScrapModuleData_df1a8333 {
+  scrapItemToType:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapType__9ad8162a_Entry] (id:0);
+  scrapTypeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapTypeData__97e0d6e7_Entry] (id:1);
+  moveScrapData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapMoveData__d24e7fb1_Entry] (id:2);
+  goodsScrapData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapGoodsData__7ab223fb_Entry] (id:3);
+  passiveScrapData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapPassiveData__5ad00d47_Entry] (id:4);
+  moveScrapRangeData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RangeData__491afc03_Entry] (id:5);
+  moduleConsts:Torappu_RoguelikeScrapModuleConsts_0b78b66e (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapType__9ad8162a_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeScrapType_36cb49c6 (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapTypeData__97e0d6e7_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeScrapTypeData_0c96df3a (id:1);
+}
+
+table Torappu_RoguelikeScrapTypeData_0c96df3a {
+  type:Torappu_RoguelikeScrapType_36cb49c6 (id:0);
+  typeName:string (id:1);
+  typeDesc:string (id:2);
+  typeIconId:string (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapMoveData__d24e7fb1_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeScrapMoveData_4b8601d6 (id:1);
+}
+
+table Torappu_RoguelikeScrapMoveData_4b8601d6 {
+  count:int (id:0);
+  range:string (id:1);
+  rangeType:Torappu_RoguelikeMoveScrapRangeType_9d7fb599 (id:2);
+  node:[string] (id:3);
+  step:int (id:4);
+  isRandomMove:bool (id:5);
+  nodeChangeTargetType:Torappu_RoguelikeEventType_74bd7f17 (id:6);
+  scrapId:string (id:7);
+  scrapDesc:string (id:8);
+  sellPrice:int (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapGoodsData__7ab223fb_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeScrapGoodsData_82fdcd64 (id:1);
+}
+
+table Torappu_RoguelikeScrapGoodsData_82fdcd64 {
+  scrapId:string (id:0);
+  scrapDesc:string (id:1);
+  sellPrice:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeScrapPassiveData__5ad00d47_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeScrapPassiveData_3717da01 (id:1);
+}
+
+table Torappu_RoguelikeScrapPassiveData_3717da01 {
+  node:Torappu_RoguelikeEventType_74bd7f17 (id:0);
+  buffStack:int (id:1);
+  scrapId:string (id:2);
+  scrapDesc:string (id:3);
+  sellPrice:int (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RangeData__491afc03_Entry {
+  key:string (id:0);
+  value:Torappu_RangeData_02fe4845 (id:1);
+}
+
+table Torappu_RangeData_02fe4845 {
+  id:string (id:0);
+  direction:Torappu_SharedConsts_Direction_80eb1882 (id:1);
+  grids:[Torappu_GridPosition_049a6f02] (id:2);
+}
+
+table Torappu_GridPosition_049a6f02 {
+  row:int (id:0);
+  col:int (id:1);
+}
+
+table Torappu_RoguelikeScrapModuleConsts_0b78b66e {
+  identifyScrapId:string (id:0);
+}
+
+table Torappu_RoguelikeTopicCustomizeData_38eb7ef7 {
+  rogue_1:Torappu_RL01CustomizeData_1ee70f25 (id:0);
+  rogue_2:Torappu_RL02CustomizeData_c5768f01 (id:1);
+  rogue_3:Torappu_RL03CustomizeData_5fe3886e (id:2);
+  rogue_4:Torappu_RL04CustomizeData_1e0fd664 (id:3);
+  rogue_5:Torappu_RL05CustomizeData_4ddfaa6e (id:4);
+  rogue_6:Torappu_RL06CustomizeData_08364ecb (id:5);
+}
+
+table Torappu_RL01CustomizeData_1ee70f25 {
+  developments:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDev__351770de_Entry] (id:0);
+  developmentTokens:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDevToken__c9ca7777_Entry] (id:1);
+  endingText:Torappu_RL01EndingText_5ab36b8d (id:2);
+  difficulties:[Torappu_RL01DifficultyExt_54a81879] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDev__351770de_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicDev_ff6459d9 (id:1);
+}
+
+table Torappu_RoguelikeTopicDev_ff6459d9 {
+  buffId:string (id:0);
+  sortId:int (id:1);
+  nodeType:Torappu_RoguelikeTopicDevNodeType_1b66601b (id:2);
+  nextNodeId:[string] (id:3);
+  frontNodeId:[string] (id:4);
+  tokenCost:int (id:5);
+  buffName:string (id:6);
+  buffIconId:string (id:7);
+  buffTypeName:string (id:8);
+  buffDisplayInfo:[Torappu_RoguelikeTopicDisplayItem_7ff319bb] (id:9);
+}
+
+table Torappu_RoguelikeTopicDisplayItem_7ff319bb {
+  displayType:string (id:0);
+  displayNum:int (id:1);
+  displayForm:Torappu_RoguelikeTopicDevTokenDisplayForm_ba4f8241 (id:2);
+  tokenDesc:string (id:3);
+  sortId:int (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDevToken__c9ca7777_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeTopicDevToken_85ba4b3a (id:1);
+}
+
+table Torappu_RoguelikeTopicDevToken_85ba4b3a {
+  sortId:int (id:0);
+  displayForm:Torappu_RoguelikeTopicDevTokenDisplayForm_ba4f8241 (id:1);
+  tokenDesc:string (id:2);
+}
+
+table Torappu_RL01EndingText_5ab36b8d {
+  summaryVariation:string (id:0);
+  summaryFusion:string (id:1);
+  summaryCapsule:string (id:2);
+  summaryActor:string (id:3);
+  summaryTop:string (id:4);
+  summaryZone:string (id:5);
+  summaryEnding:string (id:6);
+  summaryDifficultyZone:string (id:7);
+  summaryDifficultyEnding:string (id:8);
+  summaryMode:string (id:9);
+  summaryGroup:string (id:10);
+  summarySupport:string (id:11);
+  summaryNormalRecruit:string (id:12);
+  summaryDirectRecruit:string (id:13);
+  summaryFriendRecruit:string (id:14);
+  summaryFreeRecruit:string (id:15);
+  summaryMonthRecruit:string (id:16);
+  summaryUpgrade:string (id:17);
+  summaryCompleteEnding:string (id:18);
+  summaryEachZone:string (id:19);
+  summaryMeetSpZone:string (id:20);
+  summaryPerfectBattle:string (id:21);
+  summaryMeetBattle:string (id:22);
+  summaryMeetEvent:string (id:23);
+  summaryMeetShop:string (id:24);
+  summaryMeetTreasure:string (id:25);
+  summaryMeetSecretpath:string (id:26);
+  summaryExchangeRelic:string (id:27);
+  summaryMeetTrade:string (id:28);
+  summaryBuy:string (id:29);
+  summaryBuyWithPriceId:string (id:30);
+  summaryInvest:string (id:31);
+  summaryGet:string (id:32);
+  summaryRelic:string (id:33);
+  summarySafeHouse:string (id:34);
+  summaryFailEnd:string (id:35);
+  summaryStockRecruitTicket:string (id:36);
+  summaryDuelWin:string (id:37);
+  summaryDuelTie:string (id:38);
+  summaryDuelLose:string (id:39);
+  summaryExpeditionGo:string (id:40);
+  summaryExpeditionBack:string (id:41);
+}
+
+table Torappu_RL01DifficultyExt_54a81879 {
+  modeDifficulty:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  grade:int (id:1);
+  buffDesc:[string] (id:2);
+}
+
+table Torappu_RL02CustomizeData_c5768f01 {
+  developments:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RL02Development__7e8bbb89_Entry] (id:0);
+  developmentTokens:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDevToken__c9ca7777_Entry] (id:1);
+  developmentRawTextGroup:[Torappu_RL02DevRawTextBuffGroup_a23bd4c7] (id:2);
+  developmentLines:[Torappu_RL02DevelopmentLine_3e90f3de] (id:3);
+  endingText:Torappu_RL02EndingText_d1322ba6 (id:4);
+  difficulties:[Torappu_RL02DifficultyExt_72bdd6c0] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RL02Development__7e8bbb89_Entry {
+  key:string (id:0);
+  value:Torappu_RL02Development_74a2ca7a (id:1);
+}
+
+table Torappu_RL02Development_74a2ca7a {
+  buffId:string (id:0);
+  nodeType:Torappu_RL02DevelopmentNodeType_58ad7dc4 (id:1);
+  frontNodeId:[string] (id:2);
+  nextNodeId:[string] (id:3);
+  positionP:int (id:4);
+  positionR:int (id:5);
+  tokenCost:int (id:6);
+  buffName:string (id:7);
+  buffIconId:string (id:8);
+  effectType:Torappu_RL02DevelopmentEffectType_0d76ee6b (id:9);
+  rawDesc:string (id:10);
+  buffDisplayInfo:[Torappu_RoguelikeTopicDisplayItem_7ff319bb] (id:11);
+  enrollId:string (id:12);
+}
+
+table Torappu_RL02DevRawTextBuffGroup_a23bd4c7 {
+  nodeIdList:[string] (id:0);
+  useLevelMark:bool (id:1);
+  groupIconId:string (id:2);
+  useUpBreak:bool (id:3);
+  sortId:int (id:4);
+}
+
+table Torappu_RL02DevelopmentLine_3e90f3de {
+  fromNode:string (id:0);
+  toNode:string (id:1);
+  fromNodeP:int (id:2);
+  fromNodeR:int (id:3);
+  toNodeP:int (id:4);
+  toNodeR:int (id:5);
+  enrollId:string (id:6);
+}
+
+table Torappu_RL02EndingText_d1322ba6 {
+  summaryMutation:string (id:0);
+  summaryDice:string (id:1);
+  summaryDiceResultGood:string (id:2);
+  summaryDiceResultNormal:string (id:3);
+  summaryDiceResultBad:string (id:4);
+  summaryDiceResultDesc:string (id:5);
+  summaryCommuDesc:string (id:6);
+  summaryHiddenDesc:string (id:7);
+  summaryKnightDesc:string (id:8);
+  summaryGoldDesc:string (id:9);
+  summaryPracticeDesc:string (id:10);
+  summaryCommuEmptyDesc:string (id:11);
+  summaryCommuNotEmptyDesc:string (id:12);
+  summaryHiddenPassedDesc:string (id:13);
+  summaryHiddenNotPassedDesc:string (id:14);
+  summaryKnightPassedDesc:string (id:15);
+  summaryKnightNotPassedDesc:string (id:16);
+  summaryGoldThreshold:int (id:17);
+  summaryGoldHighDesc:string (id:18);
+  summaryGoldLowDesc:string (id:19);
+  summaryPracticeThreshold:int (id:20);
+  summaryPracticeHighDesc:string (id:21);
+  summaryPracticeLowDesc:string (id:22);
+}
+
+table Torappu_RL02DifficultyExt_72bdd6c0 {
+  modeDifficulty:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  grade:int (id:1);
+  buffDesc:[string] (id:2);
+}
+
+table Torappu_RL03CustomizeData_5fe3886e {
+  developments:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RL03Development__fb83f42f_Entry] (id:0);
+  developmentsTokens:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDevToken__c9ca7777_Entry] (id:1);
+  developmentRawTextGroup:[Torappu_RL03DevRawTextBuffGroup_02018dab] (id:2);
+  developmentsDifficultyNodeInfos:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RL03DevDifficultyNodeInfo__a6ea07e4_Entry] (id:3);
+  endingText:Torappu_RL03EndingText_82cacc1e (id:4);
+  difficulties:[Torappu_RL03DifficultyExt_f9086bde] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RL03Development__fb83f42f_Entry {
+  key:string (id:0);
+  value:Torappu_RL03Development_03027905 (id:1);
+}
+
+table Torappu_RL03Development_03027905 {
+  buffId:string (id:0);
+  nodeType:Torappu_RL03DevelopmentNodeType_f3e4c178 (id:1);
+  frontNodeId:[string] (id:2);
+  nextNodeId:[string] (id:3);
+  positionRow:int (id:4);
+  positionOrder:int (id:5);
+  tokenCost:int (id:6);
+  buffName:string (id:7);
+  buffIconId:string (id:8);
+  effectType:Torappu_RL03DevelopmentEffectType_5238b273 (id:9);
+  rawDesc:[string] (id:10);
+  buffDisplayInfo:[Torappu_RoguelikeTopicDisplayItem_7ff319bb] (id:11);
+  groupId:string (id:12);
+  enrollId:string (id:13);
+}
+
+table Torappu_RL03DevRawTextBuffGroup_02018dab {
+  nodeIdList:[string] (id:0);
+  useLevelMark:bool (id:1);
+  groupIconId:string (id:2);
+  sortId:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RL03DevDifficultyNodeInfo__a6ea07e4_Entry {
+  key:string (id:0);
+  value:Torappu_RL03DevDifficultyNodeInfo_e4d78699 (id:1);
+}
+
+table Torappu_RL03DevDifficultyNodeInfo_e4d78699 {
+  buffId:string (id:0);
+  nodeMap:[Torappu_RL03DevDifficultyNodePairInfo_85952558] (id:1);
+  enableGrade:int (id:2);
+}
+
+table Torappu_RL03DevDifficultyNodePairInfo_85952558 {
+  frontNode:string (id:0);
+  nextNode:string (id:1);
+}
+
+table Torappu_RL03EndingText_82cacc1e {
+  summaryGetTotem:string (id:0);
+  summaryDemoPointUp:string (id:1);
+  summaryDemoPointDown:string (id:2);
+  summaryDemoGradeUp:string (id:3);
+  summaryDemoGradeDown:string (id:4);
+  summaryVisionPointUp:string (id:5);
+  summaryVisionPointDown:string (id:6);
+  summaryVisionGradeUp:string (id:7);
+  summaryVisionGradeDown:string (id:8);
+  summaryFightWin:string (id:9);
+  summaryFightFail:string (id:10);
+  summaryExchangeTotem:string (id:11);
+  summaryUseTotem:string (id:12);
+  summaryVisionGrade:string (id:13);
+  summaryActor:string (id:14);
+  summaryTop:string (id:15);
+  summaryZone:string (id:16);
+  summaryEnding:string (id:17);
+  summaryDifficultyZone:string (id:18);
+  summaryDifficultyEnding:string (id:19);
+  summaryMode:string (id:20);
+  summaryGroup:string (id:21);
+  summarySupport:string (id:22);
+  summaryNormalRecruit:string (id:23);
+  summaryDirectRecruit:string (id:24);
+  summaryFriendRecruit:string (id:25);
+  summaryFreeRecruit:string (id:26);
+  summaryMonthRecruit:string (id:27);
+  summaryUpgrade:string (id:28);
+  summaryCompleteEnding:string (id:29);
+  summaryEachZone:string (id:30);
+  summaryMeetSpZone:string (id:31);
+  summaryPerfectBattle:string (id:32);
+  summaryMeetBattle:string (id:33);
+  summaryMeetEvent:string (id:34);
+  summaryMeetShop:string (id:35);
+  summaryMeetTreasure:string (id:36);
+  summaryMeetSecretpath:string (id:37);
+  summaryExchangeRelic:string (id:38);
+  summaryMeetTrade:string (id:39);
+  summaryBuy:string (id:40);
+  summaryBuyWithPriceId:string (id:41);
+  summaryInvest:string (id:42);
+  summaryGet:string (id:43);
+  summaryRelic:string (id:44);
+  summarySafeHouse:string (id:45);
+  summaryFailEnd:string (id:46);
+  summaryStockRecruitTicket:string (id:47);
+  summaryDuelWin:string (id:48);
+  summaryDuelTie:string (id:49);
+  summaryDuelLose:string (id:50);
+  summaryExpeditionGo:string (id:51);
+  summaryExpeditionBack:string (id:52);
+}
+
+table Torappu_RL03DifficultyExt_f9086bde {
+  modeDifficulty:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  grade:int (id:1);
+  totemProb:float (id:2);
+  relicDevLevel:string (id:3);
+  buffs:[string] (id:4);
+  buffDesc:[string] (id:5);
+}
+
+table Torappu_RL04CustomizeData_1e0fd664 {
+  commonDevelopment:Torappu_RoguelikeCommonDevelopmentData_0cc828c1 (id:0);
+  difficulties:[Torappu_RL04DifficultyExt_76197520] (id:1);
+  endingText:Torappu_RL04EndingText_b7e45adf (id:2);
+}
+
+table Torappu_RoguelikeCommonDevelopmentData_0cc828c1 {
+  developments:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCommonDevelopment__70b4e02a_Entry] (id:0);
+  developmentsTokens:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeTopicDevToken__c9ca7777_Entry] (id:1);
+  developmentRawTextGroup:[Torappu_RoguelikeCommonDevRawTextBuffGroup_e0d29b28] (id:2);
+  developmentsDifficultyNodeInfos:[System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo__95fdf30b_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCommonDevelopment__70b4e02a_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeCommonDevelopment_b336b681 (id:1);
+}
+
+table Torappu_RoguelikeCommonDevelopment_b336b681 {
+  buffId:string (id:0);
+  nodeType:Torappu_RoguelikeCommonDevelopmentNodeType_aa965185 (id:1);
+  frontNodeId:[string] (id:2);
+  nextNodeId:[string] (id:3);
+  positionRow:int (id:4);
+  positionOrder:int (id:5);
+  tokenCost:int (id:6);
+  buffName:string (id:7);
+  activeIconId:string (id:8);
+  inactiveIconId:string (id:9);
+  bottomIconId:string (id:10);
+  effectType:Torappu_RoguelikeCommonDevelopmentEffectType_28020d64 (id:11);
+  rawDesc:[string] (id:12);
+  buffDisplayInfo:[Torappu_RoguelikeTopicDisplayItem_7ff319bb] (id:13);
+  groupId:string (id:14);
+  enrollId:string (id:15);
+}
+
+table Torappu_RoguelikeCommonDevRawTextBuffGroup_e0d29b28 {
+  nodeIdList:[string] (id:0);
+  groupIconId:string (id:1);
+  sortId:int (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo__95fdf30b_Entry {
+  key:string (id:0);
+  value:Torappu_RoguelikeCommonDevDifficultyNodeInfo_e43ebc29 (id:1);
+}
+
+table Torappu_RoguelikeCommonDevDifficultyNodeInfo_e43ebc29 {
+  buffId:string (id:0);
+  nodeMap:[Torappu_RoguelikeCommonDevDifficultyNodePairInfo_38396c16] (id:1);
+  enableGrade:int (id:2);
+  enableDesc:string (id:3);
+  lightId:string (id:4);
+  decoId:string (id:5);
+}
+
+table Torappu_RoguelikeCommonDevDifficultyNodePairInfo_38396c16 {
+  frontNodes:[string] (id:0);
+  nextNode:string (id:1);
+}
+
+table Torappu_RL04DifficultyExt_76197520 {
+  modeDifficulty:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  grade:int (id:1);
+  leftDisasterDesc:string (id:2);
+  leftOverweightDesc:string (id:3);
+  relicDevLevel:string (id:4);
+  weightStatusLimitDesc:string (id:5);
+  buffs:[string] (id:6);
+  buffDesc:[string] (id:7);
+}
+
+table Torappu_RL04EndingText_b7e45adf {
+  summaryGetFragment:string (id:0);
+  summaryUseIdea:string (id:1);
+  summaryUseFood:string (id:2);
+  summaryDropFragment:string (id:3);
+  summaryMeetDisaster:string (id:4);
+  summaryLeaveDisaster:string (id:5);
+  summaryEnterAlchemy:string (id:6);
+  summaryAlchemyOthers:string (id:7);
+  summaryAlchemyFragment:string (id:8);
+  summaryWeightOverweight:string (id:9);
+  summaryWeightLimit:string (id:10);
+  summaryWeightSafe:string (id:11);
+  summaryPermUpgrade:string (id:12);
+  summaryTempUpgrade:string (id:13);
+  summarySellFragment:string (id:14);
+  summaryActor:string (id:15);
+  summaryTop:string (id:16);
+  summaryZone:string (id:17);
+  summaryEnding:string (id:18);
+  summaryDifficultyZone:string (id:19);
+  summaryDifficultyEnding:string (id:20);
+  summaryMode:string (id:21);
+  summarySupport:string (id:22);
+  summaryGroup:string (id:23);
+  summaryNormalRecruit:string (id:24);
+  summaryDirectRecruit:string (id:25);
+  summaryFriendRecruit:string (id:26);
+  summaryFreeRecruit:string (id:27);
+  summaryMonthRecruit:string (id:28);
+  summaryUpgrade:string (id:29);
+  summaryCompleteEnding:string (id:30);
+  summaryEachZone:string (id:31);
+  summaryMeetSpZone:string (id:32);
+  summaryPerfectBattle:string (id:33);
+  summaryMeetBattle:string (id:34);
+  summaryMeetEvent:string (id:35);
+  summaryMeetShop:string (id:36);
+  summaryMeetTreasure:string (id:37);
+  summaryMeetSecretpath:string (id:38);
+  summaryExchangeRelic:string (id:39);
+  summaryMeetTrade:string (id:40);
+  summaryBuy:string (id:41);
+  summaryBuyWithPriceId:string (id:42);
+  summaryInvest:string (id:43);
+  summaryGet:string (id:44);
+  summaryRelic:string (id:45);
+  summarySafeHouse:string (id:46);
+  summaryFailEnd:string (id:47);
+  summaryDuelWin:string (id:48);
+  summaryDuelTie:string (id:49);
+  summaryDuelLose:string (id:50);
+  summaryStockRecruitTicket:string (id:51);
+  summaryExpeditionGo:string (id:52);
+  summaryExpeditionBack:string (id:53);
+}
+
+table Torappu_RL05CustomizeData_4ddfaa6e {
+  commonDevelopment:Torappu_RoguelikeCommonDevelopmentData_0cc828c1 (id:0);
+  difficulties:[Torappu_RL05DifficultyExt_1a4afd14] (id:1);
+  specialShopDialog:Torappu_RoguelikeGameShopDialogData_41201cb4 (id:2);
+  endingText:Torappu_RL05EndingText_ea404f2a (id:3);
+}
+
+table Torappu_RL05DifficultyExt_1a4afd14 {
+  modeDifficulty:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  grade:int (id:1);
+  buffs:[string] (id:2);
+  buffDesc:[string] (id:3);
+  leftWrathDesc:string (id:4);
+  relicDevLevel:string (id:5);
+  gildProbDisplay:string (id:6);
+  skyStepDescription:string (id:7);
+}
+
+table Torappu_RL05EndingText_ea404f2a {
+  summaryGetCopper:string (id:0);
+  summaryLostCopper:string (id:1);
+  summaryDrawCopper:string (id:2);
+  summaryCopperResultGood:string (id:3);
+  summaryCopperResultBad:string (id:4);
+  summaryCopperResultNormal:string (id:5);
+  summaryCopperCheckSuccess:string (id:6);
+  summaryCopperCheckFail:string (id:7);
+  summaryCopperCheckNormal:string (id:8);
+  summaryMeetWrath:string (id:9);
+  summaryExpeditionGoEndingFour:string (id:10);
+  summaryExpeditionBackEndingFour:string (id:11);
+  summaryExpeditionBackCandle:string (id:12);
+  summaryExpeditionGoEnding:string (id:13);
+  summaryExpeditionBackEnding:string (id:14);
+  summaryHoldCandle:string (id:15);
+  summaryHoldCandleRecruit:string (id:16);
+  summaryHoldCandleUpgrade:string (id:17);
+  summaryExpeditionEndingFourToFive:string (id:18);
+  summaryExchangeSpZoneGet:string (id:19);
+  summaryMeetShopSpZone:string (id:20);
+  summaryBattleFailSpZone:string (id:21);
+  summaryMeetEventLock:string (id:22);
+  summaryTreasureSpZone:string (id:23);
+  summaryMeetExchangeSpZone:string (id:24);
+  summaryMeetTradeSpZone:string (id:25);
+  summaryActor:string (id:26);
+  summaryTop:string (id:27);
+  summaryZone:string (id:28);
+  summaryEnding:string (id:29);
+  summaryDifficultyZone:string (id:30);
+  summaryDifficultyEnding:string (id:31);
+  summaryMode:string (id:32);
+  summarySupport:string (id:33);
+  summaryGroup:string (id:34);
+  summaryNormalRecruit:string (id:35);
+  summaryDirectRecruit:string (id:36);
+  summaryFriendRecruit:string (id:37);
+  summaryFreeRecruit:string (id:38);
+  summaryMonthRecruit:string (id:39);
+  summaryUpgrade:string (id:40);
+  summaryCompleteEnding:string (id:41);
+  summaryEachZone:string (id:42);
+  summaryMeetSpZone:string (id:43);
+  summaryPerfectBattle:string (id:44);
+  summaryMeetBattle:string (id:45);
+  summaryMeetEvent:string (id:46);
+  summaryMeetShop:string (id:47);
+  summaryMeetTreasure:string (id:48);
+  summaryMeetSecretpath:string (id:49);
+  summaryExchangeRelic:string (id:50);
+  summaryMeetTrade:string (id:51);
+  summaryBuy:string (id:52);
+  summaryBuyWithPriceId:string (id:53);
+  summaryInvest:string (id:54);
+  summaryGet:string (id:55);
+  summaryRelic:string (id:56);
+  summarySafeHouse:string (id:57);
+  summaryFailEnd:string (id:58);
+  summaryStockRecruitTicket:string (id:59);
+  summaryDuelWin:string (id:60);
+  summaryDuelTie:string (id:61);
+  summaryDuelLose:string (id:62);
+  summaryExpeditionGo:string (id:63);
+  summaryExpeditionBack:string (id:64);
+}
+
+table Torappu_RL06CustomizeData_08364ecb {
+  commonDevelopment:Torappu_RoguelikeCommonDevelopmentData_0cc828c1 (id:0);
+  difficulties:[Torappu_RL06DifficultyExt_b7c917a2] (id:1);
+  endingText:Torappu_RL06EndingText_13054187 (id:2);
+  scrapShopDialogData:Torappu_RoguelikeGameShopDialogData_41201cb4 (id:3);
+  employShopDialogData:Torappu_RoguelikeGameShopDialogData_41201cb4 (id:4);
+}
+
+table Torappu_RL06DifficultyExt_b7c917a2 {
+  modeDifficulty:Torappu_RoguelikeTopicMode_bc5dd965 (id:0);
+  grade:int (id:1);
+  buffs:[string] (id:2);
+  buffDesc:[string] (id:3);
+  leftWeatherDesc:string (id:4);
+  relicDevLevel:string (id:5);
+}
+
+table Torappu_RL06EndingText_13054187 {
+  summaryScrapGot:string (id:0);
+  summaryScrapSold:string (id:1);
+  summaryScrapLost:string (id:2);
+  summaryScrapMove:string (id:3);
+  summaryScrapBuff:string (id:4);
+  summaryScrapLegacy:string (id:5);
+  summaryMeetWeather:string (id:6);
+  summaryWeatherClear:string (id:7);
+  summaryBubbleBandit:string (id:8);
+  summaryBubbleTreasure:string (id:9);
+  summaryBubbleEvent:string (id:10);
+  summarySavageCamp:string (id:11);
+  summaryScrapShop:string (id:12);
+  summaryScrapShopBuy:string (id:13);
+  summaryScrapShopIdentify:string (id:14);
+  summaryDoor:string (id:15);
+  summaryTreeHole:string (id:16);
+  summaryEvacuate:string (id:17);
+  summaryEmployCamp:string (id:18);
+  summaryEmployRecruit:string (id:19);
+  summaryMercenaryLeave:string (id:20);
+  summaryEncounterBattleWin:string (id:21);
+  summaryEncounterBattleLose:string (id:22);
+  summaryExchangeScrap:string (id:23);
+  summaryExpeditionGoEnding:string (id:24);
+  summaryExpeditionBackEnding:string (id:25);
+  summaryActor:string (id:26);
+  summaryTop:string (id:27);
+  summaryZone:string (id:28);
+  summaryEnding:string (id:29);
+  summaryDifficultyZone:string (id:30);
+  summaryDifficultyEnding:string (id:31);
+  summaryMode:string (id:32);
+  summarySupport:string (id:33);
+  summaryGroup:string (id:34);
+  summaryNormalRecruit:string (id:35);
+  summaryDirectRecruit:string (id:36);
+  summaryFriendRecruit:string (id:37);
+  summaryFreeRecruit:string (id:38);
+  summaryMonthRecruit:string (id:39);
+  summaryUpgrade:string (id:40);
+  summaryCompleteEnding:string (id:41);
+  summaryEachZone:string (id:42);
+  summaryMeetSpZone:string (id:43);
+  summaryPerfectBattle:string (id:44);
+  summaryMeetBattle:string (id:45);
+  summaryMeetEvent:string (id:46);
+  summaryMeetShop:string (id:47);
+  summaryMeetTreasure:string (id:48);
+  summaryMeetSecretpath:string (id:49);
+  summaryExchangeRelic:string (id:50);
+  summaryMeetTrade:string (id:51);
+  summaryBuy:string (id:52);
+  summaryBuyWithPriceId:string (id:53);
+  summaryInvest:string (id:54);
+  summaryGet:string (id:55);
+  summaryRelic:string (id:56);
+  summarySafeHouse:string (id:57);
+  summaryFailEnd:string (id:58);
+  summaryStockRecruitTicket:string (id:59);
+  summaryDuelWin:string (id:60);
+  summaryDuelTie:string (id:61);
+  summaryDuelLose:string (id:62);
+  summaryExpeditionGo:string (id:63);
+  summaryExpeditionBack:string (id:64);
+}
+
+root_type Torappu_RoguelikeTopicTable_670d558c;

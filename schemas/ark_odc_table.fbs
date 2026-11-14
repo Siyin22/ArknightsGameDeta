@@ -1,0 +1,580 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_ItemType_2ee74a72 : int {
+  NONE = 0,
+  CHAR = 1,
+  CARD_EXP = 2,
+  MATERIAL = 3,
+  GOLD = 4,
+  EXP_PLAYER = 5,
+  TKT_TRY = 6,
+  TKT_RECRUIT = 7,
+  TKT_INST_FIN = 8,
+  TKT_GACHA = 9,
+  ACTIVITY_COIN = 10,
+  DIAMOND = 11,
+  DIAMOND_SHD = 12,
+  HGG_SHD = 13,
+  LGG_SHD = 14,
+  FURN = 15,
+  AP_GAMEPLAY = 16,
+  AP_BASE = 17,
+  SOCIAL_PT = 18,
+  CHAR_SKIN = 19,
+  TKT_GACHA_10 = 20,
+  TKT_GACHA_PRSV = 21,
+  AP_ITEM = 22,
+  AP_SUPPLY = 23,
+  RENAMING_CARD = 24,
+  RENAMING_CARD_2 = 25,
+  ET_STAGE = 26,
+  ACTIVITY_ITEM = 27,
+  VOUCHER_PICK = 28,
+  VOUCHER_CGACHA = 29,
+  VOUCHER_MGACHA = 30,
+  CRS_SHOP_COIN = 31,
+  CRS_RUNE_COIN = 32,
+  LMTGS_COIN = 33,
+  EPGS_COIN = 34,
+  LIMITED_TKT_GACHA_10 = 35,
+  LIMITED_FREE_GACHA = 36,
+  REP_COIN = 37,
+  ROGUELIKE = 38,
+  LINKAGE_TKT_GACHA_10 = 39,
+  VOUCHER_ELITE_II_4 = 40,
+  VOUCHER_ELITE_II_5 = 41,
+  VOUCHER_ELITE_II_6 = 42,
+  VOUCHER_SKIN = 43,
+  RETRO_COIN = 44,
+  PLAYER_AVATAR = 45,
+  UNI_COLLECTION = 46,
+  VOUCHER_FULL_POTENTIAL = 47,
+  RL_COIN = 48,
+  RETURN_CREDIT = 49,
+  MEDAL = 50,
+  CHARM = 51,
+  HOME_BACKGROUND = 52,
+  EXTERMINATION_AGENT = 53,
+  OPTIONAL_VOUCHER_PICK = 54,
+  ACT_CART_COMPONENT = 55,
+  VOUCHER_LEVELMAX_6 = 56,
+  VOUCHER_LEVELMAX_5 = 57,
+  VOUCHER_LEVELMAX_4 = 58,
+  VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+  VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+  VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+  ACTIVITY_POTENTIAL = 62,
+  ITEM_PACK = 63,
+  SANDBOX = 64,
+  FAVOR_ADD_ITEM = 65,
+  CLASSIC_SHD = 66,
+  CLASSIC_TKT_GACHA = 67,
+  CLASSIC_TKT_GACHA_10 = 68,
+  LIMITED_BUFF = 69,
+  CLASSIC_FES_PICK_TIER_5 = 70,
+  CLASSIC_FES_PICK_TIER_6 = 71,
+  RETURN_PROGRESS = 72,
+  NEW_PROGRESS = 73,
+  MCARD_VOUCHER = 74,
+  MATERIAL_ISSUE_VOUCHER = 75,
+  CRS_SHOP_COIN_V2 = 76,
+  HOME_THEME = 77,
+  SANDBOX_PERM = 78,
+  SANDBOX_TOKEN = 79,
+  TEMPLATE_TRAP = 80,
+  NAME_CARD_SKIN = 81,
+  EMOTICON_SET = 82,
+  EXCLUSIVE_TKT_GACHA = 83,
+  EXCLUSIVE_TKT_GACHA_10 = 84,
+  SO_CHAR_EXP = 85,
+  GIFTPACKAGE_TKT = 86,
+  VOUCHER_SKIN_V2 = 87,
+  RANDOM_VOUCHER_SKIN = 88,
+  ACT1VHALFIDLE_ITEM = 89,
+  PLOT_ITEM = 90,
+  MAGAZINE_LEAF = 91,
+  STICKER = 92,
+  ARKHUB = 93,
+  LINKAGE_TKT_GACHA = 94,
+  AUTOCHESS_SKIN = 95,
+  AUTOCHESS_MISSION_POINT = 96,
+  OPEN_SERVER_CREDIT = 97,
+}
+
+enum Torappu_SpineFlipMode_2e328755 : int {
+  INPUT = 0,
+  VELOCITY = 1,
+}
+
+enum Torappu_EasingType_6a06996c : int {
+  INSTANT = 0,
+  LINEAR = 1,
+  EASE_IN = 2,
+  EASE_OUT = 3,
+  EASE_IN_OUT = 4,
+  EXPONENTIAL = 5,
+}
+
+enum Torappu_TurningMode_9564457d : int {
+  INSTANT = 0,
+  MOMENTUM = 1,
+}
+
+enum Torappu_ArkventNPCSpineType_5310bea3 : int {
+  BUILDING = 0,
+  ARKVENT = 1,
+}
+
+enum Torappu_ArkventTaskActorType_d94267cd : int {
+  NONE = 0,
+  NPC = 1,
+  FURNITURE = 2,
+  TRIGGER = 3,
+  COLLIDER = 4,
+  VIRTUAL = 5,
+  NPC_SHOW_ONLY = 6,
+  FURNITURE_SHOW_ONLY = 7,
+  TRIGGER_SHOW_ONLY = 8,
+  SCENE_OBJECT_CONTROL = 9,
+  EFFECT = 10,
+  FLAG_EXPRESSION = 99,
+}
+
+enum Torappu_ArkventTaskVarSeqCompareOperation_430765a2 : int {
+  NONE = 0,
+  GT = 1,
+  GE = 2,
+  EQ = 3,
+  NEQ = 4,
+  LE = 5,
+  LT = 6,
+}
+
+enum Torappu_ArkventTaskActorTriggerType_910898a2 : int {
+  NONE = 0,
+  AUTO = 1,
+  ENTER = 2,
+  INTERACT = 3,
+  AUTO_ONCE = 4,
+}
+
+enum Torappu_ArkventRangeType_64394bfa : int {
+  NONE = 0,
+  CIRCLE = 1,
+  RECT = 2,
+}
+
+enum Torappu_ArkventSpineFaceType_07833661 : int {
+  RIGHT = 0,
+  LEFT = 1,
+}
+
+enum Torappu_ArkventCameraBlendStyle_2392f56e : int {
+  Default = 0,
+  Cut = 1,
+  EaseInOut = 2,
+  EaseIn = 3,
+  EaseOut = 4,
+  HardIn = 5,
+  HardOut = 6,
+  Linear = 7,
+}
+
+enum Torappu_ArkventAudioMetaFlag_366ddc57 : int {
+  NONE = 0,
+  MUSIC = 1,
+  LOOP = 2,
+}
+
+enum Torappu_ArkventAudioRollOffType_597ed251 : int {
+  LINEAR = 0,
+  LOGARITHMIC = 1,
+  THIRD_PARTY = 2,
+}
+
+enum Torappu_ArkventAudioSpatialType_1599bb5b : int {
+  NONE = 0,
+  OFFSET_Z = 1,
+  DISTANCE = 2,
+}
+
+enum Torappu_ArkventAudioTriggerMode_ff8af0b9 : int {
+  NONE = 0,
+  ONE_SHOT = 1,
+  PERIODIC = 2,
+  EXIT = 3,
+}
+
+table Torappu_ArkOdcTable_4775b179 {
+  odcDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkOdcBasicData__dc30d2a6_Entry] (id:0);
+  arkventDataMap:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventData__6751d376_Entry] (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkOdcBasicData__dc30d2a6_Entry {
+  key:string (id:0);
+  value:Torappu_ArkOdcBasicData_3fa29494 (id:1);
+}
+
+table Torappu_ArkOdcBasicData_3fa29494 {
+  topicId:string (id:0);
+  rewardGroups:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_ItemBundle___fb81501e_Entry] (id:1);
+  moveConstData:Torappu_ArkOdcMoveConstData_29e21d42 (id:2);
+  loadingData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkOdcLoadingData__97b02955_Entry] (id:3);
+  constData:Torappu_ArkOdcConstData_7b9eb6f0 (id:4);
+  taskTrackingConstData:Torappu_ArkOdcTaskTrackingConstData_38481f60 (id:5);
+  clientTrackingData:Torappu_ArkOdcTaskTrackingData_ccffecc1 (id:6);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_ItemBundle___fb81501e_Entry {
+  key:string (id:0);
+  value:[Torappu_ItemBundle_64f049cd] (id:1);
+}
+
+table Torappu_ItemBundle_64f049cd {
+  id:string (id:0);
+  count:int (id:1);
+  type:Torappu_ItemType_2ee74a72 (id:2);
+}
+
+table Torappu_ArkOdcMoveConstData_29e21d42 {
+  runMaxStableMoveSpeed:float (id:0);
+  walkMaxStableMoveSpeed:float (id:1);
+  stableMovementSharpness:float (id:2);
+  defaultAlpha:float (id:3);
+  runConfiguredAnimScale:float (id:4);
+  walkConfiguredAnimScale:float (id:5);
+  minAnimScale:float (id:6);
+  maxAnimScale:float (id:7);
+  spineFlip:Torappu_SpineFlipMode_2e328755 (id:8);
+  defaultSlideStopThreshold:float (id:9);
+  presetData:Torappu_ArkventMovePresetData_fb2a72a6 (id:10);
+}
+
+table Torappu_ArkventMovePresetData_fb2a72a6 {
+  presetId:string (id:0);
+  accelEasingType:Torappu_EasingType_6a06996c (id:1);
+  accelDuration:float (id:2);
+  accPower:float (id:3);
+  decEasingType:Torappu_EasingType_6a06996c (id:4);
+  decDuration:float (id:5);
+  decPower:float (id:6);
+  turningMode:Torappu_TurningMode_9564457d (id:7);
+  momentumTurnSpeed:float (id:8);
+  momentumTurnSpeedLow:float (id:9);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkOdcLoadingData__97b02955_Entry {
+  key:string (id:0);
+  value:Torappu_ArkOdcLoadingData_9dba1d51 (id:1);
+}
+
+table Torappu_ArkOdcLoadingData_9dba1d51 {
+  loadingId:string (id:0);
+  weight:int (id:1);
+}
+
+table Torappu_ArkOdcConstData_7b9eb6f0 {
+  defaultSceneId:string (id:0);
+  defaultLoadingId:string (id:1);
+  playerSpineName:string (id:2);
+  idleSpecialAnimName:string (id:3);
+  idleSpecialAnimInterval:float (id:4);
+  resetExpIds:[string] (id:5);
+  npcSelectedFx:string (id:6);
+  interactSelectedFx:string (id:7);
+  sceneValidPositionY:float (id:8);
+}
+
+table Torappu_ArkOdcTaskTrackingConstData_38481f60 {
+  taskTrackerHeightThreshold:float (id:0);
+  distanceUnitScale:float (id:1);
+  taskTrackerYOffset:float (id:2);
+}
+
+table Torappu_ArkOdcTaskTrackingData_ccffecc1 {
+  mainDataDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkOdcTaskTrackingMainData__49a2d966_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkOdcTaskTrackingMainData__49a2d966_Entry {
+  key:string (id:0);
+  value:Torappu_ArkOdcTaskTrackingMainData_ca5be50d (id:1);
+}
+
+table Torappu_ArkOdcTaskTrackingMainData_ca5be50d {
+  questId:string (id:0);
+  priority:int (id:1);
+  title:string (id:2);
+  startBannerDesc:string (id:3);
+  completeBannerDesc:string (id:4);
+  entryDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkOdcTaskTrackingEntryData__5287580e_Entry] (id:5);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkOdcTaskTrackingEntryData__5287580e_Entry {
+  key:string (id:0);
+  value:Torappu_ArkOdcTaskTrackingEntryData_45f8da59 (id:1);
+}
+
+table Torappu_ArkOdcTaskTrackingEntryData_45f8da59 {
+  trackEntryId:string (id:0);
+  questId:string (id:1);
+  stage:int (id:2);
+  slot:int (id:3);
+  slotOrder:int (id:4);
+  description:string (id:5);
+  trackActorId:string (id:6);
+  enableCompass:bool (id:7);
+  triggerCondIds:[string] (id:8);
+  completeCondId:string (id:9);
+  progressCompleteFlags:[string] (id:10);
+  progressCount:int (id:11);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventData__6751d376_Entry {
+  key:string (id:0);
+  value:Torappu_ArkventData_c5b9b039 (id:1);
+}
+
+table Torappu_ArkventData_c5b9b039 {
+  taskData:Torappu_ArkventTaskData_d49eb601 (id:0);
+  sceneDataMap:[System_Collections_Generic_Dictionary_2_System_Int32_Torappu_ArkventSceneData__462ebe36_Entry] (id:1);
+  nameMappingData:Torappu_ArkventNameMappingData_91d0f010 (id:2);
+  interactBtnStyleDict:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventInteractBtnStyleData__5f74fc5c_Entry] (id:3);
+  headUIData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventHeadUIData__6203f4a2_Entry] (id:4);
+  barkData:Torappu_ArkventBarkData_9fc30153 (id:5);
+  animMixData:Torappu_ArkventAnimMixData_ccb8542c (id:6);
+  sceneAudioMap:[System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_ArkventAudioSourceData___7636d08a_Entry] (id:7);
+}
+
+table Torappu_ArkventTaskData_d49eb601 {
+  topicId:string (id:0);
+  actorData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventTaskActorData__4b1b0fb9_Entry] (id:1);
+  varSeqData:[string] (id:2);
+  cameraConfigData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventCameraConfigData__898d6461_Entry] (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventTaskActorData__4b1b0fb9_Entry {
+  key:string (id:0);
+  value:Torappu_ArkventTaskActorData_ad3d839b (id:1);
+}
+
+table Torappu_ArkventTaskActorData_ad3d839b {
+  actorId:string (id:0);
+  actorNameId:string (id:1);
+  actorEnvLineId:string (id:2);
+  sceneId:int (id:3);
+  isGlobal:bool (id:4);
+  charId:string (id:5);
+  skinId:string (id:6);
+  arkventSpineId:string (id:7);
+  npcSpineType:Torappu_ArkventNPCSpineType_5310bea3 (id:8);
+  overrideAnimConfig:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:9);
+  furnitureAssetId:string (id:10);
+  actorType:Torappu_ArkventTaskActorType_d94267cd (id:11);
+  actorPosition:UnityEngine_Vector3_7c3ffff1 (id:12);
+  actorYaw:float (id:13);
+  actorShowCondition:[Torappu_ArkventTaskShowCondition_cc31d80e] (id:14);
+  actorTriggerType:Torappu_ArkventTaskActorTriggerType_910898a2 (id:15);
+  actorTriggerOperations:[System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_ArkventTaskActorTriggerO_0ca53dc0_Entry] (id:16);
+  triggerRange:Torappu_ArkventRangeData_f29ad07c (id:17);
+  colliderRange:Torappu_ArkventRangeData_f29ad07c (id:18);
+  interactRange:Torappu_ArkventRangeData_f29ad07c (id:19);
+  triggerCameraConfig:string (id:20);
+  interactCameraConfig:string (id:21);
+  sceneStatusDriverId:string (id:22);
+  sceneObjectStatus:string (id:23);
+  effectId:string (id:24);
+  effectOffsetY:float (id:25);
+  interactBtnStyleId:string (id:26);
+  interactingBtnStyleId:string (id:27);
+  interactSoundFx:string (id:28);
+  headUpStyleId:string (id:29);
+  spineFace:Torappu_ArkventSpineFaceType_07833661 (id:30);
+  persistFaceWhenInteract:bool (id:31);
+  hasSafePos:bool (id:32);
+  safePos:UnityEngine_Vector3_7c3ffff1 (id:33);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry {
+  key:string (id:0);
+  value:string (id:1);
+}
+
+table UnityEngine_Vector3_7c3ffff1 {
+  x:float (id:0);
+  y:float (id:1);
+  z:float (id:2);
+}
+
+table Torappu_ArkventTaskShowCondition_cc31d80e {
+  conditionType:string (id:0);
+  varSeqList:[string] (id:1);
+  type:Torappu_ArkventTaskVarSeqCompareOperation_430765a2 (id:2);
+  value:int (id:3);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Collections_Generic_List_1_Torappu_ArkventTaskActorTriggerO_0ca53dc0_Entry {
+  key:string (id:0);
+  value:[Torappu_ArkventTaskActorTriggerOperation_1730d5e5] (id:1);
+}
+
+table Torappu_ArkventTaskActorTriggerOperation_1730d5e5 {
+  operationId:string (id:0);
+  operationTemplate:string (id:1);
+  operationParams:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:2);
+  finishOperation:bool (id:3);
+  preserveBlackout:bool (id:4);
+}
+
+table Torappu_ArkventRangeData_f29ad07c {
+  type:Torappu_ArkventRangeType_64394bfa (id:0);
+  position:UnityEngine_Vector3_7c3ffff1 (id:1);
+  bounds:UnityEngine_Vector3_7c3ffff1 (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventCameraConfigData__898d6461_Entry {
+  key:string (id:0);
+  value:Torappu_ArkventCameraConfigData_6923cfe9 (id:1);
+}
+
+table Torappu_ArkventCameraConfigData_6923cfe9 {
+  pcConfig:Torappu_ArkventCameraPlatformConfig_695a6ff5 (id:0);
+  mobileConfig:Torappu_ArkventCameraPlatformConfig_695a6ff5 (id:1);
+}
+
+table Torappu_ArkventCameraPlatformConfig_695a6ff5 {
+  blendDuration:float (id:0);
+  blendStyle:Torappu_ArkventCameraBlendStyle_2392f56e (id:1);
+  pitch:float (id:2);
+  cameraDistance:float (id:3);
+  lookAheadTime:float (id:4);
+  lookAheadSmoothing:float (id:5);
+  screenX:float (id:6);
+  screenY:float (id:7);
+  trackedObjectOffset:UnityEngine_Vector3_7c3ffff1 (id:8);
+  deadZoneWidth:float (id:9);
+  deadZoneHeight:float (id:10);
+  deadZoneDepth:float (id:11);
+  softZoneWidth:float (id:12);
+  softZoneHeight:float (id:13);
+  biasX:float (id:14);
+  biasY:float (id:15);
+  xDamping:float (id:16);
+  yDamping:float (id:17);
+  zDamping:float (id:18);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_Torappu_ArkventSceneData__462ebe36_Entry {
+  key:int (id:0);
+  value:Torappu_ArkventSceneData_af7eb6e9 (id:1);
+}
+
+table Torappu_ArkventSceneData_af7eb6e9 {
+  sceneId:string (id:0);
+  sceneIdHash:int (id:1);
+  sceneName:string (id:2);
+  assetId:string (id:3);
+  spawnPos:UnityEngine_Vector3_7c3ffff1 (id:4);
+  spawnRadius:float (id:5);
+  moveCameraConfigId:string (id:6);
+  idleCameraConfigId:string (id:7);
+}
+
+table Torappu_ArkventNameMappingData_91d0f010 {
+  displayNameMap:[System_Collections_Generic_Dictionary_2_System_String_System_String__a01cfc26_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventInteractBtnStyleData__5f74fc5c_Entry {
+  key:string (id:0);
+  value:Torappu_ArkventInteractBtnStyleData_20345608 (id:1);
+}
+
+table Torappu_ArkventInteractBtnStyleData_20345608 {
+  id:string (id:0);
+  icon:string (id:1);
+  bgStyle:string (id:2);
+  displayText:string (id:3);
+  textColorStr:string (id:4);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventHeadUIData__6203f4a2_Entry {
+  key:string (id:0);
+  value:Torappu_ArkventHeadUIData_0389098b (id:1);
+}
+
+table Torappu_ArkventHeadUIData_0389098b {
+  id:string (id:0);
+  icon:string (id:1);
+  bgStyle:string (id:2);
+}
+
+table Torappu_ArkventBarkData_9fc30153 {
+  barkAreaRadius:float (id:0);
+  showAreaRadius:float (id:1);
+  barkPoolData:[System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventBarkPoolData__1acc14c4_Entry] (id:2);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_Torappu_ArkventBarkPoolData__1acc14c4_Entry {
+  key:string (id:0);
+  value:Torappu_ArkventBarkPoolData_be0d8557 (id:1);
+}
+
+table Torappu_ArkventBarkPoolData_be0d8557 {
+  barkItemData:[Torappu_ArkventBarkItemData_7dacfbca] (id:0);
+}
+
+table Torappu_ArkventBarkItemData_7dacfbca {
+  content:string (id:0);
+  weight:int (id:1);
+  duration:float (id:2);
+  cooldown:float (id:3);
+}
+
+table Torappu_ArkventAnimMixData_ccb8542c {
+  mixDurationMap:[System_Collections_Generic_Dictionary_2_System_String_System_Single__eaaf3efa_Entry] (id:0);
+}
+
+table System_Collections_Generic_Dictionary_2_System_String_System_Single__eaaf3efa_Entry {
+  key:string (id:0);
+  value:float (id:1);
+}
+
+table System_Collections_Generic_Dictionary_2_System_Int32_System_Collections_Generic_List_1_Torappu_ArkventAudioSourceData___7636d08a_Entry {
+  key:int (id:0);
+  value:[Torappu_ArkventAudioSourceData_7f08a800] (id:1);
+}
+
+table Torappu_ArkventAudioSourceData_7f08a800 {
+  id:string (id:0);
+  positionX:float (id:1);
+  positionY:float (id:2);
+  positionZ:float (id:3);
+  module:string (id:4);
+  signal:string (id:5);
+  subSignal:string (id:6);
+  meta:Torappu_ArkventAudioMetaFlag_366ddc57 (id:7);
+  soundPlaybackPolicy:int (id:8);
+  minDist:float (id:9);
+  maxDist:float (id:10);
+  rollOffType:Torappu_ArkventAudioRollOffType_597ed251 (id:11);
+  spatialBlend:Torappu_ArkventAudioSpatialProfile_3481e911 (id:12);
+  spatialVolume:Torappu_ArkventAudioSpatialProfile_3481e911 (id:13);
+  volume:float (id:14);
+  effectiveRange:Torappu_ArkventRangeData_f29ad07c (id:15);
+  triggerMode:Torappu_ArkventAudioTriggerMode_ff8af0b9 (id:16);
+  periodicFixedInterval:float (id:17);
+  periodicMinInterval:float (id:18);
+  periodicMaxInterval:float (id:19);
+  applyIntervalOnFirstPlay:bool (id:20);
+  fadeOutTime:float (id:21);
+  mutexGroup:string (id:22);
+  mutexOrder:int (id:23);
+  bindActors:[string] (id:24);
+  tags:[string] (id:25);
+}
+
+table Torappu_ArkventAudioSpatialProfile_3481e911 {
+  type:Torappu_ArkventAudioSpatialType_1599bb5b (id:0);
+  name:string (id:1);
+}
+
+root_type Torappu_ArkOdcTable_4775b179;

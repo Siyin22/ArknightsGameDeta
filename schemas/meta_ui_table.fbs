@@ -1,0 +1,108 @@
+// Generated from local client metadata. See schema.json and native-audit.json.
+
+enum Torappu_CommonUnlockType_6ac118f4 : int {
+  STAGECLEAR = 0,
+  HASCHAR = 1,
+  NONE = 2,
+}
+
+enum Torappu_TipData_Category_beac7a3c : int {
+  NONE = 0,
+  BATTLE = 1,
+  UI = 2,
+  BUILDING = 4,
+  GACHA = 8,
+  MISC = 16,
+  ALL = 31,
+}
+
+table Torappu_MetaUIDisplayTable_2e2fb240 {
+  tipsMetaList:[Torappu_TipsMetaDisplayItem_3f017d7e] (id:0);
+  flashAlertAfterStageItemList:[Torappu_FlashAlertAfterStageDisplayMetaItem_3a31444b] (id:1);
+  mapPreviewDisplayMetaItemList:[Torappu_MapPreviewDisplayMetaItem_e9753ac2] (id:2);
+  battleFinishDisplayMetaItemList:[Torappu_BattleFinishDisplayMetaItem_622fc717] (id:3);
+  battleLoadingDisplayMetaItemList:[Torappu_BattleLoadingDisplayMetaItem_6751a4e6] (id:4);
+  battleAutoBattleMetaItemList:[Torappu_BattleAutoBattleMetaItem_f35d7ebe] (id:5);
+}
+
+table Torappu_TipsMetaDisplayItem_3f017d7e {
+  tipsId:string (id:0);
+  loadingPic:string (id:1);
+  availCheck:Torappu_CommonAvailCheck_1cc9994e (id:2);
+  relateActId:string (id:3);
+  isAllStageActive:bool (id:4);
+  stageIdList:[string] (id:5);
+  zoneIdList:[string] (id:6);
+  tips:[Torappu_TipData_5e3b77f7] (id:7);
+}
+
+table Torappu_CommonAvailCheck_1cc9994e {
+  startTs:long (id:0);
+  endTs:long (id:1);
+  type:Torappu_CommonUnlockType_6ac118f4 (id:2);
+  rate:float (id:3);
+  stageUnlockParam:Torappu_StageUnlockParam_24803ecf (id:4);
+  charUnlockParam:Torappu_CharUnlockParam_c428ab99 (id:5);
+}
+
+table Torappu_StageUnlockParam_24803ecf {
+  stageId:string (id:0);
+}
+
+table Torappu_CharUnlockParam_c428ab99 {
+  charId:string (id:0);
+}
+
+table Torappu_TipData_5e3b77f7 {
+  tip:string (id:0);
+  weight:float (id:1);
+  category:Torappu_TipData_Category_beac7a3c (id:2);
+}
+
+table Torappu_FlashAlertAfterStageDisplayMetaItem_3a31444b {
+  flashAlertId:string (id:0);
+  availCheck:Torappu_CommonAvailCheck_1cc9994e (id:1);
+  isAllStageActive:bool (id:2);
+  stageIdList:[string] (id:3);
+  relateActId:string (id:4);
+  detailText:string (id:5);
+  isBasicInfo:bool (id:6);
+  times:int (id:7);
+}
+
+table Torappu_MapPreviewDisplayMetaItem_e9753ac2 {
+  mapPreviewPicId:string (id:0);
+  availCheck:Torappu_CommonAvailCheck_1cc9994e (id:1);
+  relateActId:string (id:2);
+  isAllStageActive:bool (id:3);
+  stageIdList:[string] (id:4);
+}
+
+table Torappu_BattleFinishDisplayMetaItem_622fc717 {
+  battleFinishDisplayKey:string (id:0);
+  isAllStageActive:bool (id:1);
+  stageIdList:[string] (id:2);
+  availCheck:Torappu_CommonAvailCheck_1cc9994e (id:3);
+  relateActId:string (id:4);
+  overrideStageName:string (id:5);
+  signal:string (id:6);
+  overrideCharWord:string (id:7);
+}
+
+table Torappu_BattleLoadingDisplayMetaItem_6751a4e6 {
+  isAllStageActive:bool (id:0);
+  stageIdList:[string] (id:1);
+  battleLoadingPicId:string (id:2);
+  relateActId:string (id:3);
+  availCheck:Torappu_CommonAvailCheck_1cc9994e (id:4);
+}
+
+table Torappu_BattleAutoBattleMetaItem_f35d7ebe {
+  battleAutoBattleDisplayKey:string (id:0);
+  isAllStageActive:bool (id:1);
+  relateActId:string (id:2);
+  stageIdList:[string] (id:3);
+  availCheck:Torappu_CommonAvailCheck_1cc9994e (id:4);
+}
+
+root_type Torappu_MetaUIDisplayTable_2e2fb240;
