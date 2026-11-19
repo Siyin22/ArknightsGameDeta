@@ -1,9 +1,9 @@
 {
   "format_version": 1,
-  "official_version": "79.2.0",
-  "resource_version": "26-11-06-12-42-25-70182449",
+  "official_version": "79.4.0",
+  "resource_version": "26-11-13-06-34-18-84612175",
   "client_version": "2.7.91",
-  "data_version": "Stream://torappu-data/v079/rel79.0\nChange:127796 on 2026/11/05\nVersionControl:79.2.0",
+  "data_version": "Stream://torappu-data/v079/rel79.0\nChange:128540 on 2026/11/13\nVersionControl:79.4.0",
   "region": "CN",
   "attributes": "最高精英阶段、满级、满信赖；各潜能分别计算；不叠加模组与实战增益"
 }

@@ -1,8 +1,8 @@
 {
   "contract_version": 2,
   "publication": "complete",
-  "official_version": "79.2.0",
-  "resource_version": "26-11-06-12-42-25-70182449",
+  "official_version": "79.4.0",
+  "resource_version": "26-11-13-06-34-18-84612175",
   "client_version": "2.7.91",
   "report_ready": true,
   "report_missing": [],
@@ -1959,13 +1959,18 @@
     },
     {
       "path": "gamedata/[uc]lua/hotfixes/autochessdatabridgemultiplayerhotfixer.lua",
-      "bytes": 867,
-      "sha256": "2c98455418b65cf02cdc9e97e4d9268aa0c071b13f08221e7429c64e2ea0bb2c"
+      "bytes": 1737,
+      "sha256": "d656ab6d183443415cdcf936a5ee95b11f2121c2814ac2bea661095cf1d71271"
+    },
+    {
+      "path": "gamedata/[uc]lua/hotfixes/autochessemotionalmanagerhotfixer.lua",
+      "bytes": 1174,
+      "sha256": "f96fa713263ae782c4f8998cf3da886a5d444347eeca665f95a0f0accce8775d"
     },
     {
       "path": "gamedata/[uc]lua/hotfixes/autochessgamemanagerhotfixer.lua",
-      "bytes": 5106,
-      "sha256": "5d6be0487bb2d09ddeca7cb29cb93e66617fbcceca20d694f36bac97a937add6"
+      "bytes": 6949,
+      "sha256": "a315fd57689af7bf03ae9bf17d9a1b284cd5738f0b9d64d5821b4626870a0296"
     },
     {
       "path": "gamedata/[uc]lua/hotfixes/autochessgarrisonmanagerhotfixer.lua",
@@ -1999,13 +2004,13 @@
     },
     {
       "path": "gamedata/[uc]lua/hotfixes/autochessstepmodemanagerhotfixer.lua",
-      "bytes": 2833,
-      "sha256": "c66cca5ffccd7939970f822fc15fb353a1c590fea97b359ab4b01d520682980f"
+      "bytes": 3152,
+      "sha256": "f783fd8ea3e303caeb22477dd991372269642826d404d5ab89f620e3bb0a90bd"
     },
     {
       "path": "gamedata/[uc]lua/hotfixes/definedfix.lua",
-      "bytes": 856,
-      "sha256": "4a16c8275ba3773fff673cf949986489078a796c988170c60aca011a71cd67ff"
+      "bytes": 939,
+      "sha256": "40f808614e36504cde5f3ecdd62174ae3edc3fdee05e16b06144a72fc960a06c"
     },
     {
       "path": "gamedata/[uc]lua/hotfixes/enemyhotfixer.lua",
@@ -2051,6 +2056,11 @@
       "path": "gamedata/[uc]lua/hotfixes/teststubhotfixer.lua",
       "bytes": 347,
       "sha256": "d84ed297aee98b43b23e4aae896a3767f98c1ba4018ba66b93eaa2379223a54a"
+    },
+    {
+      "path": "gamedata/[uc]lua/hotfixes/uicontrollerhotfixer.lua",
+      "bytes": 650,
+      "sha256": "090ccf2b295e7a9eecdd3ae6c81b7c8d0a3e70790969e0625e69a466d912b43a"
     },
     {
       "path": "gamedata/art/handbook_force_map_table.json",
@@ -2596,6 +2606,11 @@
       "path": "gamedata/bakemuzzledata/character/char_1046_sbell2_defaultskin.json",
       "bytes": 994492,
       "sha256": "9e9148fd32125dfe7cf201508b33f80dbdbcfdb7c6d063f1a0b8d22a67d6e47f"
+    },
+    {
+      "path": "gamedata/bakemuzzledata/character/char_1047_halo2_char_1047_halo2_striker#4.json",
+      "bytes": 430820,
+      "sha256": "fd68bddcdfe99080c5cd8e0129678efadff059a1f74f8c23a4a514041eaaa437"
     },
     {
       "path": "gamedata/bakemuzzledata/character/char_1047_halo2_defaultskin.json",
@@ -3891,6 +3906,11 @@
       "path": "gamedata/bakemuzzledata/character/char_245_cello_defaultskin.json",
       "bytes": 199477,
       "sha256": "3c591193377be28a0d378280ff5dad335399845600f3ff2cfb4bd24abd36519d"
+    },
+    {
+      "path": "gamedata/bakemuzzledata/character/char_248_mgllan_char_248_mgllan_epoque#60.json",
+      "bytes": 34004,
+      "sha256": "c9c987404def0ac785fc3f7f323a171e8cfdf352beb2d336314f081de2687a7d"
     },
     {
       "path": "gamedata/bakemuzzledata/character/char_248_mgllan_char_248_mgllan_kitchen#1.json",
@@ -7163,6 +7183,11 @@
       "sha256": "b3ebcfecea12917c14b4202938fd9b65d9e17032486cda5537a653be8d29a342"
     },
     {
+      "path": "gamedata/bakemuzzledata/character/token_10005_mgllan_drone1_token_10005_mgllan_drone1_epoque#60.json",
+      "bytes": 7598,
+      "sha256": "300127de1597b1d5f95613ddcf0a6425e8645b306bce89220f177b2ab179e08a"
+    },
+    {
       "path": "gamedata/bakemuzzledata/character/token_10005_mgllan_drone1_token_10005_mgllan_drone1_kitchen#1.json",
       "bytes": 5555,
       "sha256": "6c70ec60e15f80f9e01924ef71ee75f8daa0f1718da6796bbafdb65762626a76"
@@ -7173,6 +7198,11 @@
       "sha256": "b6a7fc50a27872d66d96ab87d38b10fa9b79af6ff34641540ef4bdecc064c5dc"
     },
     {
+      "path": "gamedata/bakemuzzledata/character/token_10005_mgllan_drone2_token_10005_mgllan_drone2_epoque#60.json",
+      "bytes": 23202,
+      "sha256": "0f58ec55df674c1ec2c1c64fd30c095ea9d3aa9520a9510257f104c72791e732"
+    },
+    {
       "path": "gamedata/bakemuzzledata/character/token_10005_mgllan_drone2_token_10005_mgllan_drone2_kitchen#1.json",
       "bytes": 31913,
       "sha256": "c65733a8732842e9efba74f6467a6077e3522a3f5519da50c34318724631b4ef"
@@ -7181,6 +7211,11 @@
       "path": "gamedata/bakemuzzledata/character/token_10005_mgllan_drone3_default.json",
       "bytes": 30149,
       "sha256": "2a59a91ebb38a38c3f524c8e424190ef63fdb074bdd3ab2b5da4f36ceb164d90"
+    },
+    {
+      "path": "gamedata/bakemuzzledata/character/token_10005_mgllan_drone3_token_10005_mgllan_drone3_epoque#60.json",
+      "bytes": 22508,
+      "sha256": "86c8b820bbf8a8b6ca7a20f682bc86668efb790043b1f14f681d08828872bdd6"
     },
     {
       "path": "gamedata/bakemuzzledata/character/token_10005_mgllan_drone3_token_10005_mgllan_drone3_kitchen#1.json",
@@ -20914,8 +20949,8 @@
     },
     {
       "path": "gamedata/battle/buff_template_data.json",
-      "bytes": 30929538,
-      "sha256": "d74f6a7174f5d8d3d45876854cdd0e62e2722a3e3bb17bbed9610d4fa02d26cc"
+      "bytes": 30929934,
+      "sha256": "32433ece981914cb108e9095b5cd8050342f7e87680d9e01404eba0edbf504dc"
     },
     {
       "path": "gamedata/battle/cooperate_battle_tabled7bec6.json",
@@ -20954,8 +20989,8 @@
     },
     {
       "path": "gamedata/excel/activity_table071163.json",
-      "bytes": 14865001,
-      "sha256": "7182d0ae4ecca50a371b57c40b9cf183b73820824ce5a6944f85a5d4b82a80ed"
+      "bytes": 14957299,
+      "sha256": "5f4e8c64140b4caff3f59ca40b8d67bb8cbed031d452f42b1f4e447241c1611f"
     },
     {
       "path": "gamedata/excel/ark_odc_table.json",
@@ -20969,8 +21004,8 @@
     },
     {
       "path": "gamedata/excel/audio_dataf6aac9.json",
-      "bytes": 8420335,
-      "sha256": "a5ce9fc3f44722c13ebb8a7bbd6235292e7cf0674eb19c60e329f32371c5946f"
+      "bytes": 8420410,
+      "sha256": "d592db4362f10fa590de84b1dc7d815cb2a1d218226eeb10c40712a68ad3fd1d"
     },
     {
       "path": "gamedata/excel/battle_equip_table91e6b6.json",
@@ -20979,8 +21014,8 @@
     },
     {
       "path": "gamedata/excel/building_data73949e.json",
-      "bytes": 5271073,
-      "sha256": "4cba67268f6d0d283a69cd7271156fe161745980063697c3fdf04a5f4021c223"
+      "bytes": 5272240,
+      "sha256": "722fa4c03ffc74373f4cfaa3737b1ea99071e2da27142d3215b76c42253d5941"
     },
     {
       "path": "gamedata/excel/campaign_table7bb939.json",
@@ -21009,8 +21044,8 @@
     },
     {
       "path": "gamedata/excel/character_tablec913b6.json",
-      "bytes": 15310962,
-      "sha256": "b1fdbe63a5e40e2118e5b852bb4d41a9d0f8f782bec4e3d3edf3a749432450d5"
+      "bytes": 15311034,
+      "sha256": "459cff7091cd19f7a2c87d75d76a3c745e9a62ced647a1c3a5deab1b3f7cdcdb"
     },
     {
       "path": "gamedata/excel/charm_table6304e1.json",
@@ -21050,12 +21085,12 @@
     {
       "path": "gamedata/excel/data_version.txt",
       "bytes": 85,
-      "sha256": "63208e15a7b7ced10de5d6b2d683cd62515e302f68b6f7dd79d80b44e1654828"
+      "sha256": "6d55cbd911c8ea6d99344bbfae14e42193c12a3400cdeb218e71ebc4e8ac6c91"
     },
     {
       "path": "gamedata/excel/display_meta_tableb1aa89.json",
-      "bytes": 485372,
-      "sha256": "747c5c9fbd9c98f7951a2c6c7aa50d7c54e2be13872c5d69e20ab3bd615c6248"
+      "bytes": 486243,
+      "sha256": "a69252a8a3fb1d5be25aa438d90306fdc2ac22af4cc0d052529d5cf35e198c2f"
     },
     {
       "path": "gamedata/excel/enemy_handbook_table493349.json",
@@ -21069,13 +21104,13 @@
     },
     {
       "path": "gamedata/excel/gacha_table286841.json",
-      "bytes": 467072,
-      "sha256": "2bbf6c32ccdc7a20dcd9eea810296c85cdcd9fd7b315550850057422b4924469"
+      "bytes": 468716,
+      "sha256": "e195dd8e5c6d6ffb34380b1b1310d9c6d37afa8c7bb917e25dc24ec2e46cce13"
     },
     {
       "path": "gamedata/excel/gamedata_const61fefd.json",
       "bytes": 57674,
-      "sha256": "d841ed9499d66aa275f1bd9cb128c3b74ea6c7a42eea38289bf47f2e0eb63d5e"
+      "sha256": "e34f0ba4beb3e55d8bf8c79d219e6c38aa1b897d283818a6787bb8efff9f0030"
     },
     {
       "path": "gamedata/excel/handbook_info_table1ff5ad.json",
@@ -21094,8 +21129,8 @@
     },
     {
       "path": "gamedata/excel/hotupdate_meta_table7fb967.json",
-      "bytes": 21532,
-      "sha256": "192757cd1e5950408026316156944b2c8bb68539335af68519cf29bd4b8fbd86"
+      "bytes": 21419,
+      "sha256": "8314c4c4af22a9fc92c15979c1b36910d4d1df19aaf53c9b8fb7eb3a8d64260d"
     },
     {
       "path": "gamedata/excel/init_texta7862e.json",
@@ -21104,8 +21139,8 @@
     },
     {
       "path": "gamedata/excel/item_table1c04fa.json",
-      "bytes": 1805102,
-      "sha256": "18eb1031d58ded358764265a2aedd960f15ce5d0bfa8af41e88940fbb8573dc5"
+      "bytes": 1809569,
+      "sha256": "10aead0c37d8a93bfb7748e97b37801b8baee31c6bafbfbbd4837543ec8d0b75"
     },
     {
       "path": "gamedata/excel/main_texta7862e.json",
@@ -21114,8 +21149,8 @@
     },
     {
       "path": "gamedata/excel/medal_table26d2d8.json",
-      "bytes": 1522345,
-      "sha256": "4e2fedebb6f2cbc6124851b6e851c6e9ac5718f476241a9722cd4b828131bb14"
+      "bytes": 1522308,
+      "sha256": "bc2c2df003b70809204edb3c78819d78009b03b9c46f3ee63a45326985f1dabb"
     },
     {
       "path": "gamedata/excel/meta_ui_table6a50d1.json",
@@ -21144,13 +21179,13 @@
     },
     {
       "path": "gamedata/excel/replicate_table20cab3.json",
-      "bytes": 143302,
-      "sha256": "f890f4528d876b91ec4501329a31a31ad0a4cece3bf09357f335a5e9c71f0e41"
+      "bytes": 147401,
+      "sha256": "eca78331d643741fc9643a17403fb1bbf4fba328d568f7822da3dc998a43698f"
     },
     {
       "path": "gamedata/excel/retro_tableb46c3c.json",
-      "bytes": 5316228,
-      "sha256": "b8b92f4d788e5a47c763d580f308276960512347522d17c0229669521dbc71af"
+      "bytes": 5322626,
+      "sha256": "add7ad46e5deb21fdc5fe53e93c499752ba995b76cc32ac7064de864e72255fe"
     },
     {
       "path": "gamedata/excel/roguelike_table.json",
@@ -21159,8 +21194,8 @@
     },
     {
       "path": "gamedata/excel/roguelike_topic_tablebd71d3.json",
-      "bytes": 17817796,
-      "sha256": "508b3ae0291c017dc88b9bffc3c10ecd2d3faaa36c91714db04ac8ae8998f38b"
+      "bytes": 17826661,
+      "sha256": "a81ad1d959f52d6ffa78c892449c746cc2d04d14818b870aa4763e56a9007120"
     },
     {
       "path": "gamedata/excel/sandbox_perm_tablea8c1d3.json",
@@ -21174,8 +21209,8 @@
     },
     {
       "path": "gamedata/excel/shop_client_tablead7bef.json",
-      "bytes": 1834459,
-      "sha256": "f3baeaa01ce2d49d6eff570f91db0d9bb0460cff9c051a9a5ce5060de92d3abc"
+      "bytes": 1839936,
+      "sha256": "4666a3f796c700dcdd4bf084e1bec13fb0179fc426331bf49ff030ee89e41679"
     },
     {
       "path": "gamedata/excel/skill_tableafb859.json",
@@ -21184,8 +21219,8 @@
     },
     {
       "path": "gamedata/excel/skin_tabled7e521.json",
-      "bytes": 3924814,
-      "sha256": "70275543f3fa4428e38f04654abd4b13b252d032651309ad94665eba0acd6457"
+      "bytes": 3933356,
+      "sha256": "0788d0a9593431d68411da827bc01b2db371507f7826813b8ce2cdd318dce6e0"
     },
     {
       "path": "gamedata/excel/special_operator_tablef3dfef.json",
@@ -21194,8 +21229,8 @@
     },
     {
       "path": "gamedata/excel/stage_tableb3e241.json",
-      "bytes": 18869825,
-      "sha256": "2da458e21f9d50a649a833ba6f22ba94ca900cd482f23e9db9e138962da77537"
+      "bytes": 18870214,
+      "sha256": "abe5c49fe3ae9fd15da3f038d5eb708428779fe3a9dc5dee89dcb92746b00133"
     },
     {
       "path": "gamedata/excel/story_review_meta_table34f503.json",
@@ -21204,13 +21239,13 @@
     },
     {
       "path": "gamedata/excel/story_review_tablebf56bf.json",
-      "bytes": 1819580,
-      "sha256": "42e2838203e1df6274b833f9bd1b0f1b10dd1a21e45045c4ccb0d01d1e19d9f4"
+      "bytes": 1819596,
+      "sha256": "b0e948bce05b695e41449fecfa3a1ed2f6228cdb198537eb0971930405eb0cfc"
     },
     {
       "path": "gamedata/excel/story_tablee4e4f8.json",
-      "bytes": 1472809,
-      "sha256": "8974da3715bd3d98b0017dcc7d876b1af4655622c2a6cefb6e415d5f4655c1b9"
+      "bytes": 1472808,
+      "sha256": "a608ad8f1e936cbcc3cf35c864ac8e0d2d3bd657ac07b1f0be2df08284357c11"
     },
     {
       "path": "gamedata/excel/tech_buff_table.json",
@@ -21239,8 +21274,8 @@
     },
     {
       "path": "gamedata/excel/zone_tablefb5543.json",
-      "bytes": 385009,
-      "sha256": "a3bddc432cffa98887b447d026c887bafb6091192e7e6411c750877af842353b"
+      "bytes": 388747,
+      "sha256": "ffebf0729a0b35d5f680fa7c902315c007cc195d804a6b7bc94ca6fb32d0cc38"
     },
     {
       "path": "gamedata/levels/activities/a001/level_a001_01.json",
@@ -24849,8 +24884,8 @@
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_h07_10.json",
-      "bytes": 174472,
-      "sha256": "2226c0a96216db7bce5ce6f3800ae1d487215fcc1b5d60c2b6d7b98849c388fb"
+      "bytes": 117641,
+      "sha256": "e3636ec34e7b9a0c4ea01713698a5bf3e6100f2a78bfbb36780359d7a8dd3293"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_h07_10_s.json",
@@ -24919,13 +24954,18 @@
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_h08_06.json",
-      "bytes": 114163,
-      "sha256": "98015823735753823920d3dd0ee04ff1eb85d996c9099b49fc3f88f06bd6f3f7"
+      "bytes": 114164,
+      "sha256": "1b04018f74c6974d70da1a3fd7412d3f1ddad98eda2e55bd00b7ccb6eb6f19ff"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_h08_06_s.json",
       "bytes": 54838,
       "sha256": "54c0824dba192e8bbc61ee44a04ef0fcad738aad7804d7b371195494fbc733fb"
+    },
+    {
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m01.json",
+      "bytes": 494479,
+      "sha256": "010176cca0beae13eea54479bbe2dddc5862fff9bfd184f5cddfac434e13d60c"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m01/level_act3autochess_m01_sub_01.json",
@@ -24943,9 +24983,9 @@
       "sha256": "b9a5c45ebd612f151fea1af5ec78ac7f366cb27c37560954cee7c2be33eda19b"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m01.json",
-      "bytes": 494479,
-      "sha256": "010176cca0beae13eea54479bbe2dddc5862fff9bfd184f5cddfac434e13d60c"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m02.json",
+      "bytes": 526094,
+      "sha256": "83f837f993a1a8856de2e68da24dee1acda94305e83a413a203fc7e463f6d6ac"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m02/level_act3autochess_m02_sub_01.json",
@@ -24963,9 +25003,9 @@
       "sha256": "fa2343655793bfb4ba956015201ab3c8befa2f4a29935c93c0b830f45d386dbc"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m02.json",
-      "bytes": 526094,
-      "sha256": "83f837f993a1a8856de2e68da24dee1acda94305e83a413a203fc7e463f6d6ac"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m03.json",
+      "bytes": 515153,
+      "sha256": "345d8d265f4ed73ba0bd97aa07440ef4bffa34f928ddde5e632431d7db8dc161"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m03/level_act3autochess_m03_sub_01.json",
@@ -24983,9 +25023,9 @@
       "sha256": "8a17d9c08490a504c8facfb164bee2e851bf65745c647af0a923c97c10570841"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m03.json",
-      "bytes": 515153,
-      "sha256": "345d8d265f4ed73ba0bd97aa07440ef4bffa34f928ddde5e632431d7db8dc161"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m04.json",
+      "bytes": 504769,
+      "sha256": "5ec44833fd5027c74ff15effa37a2d70fd0b8560fb112062024893b0ce361fae"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m04/level_act3autochess_m04_sub_01.json",
@@ -25003,9 +25043,9 @@
       "sha256": "d10910c3feb40edcdf62f60ba80390486c9961cb30f3c9e82cf8932362580acd"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m04.json",
-      "bytes": 504769,
-      "sha256": "5ec44833fd5027c74ff15effa37a2d70fd0b8560fb112062024893b0ce361fae"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m05.json",
+      "bytes": 489218,
+      "sha256": "50ae5e0e7e62572d300422ed10503508eb967713d962cf54d16e7d9e5b1e1bf2"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m05/level_act3autochess_m05_sub_01.json",
@@ -25023,9 +25063,9 @@
       "sha256": "850c05e255e5fcd2c3dc79e35a8660737d8bdf72dbdd66207aed34cb117e4a6c"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m05.json",
-      "bytes": 489218,
-      "sha256": "50ae5e0e7e62572d300422ed10503508eb967713d962cf54d16e7d9e5b1e1bf2"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m06.json",
+      "bytes": 492055,
+      "sha256": "17cfce6528b1823c11cd09ed7985aba7d78533b47c3a8bd222991ca059982ba8"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m06/level_act3autochess_m06_sub_01.json",
@@ -25043,9 +25083,9 @@
       "sha256": "ea5343bdaceca8a23e3aa676668b974082e00fe2add9193a07ea9a4da8c68dc1"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m06.json",
-      "bytes": 492055,
-      "sha256": "17cfce6528b1823c11cd09ed7985aba7d78533b47c3a8bd222991ca059982ba8"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m09.json",
+      "bytes": 484370,
+      "sha256": "d1ddf7211679b61f393cd317d38f47b9e8da41c098034a552fce77ec06373827"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m09/level_act3autochess_m09_sub_01.json",
@@ -25063,9 +25103,9 @@
       "sha256": "002f45a9c8c51452218d51eba6d58f5f202018f2ac156508b9a4753272047aed"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m09.json",
-      "bytes": 484370,
-      "sha256": "d1ddf7211679b61f393cd317d38f47b9e8da41c098034a552fce77ec06373827"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m10.json",
+      "bytes": 484597,
+      "sha256": "fb485ee88bef2bfbbff4759614e3f313c34141bfe43e9d7d4fa1ef0214dcde55"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m10/level_act3autochess_m10_sub_01.json",
@@ -25083,9 +25123,9 @@
       "sha256": "b01239821e56f57bf5c50479d86da2b60bca3779d0ad752db6f0a6853b36a770"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m10.json",
-      "bytes": 484597,
-      "sha256": "fb485ee88bef2bfbbff4759614e3f313c34141bfe43e9d7d4fa1ef0214dcde55"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m11.json",
+      "bytes": 476848,
+      "sha256": "13e2a3a2c9ad7d3f87d4a3bc89e0cb6b60940268ee76dcd2863c625d3c491bb9"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m11/level_act3autochess_m11_sub_01.json",
@@ -25103,9 +25143,9 @@
       "sha256": "bd7ca7da6b91ff4b80b2715d14f1e9946f50ef6906cbea7551fe2b36991a55b6"
     },
     {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m11.json",
-      "bytes": 476848,
-      "sha256": "13e2a3a2c9ad7d3f87d4a3bc89e0cb6b60940268ee76dcd2863c625d3c491bb9"
+      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m12.json",
+      "bytes": 483938,
+      "sha256": "c822f43fb46f169022f1c6f17052bd5f2fde761875f7eed5c8b844dfb6824a30"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m12/level_act3autochess_m12_sub_01.json",
@@ -25121,11 +25161,6 @@
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m12/level_act3autochess_m12_sub_03.json",
       "bytes": 76030,
       "sha256": "0ffda1a61e54607aaf96bdadd21440acaf0f2eabe1b2dace35c4e2692db21c05"
-    },
-    {
-      "path": "gamedata/levels/activities/act3autochess/level_act3autochess_m12.json",
-      "bytes": 483938,
-      "sha256": "c822f43fb46f169022f1c6f17052bd5f2fde761875f7eed5c8b844dfb6824a30"
     },
     {
       "path": "gamedata/levels/activities/act3autochess/level_act3autochess_tr01.json",
@@ -25771,6 +25806,126 @@
       "path": "gamedata/levels/activities/act44side/level_act44side_tr02.json",
       "bytes": 50970,
       "sha256": "ed638a6df3ca9708df82e85a09da7d60adba99fb207f184fab977285836a8332"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_01.json",
+      "bytes": 103745,
+      "sha256": "6e98ab359751781953480a723422e6e7112c031df18a53b59690f8feefe9f0f2"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_02.json",
+      "bytes": 69764,
+      "sha256": "a8bfb066e61eacbb1a4e1cfa002ae59a29a37135a5d2fe32b1d0fd998127ccc9"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_03.json",
+      "bytes": 105657,
+      "sha256": "e850406b9f992810a228e8c4cc0f0f0d8be6b9a52b4bbb9edf4031317b5fd6b9"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_04.json",
+      "bytes": 85753,
+      "sha256": "7d2e7c4062c23f9336d11adbd20b6fae57b3d19901d54aaa299885fa6bbf26b1"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_05.json",
+      "bytes": 128252,
+      "sha256": "e5dcdc34ec93dc053717bf307b8f37b396a0b47775d2cc993ae05e58574a43c0"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_06.json",
+      "bytes": 76068,
+      "sha256": "498888c3e0e8536f1a3707d5b94ad875b012910e570205a2cf02f3e50e173308"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_07.json",
+      "bytes": 141879,
+      "sha256": "d53edd2ca03da291a358d9fab3e5f99e219bf06830f3d3f5febe08a7e05a0fc8"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_08.json",
+      "bytes": 137076,
+      "sha256": "e38e138b32611da7c01a0bdd5050d611e6e51874a2ba7bc0d828dcb34762e6a4"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_09.json",
+      "bytes": 95974,
+      "sha256": "09996918dcc2dc9f62e98ddb2504c7611ba8a7c5711ea558bd01e5240e51f31e"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_10.json",
+      "bytes": 414014,
+      "sha256": "3e60a89438637b1e828e9032f618716b57ebebb3ee8f3b1aca177cd8fe848709"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_ex01.json",
+      "bytes": 153152,
+      "sha256": "f50c6c7c2d1afddcd522244b4f8bcf6e32e2564c58d8f78603ec995846cbf810"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_ex02.json",
+      "bytes": 111472,
+      "sha256": "25fb40eb6b72794f7479f39dbe3f4ffffd6001f6b3993e6fa45f53a404833487"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_ex03.json",
+      "bytes": 148714,
+      "sha256": "c7defb322607392ba9c78de3c13406c0349c87963b9c40caf34548ec7b747186"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_ex04.json",
+      "bytes": 91972,
+      "sha256": "93b07559e219d46e0fb860b03f598315253dc02f1a0c56b136fe1b52e033548c"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_ex05.json",
+      "bytes": 91409,
+      "sha256": "62f71e51b9ec7c9c9ac5b60a022b5d9332b4803ac1d32f3a69c05d0a7ec29dd2"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_ex06.json",
+      "bytes": 81431,
+      "sha256": "b67e4b7a294b6db796728f3b559874afa47dff2d4c315eef7a559331992bd7f5"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_ex07.json",
+      "bytes": 90004,
+      "sha256": "5c0aaf073bc4f009d55e137c6e691f54230ef8f1d4f4921da38e327722ab3ce2"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_ex08.json",
+      "bytes": 149923,
+      "sha256": "87cb79522b98f8d3bcb168d073eeb31800d5b951260a8ff6ca56876d673a1a99"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_sub-1-1.json",
+      "bytes": 73926,
+      "sha256": "5bdcebd99a1f542cb165f27116df73f68034c0a96ebdc612d7e4c1af4fa6b0ff"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_sub-1-2.json",
+      "bytes": 131093,
+      "sha256": "eead3dd65b294597a18b8af1d3224b35c022bea67db9d96c69de4d999039ee9d"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_sub-1-3.json",
+      "bytes": 193839,
+      "sha256": "8bb6d7d0b26a76bea7ff717fdaa4b2d6c42a6707a114284d553467a9d9b8d826"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_sub-1-4.json",
+      "bytes": 171399,
+      "sha256": "b037f965813a7ae8d38385094c7da560c72a6ddddc0cf01001eaa8d8f6a40797"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_sub-1-5.json",
+      "bytes": 94133,
+      "sha256": "9894755f862810387f0542597e20d2968cd433b9168f42c263e0251fbf4161fc"
+    },
+    {
+      "path": "gamedata/levels/activities/act46side/level_act46side_tr01.json",
+      "bytes": 73322,
+      "sha256": "0a63cf2b24c55957853032ea3e29025fed7d9e04fb152e323cba34def90afebd"
     },
     {
       "path": "gamedata/levels/activities/act55side/level_act55side_01.json",
@@ -62568,6 +62723,21 @@
       "sha256": "45e890aa87b96ccb7487c6ddd704821e3a51f4b46424bb09fb7d74b4dbd0073e"
     },
     {
+      "path": "gamedata/story/obt/rogue/rogue_6/monthrecord/month_record_rogue_6_6_1.txt",
+      "bytes": 4656,
+      "sha256": "5bb0881f34a505c766cfe3b5c66214967deb326ae5ccbfd21add23fb90045689"
+    },
+    {
+      "path": "gamedata/story/obt/rogue/rogue_6/monthrecord/month_record_rogue_6_6_2.txt",
+      "bytes": 3791,
+      "sha256": "5286437c775548e38789a896df45d1295f579762ce08d9965316a93294876c55"
+    },
+    {
+      "path": "gamedata/story/obt/rogue/rogue_6/monthrecord/month_record_rogue_6_6_3.txt",
+      "bytes": 3340,
+      "sha256": "042734fae495e8d6c3e8f8e74b61d19290657b66755dc8c83a7bf6007d08013f"
+    },
+    {
       "path": "gamedata/story/obt/roguelike/ro1/level_rogue1_ending_1.txt",
       "bytes": 2848,
       "sha256": "77c5cf1947cfcf84376d2662466bdbfb79b7e6b7d7b064084fa9352b3eb2f8b0"
@@ -65204,13 +65374,13 @@
     },
     {
       "path": "report-inputs/inputs.json",
-      "bytes": 358671,
-      "sha256": "94ba4b14ef13e3beb8788823271314b65c4ceda86db450f78ac6406886a50e16"
+      "bytes": 361709,
+      "sha256": "c72d3b818341c26375c410322b3879789b8700897561dc8b31e74297e96f52a3"
     },
     {
       "path": "report-inputs/skill_mechanics.json",
       "bytes": 329038,
-      "sha256": "e0a5ec3314605d6ec0ea3c96bd6a5df1ce1076459e98c538fd3bd0069edd9c3d"
+      "sha256": "5120bcf081e498bb86175c6fc96d7513fd6bee84302f3c3801069b06931c3c4e"
     },
     {
       "path": "schemas/activity_table.fbs",
@@ -65550,7 +65720,7 @@
     {
       "path": "version.json",
       "bytes": 381,
-      "sha256": "4560e32648d01907489c960922dd37b26b73fe65ab42af808ae46f224a6bf28c"
+      "sha256": "647b6d798a007dd5e94bb6701a9306bbac336866bfa911a6cf837ad72b47ad80"
     }
   ]
 }

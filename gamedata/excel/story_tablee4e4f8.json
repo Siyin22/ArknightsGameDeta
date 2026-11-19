@@ -20913,7 +20913,7 @@
     "videoResource": true,
     "trigger": {
       "type": 8,
-      "key": "act46side",
+      "key": "act46sre",
       "useRegex": false
     },
     "condition": {
